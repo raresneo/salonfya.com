@@ -134,6 +134,37 @@ export default function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [location.pathname]);
 
+  useEffect(() => {
+    // UTM parameter capturing
+    const searchParams = new URLSearchParams(window.location.search);
+    const utmSource = searchParams.get('utm_source');
+    const utmCampaign = searchParams.get('utm_campaign');
+    const voucher = searchParams.get('voucher');
+
+    let trackingData: any = {};
+    const stored = localStorage.getItem('fya_tracking');
+    if (stored) {
+      try { trackingData = JSON.parse(stored); } catch (e) { }
+    }
+
+    let updated = false;
+    if (utmSource || utmCampaign) {
+      trackingData.utm_source = utmSource || trackingData.utm_source;
+      trackingData.utm_campaign = utmCampaign || trackingData.utm_campaign;
+      updated = true;
+    }
+    if (voucher) {
+      trackingData.voucher = voucher;
+      updated = true;
+      setToastMessage(`VOUCHER APLICAT: Reducerea ta a fost adăugată pentru programare!`);
+      setTimeout(() => setToastMessage(null), 5000);
+    }
+
+    if (updated) {
+      localStorage.setItem('fya_tracking', JSON.stringify(trackingData));
+    }
+  }, []);
+
   return (
     <>
       <CustomCursor />

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Modal from '../ui/Modal';
 import { Dress } from '../../types';
+import { supabase } from '../../lib/supabase';
 
 const AppointmentModal = ({ dress, isOpen, onClose, location }: { dress: Dress, isOpen: boolean, onClose: () => void, location: string }) => {
     const [step, setStep] = useState(1);
@@ -12,9 +13,34 @@ const AppointmentModal = ({ dress, isOpen, onClose, location }: { dress: Dress, 
     const handleNext = () => setStep(step + 1);
     const handlePrev = () => setStep(step - 1);
 
-    const handleBooking = () => {
+    const handleBooking = async () => {
         if (!date || !time || !name) return;
-        const message = `Bună ziua. Mă numesc ${name} (tel: ${phone}). Doresc o programare la showroom-ul din ${location} pentru rochia *${dress.name}* pe data de ${date}, ora ${time}.`;
+
+        // Fetch tracking data
+        let trackingData = { utm_source: null, utm_campaign: null, voucher: null };
+        const stored = localStorage.getItem('fya_tracking');
+        if (stored) {
+            try { trackingData = JSON.parse(stored); } catch (e) { }
+        }
+
+        try {
+            await supabase.from('leads').insert([{
+                name: name,
+                phone: phone,
+                dress_interested_in: dress.name,
+                appointment_date: date,
+                appointment_time: time,
+                location: location,
+                utm_source: trackingData.utm_source,
+                utm_campaign: trackingData.utm_campaign,
+                voucher_used: trackingData.voucher
+            }]);
+        } catch (error) {
+            console.error('Failed to save lead:', error);
+        }
+
+        const voucherText = trackingData.voucher ? ` (Am voucherul: ${trackingData.voucher})` : '';
+        const message = `Bună ziua. Mă numesc ${name} (tel: ${phone}). Doresc o programare la showroom-ul din ${location} pentru rochia *${dress.name}* pe data de ${date}, ora ${time}.${voucherText}`;
         const url = `https://wa.me/?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
         onClose();
