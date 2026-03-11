@@ -24,6 +24,8 @@ import PageTransition from './components/layout/PageTransition';
 import Preloader from './components/layout/Preloader';
 import Admin from './pages/Admin';
 
+import ReactPixel from 'react-facebook-pixel';
+
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Homepage from './pages/Homepage';
 import ImperialCollection from './pages/ImperialCollection';
@@ -163,6 +165,16 @@ export default function App() {
       localStorage.setItem('fya_tracking', JSON.stringify(trackingData));
     }
   }, []);
+
+  // Initialize and track PageViews with Meta Pixel
+  useEffect(() => {
+    const options = {
+      autoConfig: true, 
+      debug: false, 
+    };
+    ReactPixel.init('615819990278598', undefined, options);
+    ReactPixel.pageView();
+  }, [location.pathname]);
 
   return (
     <>

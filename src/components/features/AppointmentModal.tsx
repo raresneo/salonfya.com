@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Modal from '../ui/Modal';
 import { Dress } from '../../types';
 import { supabase } from '../../lib/supabase';
+import ReactPixel from 'react-facebook-pixel';
 
 interface AppointmentModalProps {
     dress?: Dress;
@@ -78,6 +79,31 @@ const AppointmentModal = ({ dress, isOpen, onClose, location }: AppointmentModal
         } catch (error) {
             console.error('Failed to save lead:', error);
         }
+
+        // --- META TRACKING (DOUBLE TRACKING) ---
+        // 1. Client-Side Track (Standard Pixel)
+        ReactPixel.track('Lead', {
+            content_name: interestedIn,
+            currency: 'RON'
+        });
+
+        // 2. Server-Side Track (Conversions API via Vercel Function)
+        try {
+            fetch('/api/meta-conversion', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    event_name: 'Lead',
+                    event_id: `lead_${Date.now()}`,
+                    email: '', // Not strictly asking for email in the current modal
+                    phone: phone, // Passing phone to FB CAPI 
+                    value: 0
+                })
+            }).catch(e => console.error("CAPI error:", e));
+        } catch (error) {
+            console.error("Failed to trigger CAPI", error);
+        }
+        // ---------------------------------------
 
         const voucherText = trackingData.voucher ? ` (Am voucherul: ${trackingData.voucher})` : '';
         const intentText = dress ? `pentru rochia *${dress.name}*` : `pentru o vizită la atelier`;
