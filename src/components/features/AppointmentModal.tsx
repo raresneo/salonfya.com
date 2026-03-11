@@ -3,7 +3,14 @@ import Modal from '../ui/Modal';
 import { Dress } from '../../types';
 import { supabase } from '../../lib/supabase';
 
-const AppointmentModal = ({ dress, isOpen, onClose, location }: { dress: Dress, isOpen: boolean, onClose: () => void, location: string }) => {
+interface AppointmentModalProps {
+    dress?: Dress;
+    isOpen: boolean;
+    onClose: () => void;
+    location: string;
+}
+
+const AppointmentModal = ({ dress, isOpen, onClose, location }: AppointmentModalProps) => {
     const [step, setStep] = useState(1);
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
@@ -23,11 +30,13 @@ const AppointmentModal = ({ dress, isOpen, onClose, location }: { dress: Dress, 
             try { trackingData = JSON.parse(stored); } catch (e) { }
         }
 
+        const interestedIn = dress ? dress.name : 'Vizită Generală Atelier';
+
         try {
             await supabase.from('leads').insert([{
                 name: name,
                 phone: phone,
-                dress_interested_in: dress.name,
+                dress_interested_in: interestedIn,
                 appointment_date: date,
                 appointment_time: time,
                 location: location,
@@ -40,8 +49,9 @@ const AppointmentModal = ({ dress, isOpen, onClose, location }: { dress: Dress, 
         }
 
         const voucherText = trackingData.voucher ? ` (Am voucherul: ${trackingData.voucher})` : '';
-        const message = `Bună ziua. Mă numesc ${name} (tel: ${phone}). Doresc o programare la showroom-ul din ${location} pentru rochia *${dress.name}* pe data de ${date}, ora ${time}.${voucherText}`;
-        const url = `https://wa.me/?text=${encodeURIComponent(message)}`;
+        const intentText = dress ? `pentru rochia *${dress.name}*` : `pentru o vizită la atelier`;
+        const message = `Bună ziua. Mă numesc ${name} (tel: ${phone}). Doresc o programare la showroom-ul din ${location} ${intentText} pe data de ${date}, la ora ${time}.${voucherText}`;
+        const url = `https://wa.me/40727844228?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
         onClose();
         // Reset state
@@ -53,6 +63,10 @@ const AppointmentModal = ({ dress, isOpen, onClose, location }: { dress: Dress, 
             setTime('');
         }, 500);
     };
+
+    const imageUrl = dress ? dress.imageUrl : '/images/about/istoric_atelier.jpg';
+    const imageClass = dress && dress.id.includes('alma') ? 'logo-mask' : 'vintage-pastel';
+    const headerText = dress ? `Probează rochia ${dress.name}` : 'Programează o Vizită';
 
     return (
         <Modal isOpen={isOpen} onClose={onClose} title="Serviciu Concierge">
@@ -154,11 +168,13 @@ const AppointmentModal = ({ dress, isOpen, onClose, location }: { dress: Dress, 
 
                 {/* Right Side: Image Context */}
                 <div className="hidden md:block w-1/2 h-full bg-[#F3F3F3] relative overflow-hidden">
-                    <img src={dress.imageUrl} className={`absolute inset-0 w-full h-full object-contain filter contrast-[0.95] ${dress.id.includes('alma') ? 'logo-mask' : 'vintage-pastel'} opacity-90 scale-105 transition-transform duration-[4s] hover:scale-[1.15]`} alt="Dress Preview" />
+                    <img src={imageUrl} className={`absolute inset-0 w-full h-full object-cover filter contrast-[0.95] ${imageClass} opacity-90 scale-105 transition-transform duration-[4s] hover:scale-[1.15]`} alt="Appointment Context Preview" />
                     <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-transparent to-transparent pointer-events-none"></div>
                     <div className="absolute bottom-12 left-12">
-                        <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-[#212121] mb-2 block">Probează Colecția {dress.collection}</span>
-                        <h4 className="font-serif italic text-5xl text-[#212121]">{dress.name}</h4>
+                        {dress && (
+                            <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-[#212121] mb-2 block">Probează Colecția {dress.collection}</span>
+                        )}
+                        <h4 className="font-serif italic text-5xl text-[#212121]">{headerText}</h4>
                     </div>
                 </div>
             </div>

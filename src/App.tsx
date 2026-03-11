@@ -35,7 +35,7 @@ import DespreNoi from './pages/DespreNoi';
 
 export default function App() {
   const [selectedDress, setSelectedDress] = useState<Dress | null>(null);
-  const [modalType, setModalType] = useState<'details' | 'tryon' | 'appointment' | 'wardrobe' | null>(null);
+  const [modalType, setModalType] = useState<'details' | 'tryon' | 'appointment' | 'wardrobe' | 'global-appointment' | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 
@@ -229,7 +229,7 @@ export default function App() {
               <Route path="/anna" element={<AnnaCollection dresses={annaDresses} onOpenDetails={openDetails} />} />
               <Route path="/mayra" element={<MayraCollection dresses={mayraDresses} onOpenDetails={openDetails} />} />
               <Route path="/beverly" element={<BeverlyCollection dresses={beverlyDresses} onOpenDetails={openDetails} />} />
-              <Route path="/despre-noi" element={<DespreNoi />} />
+              <Route path="/despre-noi" element={<DespreNoi onOpenAppointment={() => setModalType('global-appointment')} />} />
               <Route path="/admin" element={<Admin />} />
             </Routes>
           </PageTransition>
@@ -410,6 +410,14 @@ export default function App() {
               </>
             )
           }
+
+          {/* Global Appointment Modal */}
+          <AppointmentModal
+            isOpen={modalType === 'global-appointment'}
+            onClose={() => setModalType(null)}
+            location="Oradea"
+          />
+
           <ImageZoomModal
             isOpen={!!zoomImage}
             onClose={() => setZoomImage(null)}

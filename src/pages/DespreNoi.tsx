@@ -61,7 +61,11 @@ function Counter({ target, label, suffix = '' }: { target: number; label: string
     );
 }
 
-export default function DespreNoi() {
+interface DespreNoiProps {
+    onOpenAppointment: () => void;
+}
+
+export default function DespreNoi({ onOpenAppointment }: DespreNoiProps) {
     return (
         <div className="bg-[#FAF8F5] min-h-screen">
             {/* Hero Section */}
@@ -196,9 +200,9 @@ export default function DespreNoi() {
                         Atelierul nostru din Oradea vă are porțile deschise. Veniți să cunoașteți echipa, să atingeți
                         materialele și să împreună să scriem o nouă poveste.
                     </p>
-                    <a href="tel:+40700000000" className="inline-block border border-[#212121] text-[#212121] px-12 py-5 text-[11px] font-bold uppercase tracking-[0.25em] hover:bg-[#212121] hover:text-white transition-all duration-300">
+                    <button onClick={onOpenAppointment} className="inline-block border border-[#212121] text-[#212121] px-12 py-5 text-[11px] font-bold uppercase tracking-[0.25em] hover:bg-[#212121] hover:text-white transition-all duration-300">
                         Programează o Întâlnire
-                    </a>
+                    </button>
                 </AnimatedSection>
             </section>
         </div>
