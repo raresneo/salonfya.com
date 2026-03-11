@@ -239,6 +239,22 @@ export default function App() {
           <FloatingBar onOpenWardrobe={() => setModalType('wardrobe')} wardrobeCount={wardrobe.length} mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
           <ScrollProgress />
 
+          {/* Global Sticky Appointment Button */}
+          <button
+              onClick={() => setModalType('global-appointment')}
+              className="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-[80] bg-[#212121] text-white px-5 py-3 md:px-6 md:py-4 shadow-[0_8px_32px_rgba(33,33,33,0.3)] hover:bg-black hover:scale-105 transition-all group flex items-center gap-2 md:gap-3 rounded-full md:rounded-none"
+              aria-label="Programează Vizită"
+          >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="md:hidden">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+              <span className="text-[9px] md:text-[10px] uppercase tracking-[0.2em] font-bold whitespace-nowrap">Programează</span>
+              <span className="hidden md:inline-block text-sm transition-transform duration-300 group-hover:translate-x-1">→</span>
+          </button>
+
           {/* Image Zoom Modal */}
           <ImageZoomModal isOpen={!!zoomImage} onClose={() => setZoomImage(null)} imageUrl={zoomImage} />
 

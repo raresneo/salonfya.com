@@ -8,7 +8,7 @@ const collections = [
     { path: '/beverly', label: 'Beverly', image: '/images/BEVERLY/Anamara/03746EAE-477A-4A33-AE02-2AC1505D028A.jpg' },
 ];
 
-const Navbar = ({ onOpenWardrobe, wardrobeCount, mobileMenuOpen, setMobileMenuOpen }: any) => {
+const Navbar = ({ onOpenWardrobe, onOpenAppointment, wardrobeCount, mobileMenuOpen, setMobileMenuOpen }: any) => {
     const [scrolled, setScrolled] = useState(false);
     const [hoveredCollection, setHoveredCollection] = useState<string | null>(null);
     const location = useLocation();
@@ -61,8 +61,14 @@ const Navbar = ({ onOpenWardrobe, wardrobeCount, mobileMenuOpen, setMobileMenuOp
                     </Link>
                 </div>
 
-                {/* Right side - Wardrobe */}
-                <div className="flex-1 flex justify-end items-center gap-4 z-[60]">
+                {/* Right side - Nav Actions */}
+                <div className="flex-1 flex justify-end items-center gap-6 z-[60]">
+                    <button
+                        className="hidden md:flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.15em] text-[#212121] border-b border-[#212121] pb-[2px] hover:text-[#959595] hover:border-transparent transition-all"
+                        onClick={() => { setMobileMenuOpen(false); onOpenAppointment(); }}
+                    >
+                        Programează Vizită
+                    </button>
                     <button
                         className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.15em] text-[#212121] hover:text-[#605F5F] transition-colors active-scale"
                         onClick={() => { setMobileMenuOpen(false); onOpenWardrobe(); }}
@@ -97,10 +103,18 @@ const Navbar = ({ onOpenWardrobe, wardrobeCount, mobileMenuOpen, setMobileMenuOp
                     <Link
                         to="/despre-noi"
                         className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#959595] hover:text-[#212121] transition-colors"
-                        style={{ transitionDelay: mobileMenuOpen ? '500ms' : '0ms', transform: mobileMenuOpen ? 'translateY(0)' : 'translateY(20px)', opacity: mobileMenuOpen ? 1 : 0 }}
+                        style={{ transitionDelay: mobileMenuOpen ? '450ms' : '0ms', transform: mobileMenuOpen ? 'translateY(0)' : 'translateY(20px)', opacity: mobileMenuOpen ? 1 : 0 }}
                     >
                         Povestea Fya
                     </Link>
+                    
+                    <button
+                        onClick={() => { setMobileMenuOpen(false); onOpenAppointment(); }}
+                        className="mt-6 text-[10px] font-bold uppercase tracking-[0.3em] text-white bg-[#212121] px-8 py-4 hover:bg-black transition-all"
+                        style={{ transitionDelay: mobileMenuOpen ? '550ms' : '0ms', transform: mobileMenuOpen ? 'translateY(0)' : 'translateY(20px)', opacity: mobileMenuOpen ? 1 : 0 }}
+                    >
+                        Programează o Întâlnire
+                    </button>
                 </div>
 
                 {/* Right side: Image Reveal (Desktop Only) */}
