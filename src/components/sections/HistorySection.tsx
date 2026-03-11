@@ -91,12 +91,12 @@ const HistorySection = () => {
             <div className="relative w-full h-[80vh] overflow-hidden mt-20">
                 <iframe
                     className="absolute top-1/2 left-1/2 w-[177.78vh] h-[56.25vw] min-h-screen min-w-full -translate-x-1/2 -translate-y-1/2 object-cover scale-[1.35] md:scale-110 opacity-70"
-                    src="https://www.youtube.com/embed/dtbuUKJXAYc?autoplay=1&mute=1&playsinline=1&controls=0&loop=1&playlist=dtbuUKJXAYc&start=2&end=70&showinfo=0&modestbranding=1"
+                    src="https://www.youtube.com/embed/SmyuMnzifn0?autoplay=1&mute=1&playsinline=1&controls=0&loop=1&playlist=SmyuMnzifn0&showinfo=0&modestbranding=1"
                     title="Fya Cinematic"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                    style={{ pointerEvents: 'none' }}
+                    style={{ pointerEvents: 'none', filter: 'grayscale(100%)' }}
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/30 pointer-events-none">
                     <h2 className="font-serif text-[12vw] md:text-[8vw] italic text-white mix-blend-overlay tracking-tight drop-shadow-2xl">Atelier Fya</h2>

@@ -37,11 +37,12 @@ const CinematicSection = () => {
                 ) : (
                     <iframe
                         className="absolute inset-0 w-full h-full"
-                        src="https://www.youtube.com/embed/dtbuUKJXAYc?autoplay=1&controls=1&rel=0&playsinline=1"
+                        src="https://www.youtube.com/embed/SmyuMnzifn0?autoplay=1&mute=1&controls=1&rel=0&playsinline=1"
                         title="Fya Cinematic"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
+                        style={{ filter: 'grayscale(100%)' }}
                     />
                 )}
 

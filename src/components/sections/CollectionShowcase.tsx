@@ -27,7 +27,7 @@ const collections = [
         path: '/beverly',
         name: 'Beverly',
         subtitle: 'Eleganță Cosmopolită',
-        image: '/images/BEVERLY/Anamara/03746EAE-477A-4A33-AE02-2AC1505D028A.jpg',
+        image: '/images/BEVERLY/Evora/IMG_6390.JPG',
         description: 'Linii îndrăznețe cu broderii luxuriante. Modernitate și romantism în echilibru.'
     },
 ];
