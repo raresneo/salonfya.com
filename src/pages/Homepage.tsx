@@ -1,7 +1,6 @@
 import React from 'react';
 import Hero from '../components/sections/Hero';
 import CollectionShowcase from '../components/sections/CollectionShowcase';
-import CinematicSection from '../components/sections/CinematicSection';
 import AtelierSection from '../components/sections/AtelierSection';
 import InnovationSection from '../components/sections/InnovationSection';
 import HistorySection from '../components/sections/HistorySection';
@@ -13,7 +12,6 @@ export default function Homepage() {
         <>
             <Hero />
             <CollectionShowcase />
-            <CinematicSection />
             <AtelierSection />
             <InnovationSection />
             <HistorySection />

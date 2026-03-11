@@ -10,7 +10,6 @@ import CustomCursor from './components/ui/CustomCursor';
 
 // Feature Components
 import WardrobeModal from './components/features/WardrobeModal';
-import TryOnModal from './components/features/TryOnModal';
 import ImageZoomModal from './components/features/ImageZoomModal';
 import AppointmentModal from './components/features/AppointmentModal';
 
@@ -35,7 +34,7 @@ import DespreNoi from './pages/DespreNoi';
 
 export default function App() {
   const [selectedDress, setSelectedDress] = useState<Dress | null>(null);
-  const [modalType, setModalType] = useState<'details' | 'tryon' | 'appointment' | 'wardrobe' | 'global-appointment' | null>(null);
+  const [modalType, setModalType] = useState<'details' | 'appointment' | 'wardrobe' | 'global-appointment' | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 
@@ -379,13 +378,6 @@ export default function App() {
                         {isInWardrobe(selectedDress.id) ? "În Garderobă" : "Adaugă la Wishlist"}
                       </Button>
                     </div>
-
-                    <div className="flex justify-center mt-6">
-                      <div className="p-4 w-full md:w-auto border border-[#E4E1DE] text-center hover:border-[#212121] transition-colors cursor-pointer group" onClick={() => setModalType('tryon')}>
-                        <span className="block text-2xl mb-2 group-hover:scale-110 transition-transform">✧</span>
-                        <span className="text-[10px] uppercase tracking-widest font-bold">Probă AI</span>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -395,19 +387,12 @@ export default function App() {
           {/* Feature Modals */}
           {
             selectedDress && (
-              <>
-                <AppointmentModal
-                  dress={selectedDress}
-                  isOpen={modalType === 'appointment'}
-                  onClose={() => setModalType('details')}
-                  location="Oradea"
-                />
-                <TryOnModal
-                  dress={selectedDress}
-                  isOpen={modalType === 'tryon'}
-                  onClose={() => setModalType('details')}
-                />
-              </>
+              <AppointmentModal
+                dress={selectedDress}
+                isOpen={modalType === 'appointment'}
+                onClose={() => setModalType('details')}
+                location="Oradea"
+              />
             )
           }
 
