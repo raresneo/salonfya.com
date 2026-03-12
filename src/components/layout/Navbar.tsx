@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const collections = [
-    { path: '/imperial', label: 'Imperial', image: '/images/Imperial/Aurelia/IMG_5352.jpg' },
+    { path: '/imperial', label: 'Imperial', image: '/images/IMPERIAL/Aurelia/IMG_5352.jpg' },
     { path: '/anna', label: 'Anna', image: '/images/ANNA/Just Anna/IMG_5889.jpg' },
     { path: '/mayra', label: 'Mayra', image: '/images/MAYRA/Snow/IMG_5744.jpg' },
-    { path: '/beverly', label: 'Beverly', image: '/images/BEVERLY/Anamara/03746EAE-477A-4A33-AE02-2AC1505D028A.jpg' },
+    { path: '/beverly', label: 'Beverly', image: '/images/BEVERLY/Evora/IMG_6390.JPG' },
 ];
 
 const Navbar = ({ onOpenWardrobe, onOpenAppointment, wardrobeCount, mobileMenuOpen, setMobileMenuOpen }: any) => {

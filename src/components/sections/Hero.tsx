@@ -23,10 +23,10 @@ const Hero = () => {
                 <p className="text-[11px] md:text-[12px] uppercase tracking-[0.5em] font-bold text-white/40 mb-10 pt-4">Haute Couture · Oradea</p>
                 <div className="flex justify-center items-center gap-4 mb-10">
                     <span className="w-8 h-[1px] bg-white/30"></span>
-                    <p className="font-serif italic text-white/90 text-xl md:text-2xl tracking-[0.1em]">Fancy, Young, Admired (FYA)</p>
+                    <p className="font-serif italic text-white/90 text-xl md:text-2xl tracking-[0.15em] drop-shadow-lg">Fancy, Young, Admired (FYA)</p>
                     <span className="w-8 h-[1px] bg-white/30"></span>
                 </div>
-                <p className="font-light text-white/70 text-base md:text-xl leading-[1.8] max-w-lg mx-auto px-4 md:px-0 mb-14 font-serif italic">
+                <p className="font-light text-white/80 text-base md:text-xl leading-[1.8] max-w-lg mx-auto px-4 md:px-0 mb-14 font-serif italic drop-shadow-md">
                     O odă adusă feminității, sculptată în mătase pură pentru momente ce devin atemporale.
                 </p>
                 <button

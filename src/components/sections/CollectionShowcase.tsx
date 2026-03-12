@@ -6,7 +6,7 @@ const collections = [
         path: '/imperial',
         name: 'Imperial',
         subtitle: 'Eleganță Regală',
-        image: '/images/Imperial/Aurelia/IMG_5352.jpg',
+        image: '/images/IMPERIAL/Alma/IMG_5535.jpg',
         description: 'Rafinament absolut. O colecție pentru momente care definesc o viață.'
     },
     {

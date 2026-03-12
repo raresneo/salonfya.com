@@ -1,3 +1,5 @@
+import crypto from 'crypto';
+
 export default async function handler(req, res) {
   // CORS configuration for local dev and production
   res.setHeader('Access-Control-Allow-Credentials', true);
@@ -32,11 +34,25 @@ export default async function handler(req, res) {
     const timestamp = Math.floor(Date.now() / 1000);
     const eventId = eventData.event_id || `evt_${timestamp}_${Math.random().toString(36).substr(2, 9)}`;
 
+    // Helper to hash user data as required by Meta CAPI
+    const hashData = (data) => {
+      if (!data) return null;
+      const normalized = data.trim().toLowerCase();
+      return crypto.createHash('sha256').update(normalized).digest('hex');
+    };
+
+    const hashedEmail = hashData(eventData.email);
+    // For phone numbers, Meta expects strictly digits with country code, e.g. 40727844228
+    const cleanPhone = eventData.phone ? eventData.phone.replace(/\D/g, '') : '';
+    // Assume RO country code if it doesn't start with 40 or +40 but looks like a valid local mobile
+    const fullPhone = cleanPhone.startsWith('40') ? cleanPhone : (cleanPhone.length >= 9 ? `40${cleanPhone.replace(/^0/, '')}` : null);
+    const hashedPhone = hashData(fullPhone);
+
     // Format conform Facebook Graph API specs for Conversions API
     const payload = {
       data: [
         {
-          event_name: eventData.event_name || 'Schedule',
+          event_name: eventData.event_name || 'Lead',
           event_time: timestamp,
           event_id: eventId,
           event_source_url: eventSourceUrl,
@@ -44,10 +60,8 @@ export default async function handler(req, res) {
           user_data: {
             client_ip_address: clientIpAddress,
             client_user_agent: clientUserAgent,
-            // Hashing usually required if you send unhashed PII, but works fine if missing/empty
-            // We just pass the phone/email if they are provided from the payload (and we should hash them ideally, or FB handles them)
-            em: eventData.email ? [eventData.email] : [],
-            ph: eventData.phone ? [eventData.phone] : []
+            em: hashedEmail ? [hashedEmail] : [],
+            ph: hashedPhone ? [hashedPhone] : []
           },
           custom_data: {
             currency: 'RON',
