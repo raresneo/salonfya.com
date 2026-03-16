@@ -13,11 +13,15 @@ export default function BeverlyCollection({ dresses, onOpenDetails }: BeverlyCol
             {/* Cinematic Editorial Header */}
             <div className="relative h-[70vh] w-full overflow-hidden flex items-center justify-center">
                 <div className="absolute inset-0 bg-black/20 z-10 pointer-events-none" />
-                <img
-                    src="/images/BEVERLY/Anamara/03746EAE-477A-4A33-AE02-2AC1505D028A.jpg"
-                    alt="Colecția Beverly"
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
                     className="absolute inset-0 w-full h-full object-cover object-top animate-fadeInUp-slow"
-                />
+                >
+                    <source src="/images/BEVERLY/berverly_cover.mp4" type="video/mp4" />
+                </video>
 
                 <div className="relative z-20 text-center px-6 mt-20 animate-fadeInUp-slow" style={{ animationDelay: '0.2s' }}>
                     <span className="block text-[10px] md:text-[11px] uppercase tracking-[0.4em] font-bold text-white/80 mb-6 drop-shadow-md">Eleganță Cosmopolită</span>

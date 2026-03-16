@@ -248,13 +248,13 @@ export default function App() {
           <Footer />
 
           {/* Lucesposa-inspired UI elements */}
-          <FloatingBar onOpenWardrobe={() => setModalType('wardrobe')} wardrobeCount={wardrobe.length} mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
+          <FloatingBar onOpenWardrobe={() => setModalType('wardrobe')} onOpenAppointment={() => setModalType('global-appointment')} wardrobeCount={wardrobe.length} mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
           <ScrollProgress />
 
           {/* Global Sticky Appointment Button */}
           <button
               onClick={() => setModalType('global-appointment')}
-              className="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-[80] bg-[#212121] text-white px-5 py-3 md:px-6 md:py-4 shadow-[0_8px_32px_rgba(33,33,33,0.3)] hover:bg-black hover:scale-105 transition-all group flex items-center gap-2 md:gap-3 rounded-full md:rounded-none"
+              className="hidden md:flex fixed bottom-6 right-6 md:bottom-8 md:right-8 z-[80] bg-[#212121] text-white px-5 py-3 md:px-6 md:py-4 shadow-[0_8px_32px_rgba(33,33,33,0.3)] hover:bg-black hover:scale-105 transition-all group items-center gap-2 md:gap-3 rounded-full md:rounded-none"
               aria-label="Programează Vizită"
           >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="md:hidden">

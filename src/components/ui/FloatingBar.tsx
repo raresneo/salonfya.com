@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-const FloatingBar = ({ onOpenWardrobe, wardrobeCount, mobileMenuOpen, setMobileMenuOpen }: { onOpenWardrobe: () => void; wardrobeCount: number; mobileMenuOpen: boolean; setMobileMenuOpen: React.Dispatch<React.SetStateAction<boolean>>; }) => {
+const FloatingBar = ({ onOpenWardrobe, onOpenAppointment, wardrobeCount, mobileMenuOpen, setMobileMenuOpen }: { onOpenWardrobe: () => void; onOpenAppointment: () => void; wardrobeCount: number; mobileMenuOpen: boolean; setMobileMenuOpen: React.Dispatch<React.SetStateAction<boolean>>; }) => {
     const [visible, setVisible] = useState(false);
     const location = useLocation();
 
@@ -43,6 +43,17 @@ const FloatingBar = ({ onOpenWardrobe, wardrobeCount, mobileMenuOpen, setMobileM
                         </svg>
                         <span className="text-[8px] uppercase tracking-[0.15em] font-bold text-[#959595]">Acasă</span>
                     </Link>
+
+                    {/* Search/Explore */}
+                    <button onClick={onOpenAppointment} className="flex flex-col items-center gap-1 group active-scale">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#212121" strokeWidth="1.5">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                            <line x1="16" y1="2" x2="16" y2="6" />
+                            <line x1="8" y1="2" x2="8" y2="6" />
+                            <line x1="3" y1="10" x2="21" y2="10" />
+                        </svg>
+                        <span className="text-[8px] uppercase tracking-[0.15em] font-bold text-[#959595]">Programează</span>
+                    </button>
 
                     {/* Search/Explore */}
                     <Link to="/despre-noi" className="flex flex-col items-center gap-1 group active-scale">
