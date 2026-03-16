@@ -231,7 +231,7 @@ export default function App() {
 
 
           {/* Navigation */}
-          <Navbar onOpenWardrobe={() => setModalType('wardrobe')} wardrobeCount={wardrobe.length} mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
+          <Navbar onOpenWardrobe={() => setModalType('wardrobe')} onOpenAppointment={() => setModalType('global-appointment')} wardrobeCount={wardrobe.length} mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
 
           <PageTransition>
             <Routes>
