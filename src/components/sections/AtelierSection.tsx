@@ -28,7 +28,7 @@ const AtelierSection = () => (
                 <FadeInSection delay={300}>
                     <div className="w-full h-full relative overflow-hidden">
                         <img
-                            src="/images/atelier_vintage.png"
+                            src="/images/detaliile_fac_diferenta.jpeg"
                             className="w-full h-full object-cover opacity-80 hover:scale-105 transition-transform duration-[2s] vintage-pastel"
                             alt="Atelier detail"
                         />
