@@ -51,18 +51,18 @@ const CollectionShowcase = () => {
     const isVisible = useInView(sectionRef);
 
     return (
-        <section ref={sectionRef} className="py-20 md:py-32 px-6 md:px-12 bg-[#FAF8F5]">
+        <section ref={sectionRef} className="py-12 md:py-16 px-6 md:px-12 bg-[#0A0A0A]">
             {/* Section Header — like Lucesposa's "NUESTRAS COLECCIONES" */}
             <div className={`text-center mb-16 md:mb-24 transition-all duration-[1.5s] ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                <span className="block text-[10px] uppercase tracking-[0.35em] font-bold text-[#AFA79D] mb-4">
+                <span className="block text-[10px] uppercase tracking-[0.35em] font-bold text-white/60 mb-4">
                     Descoperiți Colecțiile Noastre
                 </span>
-                <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl italic text-[#212121] mb-6">
+                <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl italic text-white mb-6">
                     <span className="font-light not-italic">Fya</span>{' '}
                     <span>Colecții</span>
                 </h2>
-                <div className="w-20 h-px bg-[#E4E1DE] mx-auto mt-6" />
-                <p className="mt-6 text-[#5a5a5a] font-light text-base md:text-lg max-w-2xl mx-auto leading-[2] tracking-wide">
+                <div className="w-20 h-px bg-white/30 mx-auto mt-6" />
+                <p className="mt-6 text-white/70 font-light text-base md:text-lg max-w-2xl mx-auto leading-[2] tracking-wide">
                     O manifestare a frumuseții absolute. Fiecare colecție este o destinație în sine, creată pentru femeia care transformă rafinamentul într-un mod de a fi.
                 </p>
             </div>

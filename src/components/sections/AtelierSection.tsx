@@ -3,7 +3,7 @@ import SectionTitle from '../ui/SectionTitle';
 import FadeInSection from '../ui/FadeInSection';
 
 const AtelierSection = () => (
-    <div id="atelier" className="py-[120px] bg-[#212121] text-white overflow-hidden">
+    <div id="atelier" className="py-16 md:py-20 bg-[#0A0A0A] text-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
             <div className="order-2 lg:order-1 space-y-16">
                 <FadeInSection>
@@ -12,14 +12,14 @@ const AtelierSection = () => (
                         În atelierul Fya, am renunțat la grabă. Fiecare rochie este o pânză pe care o pictăm cu sute de ore de muncă manuală, îmbinând tradiția artizanală cu o precizie aproape arhitecturală.
                         Avem o singură credință: piesele de colecție transcend tendințele sezoniere.
                     </p>
-                    <div className="grid grid-cols-2 gap-12 pt-12 border-t border-[#605F5F]/30 mt-12">
+                    <div className="grid grid-cols-2 gap-12 pt-12 border-t border-white/20 mt-12">
                         <div>
                             <span className="block text-5xl md:text-6xl font-serif italic mb-3">100%</span>
-                            <span className="text-[10px] uppercase tracking-[0.25em] text-[#959595] font-bold">Mătase Pură</span>
+                            <span className="text-[10px] uppercase tracking-[0.25em] text-white/50 font-bold">Mătase Pură</span>
                         </div>
                         <div>
                             <span className="block text-5xl md:text-6xl font-serif italic mb-3">Oradea</span>
-                            <span className="text-[10px] uppercase tracking-[0.25em] text-[#959595] font-bold">Concept & Creație</span>
+                            <span className="text-[10px] uppercase tracking-[0.25em] text-white/50 font-bold">Concept & Creație</span>
                         </div>
                     </div>
                 </FadeInSection>

@@ -4,7 +4,7 @@ import FadeInSection from '../ui/FadeInSection';
 import Button from '../ui/Button';
 
 const PartnerSection = () => (
-    <div id="parteneri" className="py-[120px] bg-[#EBE7E0] border-t border-[#E4E1DE]">
+    <div id="parteneri" className="py-16 md:py-20 bg-[#0A0A0A] border-t border-[#333333]">
         <div className="max-w-4xl mx-auto px-6">
             <SectionTitle title="Devino Partener" subtitle="B2B Collaboration" centered />
             <FadeInSection>
