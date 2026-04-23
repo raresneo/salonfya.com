@@ -8,7 +8,7 @@ const WhereToBuySection = () => {
     ];
 
     return (
-        <div className="py-[120px] px-6 md:px-12 max-w-[1800px] mx-auto where-to-buy">
+        <div className="py-16 md:py-20 px-6 md:px-12 max-w-[1800px] mx-auto where-to-buy bg-[#0A0A0A]">
             <SectionTitle title="Descoperă Creațiile Noi" subtitle="Destinații" centered />
             <div className="flex justify-center mt-16 max-w-5xl mx-auto">
                 {locations.map((loc, idx) => (

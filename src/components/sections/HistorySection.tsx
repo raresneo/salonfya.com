@@ -44,8 +44,8 @@ const ScrollTextReveal = ({ text, className = "" }: { text: string, className?: 
 
 const HistorySection = () => {
     return (
-        <div className="bg-[#0A0A0A] text-white py-40 transition-colors duration-1000 relative z-10">
-            <div className="max-w-[1800px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-40">
+        <div className="bg-[#0A0A0A] text-white py-20 transition-colors duration-1000 relative z-10">
+            <div className="max-w-[1800px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
                 <div className="lg:col-span-12 relative h-[80vh] overflow-hidden">
                     <div className="absolute inset-0 bg-black/20 z-10"></div>
                     <img src="/images/history_hero_portrait.png" className="w-full h-full object-cover object-top parallax-y" alt="Fya Muse" />
@@ -54,13 +54,13 @@ const HistorySection = () => {
                     </div>
                 </div>
             </div>
-            <div className="max-w-4xl mx-auto px-6 mb-40">
+            <div className="max-w-4xl mx-auto px-6 mb-20">
                 <ScrollTextReveal
                     text="Fya Atelier nu este doar o semnătură, ci un manifest pentru eleganța nealterată de timp. O rebeliune tăcută împotriva zgomotului cotidian. Aici, abandonăm graba. În fiecare cusătură inserăm o poveste despre devotament artizanal și tăcerea materialelor pure."
                     className="font-serif text-3xl md:text-5xl leading-relaxed text-center text-[#E4E1DE] md:text-[#E4E1DE]"
                 />
             </div>
-            <div className="max-w-[1600px] mx-auto px-6 space-y-32 mb-40">
+            <div className="max-w-[1600px] mx-auto px-6 space-y-16 mb-20">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
                     <div className="md:col-span-5 md:col-start-2">
                         <div className="aspect-[4/5] overflow-hidden relative group rounded-sm">

@@ -6,11 +6,11 @@ const SectionTitle = ({ title, subtitle, centered = false }: { title: string, su
     <div className={`mb-16 ${centered ? 'text-center' : ''}`}>
         <FadeInSection>
             {subtitle && (
-                <span className="block text-[11px] uppercase tracking-[0.3em] text-[#959595] mb-6 font-bold">
+                <span className="block text-[11px] uppercase tracking-[0.3em] text-white/60 mb-6 font-bold">
                     {subtitle}
                 </span>
             )}
-            <h2 className="hero-title text-[#212121]">
+            <h2 className="hero-title text-white">
                 {title}
             </h2>
         </FadeInSection>
