@@ -9,13 +9,13 @@ const ImageGallery = ({ images }: { images: string[] }) => {
                 {images.map((img, idx) => (
                     <div
                         key={idx}
-                        className="group relative aspect-[3/4] overflow-hidden cursor-zoom-in border border-[#E4E1DE]"
+                        className="group relative aspect-[3/4] overflow-hidden cursor-zoom-in border border-[var(--color-border)]"
                         onClick={() => setSelectedImage(img)}
                     >
                         <img src={img} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 vintage-pastel" alt={`Gallery ${idx}`} />
                         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"></div>
                         <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                            <span className="bg-white/80 p-2 rounded-full text-[10px] uppercase tracking-widest block">Zoom</span>
+                            <span className="bg-white/80 p-2 rounded-full text-[10px] uppercase tracking-wider block">Zoom</span>
                         </div>
                     </div>
                 ))}

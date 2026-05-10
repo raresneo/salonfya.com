@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import { DRESSES } from './constants';
 import { Dress, DressType, WardrobeItem, Collection } from './types';
 
@@ -22,17 +22,23 @@ import FloatingBar from './components/ui/FloatingBar';
 import ScrollProgress from './components/ui/ScrollProgress';
 import PageTransition from './components/layout/PageTransition';
 import Preloader from './components/layout/Preloader';
-import Admin from './pages/Admin';
 
 import ReactPixel from 'react-facebook-pixel';
 
-import { Routes, Route, useLocation } from 'react-router-dom';
-import Homepage from './pages/Homepage';
-import ImperialCollection from './pages/ImperialCollection';
-import AnnaCollection from './pages/AnnaCollection';
-import MayraCollection from './pages/MayraCollection';
-import BeverlyCollection from './pages/BeverlyCollection';
-import DespreNoi from './pages/DespreNoi';
+import { Routes, Route, useLocation, Link } from 'react-router-dom';
+
+// Lazy loaded pages for ultra-fast startup
+const Homepage = lazy(() => import('./pages/Homepage'));
+const ImperialCollection = lazy(() => import('./pages/ImperialCollection'));
+const AnnaCollection = lazy(() => import('./pages/AnnaCollection'));
+const MayraCollection = lazy(() => import('./pages/MayraCollection'));
+const BeverlyCollection = lazy(() => import('./pages/BeverlyCollection'));
+const DespreNoi = lazy(() => import('./pages/DespreNoi'));
+const Programare = lazy(() => import('./pages/Programare'));
+const Admin = lazy(() => import('./pages/Admin'));
+
+
+
 
 export default function App() {
   const [selectedDress, setSelectedDress] = useState<Dress | null>(null);
@@ -95,44 +101,13 @@ export default function App() {
 
   const isInWardrobe = (id: string) => wardrobe.some(item => item.dressId === id);
 
-  const [bgColor, setBgColor] = useState('#EBE7E0');
+  const bgColor = '#EBE7E0';
 
   const location = useLocation();
 
   useEffect(() => {
-    const handleScroll = () => {
-      // Only apply dark background effect on Homepage
-      const isHomepage = location.pathname === '/';
-      if (!isHomepage) {
-        setBgColor('#EBE7E0');
-        return;
-      }
-
-      const scrollY = window.scrollY;
-      const windowHeight = window.innerHeight;
-      const totalHeight = document.documentElement.scrollHeight - windowHeight;
-      const scrollProgress = scrollY / totalHeight;
-
-      if (scrollProgress > 0.6) {
-        const factor = Math.min((scrollProgress - 0.6) / 0.2, 1);
-        const startRGB = { r: 235, g: 231, b: 224 }; // RGB for #EBE7E0
-        const endRGB = { r: 10, g: 10, b: 10 };
-
-        const r = Math.round(startRGB.r + (endRGB.r - startRGB.r) * factor);
-        const g = Math.round(startRGB.g + (endRGB.g - startRGB.g) * factor);
-        const b = Math.round(startRGB.b + (endRGB.b - startRGB.b) * factor);
-
-        setBgColor(`rgb(${r}, ${g}, ${b})`);
-      } else {
-        setBgColor('#EBE7E0');
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-
     // Scroll to top on route change
     window.scrollTo(0, 0);
-
-    return () => window.removeEventListener('scroll', handleScroll);
   }, [location.pathname]);
 
   useEffect(() => {
@@ -185,7 +160,7 @@ export default function App() {
 
       {!isPreloading && (
         <div
-          className={`min-h-screen text-[#212121] selection:bg-[#E4E1DE] font-sans transition-colors duration-[1.5s] ease-in-out ${!introFinished ? 'overflow-hidden h-screen' : ''}`}
+          className={`min-h-screen text-[var(--color-text)] selection:bg-[#E4E1DE] font-sans transition-colors duration-[1.5s] ease-in-out ${!introFinished ? 'overflow-hidden h-screen' : ''}`}
           style={{ backgroundColor: bgColor }}
         >
           <style>{`
@@ -199,9 +174,6 @@ export default function App() {
         }
         .animate-fadeInUp {
           animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-        }
-        .vintage-pastel {
-          filter: sepia(0.05) contrast(0.95) brightness(1.05);
         }
         .hero-title {
           font-family: 'Playfair Display', serif;
@@ -220,12 +192,6 @@ export default function App() {
           mask-image: radial-gradient(circle at 100% 100%, transparent 0%, transparent 8%, black 12%);
           -webkit-mask-image: radial-gradient(circle at 100% 100%, transparent 0%, transparent 8%, black 12%);
         }
-        .vintage-pastel {
-          filter: sepia(0.05) contrast(0.95) brightness(1.05);
-          backface-visibility: hidden;
-          -webkit-backface-visibility: hidden;
-          image-rendering: -webkit-optimize-contrast;
-        }
         `}</style>
 
 
@@ -234,15 +200,19 @@ export default function App() {
           <Navbar onOpenWardrobe={() => setModalType('wardrobe')} onOpenAppointment={() => setModalType('global-appointment')} wardrobeCount={wardrobe.length} mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
 
           <PageTransition>
-            <Routes>
-              <Route path="/" element={<Homepage />} />
-              <Route path="/imperial" element={<ImperialCollection dresses={imperialDresses} onOpenDetails={openDetails} />} />
-              <Route path="/anna" element={<AnnaCollection dresses={annaDresses} onOpenDetails={openDetails} />} />
-              <Route path="/mayra" element={<MayraCollection dresses={mayraDresses} onOpenDetails={openDetails} />} />
-              <Route path="/beverly" element={<BeverlyCollection dresses={beverlyDresses} onOpenDetails={openDetails} />} />
-              <Route path="/despre-noi" element={<DespreNoi onOpenAppointment={() => setModalType('global-appointment')} />} />
-              <Route path="/admin" element={<Admin />} />
-            </Routes>
+            <Suspense fallback={<div className="h-screen w-full flex items-center justify-center bg-[var(--color-bg-secondary)]"><span className="text-[10px] uppercase tracking-wider text-[var(--color-secondary)] font-bold">Așteaptă puțin...</span></div>}>
+              <Routes>
+                <Route path="/" element={<Homepage />} />
+                <Route path="/imperial" element={<ImperialCollection dresses={imperialDresses} onOpenDetails={openDetails} />} />
+                <Route path="/anna" element={<AnnaCollection dresses={annaDresses} onOpenDetails={openDetails} />} />
+                <Route path="/mayra" element={<MayraCollection dresses={mayraDresses} onOpenDetails={openDetails} />} />
+                <Route path="/beverly" element={<BeverlyCollection dresses={beverlyDresses} onOpenDetails={openDetails} />} />
+                <Route path="/despre-noi" element={<DespreNoi onOpenAppointment={() => setModalType('global-appointment')} />} />
+                <Route path="/programare" element={<Programare />} />
+                <Route path="/admin" element={<Admin />} />
+              </Routes>
+            </Suspense>
+
           </PageTransition>
 
           <Footer />
@@ -252,9 +222,9 @@ export default function App() {
           <ScrollProgress />
 
           {/* Global Sticky Appointment Button */}
-          <button
-              onClick={() => setModalType('global-appointment')}
-              className="hidden md:flex fixed bottom-6 right-6 md:bottom-8 md:right-8 z-[80] bg-[#212121] text-white px-5 py-3 md:px-6 md:py-4 shadow-[0_8px_32px_rgba(33,33,33,0.3)] hover:bg-black hover:scale-105 transition-all group items-center gap-2 md:gap-3 rounded-full md:rounded-none"
+          <Link
+              to="/programare"
+              className="hidden md:flex fixed bottom-6 right-6 md:bottom-8 md:right-8 z-[80] bg-[var(--color-text)] text-white px-5 py-3 md:px-6 md:py-4 shadow-[0_8px_32px_rgba(33,33,33,0.3)] hover:bg-black hover:scale-105 transition-all group items-center gap-2 md:gap-3 rounded-full md:rounded-none"
               aria-label="Programează Vizită"
           >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="md:hidden">
@@ -263,9 +233,10 @@ export default function App() {
                   <line x1="8" y1="2" x2="8" y2="6" />
                   <line x1="3" y1="10" x2="21" y2="10" />
               </svg>
-              <span className="text-[9px] md:text-[10px] uppercase tracking-[0.2em] font-bold whitespace-nowrap">Programează</span>
+              <span className="text-[9px] md:text-[10px] uppercase tracking-wider font-bold whitespace-nowrap">Programează</span>
               <span className="hidden md:inline-block text-sm transition-transform duration-300 group-hover:translate-x-1">→</span>
-          </button>
+          </Link>
+
 
           {/* Image Zoom Modal */}
           <ImageZoomModal isOpen={!!zoomImage} onClose={() => setZoomImage(null)} imageUrl={zoomImage} />
@@ -285,7 +256,7 @@ export default function App() {
             {selectedDress && (
               <div className="grid grid-cols-1 lg:grid-cols-12 min-h-full">
                 {/* Image Gallery Side */}
-                <div className="lg:col-span-7 bg-[#F3F3F3] p-6 lg:p-12 overflow-y-auto">
+                <div className="lg:col-span-7 bg-[var(--color-bg-secondary)] p-6 lg:p-12 overflow-y-auto">
                   <div className="grid grid-cols-2 gap-4">
                     {selectedDress.images && selectedDress.images.length > 0 ? (
                       selectedDress.images.map((img, i) => (
@@ -323,19 +294,19 @@ export default function App() {
                           : `${selectedDress.price} ${selectedDress.currency || '€'}`}
                       </span>
                     </div>
-                    <h2 className="font-serif text-[3.5rem] md:text-[5rem] lg:text-[6rem] text-[#212121] leading-[0.85] mb-10 tracking-tight">{selectedDress.name}</h2>
+                    <h2 className="font-serif text-[3.5rem] md:text-[5rem] lg:text-[6rem] text-[var(--color-text)] leading-[0.85] mb-10 tracking-tight">{selectedDress.name}</h2>
                     <p className="editorial-dropcap text-[#5a5a5a] text-lg leading-[2.2] font-light">
                       {selectedDress.description}
                     </p>
 
                     {selectedDress.sketches && selectedDress.sketches.length > 0 && (
                       <div className="mt-12">
-                        <h3 className="font-serif text-2xl text-[#212121] mb-6 border-b border-[#212121]/10 pb-2">Schițe de Design</h3>
+                        <h3 className="font-serif text-2xl text-[var(--color-text)] mb-6 border-b border-[var(--color-text)]/10 pb-2">Schițe de Design</h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                           {selectedDress.sketches.map((img, i) => (
                             <div
                               key={i}
-                              className="w-full aspect-[2/3] md:aspect-auto md:h-[60vh] cursor-zoom-in group overflow-hidden bg-white border border-[#212121]/5"
+                              className="w-full aspect-[2/3] md:aspect-auto md:h-[60vh] cursor-zoom-in group overflow-hidden bg-white border border-[var(--color-text)]/5"
                               onClick={() => setZoomImage(img)}
                             >
                               <img
@@ -346,7 +317,7 @@ export default function App() {
                             </div>
                           ))}
                         </div>
-                        <p className="mt-4 text-xs text-[#959595] italic text-center">
+                        <p className="mt-4 text-xs text-[var(--color-secondary)] italic text-center">
                           Conceptul original, ilustrat în faza de creație.
                         </p>
                       </div>
@@ -355,18 +326,18 @@ export default function App() {
 
                   {/* Technical Details Block */}
                   {selectedDress.details && (
-                    <div className="grid grid-cols-3 gap-6 border-y border-[#F3F3F3] py-10 mb-12">
+                    <div className="grid grid-cols-3 gap-6 border-y border-[var(--color-border)] py-10 mb-12">
                       <div className="space-y-2">
-                        <span className="block text-[9px] uppercase tracking-[0.3em] font-bold text-[#AFA79D]">Material</span>
-                        <span className="text-sm font-light text-[#212121] leading-relaxed">{selectedDress.details.fabric}</span>
+                        <span className="block text-[9px] uppercase tracking-wider font-bold text-[var(--color-accent-light)]">Material</span>
+                        <span className="text-sm font-light text-[var(--color-text)] leading-relaxed">{selectedDress.details.fabric}</span>
                       </div>
                       <div className="space-y-2">
-                        <span className="block text-[9px] uppercase tracking-[0.3em] font-bold text-[#AFA79D]">Siluetă</span>
-                        <span className="text-sm font-light text-[#212121] leading-relaxed">{selectedDress.details.silhouette}</span>
+                        <span className="block text-[9px] uppercase tracking-wider font-bold text-[var(--color-accent-light)]">Siluetă</span>
+                        <span className="text-sm font-light text-[var(--color-text)] leading-relaxed">{selectedDress.details.silhouette}</span>
                       </div>
                       <div className="space-y-2">
-                        <span className="block text-[9px] uppercase tracking-[0.3em] font-bold text-[#AFA79D]">Decolteu</span>
-                        <span className="text-sm font-light text-[#212121] leading-relaxed">{selectedDress.details.neckline}</span>
+                        <span className="block text-[9px] uppercase tracking-wider font-bold text-[var(--color-accent-light)]">Decolteu</span>
+                        <span className="text-sm font-light text-[var(--color-text)] leading-relaxed">{selectedDress.details.neckline}</span>
                       </div>
                     </div>
                   )}
@@ -374,18 +345,18 @@ export default function App() {
                   <div className="space-y-10 pt-4 mb-16">
                     <div className="grid grid-cols-2 gap-10">
                       <div>
-                        <span className="block text-[9px] uppercase tracking-[0.3em] font-bold text-[#AFA79D] mb-4">Culori</span>
+                        <span className="block text-[9px] uppercase tracking-wider font-bold text-[var(--color-accent-light)] mb-4">Culori</span>
                         <div className="flex gap-3 flex-wrap">
                           {selectedDress.colors.map(c => (
-                            <span key={c} className="text-xs px-4 py-2 border border-[#F3F3F3] text-[#605F5F] tracking-wide">{c}</span>
+                            <span key={c} className="text-xs px-4 py-2 border border-[var(--color-border)] text-[#605F5F] tracking-wide">{c}</span>
                           ))}
                         </div>
                       </div>
                       <div>
-                        <span className="block text-[9px] uppercase tracking-[0.3em] font-bold text-[#AFA79D] mb-4">Mărimi</span>
+                        <span className="block text-[9px] uppercase tracking-wider font-bold text-[var(--color-accent-light)] mb-4">Mărimi</span>
                         <div className="flex gap-2 flex-wrap">
                           {selectedDress.sizes.map(s => (
-                            <span key={s} className="w-10 h-10 flex items-center justify-center border border-[#E4E1DE] text-xs text-[#212121] hover:bg-[#212121] hover:text-white transition-colors cursor-pointer">{s}</span>
+                            <span key={s} className="w-10 h-10 flex items-center justify-center border border-[var(--color-border)] text-xs text-[var(--color-text)] hover:bg-[var(--color-text)] hover:text-white transition-colors cursor-pointer">{s}</span>
                           ))}
                         </div>
                       </div>
@@ -394,9 +365,12 @@ export default function App() {
 
                   <div className="mt-auto space-y-4 pb-10">
                     <div className="flex flex-col gap-4">
-                      <Button onClick={() => setModalType('appointment')} variant="primary" className="w-full">
-                        Programează Vizită
-                      </Button>
+                      <Link to={`/programare?dressId=${selectedDress.id}`} className="w-full">
+                        <Button variant="primary" className="w-full">
+                          Programează Vizită
+                        </Button>
+                      </Link>
+
                       <Button
                         onClick={() => selectedDress && toggleWardrobe(selectedDress)}
                         variant="secondary"
@@ -439,7 +413,7 @@ export default function App() {
 
           {/* Toast Notification */}
           <div className={`fixed bottom-8 left-1/2 -translate-x-1/2 z-[100] transition-all duration-500 pointer-events-none ${toastMessage ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-            <div className="bg-[#212121] text-white px-8 py-4 shadow-xl flex items-center gap-3">
+            <div className="bg-[var(--color-text)] text-white px-8 py-4 shadow-xl flex items-center gap-3">
               <span className="text-sm font-light tracking-wide">{toastMessage}</span>
             </div>
           </div>

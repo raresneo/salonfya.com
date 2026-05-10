@@ -13,11 +13,11 @@ const WhereToBuySection = () => {
             <div className="flex justify-center mt-16 max-w-5xl mx-auto">
                 {locations.map((loc, idx) => (
                     <FadeInSection key={idx} delay={idx * 200}>
-                        <div className="text-center p-10 md:p-14 border border-[#F3F3F3] hover:border-[#212121] transition-colors duration-[1.5s] group bg-white">
-                            <h3 className="font-serif text-3xl md:text-3xl italic text-[#212121] mb-6 group-hover:text-[#605F5F] transition-colors duration-500">{loc.city}</h3>
-                            <p className="text-sm font-light text-[#959595] mb-2 tracking-wide">{loc.address}</p>
-                            <p className="text-sm font-light text-[#959595] tracking-wide">{loc.phone}</p>
-                            <button className="mt-8 text-[10px] uppercase tracking-[0.25em] font-bold border-b border-[#212121]/30 pb-2 text-[#212121] hover:text-[#959595] hover:border-[#959595] transition-all duration-500">
+                        <div className="text-center p-10 md:p-14 border border-[var(--color-border)] hover:border-[var(--color-text)] transition-colors duration-[1.5s] group bg-white">
+                            <h3 className="font-serif text-3xl md:text-3xl italic text-[var(--color-text)] mb-6 group-hover:text-[#605F5F] transition-colors duration-500">{loc.city}</h3>
+                            <p className="text-sm font-light text-[var(--color-secondary)] mb-2 tracking-wide">{loc.address}</p>
+                            <p className="text-sm font-light text-[var(--color-secondary)] tracking-wide">{loc.phone}</p>
+                            <button className="mt-8 text-[10px] uppercase tracking-wider font-bold border-b border-[var(--color-text)]/30 pb-2 text-[var(--color-text)] hover:text-[var(--color-secondary)] hover:border-[#959595] transition-all duration-500">
                                 Rezervă o Programare
                             </button>
                         </div>

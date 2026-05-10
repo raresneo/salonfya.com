@@ -34,7 +34,7 @@ const Navbar = ({ onOpenWardrobe, onOpenAppointment, wardrobeCount, mobileMenuOp
     return (
         <>
             {/* Main Nav Bar */}
-            <nav className={`fixed top-0 w-full z-50 px-6 lg:px-12 flex justify-between items-center transition-all duration-700 ${scrolled ? 'bg-[#EBE7E0]/95 backdrop-blur-lg border-b border-[#E4E1DE]/50 py-3 shadow-sm' : 'bg-transparent py-5'}`}>
+            <nav className={`fixed top-0 w-full z-50 px-6 lg:px-12 flex justify-between items-center transition-all duration-700 ${scrolled ? 'bg-[var(--color-bg-secondary)]/95 backdrop-blur-lg border-b border-[var(--color-border)]/50 py-3 shadow-sm' : 'bg-transparent py-5'}`}>
                 {/* Menu Button - Left */}
                 <div className="flex-1 flex items-center gap-4">
                     <button
@@ -42,12 +42,12 @@ const Navbar = ({ onOpenWardrobe, onOpenAppointment, wardrobeCount, mobileMenuOp
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                         aria-label="Meniu"
                     >
-                        <span className={`block w-6 h-[1.5px] bg-[#212121] transition-all duration-300 origin-center ${mobileMenuOpen ? 'rotate-45 translate-y-[6.5px]' : ''}`} />
-                        <span className={`block w-6 h-[1.5px] bg-[#212121] transition-all duration-300 ${mobileMenuOpen ? 'opacity-0 scale-0' : ''}`} />
-                        <span className={`block w-6 h-[1.5px] bg-[#212121] transition-all duration-300 origin-center ${mobileMenuOpen ? '-rotate-45 -translate-y-[6.5px]' : ''}`} />
+                        <span className={`block w-6 h-[1.5px] bg-[var(--color-text)] transition-all duration-300 origin-center ${mobileMenuOpen ? 'rotate-45 translate-y-[6.5px]' : ''}`} />
+                        <span className={`block w-6 h-[1.5px] bg-[var(--color-text)] transition-all duration-300 ${mobileMenuOpen ? 'opacity-0 scale-0' : ''}`} />
+                        <span className={`block w-6 h-[1.5px] bg-[var(--color-text)] transition-all duration-300 origin-center ${mobileMenuOpen ? '-rotate-45 -translate-y-[6.5px]' : ''}`} />
                     </button>
                     <span
-                        className={`hidden lg:block text-[10px] font-bold uppercase tracking-[0.15em] cursor-pointer transition-opacity duration-300 ${scrolled || mobileMenuOpen ? 'text-[#212121]' : 'text-[#212121]'}`}
+                        className={`hidden lg:block text-[10px] font-bold uppercase tracking-[0.15em] cursor-pointer transition-opacity duration-300 ${scrolled || mobileMenuOpen ? 'text-[var(--color-text)]' : 'text-[var(--color-text)]'}`}
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     >
                         {mobileMenuOpen ? 'Închide' : 'Meniu'}
@@ -56,21 +56,23 @@ const Navbar = ({ onOpenWardrobe, onOpenAppointment, wardrobeCount, mobileMenuOp
 
                 {/* Logo - Center */}
                 <div className="w-auto flex-shrink-0 text-center z-[60] px-4">
-                    <Link to="/" onClick={() => { window.scrollTo(0, 0); setMobileMenuOpen(false); }} className="font-serif text-3xl italic tracking-wide cursor-pointer text-[#212121] active-scale inline-block">
+                    <Link to="/" onClick={() => { window.scrollTo(0, 0); setMobileMenuOpen(false); }} className="font-serif text-3xl italic tracking-wide cursor-pointer text-[var(--color-text)] active-scale inline-block">
                         FYA
                     </Link>
                 </div>
 
                 {/* Right side - Nav Actions */}
                 <div className="flex-1 flex justify-end items-center gap-6 z-[60]">
-                    <button
-                        className="hidden md:flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.15em] text-[#212121] border-b border-[#212121] pb-[2px] hover:text-[#959595] hover:border-transparent transition-all"
-                        onClick={() => { setMobileMenuOpen(false); onOpenAppointment(); }}
+                    <Link
+                        to="/programare"
+                        className="hidden md:flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.15em] text-[var(--color-text)] border-b border-[var(--color-text)] pb-[2px] hover:text-[var(--color-secondary)] hover:border-transparent transition-all"
+                        onClick={() => setMobileMenuOpen(false)}
                     >
                         Programează Vizită
-                    </button>
+                    </Link>
+
                     <button
-                        className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.15em] text-[#212121] hover:text-[#605F5F] transition-colors active-scale"
+                        className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.15em] text-[var(--color-text)] hover:text-[#605F5F] transition-colors active-scale"
                         onClick={() => { setMobileMenuOpen(false); onOpenWardrobe(); }}
                     >
                         <span>♡</span> <span className="hidden lg:inline">Garderobă</span> ({wardrobeCount})
@@ -79,18 +81,18 @@ const Navbar = ({ onOpenWardrobe, onOpenAppointment, wardrobeCount, mobileMenuOp
             </nav>
 
             {/* Split-Screen Menu Overlay */}
-            <div className={`fixed inset-0 z-40 bg-[#EBE7E0] transition-opacity duration-700 ease-in-out flex flex-col lg:flex-row ${mobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
+            <div className={`fixed inset-0 z-40 bg-[var(--color-bg-secondary)] transition-opacity duration-700 ease-in-out flex flex-col lg:flex-row ${mobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
 
                 {/* Left side: Navigation Links */}
-                <div className="w-full lg:w-1/2 h-full flex flex-col justify-center items-center lg:items-start lg:pl-32 xl:pl-48 gap-5 md:gap-6 bg-[#EBE7E0] pt-24 lg:pt-0 overflow-y-auto pb-10 lg:pb-0">
-                    <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-[#959595] mb-4">Colecții</span>
+                <div className="w-full lg:w-1/2 h-full flex flex-col justify-center items-center lg:items-start lg:pl-32 xl:pl-48 gap-5 md:gap-6 bg-[var(--color-bg-secondary)] pt-24 lg:pt-0 overflow-y-auto pb-10 lg:pb-0">
+                    <span className="text-[10px] uppercase tracking-wider font-bold text-[var(--color-secondary)] mb-4">Colecții</span>
                     {collections.map((c, i) => (
                         <Link
                             key={c.path}
                             to={c.path}
                             onMouseEnter={() => setHoveredCollection(c.path)}
                             onMouseLeave={() => setHoveredCollection(null)}
-                            className={`font-serif text-4xl md:text-5xl lg:text-6xl italic transition-all duration-500 hover:text-[#212121] hover:translate-x-4 ${location.pathname === c.path ? 'text-[#212121]' : 'text-[#A69F99]'}`}
+                            className={`font-serif text-4xl md:text-5xl lg:text-6xl italic transition-all duration-500 hover:text-[var(--color-text)] hover:translate-x-4 ${location.pathname === c.path ? 'text-[var(--color-text)]' : 'text-[#A69F99]'}`}
                             style={{ transitionDelay: mobileMenuOpen ? `${i * 60 + 100}ms` : '0ms', transform: mobileMenuOpen ? 'translateY(0)' : 'translateY(20px)', opacity: mobileMenuOpen ? 1 : 0 }}
                             data-cursor-text="EXPLOREAZĂ"
                         >
@@ -102,23 +104,25 @@ const Navbar = ({ onOpenWardrobe, onOpenAppointment, wardrobeCount, mobileMenuOp
 
                     <Link
                         to="/despre-noi"
-                        className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#959595] hover:text-[#212121] transition-colors"
+                        className="text-[11px] font-bold uppercase tracking-wider text-[var(--color-secondary)] hover:text-[var(--color-text)] transition-colors"
                         style={{ transitionDelay: mobileMenuOpen ? '450ms' : '0ms', transform: mobileMenuOpen ? 'translateY(0)' : 'translateY(20px)', opacity: mobileMenuOpen ? 1 : 0 }}
                     >
                         Povestea Fya
                     </Link>
                     
-                    <button
-                        onClick={() => { setMobileMenuOpen(false); onOpenAppointment(); }}
-                        className="mt-6 text-[10px] font-bold uppercase tracking-[0.3em] text-white bg-[#212121] px-8 py-4 hover:bg-black transition-all"
+                    <Link
+                        to="/programare"
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="mt-6 text-[10px] font-bold uppercase tracking-wider text-white bg-[var(--color-text)] px-8 py-4 hover:bg-black transition-all inline-block text-center"
                         style={{ transitionDelay: mobileMenuOpen ? '550ms' : '0ms', transform: mobileMenuOpen ? 'translateY(0)' : 'translateY(20px)', opacity: mobileMenuOpen ? 1 : 0 }}
                     >
                         Programează o Întâlnire
-                    </button>
+                    </Link>
+
                 </div>
 
                 {/* Right side: Image Reveal (Desktop Only) */}
-                <div className="hidden lg:block w-1/2 h-full bg-[#F3F3F3] relative overflow-hidden">
+                <div className="hidden lg:block w-1/2 h-full bg-[var(--color-bg-secondary)] relative overflow-hidden">
                     {/* Default State Image (Shown when nothing is hovered) */}
                     <div className={`absolute inset-0 w-full h-full bg-[#E4E1DE] transition-opacity duration-700 ease-luxury ${hoveredCollection ? 'opacity-0' : 'opacity-100'}`}>
                         {/* Soft grain or brand pattern could go here, for now solid calm color */}

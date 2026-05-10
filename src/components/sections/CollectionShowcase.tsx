@@ -54,7 +54,7 @@ const CollectionShowcase = () => {
         <section ref={sectionRef} className="py-12 md:py-16 px-6 md:px-12 bg-[#0A0A0A]">
             {/* Section Header — like Lucesposa's "NUESTRAS COLECCIONES" */}
             <div className={`text-center mb-16 md:mb-24 transition-all duration-[1.5s] ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                <span className="block text-[10px] uppercase tracking-[0.35em] font-bold text-white/60 mb-4">
+                <span className="block text-[10px] uppercase tracking-wider font-bold text-white/60 mb-4">
                     Descoperiți Colecțiile Noastre
                 </span>
                 <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl italic text-white mb-6">
@@ -85,17 +85,17 @@ const CollectionShowcase = () => {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
 
                         {/* Vertical text — Lucesposa style */}
-                        <span className="absolute top-8 left-6 text-[10px] uppercase tracking-[0.3em] font-bold text-white/50 writing-vertical hidden md:block"
+                        <span className="absolute top-8 left-6 text-[10px] uppercase tracking-wider font-bold text-white/50 writing-vertical hidden md:block"
                             style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}>
                             {col.subtitle}
                         </span>
 
                         {/* Content */}
                         <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-white">
-                            <span className="block text-[9px] uppercase tracking-[0.25em] font-bold text-white/60 mb-2">{col.subtitle}</span>
+                            <span className="block text-[9px] uppercase tracking-wider font-bold text-white/60 mb-2">{col.subtitle}</span>
                             <h3 className="font-serif text-3xl md:text-4xl italic mb-2 group-hover:translate-x-2 transition-transform duration-500">{col.name}</h3>
                             <p className="text-white/70 text-sm font-light max-w-sm leading-relaxed hidden md:block">{col.description}</p>
-                            <span className="inline-flex items-center gap-2 mt-4 text-[10px] uppercase tracking-[0.2em] font-bold text-white/80 group-hover:text-white transition-colors">
+                            <span className="inline-flex items-center gap-2 mt-4 text-[10px] uppercase tracking-wider font-bold text-white/80 group-hover:text-white transition-colors">
                                 Explorează
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="group-hover:translate-x-1 transition-transform">
                                     <path d="M5 12h14M12 5l7 7-7 7" />

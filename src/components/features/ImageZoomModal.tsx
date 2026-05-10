@@ -23,7 +23,7 @@ const ImageZoomModal = ({ isOpen, onClose, imageUrl }: { isOpen: boolean, onClos
 
     return (
         <div
-            className="fixed inset-0 z-[150] bg-[#EBE7E0] flex items-center justify-center p-0 cursor-zoom-out animate-fadeIn"
+            className="fixed inset-0 z-[150] bg-[var(--color-bg-secondary)] flex items-center justify-center p-0 cursor-zoom-out animate-fadeIn"
             onClick={onClose}
         >
             <div
@@ -49,13 +49,13 @@ const ImageZoomModal = ({ isOpen, onClose, imageUrl }: { isOpen: boolean, onClos
                 )}
 
                 <div className="absolute top-10 left-10 pointer-events-none">
-                    <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-[#212121]/30">Mod Detalii / Mișcă mouse-ul pentru a explora</span>
+                    <span className="text-[10px] uppercase tracking-wider font-bold text-[var(--color-text)]/30">Mod Detalii / Mișcă mouse-ul pentru a explora</span>
                 </div>
             </div>
 
             <button
                 onClick={onClose}
-                className="absolute top-10 right-10 text-[#212121] hover:scale-110 transition-transform z-[160] p-4 bg-white/50 backdrop-blur-sm rounded-full"
+                className="absolute top-10 right-10 text-[var(--color-text)] hover:scale-110 transition-transform z-[160] p-4 bg-white/50 backdrop-blur-sm rounded-full"
             >
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
                     <path d="M18 6L6 18M6 6l12 12" />

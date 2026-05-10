@@ -132,41 +132,41 @@ const AppointmentModal = ({ dress, isOpen, onClose, location }: AppointmentModal
 
     return (
         <Modal isOpen={isOpen} onClose={onClose} title="Serviciu Concierge">
-            <div className="w-full h-full min-h-[600px] flex flex-col md:flex-row relative bg-[#EBE7E0]">
+            <div className="w-full h-full min-h-[600px] flex flex-col md:flex-row relative bg-[var(--color-bg-secondary)]">
                 {/* Left Side: Form Area */}
                 <div className="w-full md:w-1/2 flex flex-col justify-center relative z-10 overflow-hidden h-full max-h-[90vh]">
 
                     {/* Step Indicator */}
                     <div className="absolute top-8 left-12 lg:top-12 lg:left-24 z-20 hidden md:flex items-center gap-4">
-                        <div className={`h-[1px] w-12 transition-colors duration-500 ${step >= 1 ? 'bg-[#212121]' : 'bg-[#E4E1DE]'}`} />
-                        <div className={`h-[1px] w-12 transition-colors duration-500 ${step >= 2 ? 'bg-[#212121]' : 'bg-[#E4E1DE]'}`} />
+                        <div className={`h-[1px] w-12 transition-colors duration-500 ${step >= 1 ? 'bg-[var(--color-text)]' : 'bg-[#E4E1DE]'}`} />
+                        <div className={`h-[1px] w-12 transition-colors duration-500 ${step >= 2 ? 'bg-[var(--color-text)]' : 'bg-[#E4E1DE]'}`} />
                     </div>
 
                     {/* Step 1: Identification */}
-                    <div className={`transition-all duration-700 absolute inset-0 p-8 md:p-12 lg:p-24 flex flex-col justify-center bg-[#EBE7E0] overflow-y-auto ${step === 1 ? 'opacity-100 translate-x-0 pointer-events-auto z-10' : 'opacity-0 -translate-x-10 pointer-events-none -z-10'}`}>
+                    <div className={`transition-all duration-700 absolute inset-0 p-8 md:p-12 lg:p-24 flex flex-col justify-center bg-[var(--color-bg-secondary)] overflow-y-auto ${step === 1 ? 'opacity-100 translate-x-0 pointer-events-auto z-10' : 'opacity-0 -translate-x-10 pointer-events-none -z-10'}`}>
                         <div className="my-auto">
-                            <h3 className="font-serif italic text-4xl lg:text-5xl text-[#212121] mb-12">Cu cine avem plăcerea?</h3>
+                            <h3 className="font-serif italic text-4xl lg:text-5xl text-[var(--color-text)] mb-12">Cu cine avem plăcerea?</h3>
 
                             <div className="space-y-12">
                                 <div className="relative group">
-                                    <label className="absolute -top-4 left-0 text-[10px] font-bold uppercase tracking-[0.2em] text-[#959595] transition-colors group-focus-within:text-[#212121]">Numele dumneavoastră</label>
+                                    <label className="absolute -top-4 left-0 text-[10px] font-bold uppercase tracking-wider text-[var(--color-secondary)] transition-colors group-focus-within:text-[var(--color-text)]">Numele dumneavoastră</label>
                                     <input
                                         type="text"
                                         value={name}
                                         onChange={(e) => setName(e.target.value)}
-                                        className="w-full bg-transparent border-b border-[#E4E1DE] py-4 font-serif text-2xl text-[#212121] outline-none focus:border-[#212121] transition-colors placeholder:text-[#E4E1DE]"
+                                        className="w-full bg-transparent border-b border-[var(--color-border)] py-4 font-serif text-2xl text-[var(--color-text)] outline-none focus:border-[var(--color-text)] transition-colors placeholder:text-[#E4E1DE]"
                                         placeholder="ex: Inserați numele"
                                         autoComplete="off"
                                     />
                                 </div>
 
                                 <div className="relative group">
-                                    <label className="absolute -top-4 left-0 text-[10px] font-bold uppercase tracking-[0.2em] text-[#959595] transition-colors group-focus-within:text-[#212121]">Număr de telefon</label>
+                                    <label className="absolute -top-4 left-0 text-[10px] font-bold uppercase tracking-wider text-[var(--color-secondary)] transition-colors group-focus-within:text-[var(--color-text)]">Număr de telefon</label>
                                     <input
                                         type="tel"
                                         value={phone}
                                         onChange={(e) => setPhone(e.target.value)}
-                                        className="w-full bg-transparent border-b border-[#E4E1DE] py-4 font-serif text-2xl text-[#212121] outline-none focus:border-[#212121] transition-colors placeholder:text-[#E4E1DE]"
+                                        className="w-full bg-transparent border-b border-[var(--color-border)] py-4 font-serif text-2xl text-[var(--color-text)] outline-none focus:border-[var(--color-text)] transition-colors placeholder:text-[#E4E1DE]"
                                         placeholder="ex: 07xx xxx xxx"
                                         autoComplete="off"
                                     />
@@ -176,7 +176,7 @@ const AppointmentModal = ({ dress, isOpen, onClose, location }: AppointmentModal
                             <button
                                 onClick={handleNext}
                                 disabled={!name || !phone}
-                                className="mt-16 self-start text-[10px] font-bold uppercase tracking-[0.3em] text-[#212121] border-b border-[#212121] pb-1 hover:text-[#959595] hover:border-transparent transition-all disabled:opacity-30 disabled:cursor-not-allowed"
+                                className="mt-16 self-start text-[10px] font-bold uppercase tracking-wider text-[var(--color-text)] border-b border-[var(--color-text)] pb-1 hover:text-[var(--color-secondary)] hover:border-transparent transition-all disabled:opacity-30 disabled:cursor-not-allowed"
                             >
                                 Pasul Următor →
                             </button>
@@ -184,25 +184,25 @@ const AppointmentModal = ({ dress, isOpen, onClose, location }: AppointmentModal
                     </div>
 
                     {/* Step 2: Date & Time */}
-                    <div className={`transition-all duration-700 absolute inset-0 p-8 md:p-12 lg:p-24 flex flex-col bg-[#EBE7E0] overflow-y-auto custom-scrollbar ${step === 2 ? 'opacity-100 translate-x-0 pointer-events-auto z-10' : 'opacity-0 translate-x-10 pointer-events-none -z-10'}`}>
+                    <div className={`transition-all duration-700 absolute inset-0 p-8 md:p-12 lg:p-24 flex flex-col bg-[var(--color-bg-secondary)] overflow-y-auto custom-scrollbar ${step === 2 ? 'opacity-100 translate-x-0 pointer-events-auto z-10' : 'opacity-0 translate-x-10 pointer-events-none -z-10'}`}>
                         <div className="my-auto pb-12 pt-8 md:pt-0">
-                            <button onClick={handlePrev} className="mb-8 md:absolute md:top-8 md:right-8 lg:top-12 lg:right-12 text-[10px] uppercase tracking-widest font-bold text-[#959595] hover:text-[#212121] transition-colors">← Înapoi</button>
+                            <button onClick={handlePrev} className="mb-8 md:absolute md:top-8 md:right-8 lg:top-12 lg:right-12 text-[10px] uppercase tracking-wider font-bold text-[var(--color-secondary)] hover:text-[var(--color-text)] transition-colors">← Înapoi</button>
 
-                            <h3 className="font-serif italic text-4xl lg:text-5xl text-[#212121] mb-10">Când doriți să ne vizitați?</h3>
+                            <h3 className="font-serif italic text-4xl lg:text-5xl text-[var(--color-text)] mb-10">Când doriți să ne vizitați?</h3>
 
                             <div className="space-y-10">
                                 {/* Calendar Area */}
                                 <div className="space-y-4">
-                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#959595] block mb-2">Alegeți Data</label>
-                                    <div className="bg-[#FAF8F5]/80 p-6 shadow-sm border border-white/50 backdrop-blur-sm">
+                                    <label className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-secondary)] block mb-2">Alegeți Data</label>
+                                    <div className="bg-[var(--color-bg-secondary)]/80 p-6 shadow-sm border border-white/50 backdrop-blur-sm">
                                         
                                         {/* Month Header */}
                                         <div className="flex items-center justify-between mb-6">
-                                            <button onClick={handlePrevMonth} className="p-2 text-[#959595] hover:text-[#212121] transition-colors">
+                                            <button onClick={handlePrevMonth} className="p-2 text-[var(--color-secondary)] hover:text-[var(--color-text)] transition-colors">
                                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" /></svg>
                                             </button>
-                                            <span className="font-serif text-lg text-[#212121] capitalize-first">{monthNames[currentMonthIndex]} {currentYear}</span>
-                                            <button onClick={handleNextMonth} className="p-2 text-[#959595] hover:text-[#212121] transition-colors">
+                                            <span className="font-serif text-lg text-[var(--color-text)] capitalize-first">{monthNames[currentMonthIndex]} {currentYear}</span>
+                                            <button onClick={handleNextMonth} className="p-2 text-[var(--color-secondary)] hover:text-[var(--color-text)] transition-colors">
                                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" /></svg>
                                             </button>
                                         </div>
@@ -210,7 +210,7 @@ const AppointmentModal = ({ dress, isOpen, onClose, location }: AppointmentModal
                                         {/* Days Header */}
                                         <div className="grid grid-cols-7 gap-1 mb-2">
                                             {dayNames.map(day => (
-                                                <div key={day} className="text-center text-[9px] uppercase tracking-wider font-bold text-[#959595] py-1">{day}</div>
+                                                <div key={day} className="text-center text-[9px] uppercase tracking-wider font-bold text-[var(--color-secondary)] py-1">{day}</div>
                                             ))}
                                         </div>
 
@@ -234,7 +234,7 @@ const AppointmentModal = ({ dress, isOpen, onClose, location }: AppointmentModal
                                                         className={`
                                                             aspect-square flex items-center justify-center text-sm transition-all duration-300 relative
                                                             ${isPast ? 'text-[#D4D1CE] cursor-not-allowed' : 'hover:bg-[#E4E1DE] cursor-pointer'} 
-                                                            ${isSelected ? 'bg-[#212121] text-white hover:bg-black font-medium' : 'text-[#605F5F]'}
+                                                            ${isSelected ? 'bg-[var(--color-text)] text-white hover:bg-black font-medium' : 'text-[#605F5F]'}
                                                         `}
                                                     >
                                                         {day}
@@ -250,15 +250,15 @@ const AppointmentModal = ({ dress, isOpen, onClose, location }: AppointmentModal
 
                                 {/* Time Selection */}
                                 <div className="space-y-4">
-                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#959595] block mb-2">Interval orar</label>
+                                    <label className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-secondary)] block mb-2">Interval orar</label>
                                     <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
                                         {['10:00', '12:00', '14:00', '16:00', '18:00'].map(t => (
                                             <button
                                                 key={t}
                                                 onClick={() => setTime(t)}
                                                 className={`
-                                                    py-3 text-center text-xs tracking-[0.2em] transition-all duration-300 border
-                                                    ${time === t ? 'bg-[#212121] text-white border-[#212121]' : 'bg-transparent border-[#E4E1DE] text-[#605F5F] hover:border-[#212121] hover:text-[#212121]'}
+                                                    py-3 text-center text-xs tracking-wider transition-all duration-300 border
+                                                    ${time === t ? 'bg-[var(--color-text)] text-white border-[var(--color-text)]' : 'bg-transparent border-[var(--color-border)] text-[#605F5F] hover:border-[var(--color-text)] hover:text-[var(--color-text)]'}
                                                 `}
                                             >
                                                 {t}
@@ -271,7 +271,7 @@ const AppointmentModal = ({ dress, isOpen, onClose, location }: AppointmentModal
                             <button
                                 onClick={handleBooking}
                                 disabled={!date || !time}
-                                className="mt-12 w-full text-[10px] font-bold uppercase tracking-[0.3em] text-white bg-[#212121] px-8 py-5 hover:bg-black transition-all disabled:opacity-30 disabled:cursor-not-allowed"
+                                className="mt-12 w-full text-[10px] font-bold uppercase tracking-wider text-white bg-[var(--color-text)] px-8 py-5 hover:bg-black transition-all disabled:opacity-30 disabled:cursor-not-allowed"
                             >
                                 Confirmă Rezervarea
                             </button>
@@ -281,14 +281,14 @@ const AppointmentModal = ({ dress, isOpen, onClose, location }: AppointmentModal
                 </div>
 
                 {/* Right Side: Image Context */}
-                <div className="hidden md:block w-1/2 h-full bg-[#F3F3F3] relative overflow-hidden">
+                <div className="hidden md:block w-1/2 h-full bg-[var(--color-bg-secondary)] relative overflow-hidden">
                     <img src={imageUrl} className={`absolute inset-0 w-full h-full object-cover filter contrast-[0.95] ${imageClass} opacity-90 scale-105 transition-transform duration-[4s] hover:scale-[1.15]`} alt="Appointment Context Preview" />
                     <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-transparent to-transparent pointer-events-none"></div>
                     <div className="absolute bottom-12 left-12">
                         {dress && (
-                            <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-[#212121] mb-2 block">Probează Colecția {dress.collection}</span>
+                            <span className="text-[10px] uppercase tracking-wider font-bold text-[var(--color-text)] mb-2 block">Probează Colecția {dress.collection}</span>
                         )}
-                        <h4 className="font-serif italic text-5xl text-[#212121]">{headerText}</h4>
+                        <h4 className="font-serif italic text-5xl text-[var(--color-text)]">{headerText}</h4>
                     </div>
                 </div>
             </div>

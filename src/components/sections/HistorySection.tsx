@@ -68,16 +68,16 @@ const HistorySection = () => {
                         </div>
                     </div>
                     <div className="md:col-span-4 md:col-start-8">
-                        <h3 className="text-[10px] uppercase tracking-[0.4em] font-bold text-[#E4E1DE] mb-6">01. Măiestrie & Timp</h3>
-                        <p className="font-light text-[#E4E1DE] md:text-[#959595] text-lg leading-[2] editorial-dropcap">
+                        <h3 className="text-[10px] uppercase tracking-wider font-bold text-[#E4E1DE] mb-6">01. Măiestrie & Timp</h3>
+                        <p className="font-light text-[#E4E1DE] md:text-[var(--color-secondary)] text-lg leading-[2] editorial-dropcap">
                             Refuzăm ritmul impus de tendințele secunde. Fiecare creație care ne poartă eticheta este sculptată manual pe de manechin, un act deliberat de răbdare care transformă mătasea brută într-o armură a feminității, perfect acordată siluetei tale.
                         </p>
                     </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
                     <div className="md:col-span-4 md:col-start-2 order-2 md:order-1">
-                        <h3 className="text-[10px] uppercase tracking-[0.4em] font-bold text-[#E4E1DE] mb-6">02. Materialitate Pură</h3>
-                        <p className="font-light text-[#E4E1DE] md:text-[#959595] text-lg leading-[2]">
+                        <h3 className="text-[10px] uppercase tracking-wider font-bold text-[#E4E1DE] mb-6">02. Materialitate Pură</h3>
+                        <p className="font-light text-[#E4E1DE] md:text-[var(--color-secondary)] text-lg leading-[2]">
                             Mătasea, dantela prețioasă și o selecție obsesivă decurată de materiale organice sunt singurele noastre instrumente. Restul este viziune absolută și refuzul oricărui compromis atunci când vine vorba de calitatea tactilă a fiecărei rochii.
                         </p>
                     </div>
