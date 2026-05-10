@@ -6,7 +6,7 @@ const SectionTitle = ({ title, subtitle, centered = false }: { title: string, su
     <div className={`mb-16 ${centered ? 'text-center' : ''}`}>
         <FadeInSection>
             {subtitle && (
-                <span className="block text-[11px] uppercase tracking-[0.3em] text-white/60 mb-6 font-bold">
+                <span className="block text-[11px] uppercase tracking-wider text-white/60 mb-6 font-bold">
                     {subtitle}
                 </span>
             )}

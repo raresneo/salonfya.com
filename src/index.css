@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Lato:wght@300;400;700&family=Alex+Brush&display=swap');
 
+
 :root {
-  --color-text: #212121;
-  --color-secondary: #959595;
-  --color-bg-primary: #EBE7E0;
-  --color-bg-secondary: #F3F3F3;
-  --color-accent: #605F5F;
-  --color-accent-light: #AFA79D;
-  --color-border: #E4E1DE;
+  --color-text: #1A1A1A; /* Glossy Black */
+  --color-secondary: #5C5C5C;
+  --color-bg-primary: #FFFFFF; /* Bright White */
+  --color-bg-secondary: #F6F4F0; /* Ivory / Taupe */
+  --color-accent: #1E3F20; /* Hunter Green */
+  --color-accent-light: #C5A880; /* Gold / Brass */
+  --color-border: #E5E0D8;
 
   --font-heading: 'Cormorant Garamond', serif;
   --font-secondary-heading: 'Playfair Display', serif;
@@ -22,7 +23,7 @@
 
 body {
   font-family: var(--font-body);
-  background-color: #0A0A0A;
+  background-color: var(--color-bg-primary);
   color: var(--color-text);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -116,24 +117,15 @@ h5 {
 }
 
 .animate-fadeInUp {
-  animation: fadeInUp 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .animate-fadeInUp-slow {
-  animation: fadeInUp 2.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: fadeInUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .ease-luxury {
   transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.vintage-pastel {
-  filter: sepia(0.05) contrast(0.95) brightness(1.05);
-  transition: filter 0.5s ease;
-}
-
-.vintage-pastel:hover {
-  filter: sepia(0) contrast(1) brightness(1);
 }
 
 /* Glassmorphism */

@@ -73,7 +73,7 @@ export default function CustomCursor() {
             }}
         >
             {cursorText && (
-                <span className="text-[10px] uppercase tracking-widest font-bold whitespace-nowrap opacity-100 animate-fadeIn">
+                <span className="text-[10px] uppercase tracking-wider font-bold whitespace-nowrap opacity-100 animate-fadeIn">
                     {cursorText}
                 </span>
             )}

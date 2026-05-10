@@ -26,7 +26,7 @@ const IntroAnimation = ({ onComplete }: { onComplete: () => void }) => {
     if (!isVisible) return null;
 
     return (
-        <div className={`fixed inset-0 z-[200] bg-[#EBE7E0] flex items-center justify-center transition-opacity duration-1000 ${phase === 2 ? 'opacity-0' : 'opacity-100'}`}>
+        <div className={`fixed inset-0 z-[200] bg-[var(--color-bg-secondary)] flex items-center justify-center transition-opacity duration-1000 ${phase === 2 ? 'opacity-0' : 'opacity-100'}`}>
             <style>{`
                 .cursive-reveal {
                     font-family: 'Alex Brush', cursive;
@@ -57,7 +57,7 @@ const IntroAnimation = ({ onComplete }: { onComplete: () => void }) => {
                     Fya
                 </div>
 
-                <span className={`font-serif tracking-[0.2em] text-[#212121] uppercase text-[10px] md:text-xs transition-opacity duration-1000 mt-2 ${phase >= 1 ? 'opacity-100' : 'opacity-0'}`}>
+                <span className={`font-serif tracking-wider text-[var(--color-text)] uppercase text-[10px] md:text-xs transition-opacity duration-1000 mt-2 ${phase >= 1 ? 'opacity-100' : 'opacity-0'}`}>
                     Fancy, Young & Admired
                 </span>
             </div>

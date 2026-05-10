@@ -38,7 +38,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
         >
             <div className="overflow-hidden">
                 <h1
-                    className="font-serif italic text-6xl text-[#212121] tracking-wider translate-y-full animate-revealLogo"
+                    className="font-serif italic text-6xl text-[var(--color-text)] tracking-wider translate-y-full animate-revealLogo"
                     style={{ animation: 'revealLogo 1s cubic-bezier(0.16, 1, 0.3, 1) forwards' }}
                 >
                     Fya
@@ -48,7 +48,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
             {/* Subtle Progress Line */}
             <div className="absolute bottom-20 left-1/2 -translate-x-1/2 w-48 h-[1px] bg-[#E4E1DE] overflow-hidden">
                 <div
-                    className="h-full bg-[#212121] transition-all duration-[20ms] ease-linear"
+                    className="h-full bg-[var(--color-text)] transition-all duration-[20ms] ease-linear"
                     style={{ width: `${progress}%` }}
                 />
             </div>

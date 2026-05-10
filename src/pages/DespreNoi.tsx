@@ -55,8 +55,8 @@ function Counter({ target, label, suffix = '' }: { target: number; label: string
 
     return (
         <div ref={ref} className="text-center">
-            <span className="font-serif text-5xl md:text-7xl italic text-[#212121]">{count}{suffix}</span>
-            <span className="block mt-3 text-[10px] uppercase tracking-[0.25em] font-bold text-[#959595]">{label}</span>
+            <span className="font-serif text-5xl md:text-7xl italic text-[var(--color-text)]">{count}{suffix}</span>
+            <span className="block mt-3 text-[10px] uppercase tracking-wider font-bold text-[var(--color-secondary)]">{label}</span>
         </div>
     );
 }
@@ -67,12 +67,12 @@ interface DespreNoiProps {
 
 export default function DespreNoi({ onOpenAppointment }: DespreNoiProps) {
     return (
-        <div className="bg-[#FAF8F5] min-h-screen">
+        <div className="bg-[var(--color-bg-secondary)] min-h-screen">
             {/* Hero Section */}
             <section className="relative pt-40 pb-20 px-6 md:px-16 max-w-[1400px] mx-auto min-h-[80vh] flex flex-col items-center justify-center">
                 <AnimatedSection className="w-full text-center relative z-10">
-                    <span className="block text-[10px] uppercase tracking-[0.4em] font-bold text-[#AFA79D] mb-6">Povestea Fya</span>
-                    <h1 className="font-serif text-5xl md:text-7xl lg:text-9xl text-[#212121] italic leading-[0.9] mb-8">
+                    <span className="block text-[10px] uppercase tracking-wider font-bold text-[var(--color-accent-light)] mb-6">Povestea Fya</span>
+                    <h1 className="font-serif text-5xl md:text-7xl lg:text-9xl text-[var(--color-text)] italic leading-[0.9] mb-8">
                         Ramona Jofneac
                     </h1>
                     <p className="text-[#5a5a5a] font-light text-lg md:text-xl max-w-2xl mx-auto leading-relaxed tracking-wide">
@@ -81,7 +81,7 @@ export default function DespreNoi({ onOpenAppointment }: DespreNoiProps) {
                 </AnimatedSection>
 
                 {/* Abstract Decorative Element */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] max-w-[800px] h-[80vw] max-h-[800px] bg-[#EBE7E0] rounded-full blur-3xl opacity-40 -z-10 pointer-events-none"></div>
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] max-w-[800px] h-[80vw] max-h-[800px] bg-[var(--color-bg-secondary)] rounded-full blur-3xl opacity-40 -z-10 pointer-events-none"></div>
             </section>
 
             {/* The Founder - Editorial Split */}
@@ -91,7 +91,7 @@ export default function DespreNoi({ onOpenAppointment }: DespreNoiProps) {
                     {/* Image Column */}
                     <div className="lg:col-span-5 relative group">
                         <AnimatedSection delay={100}>
-                            <div className="relative overflow-hidden aspect-[3/4] rounded-sm bg-[#EBE7E0]">
+                            <div className="relative overflow-hidden aspect-[3/4] rounded-sm bg-[var(--color-bg-secondary)]">
                                 <img
                                     src="/images/about/ramona_jofneac_real.jpg"
                                     alt="Ramona Jofneac - Founder Fya"
@@ -102,15 +102,15 @@ export default function DespreNoi({ onOpenAppointment }: DespreNoiProps) {
                         </AnimatedSection>
                         {/* Decorative floating text */}
                         <div className="absolute -left-8 top-1/2 -translate-y-1/2 -rotate-90 hidden xl:block pointer-events-none">
-                            <span className="text-[10px] uppercase tracking-[0.5em] text-[#959595]">Romanian Couture</span>
+                            <span className="text-[10px] uppercase tracking-wider text-[var(--color-secondary)]">Romanian Couture</span>
                         </div>
                     </div>
 
                     {/* Text Column */}
                     <div className="lg:col-span-6 lg:col-start-7 lg:pl-10">
                         <AnimatedSection delay={200}>
-                            <span className="block text-[10px] uppercase tracking-[0.3em] font-bold text-[#AFA79D] mb-8">Despre Fondator</span>
-                            <h2 className="font-serif text-4xl md:text-5xl text-[#212121] italic mb-10 leading-[1.1]">
+                            <span className="block text-[10px] uppercase tracking-wider font-bold text-[var(--color-accent-light)] mb-8">Despre Fondator</span>
+                            <h2 className="font-serif text-4xl md:text-5xl text-[var(--color-text)] italic mb-10 leading-[1.1]">
                                 „Eleganța nu este despre a fi remarcat, ci despre a fi amintit.”
                             </h2>
                             <div className="text-[#5a5a5a] font-light text-base md:text-lg leading-[2] space-y-6">
@@ -130,7 +130,7 @@ export default function DespreNoi({ onOpenAppointment }: DespreNoiProps) {
             <section className="bg-[#1C1C1C] text-[#F5F3F0] py-32 px-6 mt-20">
                 <div className="max-w-[1200px] mx-auto text-center">
                     <AnimatedSection>
-                        <span className="block text-[10px] uppercase tracking-[0.4em] font-bold text-[#AFA79D] mb-8">Manifest Fya</span>
+                        <span className="block text-[10px] uppercase tracking-wider font-bold text-[var(--color-accent-light)] mb-8">Manifest Fya</span>
                         <blockquote className="font-serif text-3xl md:text-5xl lg:text-6xl italic leading-[1.3] max-w-4xl mx-auto mb-12">
                             „Fiecare rochie poartă amprenta femeii care a visat-o, a artistei care a desenat-o și a artizanilor care i-au dat formă.”
                         </blockquote>
@@ -147,8 +147,8 @@ export default function DespreNoi({ onOpenAppointment }: DespreNoiProps) {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div className="order-2 lg:order-1">
                         <AnimatedSection>
-                            <span className="block text-[10px] uppercase tracking-[0.3em] font-bold text-[#AFA79D] mb-6">Culisele Creației</span>
-                            <h2 className="font-serif text-4xl md:text-5xl text-[#212121] italic mb-8 leading-[1.1]">
+                            <span className="block text-[10px] uppercase tracking-wider font-bold text-[var(--color-accent-light)] mb-6">Culisele Creației</span>
+                            <h2 className="font-serif text-4xl md:text-5xl text-[var(--color-text)] italic mb-8 leading-[1.1]">
                                 Din dragoste pentru detaliu
                             </h2>
                             <p className="text-[#5a5a5a] font-light text-base md:text-lg leading-[2]">
@@ -158,7 +158,7 @@ export default function DespreNoi({ onOpenAppointment }: DespreNoiProps) {
                     </div>
                     <div className="order-1 lg:order-2">
                         <AnimatedSection delay={150}>
-                            <div className="aspect-[3/4] relative overflow-hidden rounded-sm bg-[#EBE7E0]">
+                            <div className="aspect-[3/4] relative overflow-hidden rounded-sm bg-[var(--color-bg-secondary)]">
                                 <img
                                     src="/images/about/istoric_atelier.jpg"
                                     alt="Ramona Jofneac ajustând o rochie Fya alături de echipă"
@@ -175,8 +175,8 @@ export default function DespreNoi({ onOpenAppointment }: DespreNoiProps) {
                 <div className="max-w-[1200px] mx-auto">
                     <div className="text-center mb-20 relative">
                         <AnimatedSection>
-                            <span className="block text-[10px] uppercase tracking-[0.3em] font-bold text-[#959595] mb-4">Măiestrie</span>
-                            <h3 className="font-serif text-4xl md:text-5xl text-[#212121] italic">Arta Couture</h3>
+                            <span className="block text-[10px] uppercase tracking-wider font-bold text-[var(--color-secondary)] mb-4">Măiestrie</span>
+                            <h3 className="font-serif text-4xl md:text-5xl text-[var(--color-text)] italic">Arta Couture</h3>
                         </AnimatedSection>
                     </div>
 
@@ -193,14 +193,14 @@ export default function DespreNoi({ onOpenAppointment }: DespreNoiProps) {
             <section className="py-40 px-6 text-center max-w-[800px] mx-auto">
                 <AnimatedSection>
                     <div className="w-16 h-[1px] bg-[#D4CFC7] mx-auto mb-10"></div>
-                    <h2 className="font-serif text-4xl md:text-6xl text-[#212121] italic mb-8 leading-[1.1]">
+                    <h2 className="font-serif text-4xl md:text-6xl text-[var(--color-text)] italic mb-8 leading-[1.1]">
                         Pășiți în Universul Fya
                     </h2>
                     <p className="text-[#5a5a5a] font-light text-lg mb-12 max-w-md mx-auto leading-relaxed">
                         Atelierul nostru din Oradea vă are porțile deschise. Veniți să cunoașteți echipa, să atingeți
                         materialele și să împreună să scriem o nouă poveste.
                     </p>
-                    <button onClick={onOpenAppointment} className="inline-block border border-[#212121] text-[#212121] px-12 py-5 text-[11px] font-bold uppercase tracking-[0.25em] hover:bg-[#212121] hover:text-white transition-all duration-300">
+                    <button onClick={onOpenAppointment} className="inline-block border border-[var(--color-text)] text-[var(--color-text)] px-12 py-5 text-[11px] font-bold uppercase tracking-wider hover:bg-[var(--color-text)] hover:text-white transition-all duration-300">
                         Programează o Întâlnire
                     </button>
                 </AnimatedSection>

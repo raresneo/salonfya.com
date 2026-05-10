@@ -28,7 +28,7 @@ const Modal = ({ isOpen, onClose, children, title, fullScreen = false }: any) =>
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.4 }}
-                        className="absolute inset-0 bg-[#EBE7E0]/60 backdrop-blur-md"
+                        className="absolute inset-0 bg-[var(--color-bg-secondary)]/60 backdrop-blur-md"
                         onClick={onClose}
                     />
 
@@ -47,9 +47,9 @@ const Modal = ({ isOpen, onClose, children, title, fullScreen = false }: any) =>
                             }
                         }}
                         className={`
-                            relative bg-[#EBE7E0] w-full flex flex-col will-change-transform
+                            relative bg-[var(--color-bg-secondary)] w-full flex flex-col will-change-transform
                             h-[90vh] md:h-auto rounded-t-3xl md:rounded-none
-                            ${fullScreen ? 'md:h-full pt-4 md:pt-0' : 'md:max-h-[95vh] md:max-w-7xl pt-4 md:pt-0 border border-[#E4E1DE] md:shadow-[0_40px_100px_rgba(0,0,0,0.1)]'} 
+                            ${fullScreen ? 'md:h-full pt-4 md:pt-0' : 'md:max-h-[95vh] md:max-w-7xl pt-4 md:pt-0 border border-[var(--color-border)] md:shadow-[0_40px_100px_rgba(0,0,0,0.1)]'} 
                         `}
                     >
                         {/* Mobile Pull Indicator */}
@@ -58,17 +58,17 @@ const Modal = ({ isOpen, onClose, children, title, fullScreen = false }: any) =>
                         </div>
 
                         {/* Header */}
-                        <div className="px-6 md:px-16 pb-4 pt-2 md:py-10 flex justify-between items-center bg-[#EBE7E0] z-20 md:border-b border-[#F3F3F3]">
+                        <div className="px-6 md:px-16 pb-4 pt-2 md:py-10 flex justify-between items-center bg-[var(--color-bg-secondary)] z-20 md:border-b border-[var(--color-border)]">
                             <div className="flex flex-col">
-                                <span className="hidden md:block text-[10px] uppercase tracking-[0.4em] text-[#959595] font-bold mb-2">Fya Haute Couture</span>
-                                <h3 className="font-serif text-3xl md:text-5xl text-[#212121] italic leading-tight">{title}</h3>
+                                <span className="hidden md:block text-[10px] uppercase tracking-wider text-[var(--color-secondary)] font-bold mb-2">Fya Haute Couture</span>
+                                <h3 className="font-serif text-3xl md:text-5xl text-[var(--color-text)] italic leading-tight">{title}</h3>
                             </div>
                             <button
                                 onClick={onClose}
-                                className="group relative w-10 h-10 md:w-16 md:h-16 flex items-center justify-center border border-[#E4E1DE] hover:border-[#212121] transition-all rounded-full active-scale"
+                                className="group relative w-10 h-10 md:w-16 md:h-16 flex items-center justify-center border border-[var(--color-border)] hover:border-[var(--color-text)] transition-all rounded-full active-scale"
                                 aria-label="Close"
                             >
-                                <span className="absolute inset-0 bg-[#212121] scale-0 group-hover:scale-100 transition-transform duration-500 rounded-full hidden md:block"></span>
+                                <span className="absolute inset-0 bg-[var(--color-text)] scale-0 group-hover:scale-100 transition-transform duration-500 rounded-full hidden md:block"></span>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="20"
@@ -86,7 +86,7 @@ const Modal = ({ isOpen, onClose, children, title, fullScreen = false }: any) =>
                         </div>
 
                         {/* Inner Content */}
-                        <div className="flex-1 overflow-y-auto scrollbar-hide bg-[#EBE7E0] safe-pb">
+                        <div className="flex-1 overflow-y-auto scrollbar-hide bg-[var(--color-bg-secondary)] safe-pb">
                             {children}
                         </div>
                     </motion.div>
