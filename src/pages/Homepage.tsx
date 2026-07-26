@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from '../components/sections/Hero';
 import CollectionShowcase from '../components/sections/CollectionShowcase';
+import GallerySection from '../components/sections/GallerySection';
 import AtelierSection from '../components/sections/AtelierSection';
 import HistorySection from '../components/sections/HistorySection';
 import WhereToBuySection from '../components/sections/WhereToBuySection';
@@ -11,6 +12,7 @@ export default function Homepage() {
         <>
             <Hero />
             <CollectionShowcase />
+            <GallerySection />
             <AtelierSection />
             <HistorySection />
             <WhereToBuySection />

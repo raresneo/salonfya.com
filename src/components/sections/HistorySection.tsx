@@ -1,108 +1,72 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
+import { motion } from 'framer-motion';
 
-const useScrollProgress = (ref: React.RefObject<HTMLElement>) => {
-    const [progress, setProgress] = useState(0);
+const EASE = [0.22, 1, 0.36, 1] as const;
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (!ref.current) return;
-            const rect = ref.current.getBoundingClientRect();
-            const windowHeight = window.innerHeight;
-            const start = windowHeight * 0.9;
-            const end = windowHeight * 0.4;
-            const elementTop = rect.top;
-            let p = (start - elementTop) / (start - end);
-            p = Math.min(Math.max(p, 0), 1);
-            setProgress(p);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        handleScroll();
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, [ref]);
-
-    return progress;
-};
-
-const ScrollTextReveal = ({ text, className = "" }: { text: string, className?: string }) => {
-    const ref = useRef<HTMLDivElement>(null);
-    const progress = useScrollProgress(ref);
-    const words = text.split(" ");
-
-    return (
-        <p ref={ref} className={`${className} flex flex-wrap gap-[0.3em]`}>
-            {words.map((word, i) => {
-                const wordProgress = (progress * words.length) - i;
-                const opacity = Math.min(Math.max(wordProgress + 0.2, 0.2), 1);
-                return (
-                    <span key={i} style={{ opacity, transition: 'opacity 0.1s' }}>{word}</span>
-                );
-            })}
-        </p>
-    );
-};
+// NOTE: imagini placeholder existente. De inlocuit cu render-e Higgsfield.
+const PORTRAIT = '/images/history_hero_portrait.png';
+const HANDS = '/images/atelier_hands_sewing.png';
+const VINTAGE = '/images/atelier_vintage.png';
 
 const HistorySection = () => {
     return (
-        <div className="bg-[#0A0A0A] text-white py-20 transition-colors duration-1000 relative z-10">
-            <div className="max-w-[1800px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
-                <div className="lg:col-span-12 relative h-[80vh] overflow-hidden">
-                    <div className="absolute inset-0 bg-black/20 z-10"></div>
-                    <img src="/images/history_hero_portrait.png" className="w-full h-full object-cover object-top parallax-y" alt="Fya Muse" />
-                    <div className="absolute bottom-12 left-6 md:left-12 z-20">
-                        <h2 className="font-serif text-6xl md:text-[8rem] leading-none text-white mix-blend-difference opacity-90">Origins</h2>
-                    </div>
+        <section className="bg-[#F2F0EA] text-[#1A1A1A]">
+            {/* Full-bleed portrait with light overlay */}
+            <div className="relative h-[85svh] overflow-hidden">
+                <img src={PORTRAIT} alt="Muza Fya" className="w-full h-full object-cover object-[center_15%]" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#F2F0EA] via-transparent to-transparent" />
+                <div className="absolute bottom-10 left-6 md:left-16">
+                    <h2 className="font-serif font-light italic text-white/95 tracking-tight drop-shadow-lg" style={{ fontSize: 'clamp(3.5rem, 12vw, 10rem)' }}>Origini</h2>
                 </div>
             </div>
-            <div className="max-w-4xl mx-auto px-6 mb-20">
-                <ScrollTextReveal
-                    text="Fya Atelier nu este doar o semnătură, ci un manifest pentru eleganța nealterată de timp. O rebeliune tăcută împotriva zgomotului cotidian. Aici, abandonăm graba. În fiecare cusătură inserăm o poveste despre devotament artizanal și tăcerea materialelor pure."
-                    className="font-serif text-3xl md:text-5xl leading-relaxed text-center text-[#E4E1DE] md:text-[#E4E1DE]"
-                />
+
+            {/* Airy statement */}
+            <div className="max-w-4xl mx-auto px-6 py-32 md:py-48 text-center">
+                <motion.p
+                    className="font-serif font-light leading-[1.25] tracking-[-0.01em]"
+                    style={{ fontSize: 'clamp(1.6rem, 4vw, 3.2rem)' }}
+                    initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: '-15%' }} transition={{ duration: 0.9, ease: EASE }}
+                >
+                    Fya nu este doar o semnatura, ci un <span className="italic">manifest pentru eleganta nealterata de timp.</span> Aici abandonam graba: in fiecare cusatura inseram o poveste despre devotament artizanal.
+                </motion.p>
             </div>
-            <div className="max-w-[1600px] mx-auto px-6 space-y-16 mb-20">
-                <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-                    <div className="md:col-span-5 md:col-start-2">
-                        <div className="aspect-[4/5] overflow-hidden relative group rounded-sm">
-                            <img src="/images/atelier_hands_sewing.png" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-[2s] ease-out group-hover:scale-105" alt="Craftsmanship" />
+
+            {/* Two editorial rows, generous */}
+            <div className="max-w-[1500px] mx-auto px-6 pb-32 md:pb-48 space-y-28 md:space-y-40">
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-center">
+                    <div className="md:col-span-6">
+                        <div className="aspect-[4/5] overflow-hidden group">
+                            <img src={HANDS} alt="Maiestrie" className="w-full h-full object-cover object-center transition-transform duration-[1.6s] ease-out group-hover:scale-105" />
                         </div>
                     </div>
-                    <div className="md:col-span-4 md:col-start-8">
-                        <h3 className="text-[10px] uppercase tracking-wider font-bold text-[#E4E1DE] mb-6">01. Măiestrie & Timp</h3>
-                        <p className="font-light text-[#E4E1DE] md:text-[var(--color-secondary)] text-lg leading-[2] editorial-dropcap">
-                            Refuzăm ritmul impus de tendințele secunde. Fiecare creație care ne poartă eticheta este sculptată manual pe de manechin, un act deliberat de răbdare care transformă mătasea brută într-o armură a feminității, perfect acordată siluetei tale.
+                    <motion.div className="md:col-span-5 md:col-start-8"
+                        initial={{ opacity: 0, y: 22 }} whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: '-10%' }} transition={{ duration: 0.7, ease: EASE }}>
+                        <span className="block text-[10px] uppercase tracking-[0.26em] font-bold text-[#1A1A1A]/45 mb-6">01 &mdash; Maiestrie & timp</span>
+                        <p className="font-serif font-light text-xl md:text-2xl leading-[1.7] text-[#1A1A1A]/80">
+                            Fiecare creatie este lucrata manual, un act deliberat de rabdare care transforma materialul brut intr-o piesa perfect acordata siluetei tale.
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-                    <div className="md:col-span-4 md:col-start-2 order-2 md:order-1">
-                        <h3 className="text-[10px] uppercase tracking-wider font-bold text-[#E4E1DE] mb-6">02. Materialitate Pură</h3>
-                        <p className="font-light text-[#E4E1DE] md:text-[var(--color-secondary)] text-lg leading-[2]">
-                            Mătasea, dantela prețioasă și o selecție obsesivă decurată de materiale organice sunt singurele noastre instrumente. Restul este viziune absolută și refuzul oricărui compromis atunci când vine vorba de calitatea tactilă a fiecărei rochii.
+
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-center">
+                    <motion.div className="md:col-span-5 md:col-start-2 order-2 md:order-1"
+                        initial={{ opacity: 0, y: 22 }} whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: '-10%' }} transition={{ duration: 0.7, ease: EASE }}>
+                        <span className="block text-[10px] uppercase tracking-[0.26em] font-bold text-[#1A1A1A]/45 mb-6">02 &mdash; Materiale pure</span>
+                        <p className="font-serif font-light text-xl md:text-2xl leading-[1.7] text-[#1A1A1A]/80">
+                            Matase, dantela fina si o selectie obsesiva de materiale. Restul este viziune si refuzul oricarui compromis la calitatea fiecarei rochii.
                         </p>
-                    </div>
-                    <div className="md:col-span-5 md:col-start-7 order-1 md:order-2">
-                        <div className="aspect-[4/5] overflow-hidden relative group rounded-sm">
-                            <img src="/images/atelier_vintage.png" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-[2s] ease-out group-hover:scale-105 vintage-pastel" alt="Atelier Atmosphere" />
+                    </motion.div>
+                    <div className="md:col-span-6 md:col-start-7 order-1 md:order-2">
+                        <div className="aspect-[4/5] overflow-hidden group">
+                            <img src={VINTAGE} alt="Atmosfera atelier" className="w-full h-full object-cover object-center transition-transform duration-[1.6s] ease-out group-hover:scale-105" />
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="relative w-full h-[80vh] overflow-hidden mt-20">
-                <iframe
-                    className="absolute top-1/2 left-1/2 w-[177.78vh] h-[56.25vw] min-h-screen min-w-full -translate-x-1/2 -translate-y-1/2 object-cover scale-[1.35] md:scale-110 opacity-70"
-                    src="https://www.youtube.com/embed/SmyuMnzifn0?autoplay=1&mute=1&playsinline=1&controls=0&loop=1&playlist=SmyuMnzifn0&showinfo=0&modestbranding=1"
-                    title="Fya Cinematic"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    style={{ pointerEvents: 'none', filter: 'grayscale(100%)' }}
-                />
-                <div className="absolute inset-0 flex items-center justify-center bg-black/30 pointer-events-none">
-                    <h2 className="font-serif text-[12vw] md:text-[8vw] italic text-white mix-blend-overlay tracking-tight drop-shadow-2xl">Atelier Fya</h2>
-                </div>
-            </div>
-        </div>
+        </section>
     );
 };
 

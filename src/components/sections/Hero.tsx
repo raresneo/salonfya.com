@@ -1,50 +1,87 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import { HF } from '../../data/higgsfieldImages';
+
+const HERO_IMAGE = HF.hero;
+
+const EASE = [0.22, 1, 0.36, 1] as const;
+
+const riseParent = { hidden: {}, show: { transition: { staggerChildren: 0.09, delayChildren: 0.2 } } };
+const riseChild = { hidden: { y: '115%' }, show: { y: '0%', transition: { duration: 1.0, ease: EASE } } };
 
 const Hero = () => {
+    const [pct, setPct] = useState(0);
+    useEffect(() => {
+        const onScroll = () => {
+            const h = document.documentElement.scrollHeight - window.innerHeight;
+            setPct(h > 0 ? Math.round((window.scrollY / h) * 100) : 0);
+        };
+        onScroll();
+        window.addEventListener('scroll', onScroll, { passive: true });
+        return () => window.removeEventListener('scroll', onScroll);
+    }, []);
+
     return (
-        <div className="relative h-[100vh] w-full overflow-hidden flex items-center justify-center bg-[#0A0A0A]">
-            {/* Video Background */}
-            <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
-                <iframe
-                    className="absolute top-1/2 left-1/2 w-[177.78vh] h-[56.25vw] min-h-screen min-w-full -translate-x-1/2 -translate-y-1/2 object-cover scale-[1.35] md:scale-110"
-                    src="https://www.youtube.com/embed/SmyuMnzifn0?autoplay=1&mute=1&playsinline=1&controls=0&loop=1&playlist=SmyuMnzifn0&showinfo=0&modestbranding=1"
-                    title="Fya Atelier"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    style={{ pointerEvents: 'none', filter: 'grayscale(100%)' }}
-                />
-                <div className="absolute inset-0 bg-black/30 z-10" />
+        <section className="relative min-h-[100svh] w-full bg-[#F2F0EA] text-[#1A1A1A] flex flex-col">
+            {/* Top line: brand whisper */}
+            <div className="flex items-center justify-between px-6 md:px-16 pt-28 md:pt-32">
+                <motion.span
+                    className="text-[10px] uppercase tracking-[0.3em] text-[#1A1A1A]/50"
+                    initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.1 }}
+                >Atelier de rochii de mireasa</motion.span>
+                <motion.span
+                    className="text-[10px] uppercase tracking-[0.3em] text-[#1A1A1A]/50"
+                    initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.2 }}
+                >Oradea, 2026</motion.span>
             </div>
 
-            {/* Center Content */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center z-20 p-6">
-                <p className="text-[11px] md:text-[12px] uppercase tracking-wider font-bold text-white/50 mb-6">Colecția 2026</p>
-                <p className="text-[11px] md:text-[12px] uppercase tracking-wider font-bold text-white/40 mb-10 pt-4">Haute Couture · Oradea</p>
-                <div className="flex justify-center items-center gap-4 mb-10">
-                    <span className="w-8 h-[1px] bg-white/30"></span>
-                    <p className="font-serif italic text-white/90 text-xl md:text-2xl tracking-[0.15em] drop-shadow-lg">Fancy, Young, Admired (FYA)</p>
-                    <span className="w-8 h-[1px] bg-white/30"></span>
-                </div>
-                <p className="font-light text-white/80 text-base md:text-xl leading-[1.8] max-w-lg mx-auto px-4 md:px-0 mb-14 font-serif italic drop-shadow-md">
-                    O odă adusă feminității, sculptată în mătase pură pentru momente ce devin atemporale.
-                </p>
-                <button
-                    onClick={() => {
-                        const el = document.getElementById('colectii') || document.querySelector('section');
-                        if (el) el.scrollIntoView({ behavior: 'smooth' });
-                        else window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
-                    }}
-                    className="inline-flex items-center gap-3 border border-white/30 text-white/80 px-10 py-4 text-[10px] uppercase tracking-wider font-bold hover:bg-white hover:text-[var(--color-text)] transition-all duration-500"
+            {/* Massive thin display headline */}
+            <div className="flex-1 flex items-center px-6 md:px-16">
+                <motion.h1
+                    className="font-serif font-light leading-[0.95] tracking-[-0.02em]"
+                    style={{ fontSize: 'clamp(3rem, 9vw, 9.5rem)' }}
+                    variants={riseParent} initial="hidden" animate="show"
                 >
-                    Explorează Colecțiile
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                        <path d="M19 12H5M12 19l-7-7 7-7" style={{ transform: 'rotate(270deg)', transformOrigin: '12px 12px' }} />
-                    </svg>
-                </button>
+                    <span className="block overflow-hidden"><motion.span className="block" variants={riseChild}>unde rochia ta</motion.span></span>
+                    <span className="block overflow-hidden"><motion.span className="block" variants={riseChild}>de mireasa</motion.span></span>
+                    <span className="block overflow-hidden"><motion.span className="block italic" variants={riseChild}>prinde viata.</motion.span></span>
+                </motion.h1>
             </div>
-            {/* Removed scroll indicator */}
-        </div>
+
+            {/* Bottom row: intro + cta + scroll counter */}
+            <div className="px-6 md:px-16 pb-10 md:pb-14 grid grid-cols-1 md:grid-cols-[1fr_auto_auto] gap-8 md:gap-16 items-end">
+                <motion.p
+                    className="max-w-sm text-sm md:text-base font-light leading-relaxed text-[#1A1A1A]/70"
+                    initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, ease: EASE, delay: 0.8 }}
+                >
+                    Un atelier de rochii de mireasa premium si unicat. Design, executie si ajustari facute in intregime la noi, in Oradea.
+                </motion.p>
+
+                <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, ease: EASE, delay: 0.95 }}>
+                    <Link to="/programare" className="group inline-flex items-center gap-3 text-[11px] uppercase tracking-[0.18em] font-medium">
+                        <span className="relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-full after:origin-left after:scale-x-100 after:bg-[#1A1A1A] group-hover:after:scale-x-0 after:transition-transform after:duration-500">Programeaza o proba</span>
+                        <span className="transition-transform duration-500 group-hover:translate-x-1">&rarr;</span>
+                    </Link>
+                </motion.div>
+
+                <div className="font-serif text-sm tabular-nums text-[#1A1A1A]/40 justify-self-start md:justify-self-end">
+                    {String(pct).padStart(2, '0')} / 100
+                </div>
+            </div>
+
+            {/* Taller image band, positioned to show the full silhouette head-to-hem */}
+            <motion.div
+                className="relative w-full h-[56svh] md:h-[64svh] overflow-hidden"
+                initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.2, ease: EASE, delay: 0.4 }}
+            >
+                <motion.img
+                    src={HERO_IMAGE} alt="Rochie de mireasa Fya"
+                    className="w-full h-full object-cover object-[center_20%]"
+                    initial={{ scale: 1.1 }} animate={{ scale: 1 }} transition={{ duration: 2.4, ease: EASE }}
+                />
+            </motion.div>
+        </section>
     );
 };
 

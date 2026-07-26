@@ -1,30 +1,41 @@
 import React from 'react';
-import SectionTitle from '../ui/SectionTitle';
-import FadeInSection from '../ui/FadeInSection';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
+const EASE = [0.22, 1, 0.36, 1] as const;
 
 const WhereToBuySection = () => {
-    const locations = [
-        { city: "Oradea", address: "Str. Republicii 12", phone: "+40 700 000 000" },
-    ];
-
     return (
-        <div className="py-16 md:py-20 px-6 md:px-12 max-w-[1800px] mx-auto where-to-buy bg-[#0A0A0A]">
-            <SectionTitle title="Descoperă Creațiile Noi" subtitle="Destinații" centered />
-            <div className="flex justify-center mt-16 max-w-5xl mx-auto">
-                {locations.map((loc, idx) => (
-                    <FadeInSection key={idx} delay={idx * 200}>
-                        <div className="text-center p-10 md:p-14 border border-[var(--color-border)] hover:border-[var(--color-text)] transition-colors duration-[1.5s] group bg-white">
-                            <h3 className="font-serif text-3xl md:text-3xl italic text-[var(--color-text)] mb-6 group-hover:text-[#605F5F] transition-colors duration-500">{loc.city}</h3>
-                            <p className="text-sm font-light text-[var(--color-secondary)] mb-2 tracking-wide">{loc.address}</p>
-                            <p className="text-sm font-light text-[var(--color-secondary)] tracking-wide">{loc.phone}</p>
-                            <button className="mt-8 text-[10px] uppercase tracking-wider font-bold border-b border-[var(--color-text)]/30 pb-2 text-[var(--color-text)] hover:text-[var(--color-secondary)] hover:border-[#959595] transition-all duration-500">
-                                Rezervă o Programare
-                            </button>
-                        </div>
-                    </FadeInSection>
-                ))}
+        <section className="bg-[#F2F0EA] text-[#1A1A1A] px-6 md:px-16 py-32 md:py-48 border-t border-[#1A1A1A]/10">
+            <div className="max-w-5xl mx-auto text-center">
+                <motion.span
+                    className="block text-[10px] uppercase tracking-[0.28em] text-[#1A1A1A]/45 mb-8"
+                    initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.7 }}
+                >Vizeaza-ne</motion.span>
+                <motion.h2
+                    className="font-serif font-light italic tracking-[-0.02em] leading-[0.95] mb-16"
+                    style={{ fontSize: 'clamp(2.4rem, 7vw, 6rem)' }}
+                    initial={{ opacity: 0, y: 26 }} whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: '-10%' }} transition={{ duration: 0.8, ease: EASE }}
+                >
+                    atelierul nostru
+                </motion.h2>
+
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: '-10%' }} transition={{ duration: 0.7, ease: EASE }}
+                    className="inline-block"
+                >
+                    <p className="font-serif text-3xl md:text-4xl italic mb-4">Oradea</p>
+                    <p className="text-sm font-light text-[#1A1A1A]/55 tracking-wide mb-1">Str. Republicii 12, jud. Bihor</p>
+                    <p className="text-sm font-light text-[#1A1A1A]/55 tracking-wide mb-10">Luni &ndash; Sambata, cu programare</p>
+                    <Link to="/programare" className="group inline-flex items-center gap-3 text-[11px] uppercase tracking-[0.18em] font-medium">
+                        <span className="relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-full after:origin-left after:scale-x-100 after:bg-[#1A1A1A] group-hover:after:scale-x-0 after:transition-transform after:duration-500">Programeaza o proba</span>
+                        <span className="transition-transform duration-500 group-hover:translate-x-1">&rarr;</span>
+                    </Link>
+                </motion.div>
             </div>
-        </div>
+        </section>
     );
 };
 
