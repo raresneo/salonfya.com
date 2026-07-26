@@ -98,12 +98,10 @@ const Admin = () => {
     };
 
     const uploadImage = async (file: File) => {
-        const formData = new FormData();
-        formData.append('image', file);
         try {
-            const res = await fetch('/api/upload', {
+            const res = await fetch(`/api/upload?filename=${encodeURIComponent(file.name)}`, {
                 method: 'POST',
-                body: formData
+                body: file
             });
             const data = await res.json();
             if (data.url) {
