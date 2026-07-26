@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { HF } from '../../data/higgsfieldImages';
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
-// NOTE: imagine placeholder existenta. De inlocuit cu render Higgsfield (atelier).
-const ATELIER_IMAGE = '/images/detaliile_fac_diferenta.jpeg';
+const ATELIER_IMAGE = HF.atelier;
 
 const steps = [
     { n: '01', title: 'Proba & discutia', text: 'Ne spui ce iti doresti, vedem impreuna ce ti se potriveste.' },
