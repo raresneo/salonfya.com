@@ -1,117 +1,80 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
-const collections = [
-    {
-        path: '/imperial',
-        name: 'Imperial',
-        subtitle: 'Eleganță Regală',
-        image: '/images/IMPERIAL/Alma/IMG_5535.jpg',
-        description: 'Rafinament absolut. O colecție pentru momente care definesc o viață.'
-    },
-    {
-        path: '/anna',
-        name: 'Anna',
-        subtitle: 'Puritate Naturală',
-        image: '/images/ANNA/Just Anna/IMG_5889.jpg',
-        description: 'Atingerea naturii întâlnește couture-ul în forme organice și diafane.'
-    },
-    {
-        path: '/mayra',
-        name: 'Mayra',
-        subtitle: 'Romantism Eteric',
-        image: '/images/MAYRA/Snow/IMG_5744.jpg',
-        description: 'Detalii fine, design modern, siluetă clasică — dedicată mireselor pasionate.'
-    },
-    {
-        path: '/beverly',
-        name: 'Beverly',
-        subtitle: 'Eleganță Cosmopolită',
-        image: '/images/BEVERLY/Evora/IMG_6390.JPG',
-        description: 'Linii îndrăznețe cu broderii luxuriante. Modernitate și romantism în echilibru.'
-    },
+const EASE = [0.22, 1, 0.36, 1] as const;
+
+type Col = { path: string; name: string; subtitle: string; image: string; };
+
+const collections: Col[] = [
+    { path: '/imperial', name: 'Imperial', subtitle: 'Eleganta regala', image: '/images/IMPERIAL/Alma/IMG_5535.jpg' },
+    { path: '/anna', name: 'Anna', subtitle: 'Puritate naturala', image: '/images/ANNA/Just Anna/IMG_5889.jpg' },
+    { path: '/mayra', name: 'Mayra', subtitle: 'Romantism eteric', image: '/images/MAYRA/Snow/IMG_5744.jpg' },
+    { path: '/beverly', name: 'Beverly', subtitle: 'Eleganta cosmopolita', image: '/images/BEVERLY/Evora/IMG_6390.JPG' },
 ];
 
-function useInView(ref: React.RefObject<HTMLElement | null>, threshold = 0.1) {
-    const [visible, setVisible] = useState(false);
-    useEffect(() => {
-        const el = ref.current;
-        if (!el) return;
-        const observer = new IntersectionObserver(([e]) => {
-            if (e.isIntersecting) { setVisible(true); observer.unobserve(el); }
-        }, { threshold });
-        observer.observe(el);
-        return () => observer.disconnect();
-    }, [ref, threshold]);
-    return visible;
-}
-
 const CollectionShowcase = () => {
-    const sectionRef = useRef<HTMLElement>(null);
-    const isVisible = useInView(sectionRef);
+    const [active, setActive] = useState<number | null>(null);
 
     return (
-        <section ref={sectionRef} className="py-12 md:py-16 px-6 md:px-12 bg-[#0A0A0A]">
-            {/* Section Header — like Lucesposa's "NUESTRAS COLECCIONES" */}
-            <div className={`text-center mb-16 md:mb-24 transition-all duration-[1.5s] ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                <span className="block text-[10px] uppercase tracking-wider font-bold text-white/60 mb-4">
-                    Descoperiți Colecțiile Noastre
-                </span>
-                <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl italic text-white mb-6">
-                    <span className="font-light not-italic">Fya</span>{' '}
-                    <span>Colecții</span>
-                </h2>
-                <div className="w-20 h-px bg-white/30 mx-auto mt-6" />
-                <p className="mt-6 text-white/70 font-light text-base md:text-lg max-w-2xl mx-auto leading-[2] tracking-wide">
-                    O manifestare a frumuseții absolute. Fiecare colecție este o destinație în sine, creată pentru femeia care transformă rafinamentul într-un mod de a fi.
-                </p>
+        <section id="colectii" className="bg-[#0A0A0A] text-white py-24 md:py-36">
+            {/* Header */}
+            <div className="px-6 md:px-16 flex items-baseline justify-between flex-wrap gap-4 mb-16 md:mb-24">
+                <motion.h2
+                    className="font-serif italic font-light tracking-tight"
+                    style={{ fontSize: 'clamp(2.4rem, 6vw, 5rem)' }}
+                    initial={{ opacity: 0, y: 24 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: '-10%' }}
+                    transition={{ duration: 0.6, ease: EASE }}
+                >
+                    Colectiile
+                </motion.h2>
+                <span className="text-[10px] uppercase tracking-[0.24em] font-bold text-white/50">Patru semnaturi, o singura casa</span>
             </div>
 
-            {/* Editorial Grid — Asymmetric like Lucesposa */}
-            <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            {/* Editorial list */}
+            <div className="relative" onMouseLeave={() => setActive(null)}>
                 {collections.map((col, i) => (
-                    <Link
+                    <motion.div
                         key={col.path}
-                        to={col.path}
-                        className={`group relative overflow-hidden transition-all duration-[2s] ease-luxury ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'} ${i === 0 || i === 3 ? 'col-span-1 md:col-span-2 lg:col-span-2 aspect-[4/5] md:aspect-[16/9]' : 'col-span-1 aspect-[4/5] md:aspect-[3/4]'}`}
-                        style={{ transitionDelay: `${200 + i * 150}ms` }}
+                        initial={{ opacity: 0, y: 28 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: '-8%' }}
+                        transition={{ duration: 0.55, ease: EASE, delay: i * 0.06 }}
                     >
-                        <img
-                            src={col.image}
-                            alt={col.name}
-                            className="absolute inset-0 w-full h-full object-cover object-top transition-all duration-[2s] ease-out group-hover:scale-105 group-hover:brightness-90"
-                        />
-                        {/* Gradient overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
-
-                        {/* Vertical text — Lucesposa style */}
-                        <span className="absolute top-8 left-6 text-[10px] uppercase tracking-wider font-bold text-white/50 writing-vertical hidden md:block"
-                            style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}>
-                            {col.subtitle}
-                        </span>
-
-                        {/* Content */}
-                        <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-white">
-                            <span className="block text-[9px] uppercase tracking-wider font-bold text-white/60 mb-2">{col.subtitle}</span>
-                            <h3 className="font-serif text-3xl md:text-4xl italic mb-2 group-hover:translate-x-2 transition-transform duration-500">{col.name}</h3>
-                            <p className="text-white/70 text-sm font-light max-w-sm leading-relaxed hidden md:block">{col.description}</p>
-                            <span className="inline-flex items-center gap-2 mt-4 text-[10px] uppercase tracking-wider font-bold text-white/80 group-hover:text-white transition-colors">
-                                Explorează
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="group-hover:translate-x-1 transition-transform">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
+                        <Link
+                            to={col.path}
+                            onMouseEnter={() => setActive(i)}
+                            className="group relative grid grid-cols-[auto_1fr_auto] md:grid-cols-[0.5fr_2fr_1fr_auto] items-center gap-6 md:gap-10 px-6 md:px-16 py-7 md:py-9 border-t border-white/12 last:border-b hover:bg-white/[0.03] transition-colors duration-500"
+                        >
+                            <span className="font-serif italic text-white/40 text-lg">{String(i + 1).padStart(2, '0')}</span>
+                            <span className="font-serif italic font-light tracking-tight transition-transform duration-500 group-hover:translate-x-3"
+                                style={{ fontSize: 'clamp(1.9rem, 5vw, 3.4rem)' }}>{col.name}</span>
+                            <span className="hidden md:block text-sm text-white/50 font-light">{col.subtitle}</span>
+                            <span className="w-11 h-11 border border-white/20 rounded-full grid place-items-center transition-all duration-500 group-hover:bg-white group-hover:text-[#0A0A0A]">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                             </span>
-                        </div>
-
-                        {/* Plus icon — Lucesposa style */}
-                        <div className="absolute top-6 right-6 w-10 h-10 border border-white/30 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5">
-                                <line x1="12" y1="5" x2="12" y2="19" />
-                                <line x1="5" y1="12" x2="19" y2="12" />
-                            </svg>
-                        </div>
-                    </Link>
+                        </Link>
+                    </motion.div>
                 ))}
+
+                {/* Floating preview (desktop) */}
+                <div className="pointer-events-none hidden lg:block absolute top-0 right-[14%] h-full w-[220px] z-20">
+                    {collections.map((col, i) => (
+                        <motion.div
+                            key={col.path}
+                            className="absolute top-1/2 left-0 w-[220px] h-[290px] overflow-hidden"
+                            initial={false}
+                            animate={active === i
+                                ? { opacity: 1, y: '-50%', scale: 1, rotate: -2 }
+                                : { opacity: 0, y: '-46%', scale: 0.92, rotate: -3 }}
+                            transition={{ duration: 0.45, ease: EASE }}
+                        >
+                            <img src={col.image} alt={col.name} className="w-full h-full object-cover object-top" />
+                        </motion.div>
+                    ))}
+                </div>
             </div>
         </section>
     );
