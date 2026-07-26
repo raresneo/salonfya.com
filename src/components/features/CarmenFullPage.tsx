@@ -149,7 +149,7 @@ const CarmenFullPage = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => v
                     <div className="h-full bg-[var(--color-bg-secondary)] flex items-center justify-center p-0 lg:p-0 overflow-hidden order-2 lg:order-2 relative group">
                         <img
                             src="/images/carmen_model_front_v2.png"
-                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-[1.5s] ease-in-out"
+                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out"
                             alt="Carmen Model"
                         />
                         <div className="absolute bottom-12 right-12 bg-white/90 backdrop-blur p-4 max-w-xs text-right opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-300">

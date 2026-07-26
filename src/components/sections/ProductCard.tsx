@@ -15,7 +15,7 @@ const ProductCard: React.FC<{ dress: Dress, onClick: () => void, index: number }
                         src={dress.imageUrl}
                         alt={dress.name}
                         loading="lazy"
-                        className={`w-full h-full object-contain transition-all duration-[1.5s] ease-out group-hover:scale-105 vintage-pastel mix-blend-multiply ${dress.id.includes('alma') ? 'logo-mask' : ''}`}
+                        className={`w-full h-full object-contain transition-all duration-700 ease-out group-hover:scale-105 vintage-pastel mix-blend-multiply ${dress.id.includes('alma') ? 'logo-mask' : ''}`}
                     />
 
                     {/* Minimal Overlay */}

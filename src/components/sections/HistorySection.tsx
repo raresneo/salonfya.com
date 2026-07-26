@@ -64,12 +64,12 @@ const HistorySection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
                     <div className="md:col-span-5 md:col-start-2">
                         <div className="aspect-[4/5] overflow-hidden relative group rounded-sm">
-                            <img src="/images/atelier_hands_sewing.png" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-[2s] ease-out group-hover:scale-105" alt="Craftsmanship" />
+                            <img src="/images/atelier_hands_sewing.png" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-out group-hover:scale-105" alt="Craftsmanship" />
                         </div>
                     </div>
                     <div className="md:col-span-4 md:col-start-8">
                         <h3 className="text-[10px] uppercase tracking-wider font-bold text-[#E4E1DE] mb-6">01. Măiestrie & Timp</h3>
-                        <p className="font-light text-[#E4E1DE] md:text-[var(--color-secondary)] text-lg leading-[2] editorial-dropcap">
+                        <p className="font-light text-[#E4E1DE] text-lg leading-[2] editorial-dropcap">
                             Refuzăm ritmul impus de tendințele secunde. Fiecare creație care ne poartă eticheta este sculptată manual pe de manechin, un act deliberat de răbdare care transformă mătasea brută într-o armură a feminității, perfect acordată siluetei tale.
                         </p>
                     </div>
@@ -77,13 +77,13 @@ const HistorySection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
                     <div className="md:col-span-4 md:col-start-2 order-2 md:order-1">
                         <h3 className="text-[10px] uppercase tracking-wider font-bold text-[#E4E1DE] mb-6">02. Materialitate Pură</h3>
-                        <p className="font-light text-[#E4E1DE] md:text-[var(--color-secondary)] text-lg leading-[2]">
+                        <p className="font-light text-[#E4E1DE] text-lg leading-[2]">
                             Mătasea, dantela prețioasă și o selecție obsesivă decurată de materiale organice sunt singurele noastre instrumente. Restul este viziune absolută și refuzul oricărui compromis atunci când vine vorba de calitatea tactilă a fiecărei rochii.
                         </p>
                     </div>
                     <div className="md:col-span-5 md:col-start-7 order-1 md:order-2">
                         <div className="aspect-[4/5] overflow-hidden relative group rounded-sm">
-                            <img src="/images/atelier_vintage.png" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-[2s] ease-out group-hover:scale-105 vintage-pastel" alt="Atelier Atmosphere" />
+                            <img src="/images/atelier_vintage.png" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-700 ease-out group-hover:scale-105 vintage-pastel" alt="Atelier Atmosphere" />
                         </div>
                     </div>
                 </div>

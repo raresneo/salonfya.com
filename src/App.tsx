@@ -292,7 +292,7 @@ export default function App() {
                         >
                           <img
                             src={img}
-                            className={`w-full h-full object-contain object-center transition-transform duration-[2s] group-hover:scale-105 vintage-pastel ${selectedDress.id.includes('alma') ? 'logo-mask' : ''}`}
+                            className={`w-full h-full object-contain object-center transition-transform duration-700 group-hover:scale-105 vintage-pastel ${selectedDress.id.includes('alma') ? 'logo-mask' : ''}`}
                             alt={`${selectedDress.name} view ${i + 1}`}
                             style={{
                               imageRendering: 'auto'
@@ -302,7 +302,7 @@ export default function App() {
                       ))
                     ) : (
                       <div className="col-span-2 aspect-[3/4] cursor-zoom-in group overflow-hidden" onClick={() => setZoomImage(selectedDress.imageUrl)}>
-                        <img src={selectedDress.imageUrl} className="w-full h-full object-contain bg-white object-center transition-transform duration-[2s] group-hover:scale-105 vintage-pastel" alt={selectedDress.name} />
+                        <img src={selectedDress.imageUrl} className="w-full h-full object-contain bg-white object-center transition-transform duration-700 group-hover:scale-105 vintage-pastel" alt={selectedDress.name} />
                       </div>
                     )}
                   </div>
@@ -336,7 +336,7 @@ export default function App() {
                             >
                               <img
                                 src={img}
-                                className="w-full h-full object-contain object-center p-2 transition-transform duration-[2s] group-hover:scale-105"
+                                className="w-full h-full object-contain object-center p-2 transition-transform duration-700 group-hover:scale-105"
                                 alt={`${selectedDress.name} sketch ${i + 1}`}
                               />
                             </div>

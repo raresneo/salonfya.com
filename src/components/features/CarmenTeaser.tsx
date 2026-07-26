@@ -5,7 +5,7 @@ const CarmenTeaser = ({ onOpen }: { onOpen: () => void }) => {
         <div className="relative w-full h-[80vh] overflow-hidden group cursor-pointer" onClick={onOpen}>
             <img
                 src="/images/carmen_model_front_v2.png" // Updated to use the new high quality image
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105 vintage-pastel"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 vintage-pastel"
                 alt="Carmen Collection"
             />
             <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-700"></div>

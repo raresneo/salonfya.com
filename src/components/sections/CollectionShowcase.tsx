@@ -53,7 +53,7 @@ const CollectionShowcase = () => {
     return (
         <section ref={sectionRef} className="py-12 md:py-16 px-6 md:px-12 bg-[#0A0A0A]">
             {/* Section Header — like Lucesposa's "NUESTRAS COLECCIONES" */}
-            <div className={`text-center mb-16 md:mb-24 transition-all duration-[1.5s] ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <div className={`text-center mb-16 md:mb-24 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                 <span className="block text-[10px] uppercase tracking-wider font-bold text-white/60 mb-4">
                     Descoperiți Colecțiile Noastre
                 </span>
@@ -73,13 +73,13 @@ const CollectionShowcase = () => {
                     <Link
                         key={col.path}
                         to={col.path}
-                        className={`group relative overflow-hidden transition-all duration-[2s] ease-luxury ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'} ${i === 0 || i === 3 ? 'col-span-1 md:col-span-2 lg:col-span-2 aspect-[4/5] md:aspect-[16/9]' : 'col-span-1 aspect-[4/5] md:aspect-[3/4]'}`}
+                        className={`group relative overflow-hidden transition-all duration-700 ease-luxury ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'} ${i === 0 || i === 3 ? 'col-span-1 md:col-span-2 lg:col-span-2 aspect-[4/5] md:aspect-[16/9]' : 'col-span-1 aspect-[4/5] md:aspect-[3/4]'}`}
                         style={{ transitionDelay: `${200 + i * 150}ms` }}
                     >
                         <img
                             src={col.image}
                             alt={col.name}
-                            className="absolute inset-0 w-full h-full object-cover object-top transition-all duration-[2s] ease-out group-hover:scale-105 group-hover:brightness-90"
+                            className="absolute inset-0 w-full h-full object-cover object-top transition-all duration-700 ease-out group-hover:scale-105 group-hover:brightness-90"
                         />
                         {/* Gradient overlay */}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
