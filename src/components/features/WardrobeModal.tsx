@@ -1,12 +1,12 @@
 import React from 'react';
 import Modal from '../ui/Modal';
-import { WardrobeItem } from '../../types';
-import { DRESSES } from '../../constants';
+import { WardrobeItem, Dress } from '../../types';
 
 const WardrobeModal = ({
     isOpen,
     onClose,
     wardrobe,
+    dresses,
     onUpdateItem,
     onRemoveItem,
     onClearAll
@@ -14,6 +14,7 @@ const WardrobeModal = ({
     isOpen: boolean;
     onClose: () => void;
     wardrobe: WardrobeItem[];
+    dresses: Dress[];
     onUpdateItem: (id: string, field: keyof WardrobeItem, value: string) => void;
     onRemoveItem: (id: string) => void;
     onClearAll: () => void;
@@ -42,7 +43,7 @@ const WardrobeModal = ({
 
                         <div className="grid grid-cols-1 gap-12">
                             {wardrobe.map((item) => {
-                                const dress = DRESSES.find(d => d.id === item.dressId);
+                                const dress = dresses.find(d => d.id === item.dressId);
                                 if (!dress) return null;
 
                                 return (

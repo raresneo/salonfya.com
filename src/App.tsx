@@ -1,5 +1,5 @@
 import React, { useState, useEffect, Suspense, lazy } from 'react';
-import { DRESSES } from './constants';
+// import { DRESSES } from './constants';
 import { Dress, DressType, WardrobeItem, Collection } from './types';
 
 // UI Components
@@ -24,6 +24,7 @@ import PageTransition from './components/layout/PageTransition';
 import Preloader from './components/layout/Preloader';
 
 import ReactPixel from 'react-facebook-pixel';
+import { supabase } from './lib/supabase';
 
 import { Routes, Route, useLocation, Link } from 'react-router-dom';
 
@@ -41,6 +42,7 @@ const Admin = lazy(() => import('./pages/Admin'));
 
 
 export default function App() {
+  const [dresses, setDresses] = useState<Dress[]>([]);
   const [selectedDress, setSelectedDress] = useState<Dress | null>(null);
   const [modalType, setModalType] = useState<'details' | 'appointment' | 'wardrobe' | 'global-appointment' | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -94,10 +96,10 @@ export default function App() {
   };
 
   // Extract collections
-  const imperialDresses = DRESSES.filter(d => d.collection === Collection.IMPERIAL);
-  const annaDresses = DRESSES.filter(d => d.collection === Collection.ANNA);
-  const mayraDresses = DRESSES.filter(d => d.collection === Collection.MAYRA);
-  const beverlyDresses = DRESSES.filter(d => d.collection === Collection.BEVERLY);
+  const imperialDresses = dresses.filter(d => d.collection === Collection.IMPERIAL);
+  const annaDresses = dresses.filter(d => d.collection === Collection.ANNA);
+  const mayraDresses = dresses.filter(d => d.collection === Collection.MAYRA);
+  const beverlyDresses = dresses.filter(d => d.collection === Collection.BEVERLY);
 
   const isInWardrobe = (id: string) => wardrobe.some(item => item.dressId === id);
 
@@ -139,6 +141,28 @@ export default function App() {
     if (updated) {
       localStorage.setItem('fya_tracking', JSON.stringify(trackingData));
     }
+  }, []);
+
+  useEffect(() => {
+    const fetchDresses = async () => {
+      const { data } = await supabase.from('dresses').select('*');
+      if (data) {
+          // Transform db fields to match Dress type (like rent_price -> rentPrice, collection_id -> collection)
+          const formatted = data.map(d => ({
+              ...d,
+              rentPrice: d.rent_price,
+              collection: d.collection_id,
+              imageUrl: d.image_url,
+              details: {
+                  fabric: d.fabric || '',
+                  silhouette: d.silhouette || '',
+                  neckline: d.neckline || ''
+              }
+          }));
+          setDresses(formatted);
+      }
+    };
+    fetchDresses();
   }, []);
 
   // Initialize and track PageViews with Meta Pixel
@@ -246,6 +270,7 @@ export default function App() {
             isOpen={modalType === 'wardrobe'}
             onClose={closeModal}
             wardrobe={wardrobe}
+            dresses={dresses}
             onUpdateItem={updateWardrobeItem}
             onRemoveItem={removeFromWardrobe}
             onClearAll={clearWardrobe}

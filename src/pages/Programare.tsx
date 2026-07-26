@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { DRESSES } from '../constants';
 import { Dress } from '../types';
 import { supabase } from '../lib/supabase';
 import ReactPixel from 'react-facebook-pixel';
@@ -19,10 +18,25 @@ export default function Programare() {
     const [isSubmitted, setIsSubmitted] = useState(false);
 
     useEffect(() => {
-        if (dressId) {
-            const dress = DRESSES.find(d => d.id === dressId);
-            if (dress) setSelectedDress(dress);
-        }
+        const fetchDress = async () => {
+            if (dressId) {
+                const { data } = await supabase.from('dresses').select('*').eq('id', dressId).single();
+                if (data) {
+                    setSelectedDress({
+                        ...data,
+                        rentPrice: data.rent_price,
+                        collection: data.collection_id,
+                        imageUrl: data.image_url,
+                        details: {
+                            fabric: data.fabric || '',
+                            silhouette: data.silhouette || '',
+                            neckline: data.neckline || ''
+                        }
+                    });
+                }
+            }
+        };
+        fetchDress();
         window.scrollTo(0, 0);
     }, [dressId]);
 
