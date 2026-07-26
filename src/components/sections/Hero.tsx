@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { HF } from '../../data/higgsfieldImages';
 
-// NOTE: imagine placeholder existenta. De inlocuit cu render Higgsfield.
-const HERO_IMAGE = '/images/IMPERIAL/Alma/IMG_5535.jpg';
+const HERO_IMAGE = HF.hero;
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
