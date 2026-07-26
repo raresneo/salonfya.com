@@ -13,7 +13,7 @@ const HistorySection = () => {
         <section className="bg-[#F2F0EA] text-[#1A1A1A]">
             {/* Full-bleed portrait with light overlay */}
             <div className="relative h-[85svh] overflow-hidden">
-                <img src={PORTRAIT} alt="Muza Fya" className="w-full h-full object-cover object-top" />
+                <img src={PORTRAIT} alt="Muza Fya" className="w-full h-full object-cover object-[center_15%]" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#F2F0EA] via-transparent to-transparent" />
                 <div className="absolute bottom-10 left-6 md:left-16">
                     <h2 className="font-serif font-light italic text-white/95 tracking-tight drop-shadow-lg" style={{ fontSize: 'clamp(3.5rem, 12vw, 10rem)' }}>Origini</h2>
@@ -37,7 +37,7 @@ const HistorySection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-center">
                     <div className="md:col-span-6">
                         <div className="aspect-[4/5] overflow-hidden group">
-                            <img src={HANDS} alt="Maiestrie" className="w-full h-full object-cover transition-transform duration-[1.6s] ease-out group-hover:scale-105" />
+                            <img src={HANDS} alt="Maiestrie" className="w-full h-full object-cover object-center transition-transform duration-[1.6s] ease-out group-hover:scale-105" />
                         </div>
                     </div>
                     <motion.div className="md:col-span-5 md:col-start-8"
@@ -61,7 +61,7 @@ const HistorySection = () => {
                     </motion.div>
                     <div className="md:col-span-6 md:col-start-7 order-1 md:order-2">
                         <div className="aspect-[4/5] overflow-hidden group">
-                            <img src={VINTAGE} alt="Atmosfera atelier" className="w-full h-full object-cover transition-transform duration-[1.6s] ease-out group-hover:scale-105" />
+                            <img src={VINTAGE} alt="Atmosfera atelier" className="w-full h-full object-cover object-center transition-transform duration-[1.6s] ease-out group-hover:scale-105" />
                         </div>
                     </div>
                 </div>
