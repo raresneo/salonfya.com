@@ -5,12 +5,10 @@ import { GoogleGenAI } from "@google/genai";
  * Combines a user's photo with the dress image.
  */
 export async function generateTryOn(userImageBase64: string, dressImageUrl: string, dressDescription: string): Promise<string> {
-  const apiKey = (import.meta as any).env?.VITE_GEMINI_API_KEY || (import.meta as any).env?.GEMINI_API_KEY || process.env.GEMINI_API_KEY || '';
-
-  if (!apiKey) {
-    throw new Error("Cheia Gemini API lipsește. Verificați setările Vercel / variabila de mediu.");
-  }
-
+  // Security Update (WS1): Gemini API Key removed from client side.
+  // This service must be migrated to a secure server-side endpoint (api/).
+  throw new Error("Serviciul Try-On este indisponibil momentan. Așteaptă actualizarea securizată (WS5).");
+  
   // Define the exact instruction for the model
   const garmentPrompt = `An elegant photorealistic fashion studio portrait of a woman wearing: ${dressDescription}. The dress perfectly maps to her body.`;
 
