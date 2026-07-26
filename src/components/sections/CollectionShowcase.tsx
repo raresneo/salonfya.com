@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { HF } from '../../data/higgsfieldImages';
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 type Col = { path: string; name: string; subtitle: string; image: string; };
 
 const collections: Col[] = [
-    { path: '/imperial', name: 'Imperial', subtitle: 'Eleganta regala', image: '/images/IMPERIAL/Alma/IMG_5535.jpg' },
-    { path: '/anna', name: 'Anna', subtitle: 'Puritate naturala', image: '/images/ANNA/Just Anna/IMG_5889.jpg' },
-    { path: '/mayra', name: 'Mayra', subtitle: 'Romantism eteric', image: '/images/MAYRA/Snow/IMG_5744.jpg' },
-    { path: '/beverly', name: 'Beverly', subtitle: 'Eleganta cosmopolita', image: '/images/BEVERLY/Evora/IMG_6390.JPG' },
+    { path: '/imperial', name: 'Imperial', subtitle: 'Eleganta regala', image: HF.imperial },
+    { path: '/anna', name: 'Anna', subtitle: 'Puritate naturala', image: HF.anna },
+    { path: '/mayra', name: 'Mayra', subtitle: 'Romantism eteric', image: HF.mayra },
+    { path: '/beverly', name: 'Beverly', subtitle: 'Eleganta cosmopolita', image: HF.beverly },
 ];
 
 const CollectionShowcase = () => {
