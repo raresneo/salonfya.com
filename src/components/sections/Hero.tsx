@@ -70,14 +70,14 @@ const Hero = () => {
                 </div>
             </div>
 
-            {/* Slim image strip anchoring the hero (Vero-like calm), not full-bleed */}
+            {/* Taller image band, positioned to show the full silhouette head-to-hem */}
             <motion.div
-                className="relative w-full h-[38svh] md:h-[46svh] overflow-hidden"
+                className="relative w-full h-[56svh] md:h-[64svh] overflow-hidden"
                 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.2, ease: EASE, delay: 0.4 }}
             >
                 <motion.img
                     src={HERO_IMAGE} alt="Rochie de mireasa Fya"
-                    className="w-full h-full object-cover object-[center_28%]"
+                    className="w-full h-full object-cover object-[center_20%]"
                     initial={{ scale: 1.1 }} animate={{ scale: 1 }} transition={{ duration: 2.4, ease: EASE }}
                 />
             </motion.div>
