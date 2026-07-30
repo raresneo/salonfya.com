@@ -1,0 +1,16 @@
+/**
+ * Punte către tema veche.
+ *
+ * `src/pages/Admin.tsx` este scris cu variabilele din design-ul anterior
+ * (--color-text, --color-border etc.). Le mapăm pe paleta nouă ca ecranul de
+ * administrare să rămână lizibil fără să îl rescriem acum.
+ */
+:root {
+  --color-text: var(--ink);
+  --color-secondary: var(--muted);
+  --color-border: var(--sand-deep);
+  --color-bg: var(--ivory);
+  --color-bg-secondary: var(--ivory-warm);
+  --color-accent: var(--clay);
+  --color-accent-light: var(--olive);
+}
