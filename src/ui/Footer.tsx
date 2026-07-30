@@ -47,24 +47,41 @@ const Footer: React.FC = () => (
             <a href={`tel:${SALON.phoneHref}`}>{SALON.phone}</a>
           </li>
           <li>
+            <a href={`https://wa.me/${SALON.whatsapp}`} target="_blank" rel="noreferrer">
+              WhatsApp
+            </a>
+          </li>
+          <li>
             <a href={`mailto:${SALON.email}`}>{SALON.email}</a>
           </li>
           <li>
-            <a href={SALON.instagram} target="_blank" rel="noreferrer">
-              Instagram
+            <a href={SALON.maps} target="_blank" rel="noreferrer">
+              {SALON.street}
             </a>
           </li>
-          <li>
-            <a href={SALON.facebook} target="_blank" rel="noreferrer">
-              Facebook
-            </a>
-          </li>
+          {/* Afișate doar când avem URL real, ca să nu trimitem pe pagini goale. */}
+          {SALON.instagram && (
+            <li>
+              <a href={SALON.instagram} target="_blank" rel="noreferrer">
+                Instagram
+              </a>
+            </li>
+          )}
+          {SALON.facebook && (
+            <li>
+              <a href={SALON.facebook} target="_blank" rel="noreferrer">
+                Facebook
+              </a>
+            </li>
+          )}
         </ul>
       </div>
     </div>
 
     <div className="foot-bot">
-      <span>&copy; {new Date().getFullYear()} Salon FYA · Oradea, Bihor</span>
+      <span>
+        &copy; {new Date().getFullYear()} Salon FYA · {SALON.addressFull}
+      </span>
       <span>Rochii de mireasă · rochii de seară · ajustări în atelier</span>
     </div>
   </footer>
