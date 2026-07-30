@@ -53,6 +53,32 @@ const mapRow = (row: Record<string, any>): Dress => {
   };
 };
 
+/**
+ * Scoate duplicatele, pe id și pe fotografia de copertă.
+ *
+ * A doua verificare contează: în repo existau modele cu nume diferite dar cu
+ * exact aceleași fișiere (Elia era Daiana redenumită, Evora apărea și în
+ * Beverly). Dacă cineva reintroduce așa ceva din /admin, gridul nu o mai
+ * afișează de două ori.
+ */
+const dedupe = (list: Dress[]): Dress[] => {
+  const seenIds = new Set<string>();
+  const seenCovers = new Set<string>();
+  const out: Dress[] = [];
+
+  for (const dress of list) {
+    const cover = (dress.imageUrl || '').toLowerCase();
+    if (seenIds.has(dress.id)) continue;
+    if (cover && seenCovers.has(cover)) continue;
+
+    seenIds.add(dress.id);
+    if (cover) seenCovers.add(cover);
+    out.push(dress);
+  }
+
+  return out;
+};
+
 export type CatalogState = {
   dresses: Dress[];
   loading: boolean;
@@ -62,6 +88,8 @@ export type CatalogState = {
   warning?: string;
 };
 
+const LOCAL = dedupe(LOCAL_CATALOG);
+
 /**
  * Catalogul afișat pe site.
  *
@@ -70,7 +98,7 @@ export type CatalogState = {
  */
 export const useCatalog = (): CatalogState => {
   const [state, setState] = useState<CatalogState>({
-    dresses: LOCAL_CATALOG,
+    dresses: LOCAL,
     loading: isSupabaseConfigured,
     source: 'local',
   });
@@ -86,7 +114,7 @@ export const useCatalog = (): CatalogState => {
 
       if (error) {
         setState({
-          dresses: LOCAL_CATALOG,
+          dresses: LOCAL,
           loading: false,
           source: 'local',
           warning: error.message,
@@ -94,10 +122,10 @@ export const useCatalog = (): CatalogState => {
         return;
       }
 
-      const rows = (data || []).map(mapRow).filter((dress) => dress.images && dress.images.length > 0);
+      const rows = dedupe((data || []).map(mapRow).filter((dress) => dress.images && dress.images.length > 0));
 
       setState({
-        dresses: rows.length > 0 ? rows : LOCAL_CATALOG,
+        dresses: rows.length > 0 ? rows : LOCAL,
         loading: false,
         source: rows.length > 0 ? 'db' : 'local',
       });

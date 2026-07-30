@@ -9,9 +9,14 @@ import { Collection, Dress, DressType } from '../types';
  *
  * Reguli respectate la alegerea imaginilor:
  *  - fără .heic / .HEIC, browserele nu le randează
- *  - unde există varianta optimizată la nivel de /images (ex. alma_front.jpg),
- *    o folosim în loc de PNG-ul original de 2 MB din folderul colecției
+ *  - unde există varianta optimizată la nivel de /images, o folosim în loc de
+ *    PNG-ul original de 2 MB din folderul colecției
  *  - prima imagine din listă e coperta folosită în grid
+ *
+ * Atenție la fișierele plate din rădăcina /images: unele sunt copii redenumite
+ * ale altei rochii. Verificat prin SHA de blob, nu vizual. Elia primea pozele
+ * lui Daiana exact așa. Când adaugi un model nou, compară fișierele înainte de
+ * a te încrede în denumire.
  */
 
 /** Construiește o cale publică sigură, cu spațiile encodate (ex. "Ivory Grace"). */
@@ -99,13 +104,15 @@ const IMPERIAL_SEEDS: Seed[] = [
     sketches: [p('IMPERIAL', 'Daiana', 'daiana_sketch.png')],
   },
   {
+    // Fișierele plate elia_*.jpg sunt copii ale lui Daiana (SHA identic),
+    // deci folosim exclusiv folderul colecției.
     name: 'Elia',
     images: [
-      flat('elia_front.jpg'),
-      flat('elia_front_2.jpg'),
-      flat('elia_side.jpg'),
-      flat('elia_back.jpg'),
-      flat('elia_detail.jpg'),
+      p('IMPERIAL', 'Elia', 'IMG_5552.jpg'),
+      p('IMPERIAL', 'Elia', 'IMG_5553.jpg'),
+      p('IMPERIAL', 'Elia', 'IMG_5554.jpg'),
+      p('IMPERIAL', 'Elia', 'IMG_5414.jpg'),
+      p('IMPERIAL', 'Elia', 'IMG_5415.jpg'),
     ],
     sketches: [p('IMPERIAL', 'Elia', 'elia_sketch.png')],
   },
@@ -382,6 +389,11 @@ const MAYRA_SEEDS: Seed[] = [
 
 /* ----------------------------------- BEVERLY --------------------------------- */
 
+/**
+ * Notă: folderul BEVERLY/Evora conține exact aceleași fișiere ca IMPERIAL/Evora
+ * (SHA identic), deci nu îl mai listăm aici. Evora apare o singură dată, în
+ * Imperial.
+ */
 const BEVERLY_SEEDS: Seed[] = [
   {
     name: 'Aveline',
@@ -427,15 +439,6 @@ const BEVERLY_SEEDS: Seed[] = [
     images: [
       p('BEVERLY', 'Celestia', '2107F38F-0DD1-4497-BF3E-6AFFCB417580.PNG'),
       p('BEVERLY', 'Celestia', 'B5632105-393D-4F7E-B4D3-DB5FD9F935FF.PNG'),
-    ],
-  },
-  {
-    name: 'Evora Beverly',
-    images: [
-      p('BEVERLY', 'Evora', 'IMG_6390.JPG'),
-      p('BEVERLY', 'Evora', 'IMG_6391.JPG'),
-      p('BEVERLY', 'Evora', 'IMG_6392.JPG'),
-      p('BEVERLY', 'Evora', 'IMG_6393.JPG'),
     ],
   },
   {
