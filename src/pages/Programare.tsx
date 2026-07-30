@@ -12,7 +12,11 @@ import { Reveal } from '../lib/motion';
 type Errors = Partial<Record<'nume' | 'telefon' | 'data', string>>;
 type Status = 'idle' | 'sending' | 'done' | 'failed';
 
-const SLOTS = ['Dimineață, 10:00 - 12:00', 'La prânz, 12:00 - 14:00', 'După-amiază, 14:00 - 18:00', 'Nu contează'];
+/**
+ * Preferințe de interval, nu program de funcționare: salonul lucrează doar pe
+ * bază de programare, deci nu promitem ore fixe.
+ */
+const SLOTS = ['Dimineața', 'La prânz', 'După-amiaza', 'Seara', 'Nu contează'];
 
 const readTracking = (): Record<string, string> => {
   try {
@@ -45,7 +49,7 @@ const Programare: React.FC = () => {
     telefon: '',
     email: '',
     data: '',
-    interval: SLOTS[3],
+    interval: SLOTS[SLOTS.length - 1],
     colectie: dress?.collection || '',
     mesaj: savedNames.length > 0 ? `Mă interesează: ${savedNames.join(', ')}.` : '',
   });
@@ -57,7 +61,7 @@ const Programare: React.FC = () => {
 
   const whatsappHref = useMemo(() => {
     const lines = [
-      'Bună! Vreau să programez o probă la Salon FYA.',
+      'Bună! Vreau să programez o probă la Salon Fya.',
       form.nume && `Nume: ${form.nume}`,
       form.data && `Data dorită: ${form.data}`,
       dress && `Rochie: ${dress.name}`,
@@ -172,7 +176,11 @@ const Programare: React.FC = () => {
               <dl>
                 <div>
                   <dt>Atelier și showroom</dt>
-                  <dd>{SALON.address}</dd>
+                  <dd>
+                    <a href={SALON.maps} target="_blank" rel="noreferrer">
+                      {SALON.street}, {SALON.city}
+                    </a>
+                  </dd>
                 </div>
                 <div>
                   <dt>Telefon</dt>
@@ -189,7 +197,23 @@ const Programare: React.FC = () => {
 
             <Reveal as="p" index={3} className="body body--light">
               Prima probă durează în jur de o oră. Poți veni însoțită, majoritatea mireselor vin cu mama sau cu o
-              prietenă.
+              prietenă. {SALON.hoursNote}
+            </Reveal>
+
+            <Reveal index={4}>
+              <a className="btn btn--ghost" href={whatsappHref} target="_blank" rel="noreferrer">
+                <span>Scrie-ne pe WhatsApp</span>
+                <i>&rarr;</i>
+              </a>
+            </Reveal>
+
+            <Reveal index={5} className="map">
+              <iframe
+                src={SALON.mapsEmbed}
+                title={`Harta către ${SALON.name}, ${SALON.addressFull}`}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </Reveal>
           </div>
 
@@ -198,8 +222,8 @@ const Programare: React.FC = () => {
               <div className="done">
                 <strong>Am primit cererea.</strong>
                 <p>
-                  Te sunăm în maximum o zi lucrătoare ca să fixăm ora. Dacă vrei mai repede, sună direct la{' '}
-                  {SALON.phone}.
+                  Te sunăm în maximum o zi lucrătoare ca să fixăm ora. Dacă vrei mai repede, sună la {SALON.phone} sau
+                  scrie-ne pe WhatsApp.
                 </p>
                 <Link className="btn btn--ghost" to="/colectii" style={{ marginTop: 16, justifySelf: 'start' }}>
                   <span>Mai vezi rochii</span>
@@ -237,7 +261,7 @@ const Programare: React.FC = () => {
                     <span className="err">{errors.data}</span>
                   </div>
                   <div className="field">
-                    <label htmlFor="interval">Interval orar</label>
+                    <label htmlFor="interval">Când ți-ar fi comod</label>
                     <select id="interval" name="interval" value={form.interval} onChange={set('interval')}>
                       {SLOTS.map((slot) => (
                         <option key={slot}>{slot}</option>
