@@ -29,11 +29,13 @@ export const SALON = {
     'https://www.google.com/maps?q=Strada+Vasile+Alecsandri+21,+410072+Oradea,+Romania&output=embed',
 
   /**
-   * Profilurile sociale. Facebook e legat prin ID-ul paginii, care rezolvă
-   * corect indiferent de cum se schimbă numele sau handle-ul paginii.
+   * Profilurile sociale, linkuri curate.
+   *
+   * Facebook e legat prin ID-ul paginii, care rezolvă corect indiferent de cum
+   * se schimbă numele sau handle-ul. Instagram: @salonfyaromania.
    */
   facebook: 'https://www.facebook.com/461693320575514',
-  instagram: 'https://www.instagram.com/salonfya/',
+  instagram: 'https://www.instagram.com/salonfyaromania/',
 
   /** Județele din care vin miresele, folosite în textele de acoperire locală. */
   reach: ['Bihor', 'Cluj', 'Arad', 'Timiș', 'Sălaj', 'Satu Mare', 'Maramureș'],
