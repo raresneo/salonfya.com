@@ -23,4 +23,12 @@ dist-ssr
 *.sln
 *.sw?
 .vercel
-.env*.local
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Test output
+playwright-report
+test-results
