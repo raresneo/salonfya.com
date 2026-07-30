@@ -1,0 +1,161 @@
+/**
+ * Calendarul și previzualizarea mesajului din pagina de programare.
+ *
+ * Trăiesc pe fundal închis (secțiunea .sec--deep), deci toate stările sunt
+ * gândite pe plum, nu pe ivoriu.
+ */
+
+.cal {
+  margin: 0;
+  padding: var(--s-6) 0 var(--s-2);
+  border: 0;
+  border-top: 1px solid var(--plum-line);
+  display: grid;
+  gap: var(--s-6);
+}
+
+.cal legend {
+  padding: 0;
+  font-size: .6875rem;
+  font-weight: 600;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--on-plum-dim);
+}
+
+/* rândul de zile, derulabil orizontal pe mobil */
+.cal-days {
+  display: flex;
+  gap: var(--s-2);
+  overflow-x: auto;
+  padding-bottom: var(--s-2);
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+  scrollbar-color: var(--plum-line) transparent;
+}
+
+.cal-days::-webkit-scrollbar {
+  height: 3px;
+}
+
+.cal-days::-webkit-scrollbar-thumb {
+  background: var(--plum-line);
+}
+
+.cal-day {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  display: grid;
+  gap: 2px;
+  justify-items: center;
+  min-width: 60px;
+  padding: 10px 8px 12px;
+  color: var(--sand);
+  box-shadow: inset 0 0 0 1px var(--plum-line);
+  transition: color .3s ease, box-shadow .3s ease, background .3s ease, transform .4s var(--e-quart);
+}
+
+.cal-day:hover {
+  box-shadow: inset 0 0 0 1px oklch(58% 0.05 340);
+  transform: translate3d(0, -2px, 0);
+}
+
+.cal-day.on {
+  background: var(--clay);
+  color: var(--ivory);
+  box-shadow: none;
+  transform: none;
+}
+
+.cal-dow {
+  font-size: .625rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--on-plum-dim);
+}
+
+.cal-day.wk .cal-dow {
+  color: var(--clay);
+}
+
+.cal-day.on .cal-dow {
+  color: var(--ivory);
+}
+
+.cal-num {
+  font-family: var(--serif);
+  font-size: 1.375rem;
+  line-height: 1;
+}
+
+.cal-mon {
+  font-size: .5625rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--on-plum-dim);
+}
+
+.cal-day.on .cal-mon {
+  color: var(--ivory);
+}
+
+.cal-rest {
+  display: grid;
+  gap: var(--s-6);
+}
+
+@media (min-width: 620px) {
+  .cal-rest {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+    align-items: start;
+  }
+}
+
+.cal-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+  padding-top: 6px;
+}
+
+.cal-slot {
+  padding: 9px 14px;
+  min-height: 40px;
+  font-size: .6875rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--on-plum-dim);
+  box-shadow: inset 0 0 0 1px var(--plum-line);
+  transition: color .3s ease, box-shadow .3s ease, background .3s ease;
+}
+
+.cal-slot:hover {
+  color: var(--sand);
+  box-shadow: inset 0 0 0 1px oklch(58% 0.05 340);
+}
+
+.cal-slot.on {
+  background: var(--sand);
+  color: var(--plum-deep);
+  box-shadow: none;
+}
+
+/* previzualizarea mesajului */
+.preview {
+  display: grid;
+  gap: var(--s-3);
+  padding: var(--s-6);
+  background: oklch(13% 0.03 340);
+}
+
+.preview pre {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: .875rem;
+  line-height: 1.7;
+  color: var(--sand);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
