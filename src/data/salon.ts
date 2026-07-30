@@ -1,12 +1,8 @@
 /**
  * Datele publice ale salonului, într-un singur loc.
  *
- * Sursa: fișa WhatsApp Business a salonului. Dacă se schimbă numărul sau
- * adresa, se schimbă doar aici.
- *
- * `instagram` și `facebook` sunt goale intenționat până primim linkurile
- * reale. Componentele verifică valoarea înainte de a afișa linkul, deci nu
- * trimitem nimeni pe o pagină inexistentă.
+ * Sursa: fișa WhatsApp Business și paginile sociale conectate ale salonului.
+ * Dacă se schimbă numărul, adresa sau un profil, se schimbă doar aici.
  */
 export const SALON = {
   name: 'Salon FYA',
@@ -32,8 +28,12 @@ export const SALON = {
   mapsEmbed:
     'https://www.google.com/maps?q=Strada+Vasile+Alecsandri+21,+410072+Oradea,+Romania&output=embed',
 
-  instagram: '',
-  facebook: '',
+  /**
+   * Profilurile sociale. Facebook e legat prin ID-ul paginii, care rezolvă
+   * corect indiferent de cum se schimbă numele sau handle-ul paginii.
+   */
+  facebook: 'https://www.facebook.com/461693320575514',
+  instagram: 'https://www.instagram.com/salonfya/',
 
   /** Județele din care vin miresele, folosite în textele de acoperire locală. */
   reach: ['Bihor', 'Cluj', 'Arad', 'Timiș', 'Sălaj', 'Satu Mare', 'Maramureș'],
