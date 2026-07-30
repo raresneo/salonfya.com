@@ -7,7 +7,9 @@ import { Collection, Dress, DressType } from '../types';
  * acesta e plasa de siguranță: dacă tabela `dresses` e goală sau variabilele
  * de mediu lipsesc, site-ul afișează în continuare produsele.
  *
- * Reguli respectate la alegerea imaginilor:
+ * Reguli de catalogare:
+ *  - orice model care începe cu "Ana" aparține colecției Anna, indiferent în ce
+ *    folder stau fotografiile în repo
  *  - fără .heic / .HEIC, browserele nu le randează
  *  - unde există varianta optimizată la nivel de /images, o folosim în loc de
  *    PNG-ul original de 2 MB din folderul colecției
@@ -63,14 +65,6 @@ const IMPERIAL_SEEDS: Seed[] = [
     name: 'Alma',
     images: [flat('alma_front.jpg'), flat('alma_back.jpg'), flat('alma_detail.jpg')],
     sketches: [flat('alma_sketch_front.png'), flat('alma_sketch_back.png'), flat('alma_sketch_movement.png')],
-  },
-  {
-    name: 'Anamara',
-    images: [
-      p('IMPERIAL', 'Anamara', 'IMG_6316.jpg'),
-      p('IMPERIAL', 'Anamara', '3D870093-9834-45A4-9A7A-821B9FFB6889.PNG'),
-      p('IMPERIAL', 'Anamara', '744883C6-51FE-44AB-ADDD-D4F57FAFFF68.PNG'),
-    ],
   },
   {
     name: 'Argente',
@@ -178,6 +172,10 @@ const IMPERIAL_SEEDS: Seed[] = [
 
 /* ------------------------------------ ANNA ----------------------------------- */
 
+/**
+ * Toate modelele care încep cu "Ana" stau aici, inclusiv Anamara, care avea
+ * fotografiile în folderul IMPERIAL. Folderul din repo nu decide colecția.
+ */
 const ANNA_SEEDS: Seed[] = [
   {
     name: 'Anais',
@@ -187,6 +185,14 @@ const ANNA_SEEDS: Seed[] = [
       p('ANNA', 'Anais', 'A85332DF-BE08-4DA1-9DF5-CF48706FFDBF.PNG'),
     ],
     sketches: [p('ANNA', 'Anais', 'anna_anais_sketch.png')],
+  },
+  {
+    name: 'Anamara',
+    images: [
+      p('IMPERIAL', 'Anamara', 'IMG_6316.jpg'),
+      p('IMPERIAL', 'Anamara', '3D870093-9834-45A4-9A7A-821B9FFB6889.PNG'),
+      p('IMPERIAL', 'Anamara', '744883C6-51FE-44AB-ADDD-D4F57FAFFF68.PNG'),
+    ],
   },
   {
     name: 'Anamaria',
