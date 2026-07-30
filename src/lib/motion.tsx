@@ -52,7 +52,15 @@ export const Reveal: React.FC<RevealProps> = ({
     );
 
     observer.observe(node);
-    return () => observer.disconnect();
+
+    // Plasă de siguranță: dacă observer-ul nu raportează niciodată (secțiune
+    // ascunsă la mount, apoi afișată), descoperim conținutul oricum.
+    const safety = window.setTimeout(() => node.classList.add('is-in'), 2600);
+
+    return () => {
+      observer.disconnect();
+      window.clearTimeout(safety);
+    };
   }, []);
 
   const Tag = as as any;
@@ -186,34 +194,58 @@ export const Cursor: React.FC = () => {
 type SmartImageProps = {
   src: string;
   alt: string;
-  /** Text afișat în locul imaginii dacă fișierul lipsește. */
-  fallbackLabel?: string;
   eager?: boolean;
   className?: string;
   sizes?: string;
 };
 
 /**
- * Imagine cu fade la încărcare și stare explicită de eroare: dacă fișierul
- * lipsește, cadrul primește clasa `failed` și afișează o etichetă, în loc să
- * rămână o zonă goală sau o pictogramă spartă.
+ * Imagine cu fade la încărcare și stare explicită de eroare.
+ *
+ * Atenție la cazul care a golit homepage-ul o dată: dacă imaginea e deja în
+ * cache, `load` se declanșează înainte ca React să atașeze handler-ul, deci
+ * `onLoad` nu mai vine niciodată. De aceea verificăm `complete` la mount și
+ * păstrăm și un timeout de siguranță: o poză vizibilă fără fade e infinit mai
+ * bună decât o secțiune goală.
  */
 export const SmartImage: React.FC<SmartImageProps> = ({ src, alt, eager, className, sizes }) => {
+  const ref = useRef<HTMLImageElement | null>(null);
   const [loaded, setLoaded] = useState(false);
 
-  const markFailed = (event: React.SyntheticEvent<HTMLImageElement>) => {
-    const image = event.currentTarget;
+  useEffect(() => {
+    // src nou, o luăm de la capăt (altfel a doua rochie moștenea starea primei)
+    setLoaded(false);
+
+    const image = ref.current;
+    if (!image) return;
+
+    image.style.removeProperty('display');
+    image.parentElement?.classList.remove('failed');
+
+    if (image.complete && image.naturalWidth > 0) {
+      setLoaded(true);
+      return;
+    }
+
+    const safety = window.setTimeout(() => setLoaded(true), 2500);
+    return () => window.clearTimeout(safety);
+  }, [src]);
+
+  const markFailed = () => {
+    const image = ref.current;
+    if (!image) return;
     image.style.display = 'none';
     image.parentElement?.classList.add('failed');
   };
 
   return (
     <img
+      ref={ref}
       src={src}
       alt={alt}
       sizes={sizes}
       loading={eager ? 'eager' : 'lazy'}
-      decoding="async"
+      decoding={eager ? 'sync' : 'async'}
       className={[className, loaded ? 'loaded' : ''].filter(Boolean).join(' ')}
       onLoad={() => setLoaded(true)}
       onError={markFailed}
