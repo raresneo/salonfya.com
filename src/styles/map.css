@@ -1,0 +1,23 @@
+/**
+ * Harta embed din pagina de programare.
+ *
+ * Ținută separat de design system pentru că e singurul iframe din site și are
+ * nevoie de tratament propriu (fără border, filtrată ca să nu spargă paleta).
+ */
+.map {
+  margin-top: var(--s-2);
+  overflow: hidden;
+  background: var(--plum-lift);
+  aspect-ratio: 16 / 10;
+  max-width: 520px;
+}
+
+.map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  /* Harta Google e foarte deschisă la culoare; o temperăm ca să stea
+     în paleta închisă a secțiunii, fără să devină ilizibilă. */
+  filter: grayscale(0.35) contrast(0.95) brightness(0.96);
+}
