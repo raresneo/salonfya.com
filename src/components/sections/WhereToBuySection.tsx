@@ -13,7 +13,7 @@ const WhereToBuySection = () => {
             <div className="flex justify-center mt-16 max-w-5xl mx-auto">
                 {locations.map((loc, idx) => (
                     <FadeInSection key={idx} delay={idx * 200}>
-                        <div className="text-center p-10 md:p-14 border border-[var(--color-border)] hover:border-[var(--color-text)] transition-colors duration-[1.5s] group bg-white">
+                        <div className="text-center p-10 md:p-14 border border-[var(--color-border)] hover:border-[var(--color-text)] transition-colors duration-700 group bg-white">
                             <h3 className="font-serif text-3xl md:text-3xl italic text-[var(--color-text)] mb-6 group-hover:text-[#605F5F] transition-colors duration-500">{loc.city}</h3>
                             <p className="text-sm font-light text-[var(--color-secondary)] mb-2 tracking-wide">{loc.address}</p>
                             <p className="text-sm font-light text-[var(--color-secondary)] tracking-wide">{loc.phone}</p>

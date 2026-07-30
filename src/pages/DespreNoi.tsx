@@ -95,7 +95,7 @@ export default function DespreNoi({ onOpenAppointment }: DespreNoiProps) {
                                 <img
                                     src="/images/about/ramona_jofneac_real.jpg"
                                     alt="Ramona Jofneac - Founder Fya"
-                                    className="w-full h-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-105"
+                                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                                 />
                                 <div className="absolute inset-0 border border-black/5 m-4 pointer-events-none"></div>
                             </div>

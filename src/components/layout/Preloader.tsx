@@ -9,8 +9,8 @@ export default function Preloader({ onComplete }: PreloaderProps) {
     const [isFadingOut, setIsFadingOut] = useState(false);
 
     useEffect(() => {
-        // Simulate loading time (e.g., waiting for fonts/images or just a cinematic delay)
-        const duration = 2000; // 2 seconds minimum display
+        // Faster loading simulation or remove artificial delay entirely
+        const duration = 500; // 0.5 seconds max display
         const interval = 20;
         const steps = duration / interval;
         let currentStep = 0;
@@ -23,7 +23,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
                 clearInterval(timer);
                 setIsFadingOut(true);
                 // Wait for fade out animation to finish before unmounting
-                setTimeout(onComplete, 800);
+                setTimeout(onComplete, 400);
             }
         }, interval);
 
