@@ -32,3 +32,4 @@ dist-ssr
 # Test output
 playwright-report
 test-results
+mcp_config.json
