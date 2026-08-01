@@ -1,237 +1,783 @@
 [
   {
     "element_name": "FYA-DRESS-IMP-Alma",
-    "collection": "IMPERIAL",
+    "collection": "Imperial",
+    "dress": "Alma",
+    "category": "prop",
+    "description": "Sleek A-line gown with spaghetti straps, fully embellished shimmering lace bodice, and a flowing minimalist skirt with an elegant train.",
     "images": [
-      "public/images/clean/IMPERIAL/alma_front.jpg",
-      "public/images/clean/IMPERIAL/alma_back.jpg",
-      "public/images/clean/IMPERIAL/alma_detail.jpg"
-    ]
+      "https://salonfya.com/images/alma_front.jpg",
+      "https://salonfya.com/images/alma_back.jpg",
+      "https://salonfya.com/images/alma_detail.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   },
   {
     "element_name": "FYA-DRESS-IMP-Argente",
-    "collection": "IMPERIAL",
+    "collection": "Imperial",
+    "dress": "Argente",
+    "category": "prop",
+    "description": "Strapless fitted mermaid silhouette with intricate beadwork and floral lace on a sheer bodice, ending in a dramatic flared tulle skirt.",
     "images": [
-      "public/images/clean/IMPERIAL/argente_front.jpg",
-      "public/images/clean/IMPERIAL/argente_front_2.jpg",
-      "public/images/clean/IMPERIAL/argente_back.jpg",
-      "public/images/clean/IMPERIAL/argente_detail.jpg"
-    ]
+      "https://salonfya.com/images/argente_front.jpg",
+      "https://salonfya.com/images/argente_front_2.jpg",
+      "https://salonfya.com/images/argente_back.jpg",
+      "https://salonfya.com/images/argente_detail.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   },
   {
     "element_name": "FYA-DRESS-IMP-Aurelia",
-    "collection": "IMPERIAL",
+    "collection": "Imperial",
+    "dress": "Aurelia",
+    "category": "prop",
+    "description": "Sweetheart neckline ballgown featuring a structured boned corset bodice adorned with delicate floral lace appliques that trail down a voluminous tulle skirt.",
     "images": [
-      "public/images/clean/IMPERIAL/aurelia_front.jpg",
-      "public/images/clean/IMPERIAL/aurelia_back.jpg",
-      "public/images/clean/IMPERIAL/aurelia_detail.jpg",
-      "public/images/clean/IMPERIAL/aurelia_closeup.jpg"
-    ]
+      "https://salonfya.com/images/aurelia_front.jpg",
+      "https://salonfya.com/images/aurelia_back.jpg",
+      "https://salonfya.com/images/aurelia_detail.jpg",
+      "https://salonfya.com/images/aurelia_closeup.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   },
   {
     "element_name": "FYA-DRESS-IMP-Daiana",
-    "collection": "IMPERIAL",
+    "collection": "Imperial",
+    "dress": "Daiana",
+    "category": "prop",
+    "description": "Plunging V-neckline A-line gown with shimmering patterned lace, spaghetti straps, an illusion open back, and a flowing sheer skirt with a subtle train.",
     "images": [
-      "public/images/clean/IMPERIAL/daiana_front.jpg",
-      "public/images/clean/IMPERIAL/daiana_side.jpg",
-      "public/images/clean/IMPERIAL/daiana_back.jpg",
-      "public/images/clean/IMPERIAL/daiana_detail_1.jpg",
-      "public/images/clean/IMPERIAL/daiana_detail_2.jpg"
-    ]
+      "https://salonfya.com/images/daiana_front.jpg",
+      "https://salonfya.com/images/daiana_side.jpg",
+      "https://salonfya.com/images/daiana_back.jpg",
+      "https://salonfya.com/images/daiana_detail_1.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   },
   {
     "element_name": "FYA-DRESS-IMP-Elia",
-    "collection": "IMPERIAL",
+    "collection": "Imperial",
+    "dress": "Elia",
+    "category": "prop",
+    "description": "Sleek mermaid silhouette gown featuring a structured lace bodice with pearl detailing, available with an illusion plunging V-neck or strapless sweetheart neckline.",
     "images": [
-      "public/images/clean/IMPERIAL/IMG_5552.jpg",
-      "public/images/clean/IMPERIAL/IMG_5553.jpg",
-      "public/images/clean/IMPERIAL/IMG_5554.jpg",
-      "public/images/clean/IMPERIAL/IMG_5414.jpg",
-      "public/images/clean/IMPERIAL/IMG_5415.jpg"
-    ]
+      "https://salonfya.com/images/IMPERIAL/Elia/IMG_5552.jpg",
+      "https://salonfya.com/images/IMPERIAL/Elia/IMG_5553.jpg",
+      "https://salonfya.com/images/IMPERIAL/Elia/IMG_5554.jpg",
+      "https://salonfya.com/images/IMPERIAL/Elia/IMG_5414.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   },
   {
     "element_name": "FYA-DRESS-IMP-Elise",
-    "collection": "IMPERIAL",
+    "collection": "Imperial",
+    "dress": "Elise",
+    "category": "prop",
+    "description": "Opulent off-the-shoulder ballgown with intricate silver beading, lace embroidery across the bodice, and a voluminous cascading tulle skirt with a long train.",
     "images": [
-      "public/images/clean/IMPERIAL/elise_front.jpg",
-      "public/images/clean/IMPERIAL/elise_side.jpg",
-      "public/images/clean/IMPERIAL/elise_back.jpg",
-      "public/images/clean/IMPERIAL/elise_detail.jpg"
-    ]
+      "https://salonfya.com/images/elise_front.jpg",
+      "https://salonfya.com/images/elise_side.jpg",
+      "https://salonfya.com/images/elise_back.jpg",
+      "https://salonfya.com/images/elise_detail.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   },
   {
     "element_name": "FYA-DRESS-IMP-Evora",
-    "collection": "IMPERIAL",
+    "collection": "Imperial",
+    "dress": "Evora",
+    "category": "prop",
+    "description": "Romantic A-line gown with illusion long bishop sleeves, a deep V-neckline, fully beaded floral applique bodice, and a pure white flowing tulle skirt.",
     "images": [
-      "public/images/clean/IMPERIAL/IMG_5580.jpg",
-      "public/images/clean/IMPERIAL/IMG_5581.jpg",
-      "public/images/clean/IMPERIAL/IMG_5583.jpg",
-      "public/images/clean/IMPERIAL/IMG_5587.jpg"
-    ]
+      "https://salonfya.com/images/IMPERIAL/Evora/IMG_5580.jpg",
+      "https://salonfya.com/images/IMPERIAL/Evora/IMG_5581.jpg",
+      "https://salonfya.com/images/IMPERIAL/Evora/IMG_5583.jpg",
+      "https://salonfya.com/images/IMPERIAL/Evora/IMG_5587.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   },
   {
-    "element_name": "FYA-DRESS-IMP-IvoryGrace",
-    "collection": "IMPERIAL",
+    "element_name": "FYA-DRESS-IMP-Ivory-Grace",
+    "collection": "Imperial",
+    "dress": "Ivory Grace",
+    "category": "prop",
+    "description": "Modest and elegant long-sleeve ballgown with a high bateau neckline, sleek minimalist skirt, delicate pearl waist belt, and subtle embroidery on the bodice.",
     "images": [
-      "public/images/clean/IMPERIAL/IMG_5395.jpg",
-      "public/images/clean/IMPERIAL/IMG_5399.jpg",
-      "public/images/clean/IMPERIAL/f202fbc6-6dd7-442b-8121-0cc159e5ff40.JPG"
-    ]
+      "https://salonfya.com/images/IMPERIAL/Ivory%20Grace/IMG_5395.jpg",
+      "https://salonfya.com/images/IMPERIAL/Ivory%20Grace/IMG_5399.jpg",
+      "https://salonfya.com/images/IMPERIAL/Ivory%20Grace/f202fbc6-6dd7-442b-8121-0cc159e5ff40.JPG"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   },
   {
     "element_name": "FYA-DRESS-IMP-Lumiere",
-    "collection": "IMPERIAL",
+    "collection": "Imperial",
+    "dress": "Lumiere",
+    "category": "prop",
+    "description": "Romantic A-line gown featuring illusion lace long sleeves, a sweetheart neckline beneath sheer lace, and a soft, flowing tulle skirt.",
     "images": [
-      "public/images/clean/IMPERIAL/IMG_5439.jpg"
-    ]
+      "https://salonfya.com/images/IMPERIAL/Lumiere/IMG_5439.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   },
   {
     "element_name": "FYA-DRESS-IMP-Mayson",
-    "collection": "IMPERIAL",
+    "collection": "Imperial",
+    "dress": "Mayson",
+    "category": "prop",
+    "description": "Luxurious long-sleeve V-neck ballgown crafted from textured shimmering fabric, featuring a pleated voluminous skirt and a wide structured waistband.",
     "images": [
-      "public/images/clean/IMPERIAL/IMG_5364.jpg",
-      "public/images/clean/IMPERIAL/IMG_5366.jpg",
-      "public/images/clean/IMPERIAL/IMG_5369.jpg",
-      "public/images/clean/IMPERIAL/IMG_5370.jpg"
-    ]
+      "https://salonfya.com/images/IMPERIAL/Mayson/IMG_5364.jpg",
+      "https://salonfya.com/images/IMPERIAL/Mayson/IMG_5366.jpg",
+      "https://salonfya.com/images/IMPERIAL/Mayson/IMG_5369.jpg",
+      "https://salonfya.com/images/IMPERIAL/Mayson/IMG_5370.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   },
   {
     "element_name": "FYA-DRESS-IMP-Queen",
-    "collection": "IMPERIAL",
+    "collection": "Imperial",
+    "dress": "Queen",
+    "category": "prop",
+    "description": "Minimalist and sophisticated sleeveless scoop-neck ballgown made from sleek, unembellished fabric with a smooth, elegant drape.",
     "images": [
-      "public/images/clean/IMPERIAL/IMG_5568.jpg",
-      "public/images/clean/IMPERIAL/IMG_5571.jpg",
-      "public/images/clean/IMPERIAL/IMG_5463.jpg"
-    ]
+      "https://salonfya.com/images/IMPERIAL/Queen/IMG_5568.jpg",
+      "https://salonfya.com/images/IMPERIAL/Queen/IMG_5571.jpg",
+      "https://salonfya.com/images/IMPERIAL/Queen/IMG_5463.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   },
   {
     "element_name": "FYA-DRESS-IMP-Serena",
-    "collection": "IMPERIAL",
+    "collection": "Imperial",
+    "dress": "Serena",
+    "category": "prop",
+    "description": "Form-fitting sleek mermaid gown with long sleeves, a deep V-neckline, and sheer lace illusion details on the shoulders and back.",
     "images": [
-      "public/images/clean/IMPERIAL/IMG_5423.jpg",
-      "public/images/clean/IMPERIAL/IMG_5424.jpg",
-      "public/images/clean/IMPERIAL/IMG_5573.jpg",
-      "public/images/clean/IMPERIAL/IMG_5460.jpg"
-    ]
+      "https://salonfya.com/images/IMPERIAL/Serena/IMG_5423.jpg",
+      "https://salonfya.com/images/IMPERIAL/Serena/IMG_5424.jpg",
+      "https://salonfya.com/images/IMPERIAL/Serena/IMG_5573.jpg",
+      "https://salonfya.com/images/IMPERIAL/Serena/IMG_5460.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   },
   {
-    "element_name": "FYA-DRESS-ANNA-Anais",
-    "collection": "ANNA",
+    "element_name": "FYA-DRESS-ANN-Anais",
+    "collection": "Anna",
+    "dress": "Anais",
+    "category": "prop",
+    "description": "Plunging deep V-neckline, long sheer puffy bishop sleeves with dotted pattern, delicate beaded lace bodice, soft flowing sparkly tulle skirt.",
     "images": [
-      "public/images/clean/ANNA/Anais_0A1909F0-C8B1-4B7C-AA3E-2514FAA0D407.jpg",
-      "public/images/clean/ANNA/Anais_79DC5387-A233-4FAF-A400-365F22270EED.PNG",
-      "public/images/clean/ANNA/Anais_A85332DF-BE08-4DA1-9DF5-CF48706FFDBF.PNG"
-    ]
+      "https://salonfya.com/images/ANNA/Anais/0A1909F0-C8B1-4B7C-AA3E-2514FAA0D407.jpg",
+      "https://salonfya.com/images/ANNA/Anais/79DC5387-A233-4FAF-A400-365F22270EED.PNG",
+      "https://salonfya.com/images/ANNA/Anais/A85332DF-BE08-4DA1-9DF5-CF48706FFDBF.PNG"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   },
   {
-    "element_name": "FYA-DRESS-ANNA-Anamara",
-    "collection": "ANNA",
+    "element_name": "FYA-DRESS-ANN-Anamara",
+    "collection": "Anna",
+    "dress": "Anamara",
+    "category": "prop",
+    "description": "Mermaid silhouette, high illusion neckline over sweetheart bodice, sheer long sleeves, intricate lace appliques covering bodice and skirt, illusion back with button closure down the middle.",
     "images": [
-      "public/images/clean/ANNA/Anamara_IMG_6316.jpg",
-      "public/images/clean/ANNA/Anamara_3D870093-9834-45A4-9A7A-821B9FFB6889.PNG",
-      "public/images/clean/ANNA/Anamara_744883C6-51FE-44AB-ADDD-D4F57FAFFF68.PNG"
-    ]
+      "https://salonfya.com/images/IMPERIAL/Anamara/IMG_6316.jpg",
+      "https://salonfya.com/images/IMPERIAL/Anamara/3D870093-9834-45A4-9A7A-821B9FFB6889.PNG",
+      "https://salonfya.com/images/IMPERIAL/Anamara/744883C6-51FE-44AB-ADDD-D4F57FAFFF68.PNG"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   },
   {
-    "element_name": "FYA-DRESS-ANNA-Anamaria",
-    "collection": "ANNA",
+    "element_name": "FYA-DRESS-ANN-Anamaria",
+    "collection": "Anna",
+    "dress": "Anamaria",
+    "category": "prop",
+    "description": "High illusion neckline over sweetheart bodice, sheer long sleeves, intricate linear beading on bodice and sleeves, full sparkly tulle skirt, illusion back with button closure.",
     "images": [
-      "public/images/clean/ANNA/Anamaria_IMG_5829.jpg",
-      "public/images/clean/ANNA/Anamaria_IMG_5841.jpg",
-      "public/images/clean/ANNA/Anamaria_IMG_5843.jpg",
-      "public/images/clean/ANNA/Anamaria_IMG_5845.jpg"
-    ]
+      "https://salonfya.com/images/ANNA/Anamaria/IMG_5829.jpg",
+      "https://salonfya.com/images/ANNA/Anamaria/IMG_5841.jpg",
+      "https://salonfya.com/images/ANNA/Anamaria/IMG_5843.jpg",
+      "https://salonfya.com/images/ANNA/Anamaria/IMG_5845.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   },
   {
-    "element_name": "FYA-DRESS-ANNA-Anaria",
-    "collection": "ANNA",
+    "element_name": "FYA-DRESS-ANN-Anaria",
+    "collection": "Anna",
+    "dress": "Anaria",
+    "category": "prop",
+    "description": "Plunging V-neckline, sheer long bishop sleeves with beaded lace cuffs, heavily beaded patterned bodice, full shimmering sparkly tulle skirt.",
     "images": [
-      "public/images/clean/ANNA/Anaria_48777E20-17E8-4147-8162-1DFA6FC8ED37.PNG",
-      "public/images/clean/ANNA/Anaria_753C58D1-6014-43EF-B408-E9D5382C43EE.PNG",
-      "public/images/clean/ANNA/Anaria_E110F78F-1AE3-4F76-9927-C1C38242F2B0.PNG"
-    ]
+      "https://salonfya.com/images/ANNA/Anaria/48777E20-17E8-4147-8162-1DFA6FC8ED37.PNG",
+      "https://salonfya.com/images/ANNA/Anaria/753C58D1-6014-43EF-B408-E9D5382C43EE.PNG",
+      "https://salonfya.com/images/ANNA/Anaria/E110F78F-1AE3-4F76-9927-C1C38242F2B0.PNG"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   },
   {
-    "element_name": "FYA-DRESS-ANNA-Anastasia",
-    "collection": "ANNA",
+    "element_name": "FYA-DRESS-ANN-Anastasia",
+    "collection": "Anna",
+    "dress": "Anastasia",
+    "category": "prop",
+    "description": "Cap sleeves with delicate lace, sweetheart bodice with lace appliques, sheer illusion back with button closure down the middle, full soft plain tulle skirt.",
     "images": [
-      "public/images/clean/ANNA/Anastasia_20FF0E7B-AEEA-4216-A8BD-DB3ED5252E97.PNG",
-      "public/images/clean/ANNA/Anastasia_811DDE31-7EB2-44F1-8D33-920F6E536A1E.PNG",
-      "public/images/clean/ANNA/Anastasia_9882240D-72F9-435F-9A1C-213C53DC6380.PNG"
-    ]
+      "https://salonfya.com/images/ANNA/Anastasia/20FF0E7B-AEEA-4216-A8BD-DB3ED5252E97.PNG",
+      "https://salonfya.com/images/ANNA/Anastasia/811DDE31-7EB2-44F1-8D33-920F6E536A1E.PNG",
+      "https://salonfya.com/images/ANNA/Anastasia/9882240D-72F9-435F-9A1C-213C53DC6380.PNG"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   },
   {
-    "element_name": "FYA-DRESS-ANNA-Anastea",
-    "collection": "ANNA",
+    "element_name": "FYA-DRESS-ANN-Anastea",
+    "collection": "Anna",
+    "dress": "Anastea",
+    "category": "prop",
+    "description": "Smooth satin fabric, off-the-shoulder straps, draped sweetheart bodice, short puffed sleeves, full pleated satin skirt, corset lacing on back.",
     "images": [
-      "public/images/clean/ANNA/Anastea_IMG_6002.jpg",
-      "public/images/clean/ANNA/Anastea_162B7262-5C38-4385-9346-FDB3B1527BD4.PNG",
-      "public/images/clean/ANNA/Anastea_22696034-4E9C-4BE8-AAE9-528DBC3C1ED7.PNG",
-      "public/images/clean/ANNA/Anastea_C5E124D3-D23F-46C6-9FFF-B48DBC1B5C58.PNG"
-    ]
+      "https://salonfya.com/images/ANNA/Anastea/IMG_6002.jpg",
+      "https://salonfya.com/images/ANNA/Anastea/162B7262-5C38-4385-9346-FDB3B1527BD4.PNG",
+      "https://salonfya.com/images/ANNA/Anastea/22696034-4E9C-4BE8-AAE9-528DBC3C1ED7.PNG",
+      "https://salonfya.com/images/ANNA/Anastea/C5E124D3-D23F-46C6-9FFF-B48DBC1B5C58.PNG"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   },
   {
-    "element_name": "FYA-DRESS-ANNA-Anatolia",
-    "collection": "ANNA",
+    "element_name": "FYA-DRESS-ANN-Anatolia",
+    "collection": "Anna",
+    "dress": "Anatolia",
+    "category": "prop",
+    "description": "Illusion long sleeves, plunging V-neckline with scalloped lace edge, lace appliques cascading down the bodice and skirt, full tulle skirt.",
     "images": [
-      "public/images/clean/ANNA/Anatolia_IMG_5851.jpg",
-      "public/images/clean/ANNA/Anatolia_IMG_5855.jpg"
-    ]
+      "https://salonfya.com/images/ANNA/Anatolia/IMG_5851.jpg",
+      "https://salonfya.com/images/ANNA/Anatolia/IMG_5855.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   },
   {
-    "element_name": "FYA-DRESS-ANNA-Anavelle",
-    "collection": "ANNA",
+    "element_name": "FYA-DRESS-ANN-Anavelle",
+    "collection": "Anna",
+    "dress": "Anavelle",
+    "category": "prop",
+    "description": "Long sheer sleeves, fully beaded bodice and sleeves, deep V-back with button closure down the middle, full sparkly tulle skirt with train.",
     "images": [
-      "public/images/clean/ANNA/Anavelle_A74C3A1A-C6FF-4C80-BBF4-6E3736B9F525.PNG",
-      "public/images/clean/ANNA/Anavelle_F0984693-7165-430E-A06E-8451F8492F3A.PNG",
-      "public/images/clean/ANNA/Anavelle_FC5646E0-8C55-4E53-B5C4-FE51E2B46449.PNG"
-    ]
+      "https://salonfya.com/images/ANNA/Anavelle/A74C3A1A-C6FF-4C80-BBF4-6E3736B9F525.PNG",
+      "https://salonfya.com/images/ANNA/Anavelle/F0984693-7165-430E-A06E-8451F8492F3A.PNG",
+      "https://salonfya.com/images/ANNA/Anavelle/FC5646E0-8C55-4E53-B5C4-FE51E2B46449.PNG"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   },
   {
-    "element_name": "FYA-DRESS-ANNA-Anelie",
-    "collection": "ANNA",
+    "element_name": "FYA-DRESS-ANN-Anelie",
+    "collection": "Anna",
+    "dress": "Anelie",
+    "category": "prop",
+    "description": "Off-the-shoulder draped tulle straps, sweetheart neckline, heavily beaded bodice with pearls and crystals, full sparkly tulle skirt.",
     "images": [
-      "public/images/clean/ANNA/Anelie_309257BD-2244-49A4-A5D5-50358890D6D5.PNG",
-      "public/images/clean/ANNA/Anelie_3F333F5B-B61B-4A2E-87D1-8325BBA0CBF7.PNG",
-      "public/images/clean/ANNA/Anelie_B16FAF52-4CD5-4C75-A5D3-04E5ECE96EEB.PNG"
-    ]
+      "https://salonfya.com/images/ANNA/Anelie/309257BD-2244-49A4-A5D5-50358890D6D5.PNG",
+      "https://salonfya.com/images/ANNA/Anelie/3F333F5B-B61B-4A2E-87D1-8325BBA0CBF7.PNG",
+      "https://salonfya.com/images/ANNA/Anelie/B16FAF52-4CD5-4C75-A5D3-04E5ECE96EEB.PNG"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   },
   {
-    "element_name": "FYA-DRESS-ANNA-Annabelle",
-    "collection": "ANNA",
+    "element_name": "FYA-DRESS-ANN-Annabelle",
+    "collection": "Anna",
+    "dress": "Annabelle",
+    "category": "prop",
+    "description": "High illusion neckline over sweetheart bodice, long sheer lace sleeves with puffed shoulders, deep V front illusion, full tulle skirt with lace appliques cascading down, deep V-back.",
     "images": [
-      "public/images/clean/ANNA/Annabelle_IMG_5868.jpg",
-      "public/images/clean/ANNA/Annabelle_IMG_5872.jpg",
-      "public/images/clean/ANNA/Annabelle_IMG_5875.jpg",
-      "public/images/clean/ANNA/Annabelle_IMG_5881.jpg"
-    ]
+      "https://salonfya.com/images/ANNA/Annabelle/IMG_5868.jpg",
+      "https://salonfya.com/images/ANNA/Annabelle/IMG_5872.jpg",
+      "https://salonfya.com/images/ANNA/Annabelle/IMG_5875.jpg",
+      "https://salonfya.com/images/ANNA/Annabelle/IMG_5881.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   },
   {
-    "element_name": "FYA-DRESS-ANNA-Annador",
-    "collection": "ANNA",
+    "element_name": "FYA-DRESS-ANN-Annador",
+    "collection": "Anna",
+    "dress": "Annador",
+    "category": "prop",
+    "description": "Off-the-shoulder draped soft tulle straps, sweetheart neckline, delicate lace appliques on bodice, full soft tulle skirt.",
     "images": [
-      "public/images/clean/ANNA/Annador_0DB5AAD1-EEE2-40B7-926B-403B31D9EEE2.PNG",
-      "public/images/clean/ANNA/Annador_BBACE0F9-1649-4353-93B4-A7D453D0991C.PNG"
-    ]
+      "https://salonfya.com/images/ANNA/Annador/0DB5AAD1-EEE2-40B7-926B-403B31D9EEE2.PNG",
+      "https://salonfya.com/images/ANNA/Annador/BBACE0F9-1649-4353-93B4-A7D453D0991C.PNG"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   },
   {
-    "element_name": "FYA-DRESS-ANNA-Annette",
-    "collection": "ANNA",
+    "element_name": "FYA-DRESS-ANN-Annette",
+    "collection": "Anna",
+    "dress": "Annette",
+    "category": "prop",
+    "description": "Off-the-shoulder sheer tulle straps, plunging sweetheart neckline, intricately beaded and crystal-embellished bodice, soft plain tulle skirt.",
     "images": [
-      "public/images/clean/ANNA/Annette_IMG_5917.jpg",
-      "public/images/clean/ANNA/Annette_IMG_5918.jpg",
-      "public/images/clean/ANNA/Annette_IMG_5919.jpg",
-      "public/images/clean/ANNA/Annette_35C61BE9-0D54-4949-881A-50C8B2229576.PNG"
-    ]
+      "https://salonfya.com/images/ANNA/Annette/IMG_5917.jpg",
+      "https://salonfya.com/images/ANNA/Annette/IMG_5918.jpg",
+      "https://salonfya.com/images/ANNA/Annette/IMG_5919.jpg",
+      "https://salonfya.com/images/ANNA/Annette/35C61BE9-0D54-4949-881A-50C8B2229576.PNG"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   },
   {
-    "element_name": "FYA-DRESS-ANNA-Just Anna",
-    "collection": "ANNA",
+    "element_name": "FYA-DRESS-ANN-Just-Anna",
+    "collection": "Anna",
+    "dress": "Just Anna",
+    "category": "prop",
+    "description": "Off-the-shoulder puffed sheer sleeves, draped sweetheart neckline, intricately beaded bodice with crystals, full sparkly tulle skirt.",
     "images": [
-      "public/images/clean/ANNA/Just Anna_IMG_5889.jpg",
-      "public/images/clean/ANNA/Just Anna_IMG_5890.jpg",
-      "public/images/clean/ANNA/Just Anna_IMG_5908.jpg"
-    ]
+      "https://salonfya.com/images/ANNA/Just%20Anna/IMG_5889.jpg",
+      "https://salonfya.com/images/ANNA/Just%20Anna/IMG_5890.jpg",
+      "https://salonfya.com/images/ANNA/Just%20Anna/IMG_5908.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
+  },
+  {
+    "element_name": "FYA-DRESS-MAY-Adania",
+    "collection": "Mayra",
+    "dress": "Adania",
+    "category": "prop",
+    "description": "Ornate fit-and-flare gown densely covered in pearls, beads, and sequins in a symmetrical butterfly-like pattern. The bodice has a sweetheart neckline with thin beaded straps. The gown has a deep V-neckline at the back and flows into a subtle train, with the pearled detailing continuing densely over the skirt.",
+    "images": [
+      "https://salonfya.com/images/MAYRA/Adania/IMG_5591.jpg",
+      "https://salonfya.com/images/MAYRA/Adania/IMG_5597.jpg",
+      "https://salonfya.com/images/MAYRA/Adania/IMG_5603.jpg",
+      "https://salonfya.com/images/MAYRA/Adania/IMG_5607.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
+  },
+  {
+    "element_name": "FYA-DRESS-MAY-Celina",
+    "collection": "Mayra",
+    "dress": "Celina",
+    "category": "prop",
+    "description": "Minimalist and sophisticated fit-and-flare gown crafted from smooth crepe. The bodice features a clean, high boat neckline and solid white front. The long sleeves are made of sheer illusion mesh embellished with delicate lace appliqué and beadwork. The back features a striking deep V-cut down to the waistline.",
+    "images": [
+      "https://salonfya.com/images/MAYRA/Celina/IMG_5616.jpg",
+      "https://salonfya.com/images/MAYRA/Celina/IMG_5618.jpg",
+      "https://salonfya.com/images/MAYRA/Celina/IMG_5620.jpg",
+      "https://salonfya.com/images/MAYRA/Celina/IMG_5626.JPEG"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
+  },
+  {
+    "element_name": "FYA-DRESS-MAY-Desideria",
+    "collection": "Mayra",
+    "dress": "Desideria",
+    "category": "prop",
+    "description": "Striking A-line gown covered entirely in intricate glittering botanical lace. The bodice features a plunging illusion V-neckline and sheer long sleeves adorned with the same matching lace pattern. The back showcases a deep V-cut matching the front, and the skirt flows gently to a small train.",
+    "images": [
+      "https://salonfya.com/images/MAYRA/Desideria/IMG_5631.jpg",
+      "https://salonfya.com/images/MAYRA/Desideria/IMG_5637.jpg",
+      "https://salonfya.com/images/MAYRA/Desideria/IMG_5638.jpg",
+      "https://salonfya.com/images/MAYRA/Desideria/IMG_5640.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
+  },
+  {
+    "element_name": "FYA-DRESS-MAY-Elvira",
+    "collection": "Mayra",
+    "dress": "Elvira",
+    "category": "prop",
+    "description": "Romantic A-line gown featuring an illusion bodice adorned with delicate floral lace appliqué and off-the-shoulder draped lace sleeves. The sweetheart neckline is softened by the illusion mesh. The lightweight tulle skirt flows beautifully into a long train. The back features a scoop cut framed by matching floral lace.",
+    "images": [
+      "https://salonfya.com/images/MAYRA/Elvira/IMG_5648.jpg",
+      "https://salonfya.com/images/MAYRA/Elvira/IMG_5651.jpg",
+      "https://salonfya.com/images/MAYRA/Elvira/IMG_5652.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
+  },
+  {
+    "element_name": "FYA-DRESS-MAY-Grazia",
+    "collection": "Mayra",
+    "dress": "Grazia",
+    "category": "prop",
+    "description": "Flowing A-line gown with a smooth, draped skirt featuring a high side slit. The corset-style bodice showcases exposed boning and a sweetheart neckline, decorated with sparkling beaded lace appliqué that extends delicately down onto the skirt. The back features a low scoop neckline and thin straps.",
+    "images": [
+      "https://salonfya.com/images/MAYRA/Grazia/IMG_5668.jpg",
+      "https://salonfya.com/images/MAYRA/Grazia/IMG_5669.jpg",
+      "https://salonfya.com/images/MAYRA/Grazia/ED2F8FEC-0716-44BC-B7C6-29E39267E930.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
+  },
+  {
+    "element_name": "FYA-DRESS-MAY-Isadora",
+    "collection": "Mayra",
+    "dress": "Isadora",
+    "category": "prop",
+    "description": "Glamorous fit-and-flare gown heavily embellished with beaded botanical lace over a sheer bodice. The gown features a plunging V-neckline and is paired with matching detachable long sheer sleeves. The back showcases a deep open V-cut framed by intricate lace, flowing into a dramatic train.",
+    "images": [
+      "https://salonfya.com/images/MAYRA/Isadora/IMG_5681.jpg",
+      "https://salonfya.com/images/MAYRA/Isadora/IMG_5682.jpg",
+      "https://salonfya.com/images/MAYRA/Isadora/IMG_5691.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
+  },
+  {
+    "element_name": "FYA-DRESS-MAY-Luminia",
+    "collection": "Mayra",
+    "dress": "Luminia",
+    "category": "prop",
+    "description": "Ethereal A-line gown with a flowing, soft tulle skirt. The bodice features a deep plunging V-neckline with illusion mesh paneling and thick straps, adorned with swirling symmetrical lace appliqué. The gown can be paired with an optional sheer high-neck cape that drapes elegantly over the shoulders. The back of the gown itself features a deep V-shape.",
+    "images": [
+      "https://salonfya.com/images/MAYRA/Luminia/IMG_5697.jpg",
+      "https://salonfya.com/images/MAYRA/Luminia/IMG_5698.jpg",
+      "https://salonfya.com/images/MAYRA/Luminia/IMG_5699.jpg",
+      "https://salonfya.com/images/MAYRA/Luminia/IMG_5709.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
+  },
+  {
+    "element_name": "FYA-DRESS-MAY-Miracle",
+    "collection": "Mayra",
+    "dress": "Miracle",
+    "category": "prop",
+    "description": "Classic A-line gown with a structured satin skirt and a long train. The bodice features a sheer illusion neckline and long sheer sleeves, fully embellished with intricate beaded lace appliques that trail down onto the waist. The back is a deep illusion V-shape framed by matching lace details.",
+    "images": [
+      "https://salonfya.com/images/MAYRA/Miracle/IMG_5714.jpg",
+      "https://salonfya.com/images/MAYRA/Miracle/IMG_5715.jpg",
+      "https://salonfya.com/images/MAYRA/Miracle/IMG_5717.jpg",
+      "https://salonfya.com/images/MAYRA/Miracle/IMG_5718.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
+  },
+  {
+    "element_name": "FYA-DRESS-MAY-Roze",
+    "collection": "Mayra",
+    "dress": "Roze",
+    "category": "prop",
+    "description": "Voluminous blush pink ballgown made entirely of heavily textured, ruffled tulle rosettes. The bodice features a deep plunging V-neckline with ruffled tulle shoulder details and a matching deep V open back, finished with a delicate ribbon sash at the waist.",
+    "images": [
+      "https://salonfya.com/images/MAYRA/Roze/IMG_5735.jpg",
+      "https://salonfya.com/images/MAYRA/Roze/IMG_5736.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
+  },
+  {
+    "element_name": "FYA-DRESS-MAY-Snow",
+    "collection": "Mayra",
+    "dress": "Snow",
+    "category": "prop",
+    "description": "Minimalist A-line gown crafted from smooth satin. The structured bodice features a square neckline and wide straps, leading to a deep V-back. A large structured bow accents the back waistline with trailing tails over the flowing skirt and train.",
+    "images": [
+      "https://salonfya.com/images/MAYRA/Snow/IMG_5743.jpg",
+      "https://salonfya.com/images/MAYRA/Snow/IMG_5744.jpg",
+      "https://salonfya.com/images/MAYRA/Snow/IMG_5748.jpg",
+      "https://salonfya.com/images/MAYRA/Snow/IMG_5753.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
+  },
+  {
+    "element_name": "FYA-DRESS-MAY-Tania",
+    "collection": "Mayra",
+    "dress": "Tania",
+    "category": "prop",
+    "description": "Ethereal flowing A-line gown with long bishop sleeves. The bodice features delicate pleating and a scoop neckline, accented with pink and green floral embroidery along the neckline, waistline, and cuffs. The back is closed with matching floral embroidery details.",
+    "images": [
+      "https://salonfya.com/images/MAYRA/Tania/IMG_5764.jpg",
+      "https://salonfya.com/images/MAYRA/Tania/IMG_5767.jpg",
+      "https://salonfya.com/images/MAYRA/Tania/IMG_5771.jpg",
+      "https://salonfya.com/images/MAYRA/Tania/IMG_5781.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
+  },
+  {
+    "element_name": "FYA-DRESS-MAY-Taniana",
+    "collection": "Mayra",
+    "dress": "Taniana",
+    "category": "prop",
+    "description": "Ethereal flowing A-line gown featuring unique cape sleeves that drape to the floor. The bodice features delicate pleating and a scoop neckline, accented with intricate 3D floral appliques along the neckline and shoulders. The back features a deep V-shape adorned with matching floral appliques.",
+    "images": [
+      "https://salonfya.com/images/MAYRA/Taniana/IMG_5785.jpg",
+      "https://salonfya.com/images/MAYRA/Taniana/IMG_5788.jpg",
+      "https://salonfya.com/images/MAYRA/Taniana/IMG_5796.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
+  },
+  {
+    "element_name": "FYA-DRESS-BEV-Aveline",
+    "collection": "Beverly",
+    "dress": "Aveline",
+    "category": "prop",
+    "description": "Elegant A-line gown with a flowing tulle skirt. The corset bodice is slightly sheer with visible boning, featuring a subtle sweetheart neckline and delicate beaded off-the-shoulder drape sleeves. Dainty 3D floral appliques and beadwork decorate the bodice and trail onto the top of the skirt. The back is an open corset style with matching floral details.",
+    "images": [
+      "https://salonfya.com/images/BEVERLY/Aveline/115CCF60-8679-410A-8370-63E6A9F89212.PNG",
+      "https://salonfya.com/images/BEVERLY/Aveline/AAAF1202-841B-4ECB-99D7-288B50AB6844.PNG"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
+  },
+  {
+    "element_name": "FYA-DRESS-BEV-Beauty",
+    "collection": "Beverly",
+    "dress": "Beauty",
+    "category": "prop",
+    "description": "Breathtaking fitted trumpet gown completely covered in intricate geometric and floral beadwork. The bodice features a sweetheart neckline with thin spaghetti straps that lead to a dramatic open criss-cross back. A voluminous detachable tulle overskirt with matching beadwork at the waist adds a layer of grandeur.",
+    "images": [
+      "https://salonfya.com/images/BEVERLY/Beauty/2C8B1C4E-9132-4164-A376-2CA5D84F83B2.PNG",
+      "https://salonfya.com/images/BEVERLY/Beauty/38BFFE6C-B36C-4166-A82C-A9FD2EE8C200.PNG",
+      "https://salonfya.com/images/BEVERLY/Beauty/1ED51795-BB30-42F8-9E60-27A53172F5C5.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
+  },
+  {
+    "element_name": "FYA-DRESS-BEV-Bety",
+    "collection": "Beverly",
+    "dress": "Bety",
+    "category": "prop",
+    "description": "Romantic flowing A-line gown with a thigh-high slit. The corset bodice features a sweetheart neckline with thin spaghetti straps and delicate off-the-shoulder tulle drape sleeves. The bodice and top of the skirt are adorned with intricate trailing beadwork and tiny 3D floral appliques. The back features a deep open V-shape.",
+    "images": [
+      "https://salonfya.com/images/BEVERLY/Bety/40C0C4BB-6FFA-4766-9C74-936E4B33A0B7.PNG",
+      "https://salonfya.com/images/BEVERLY/Bety/7C7BAEA6-5AA1-47F0-AB66-0932F85F1BFC.PNG",
+      "https://salonfya.com/images/BEVERLY/Bety/D890182A-3BF8-4437-BE26-D4BE930405DF.PNG"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
+  },
+  {
+    "element_name": "FYA-DRESS-BEV-Candy",
+    "collection": "Beverly",
+    "dress": "Candy",
+    "category": "prop",
+    "description": "Classic A-line gown with a softly pleated tulle skirt. The bodice has a deep plunging V-neckline with a sheer insert and long fitted sleeves. The entire bodice and sleeves are adorned with bold floral lace appliques that trail slightly past the waist. The back features a sheer illusion panel with matching lace appliques and a row of classic buttons down the center.",
+    "images": [
+      "https://salonfya.com/images/BEVERLY/Candy/25F6D5C5-6164-469C-8EE4-7DCEF85EEF14.PNG",
+      "https://salonfya.com/images/BEVERLY/Candy/658A28B1-4FB0-476A-8E4C-681794EDDC36.PNG",
+      "https://salonfya.com/images/BEVERLY/Candy/C646F8AC-F3B2-4131-B600-918E762A84B9.PNG"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
+  },
+  {
+    "element_name": "FYA-DRESS-BEV-Cediz",
+    "collection": "Beverly",
+    "dress": "Cediz",
+    "category": "prop",
+    "description": "Whimsical A-line gown with a flowing tulle skirt. The corset bodice is ruched and draped, featuring a sweetheart neckline and delicate beaded shoulder straps that form a sheer drape effect over the shoulders. Intricate vine-like beading and floral appliques accent the waist, bustline, and back. The back features a deep open V-shape with a row of buttons down the center.",
+    "images": [
+      "https://salonfya.com/images/BEVERLY/Cediz/7BDA1B11-69AA-4CF2-8B80-2DF0FB5B0305.PNG",
+      "https://salonfya.com/images/BEVERLY/Cediz/AC2C54DB-1A39-402F-BAAB-C1A39DDE0C8C.PNG",
+      "https://salonfya.com/images/BEVERLY/Cediz/CDC70D0B-80B0-436E-A138-4A64FE5051B2.PNG"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
+  },
+  {
+    "element_name": "FYA-DRESS-BEV-Celestia",
+    "collection": "Beverly",
+    "dress": "Celestia",
+    "category": "prop",
+    "description": "Glamorous fitted column gown completely covered in wavy, intricate beadwork. The straight off-the-shoulder neckline features dramatic beaded fringe that drapes over the upper arms. The back matches the front with an open upper back and a line of classic buttons trailing down to a sweep train.",
+    "images": [
+      "https://salonfya.com/images/BEVERLY/Celestia/2107F38F-0DD1-4497-BF3E-6AFFCB417580.PNG",
+      "https://salonfya.com/images/BEVERLY/Celestia/B5632105-393D-4F7E-B4D3-DB5FD9F935FF.PNG"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
+  },
+  {
+    "element_name": "FYA-DRESS-BEV-Fyona",
+    "collection": "Beverly",
+    "dress": "Fyona",
+    "category": "prop",
+    "description": "Romantic flowing A-line gown with a voluminous layered tulle skirt. The corset bodice is sheer with visible boning, featuring a sweetheart neckline and delicate off-the-shoulder draped tulle sleeves. The bodice is densely covered in intricate 3D floral appliques and lace that cascade down into the skirt. The back is an open corset style with matching floral details.",
+    "images": [
+      "https://salonfya.com/images/BEVERLY/Fyona/59B72D64-68F1-4BFD-8C16-8A65FFCD7366.PNG",
+      "https://salonfya.com/images/BEVERLY/Fyona/E325D880-0FDD-42A5-A4E6-3731EFEBBF8A.PNG",
+      "https://salonfya.com/images/BEVERLY/Fyona/44F1F915-D193-41D9-A6E3-1CAA83D39058.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
+  },
+  {
+    "element_name": "FYA-DRESS-BEV-Marisa",
+    "collection": "Beverly",
+    "dress": "Marisa",
+    "category": "prop",
+    "description": "Stunning fitted trumpet gown with a unique geometric grid and large scroll lace pattern. The sweetheart neckline features a deep plunging slit and delicate thin straps, along with off-the-shoulder lace sleeves. The bodice is structured with visible boning. The back is an open corset style.",
+    "images": [
+      "https://salonfya.com/images/BEVERLY/Marisa/230565A2-30C0-42B2-9489-FE788A454878.PNG",
+      "https://salonfya.com/images/BEVERLY/Marisa/38B36E35-0C78-4040-BD34-0179CA259ED4.PNG",
+      "https://salonfya.com/images/BEVERLY/Marisa/3C36FB67-DB80-4606-B3FF-D1C53E7638C2.PNG",
+      "https://salonfya.com/images/BEVERLY/Marisa/B6C95714-06F6-44F8-8FD9-8D534D00AB86.PNG"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
+  },
+  {
+    "element_name": "FYA-DRESS-BEV-Nolli",
+    "collection": "Beverly",
+    "dress": "Nolli",
+    "category": "prop",
+    "description": "Elegant A-line gown with a softly pleated tulle skirt. The bodice features a sweetheart neckline with a sheer illusion panel creating a high scoop neckline and long sheer sleeves with subtle wrist appliques. Dainty floral lace appliques decorate the bodice and trail gently onto the upper skirt. The back features a sheer illusion panel with matching lace appliques and a row of classic buttons down the center.",
+    "images": [
+      "https://salonfya.com/images/BEVERLY/Nolli/1AF62A14-D463-4296-996D-4407D0D05C0C.PNG",
+      "https://salonfya.com/images/BEVERLY/Nolli/791B9E80-C741-4596-9D8B-98B623FF0BF9.PNG",
+      "https://salonfya.com/images/BEVERLY/Nolli/788465EE-72EB-4D98-AF47-976F66A94BE3.jpg",
+      "https://salonfya.com/images/BEVERLY/Nolli/8B0FFD39-1E26-4F31-B784-AE7BA3AF65B4.jpg"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
+  },
+  {
+    "element_name": "FYA-DRESS-BEV-Solea",
+    "collection": "Beverly",
+    "dress": "Solea",
+    "category": "prop",
+    "description": "Ethereal A-line gown made entirely of shimmering star-patterned tulle. The bodice features a deep plunging V-neckline down to the waist and voluminous sheer long sleeves gathered at the wrists. The back is completely open in a deep V-shape. The lightweight skirt flows fluidly to a long sheer train.",
+    "images": [
+      "https://salonfya.com/images/BEVERLY/Solea/1F094A24-E99A-40BC-82F4-0FA8E7DC3167.PNG",
+      "https://salonfya.com/images/BEVERLY/Solea/9018FCB1-33DE-486D-9511-C42292ED2A65.PNG",
+      "https://salonfya.com/images/BEVERLY/Solea/B9A677F9-769E-452A-91B7-93DC86E26CC2.PNG"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
+  },
+  {
+    "element_name": "FYA-DRESS-BEV-Valensia",
+    "collection": "Beverly",
+    "dress": "Valensia",
+    "category": "prop",
+    "description": "Modest long-sleeve A-line gown made entirely of dense floral and nature-inspired lace. The bodice features a high mock neckline and long fitted sleeves. The back is fully covered in the same intricate lace with a row of small buttons down the center.",
+    "images": [
+      "https://salonfya.com/images/BEVERLY/Valensia/8FC77535-6FF4-4D57-AB1F-9CAE439BEA3B.PNG",
+      "https://salonfya.com/images/BEVERLY/Valensia/E91DF7E3-18B8-482B-8F6A-E1ABDCF9F46F.PNG"
+    ],
+    "image_notes": "1 = cadru întreg față fără cap, 2 = spate",
+    "has_face_in_primary": false,
+    "cleaned": false,
+    "missing_shots": []
   }
 ]
