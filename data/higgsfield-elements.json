@@ -114,5 +114,124 @@
       "public/images/clean/IMPERIAL/IMG_5573.jpg",
       "public/images/clean/IMPERIAL/IMG_5460.jpg"
     ]
+  },
+  {
+    "element_name": "FYA-DRESS-ANNA-Anais",
+    "collection": "ANNA",
+    "images": [
+      "public/images/clean/ANNA/Anais_0A1909F0-C8B1-4B7C-AA3E-2514FAA0D407.jpg",
+      "public/images/clean/ANNA/Anais_79DC5387-A233-4FAF-A400-365F22270EED.PNG",
+      "public/images/clean/ANNA/Anais_A85332DF-BE08-4DA1-9DF5-CF48706FFDBF.PNG"
+    ]
+  },
+  {
+    "element_name": "FYA-DRESS-ANNA-Anamara",
+    "collection": "ANNA",
+    "images": [
+      "public/images/clean/ANNA/Anamara_IMG_6316.jpg",
+      "public/images/clean/ANNA/Anamara_3D870093-9834-45A4-9A7A-821B9FFB6889.PNG",
+      "public/images/clean/ANNA/Anamara_744883C6-51FE-44AB-ADDD-D4F57FAFFF68.PNG"
+    ]
+  },
+  {
+    "element_name": "FYA-DRESS-ANNA-Anamaria",
+    "collection": "ANNA",
+    "images": [
+      "public/images/clean/ANNA/Anamaria_IMG_5829.jpg",
+      "public/images/clean/ANNA/Anamaria_IMG_5841.jpg",
+      "public/images/clean/ANNA/Anamaria_IMG_5843.jpg",
+      "public/images/clean/ANNA/Anamaria_IMG_5845.jpg"
+    ]
+  },
+  {
+    "element_name": "FYA-DRESS-ANNA-Anaria",
+    "collection": "ANNA",
+    "images": [
+      "public/images/clean/ANNA/Anaria_48777E20-17E8-4147-8162-1DFA6FC8ED37.PNG",
+      "public/images/clean/ANNA/Anaria_753C58D1-6014-43EF-B408-E9D5382C43EE.PNG",
+      "public/images/clean/ANNA/Anaria_E110F78F-1AE3-4F76-9927-C1C38242F2B0.PNG"
+    ]
+  },
+  {
+    "element_name": "FYA-DRESS-ANNA-Anastasia",
+    "collection": "ANNA",
+    "images": [
+      "public/images/clean/ANNA/Anastasia_20FF0E7B-AEEA-4216-A8BD-DB3ED5252E97.PNG",
+      "public/images/clean/ANNA/Anastasia_811DDE31-7EB2-44F1-8D33-920F6E536A1E.PNG",
+      "public/images/clean/ANNA/Anastasia_9882240D-72F9-435F-9A1C-213C53DC6380.PNG"
+    ]
+  },
+  {
+    "element_name": "FYA-DRESS-ANNA-Anastea",
+    "collection": "ANNA",
+    "images": [
+      "public/images/clean/ANNA/Anastea_IMG_6002.jpg",
+      "public/images/clean/ANNA/Anastea_162B7262-5C38-4385-9346-FDB3B1527BD4.PNG",
+      "public/images/clean/ANNA/Anastea_22696034-4E9C-4BE8-AAE9-528DBC3C1ED7.PNG",
+      "public/images/clean/ANNA/Anastea_C5E124D3-D23F-46C6-9FFF-B48DBC1B5C58.PNG"
+    ]
+  },
+  {
+    "element_name": "FYA-DRESS-ANNA-Anatolia",
+    "collection": "ANNA",
+    "images": [
+      "public/images/clean/ANNA/Anatolia_IMG_5851.jpg",
+      "public/images/clean/ANNA/Anatolia_IMG_5855.jpg"
+    ]
+  },
+  {
+    "element_name": "FYA-DRESS-ANNA-Anavelle",
+    "collection": "ANNA",
+    "images": [
+      "public/images/clean/ANNA/Anavelle_A74C3A1A-C6FF-4C80-BBF4-6E3736B9F525.PNG",
+      "public/images/clean/ANNA/Anavelle_F0984693-7165-430E-A06E-8451F8492F3A.PNG",
+      "public/images/clean/ANNA/Anavelle_FC5646E0-8C55-4E53-B5C4-FE51E2B46449.PNG"
+    ]
+  },
+  {
+    "element_name": "FYA-DRESS-ANNA-Anelie",
+    "collection": "ANNA",
+    "images": [
+      "public/images/clean/ANNA/Anelie_309257BD-2244-49A4-A5D5-50358890D6D5.PNG",
+      "public/images/clean/ANNA/Anelie_3F333F5B-B61B-4A2E-87D1-8325BBA0CBF7.PNG",
+      "public/images/clean/ANNA/Anelie_B16FAF52-4CD5-4C75-A5D3-04E5ECE96EEB.PNG"
+    ]
+  },
+  {
+    "element_name": "FYA-DRESS-ANNA-Annabelle",
+    "collection": "ANNA",
+    "images": [
+      "public/images/clean/ANNA/Annabelle_IMG_5868.jpg",
+      "public/images/clean/ANNA/Annabelle_IMG_5872.jpg",
+      "public/images/clean/ANNA/Annabelle_IMG_5875.jpg",
+      "public/images/clean/ANNA/Annabelle_IMG_5881.jpg"
+    ]
+  },
+  {
+    "element_name": "FYA-DRESS-ANNA-Annador",
+    "collection": "ANNA",
+    "images": [
+      "public/images/clean/ANNA/Annador_0DB5AAD1-EEE2-40B7-926B-403B31D9EEE2.PNG",
+      "public/images/clean/ANNA/Annador_BBACE0F9-1649-4353-93B4-A7D453D0991C.PNG"
+    ]
+  },
+  {
+    "element_name": "FYA-DRESS-ANNA-Annette",
+    "collection": "ANNA",
+    "images": [
+      "public/images/clean/ANNA/Annette_IMG_5917.jpg",
+      "public/images/clean/ANNA/Annette_IMG_5918.jpg",
+      "public/images/clean/ANNA/Annette_IMG_5919.jpg",
+      "public/images/clean/ANNA/Annette_35C61BE9-0D54-4949-881A-50C8B2229576.PNG"
+    ]
+  },
+  {
+    "element_name": "FYA-DRESS-ANNA-Just Anna",
+    "collection": "ANNA",
+    "images": [
+      "public/images/clean/ANNA/Just Anna_IMG_5889.jpg",
+      "public/images/clean/ANNA/Just Anna_IMG_5890.jpg",
+      "public/images/clean/ANNA/Just Anna_IMG_5908.jpg"
+    ]
   }
 ]

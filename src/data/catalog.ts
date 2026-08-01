@@ -191,6 +191,7 @@ const IMPERIAL_SEEDS: Seed[] = [
 const ANNA_SEEDS: Seed[] = [
   {
     name: 'Anais',
+    description: 'Plunging deep V-neckline, long sheer puffy bishop sleeves with dotted pattern, delicate beaded lace bodice, soft flowing sparkly tulle skirt.',
     images: [
       p('ANNA', 'Anais', '0A1909F0-C8B1-4B7C-AA3E-2514FAA0D407.jpg'),
       p('ANNA', 'Anais', '79DC5387-A233-4FAF-A400-365F22270EED.PNG'),
@@ -200,6 +201,7 @@ const ANNA_SEEDS: Seed[] = [
   },
   {
     name: 'Anamara',
+    description: 'Mermaid silhouette, high illusion neckline over sweetheart bodice, sheer long sleeves, intricate lace appliques covering bodice and skirt, illusion back with button closure down the middle.',
     images: [
       p('IMPERIAL', 'Anamara', 'IMG_6316.jpg'),
       p('IMPERIAL', 'Anamara', '3D870093-9834-45A4-9A7A-821B9FFB6889.PNG'),
@@ -208,6 +210,7 @@ const ANNA_SEEDS: Seed[] = [
   },
   {
     name: 'Anamaria',
+    description: 'High illusion neckline over sweetheart bodice, sheer long sleeves, intricate linear beading on bodice and sleeves, full sparkly tulle skirt, illusion back with button closure.',
     images: [
       p('ANNA', 'Anamaria', 'IMG_5829.jpg'),
       p('ANNA', 'Anamaria', 'IMG_5841.jpg'),
@@ -217,6 +220,7 @@ const ANNA_SEEDS: Seed[] = [
   },
   {
     name: 'Anaria',
+    description: 'Plunging V-neckline, sheer long bishop sleeves with beaded lace cuffs, heavily beaded patterned bodice, full shimmering sparkly tulle skirt.',
     images: [
       p('ANNA', 'Anaria', '48777E20-17E8-4147-8162-1DFA6FC8ED37.PNG'),
       p('ANNA', 'Anaria', '753C58D1-6014-43EF-B408-E9D5382C43EE.PNG'),
@@ -226,6 +230,7 @@ const ANNA_SEEDS: Seed[] = [
   },
   {
     name: 'Anastasia',
+    description: 'Cap sleeves with delicate lace, sweetheart bodice with lace appliques, sheer illusion back with button closure down the middle, full soft plain tulle skirt.',
     images: [
       p('ANNA', 'Anastasia', '20FF0E7B-AEEA-4216-A8BD-DB3ED5252E97.PNG'),
       p('ANNA', 'Anastasia', '811DDE31-7EB2-44F1-8D33-920F6E536A1E.PNG'),
@@ -234,6 +239,7 @@ const ANNA_SEEDS: Seed[] = [
   },
   {
     name: 'Anastea',
+    description: 'Smooth satin fabric, off-the-shoulder straps, draped sweetheart bodice, short puffed sleeves, full pleated satin skirt, corset lacing on back.',
     images: [
       p('ANNA', 'Anastea', 'IMG_6002.jpg'),
       p('ANNA', 'Anastea', '162B7262-5C38-4385-9346-FDB3B1527BD4.PNG'),
@@ -243,10 +249,12 @@ const ANNA_SEEDS: Seed[] = [
   },
   {
     name: 'Anatolia',
+    description: 'Illusion long sleeves, plunging V-neckline with scalloped lace edge, lace appliques cascading down the bodice and skirt, full tulle skirt.',
     images: [p('ANNA', 'Anatolia', 'IMG_5851.jpg'), p('ANNA', 'Anatolia', 'IMG_5855.jpg')],
   },
   {
     name: 'Anavelle',
+    description: 'Long sheer sleeves, fully beaded bodice and sleeves, deep V-back with button closure down the middle, full sparkly tulle skirt with train.',
     images: [
       p('ANNA', 'Anavelle', 'A74C3A1A-C6FF-4C80-BBF4-6E3736B9F525.PNG'),
       p('ANNA', 'Anavelle', 'F0984693-7165-430E-A06E-8451F8492F3A.PNG'),
@@ -255,6 +263,7 @@ const ANNA_SEEDS: Seed[] = [
   },
   {
     name: 'Anelie',
+    description: 'Off-the-shoulder draped tulle straps, sweetheart neckline, heavily beaded bodice with pearls and crystals, full sparkly tulle skirt.',
     images: [
       p('ANNA', 'Anelie', '309257BD-2244-49A4-A5D5-50358890D6D5.PNG'),
       p('ANNA', 'Anelie', '3F333F5B-B61B-4A2E-87D1-8325BBA0CBF7.PNG'),
@@ -263,6 +272,7 @@ const ANNA_SEEDS: Seed[] = [
   },
   {
     name: 'Annabelle',
+    description: 'High illusion neckline over sweetheart bodice, long sheer lace sleeves with puffed shoulders, deep V front illusion, full tulle skirt with lace appliques cascading down, deep V-back.',
     images: [
       p('ANNA', 'Annabelle', 'IMG_5868.jpg'),
       p('ANNA', 'Annabelle', 'IMG_5872.jpg'),
@@ -272,6 +282,7 @@ const ANNA_SEEDS: Seed[] = [
   },
   {
     name: 'Annador',
+    description: 'Off-the-shoulder draped soft tulle straps, sweetheart neckline, delicate lace appliques on bodice, full soft tulle skirt.',
     images: [
       p('ANNA', 'Annador', '0DB5AAD1-EEE2-40B7-926B-403B31D9EEE2.PNG'),
       p('ANNA', 'Annador', 'BBACE0F9-1649-4353-93B4-A7D453D0991C.PNG'),
@@ -280,6 +291,7 @@ const ANNA_SEEDS: Seed[] = [
   },
   {
     name: 'Annette',
+    description: 'Off-the-shoulder sheer tulle straps, plunging sweetheart neckline, intricately beaded and crystal-embellished bodice, soft plain tulle skirt.',
     images: [
       p('ANNA', 'Annette', 'IMG_5917.jpg'),
       p('ANNA', 'Annette', 'IMG_5918.jpg'),
@@ -289,6 +301,7 @@ const ANNA_SEEDS: Seed[] = [
   },
   {
     name: 'Just Anna',
+    description: 'Off-the-shoulder puffed sheer sleeves, draped sweetheart neckline, intricately beaded bodice with crystals, full sparkly tulle skirt.',
     images: [
       p('ANNA', 'Just Anna', 'IMG_5889.jpg'),
       p('ANNA', 'Just Anna', 'IMG_5890.jpg'),
