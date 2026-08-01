@@ -317,7 +317,7 @@ const MAYRA_SEEDS: DressSeed[] = [
     name: 'Adania',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Adania. Ornate fit-and-flare gown densely covered in pearls, beads, and sequins in a symmetrical butterfly-like pattern. The bodice has a sweetheart neckline with thin beaded straps. The gown has a deep V-neckline at the back and flows into a subtle train, with the pearled detailing continuing densely over the skirt.',
     images: [
-      p('MAYRA', 'Adania', 'IMG_5591.jpg'),
+      p('clean', 'IMG_5591_nohead.jpg'),
       p('MAYRA', 'Adania', 'IMG_5597.jpg'),
       p('MAYRA', 'Adania', 'IMG_5603.jpg'),
       p('MAYRA', 'Adania', 'IMG_5607.jpg'),
@@ -327,7 +327,7 @@ const MAYRA_SEEDS: DressSeed[] = [
     name: 'Celina',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Celina. Minimalist and fit-and-flare gown crafted from smooth crepe. The bodice features a clean, high boat neckline and solid white front. The long sleeves are made of sheer illusion mesh embellished with lace appliqué and beadwork. The back features a deep V-cut down to the waistline.',
     images: [
-      p('MAYRA', 'Celina', 'IMG_5616.jpg'),
+      p('clean', 'IMG_5616_nohead.jpg'),
       p('MAYRA', 'Celina', 'IMG_5618.jpg'),
       p('MAYRA', 'Celina', 'IMG_5620.jpg'),
       p('MAYRA', 'Celina', 'IMG_5626.JPEG'),
@@ -337,7 +337,7 @@ const MAYRA_SEEDS: DressSeed[] = [
     name: 'Desideria',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Desideria. A-line gown covered entirely in intricate glittering botanical lace. The bodice features a plunging illusion V-neckline and sheer long sleeves adorned with the same matching lace pattern. The back showcases a deep V-cut matching the front, and the skirt flows gently to a small train.',
     images: [
-      p('MAYRA', 'Desideria', 'IMG_5631.jpg'),
+      p('clean', 'IMG_5631_nohead.jpg'),
       p('MAYRA', 'Desideria', 'IMG_5637.jpg'),
       p('MAYRA', 'Desideria', 'IMG_5638.jpg'),
       p('MAYRA', 'Desideria', 'IMG_5640.jpg'),
@@ -347,7 +347,7 @@ const MAYRA_SEEDS: DressSeed[] = [
     name: 'Elvira',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Elvira. A-line gown featuring an illusion bodice adorned with floral lace appliqué and off-the-shoulder draped lace sleeves. The sweetheart neckline is softened by the illusion mesh. The lightweight tulle skirt flows beautifully into a long train. The back features a scoop cut framed by matching floral lace.',
     images: [
-      p('MAYRA', 'Elvira', 'IMG_5648.jpg'),
+      p('clean', 'IMG_5648_nohead.jpg'),
       p('MAYRA', 'Elvira', 'IMG_5651.jpg'),
       p('MAYRA', 'Elvira', 'IMG_5652.jpg'),
     ],
@@ -356,7 +356,7 @@ const MAYRA_SEEDS: DressSeed[] = [
     name: 'Grazia',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Grazia. Flowing A-line gown with a smooth, draped skirt featuring a high side slit. The corset-style bodice showcases exposed boning and a sweetheart neckline, decorated with sparkling beaded lace appliqué that extends delicately down onto the skirt. The back features a low scoop neckline and thin straps.',
     images: [
-      p('MAYRA', 'Grazia', 'IMG_5668.jpg'),
+      p('clean', 'IMG_5668_nohead.jpg'),
       p('MAYRA', 'Grazia', 'IMG_5669.jpg'),
       p('MAYRA', 'Grazia', 'ED2F8FEC-0716-44BC-B7C6-29E39267E930.jpg'),
     ],
@@ -365,7 +365,7 @@ const MAYRA_SEEDS: DressSeed[] = [
     name: 'Isadora',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Isadora. Fit-and-flare gown heavily embellished with beaded botanical lace over a sheer bodice. The gown features a plunging V-neckline and is paired with matching detachable long sheer sleeves. The back showcases a deep open V-cut framed by intricate lace, flowing into a dramatic train.',
     images: [
-      p('MAYRA', 'Isadora', 'IMG_5681.jpg'),
+      p('clean', 'IMG_5681_nohead.jpg'),
       p('MAYRA', 'Isadora', 'IMG_5682.jpg'),
       p('MAYRA', 'Isadora', 'IMG_5691.jpg'),
     ],
@@ -374,7 +374,7 @@ const MAYRA_SEEDS: DressSeed[] = [
     name: 'Luminia',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Luminia. A-line gown with a flowing, soft tulle skirt. The bodice features a deep plunging V-neckline with illusion mesh paneling and thick straps, adorned with swirling symmetrical lace appliqué. The gown can be paired with an optional sheer high-neck cape that drapes elegantly over the shoulders. The back of the gown itself features a deep V-shape.',
     images: [
-      p('MAYRA', 'Luminia', 'IMG_5697.jpg'),
+      p('clean', 'IMG_5697_nohead.jpg'),
       p('MAYRA', 'Luminia', 'IMG_5698.jpg'),
       p('MAYRA', 'Luminia', 'IMG_5699.jpg'),
       p('MAYRA', 'Luminia', 'IMG_5709.jpg'),
@@ -385,7 +385,7 @@ const MAYRA_SEEDS: DressSeed[] = [
     name: 'Miracle',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Miracle. A-line gown with a structured satin skirt and a long train. The bodice features a sheer illusion neckline and long sheer sleeves, fully embellished with intricate beaded lace appliques that trail down onto the waist. The back is a deep illusion V-shape framed by matching lace details.',
     images: [
-      p('MAYRA', 'Miracle', 'IMG_5714.jpg'),
+      p('clean', 'IMG_5714_nohead.jpg'),
       p('MAYRA', 'Miracle', 'IMG_5715.jpg'),
       p('MAYRA', 'Miracle', 'IMG_5717.jpg'),
       p('MAYRA', 'Miracle', 'IMG_5718.jpg'),
@@ -396,7 +396,7 @@ const MAYRA_SEEDS: DressSeed[] = [
   {
     name: 'Roze',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Roze. Voluminous blush pink ballgown made entirely of heavily textured, ruffled tulle rosettes. The bodice features a deep plunging V-neckline with ruffled tulle shoulder details and a matching deep V open back, finished with a ribbon sash at the waist.',
-    images: [p('MAYRA', 'Roze', 'IMG_5735.jpg'), p('MAYRA', 'Roze', 'IMG_5736.jpg')],
+    images: [p('clean', 'IMG_5735_nohead.jpg'), p('MAYRA', 'Roze', 'IMG_5736.jpg')],
   },
   {
     name: 'Snow',
@@ -413,7 +413,7 @@ const MAYRA_SEEDS: DressSeed[] = [
     name: 'Tania',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Tania. Flowing A-line gown with long bishop sleeves. The bodice features pleating and a scoop neckline, accented with pink and green floral embroidery along the neckline, waistline, and cuffs. The back is closed with matching floral embroidery details.',
     images: [
-      p('MAYRA', 'Tania', 'IMG_5764.jpg'),
+      p('clean', 'IMG_5764_nohead.jpg'),
       p('MAYRA', 'Tania', 'IMG_5767.jpg'),
       p('MAYRA', 'Tania', 'IMG_5771.jpg'),
       p('MAYRA', 'Tania', 'IMG_5781.jpg'),
@@ -423,7 +423,7 @@ const MAYRA_SEEDS: DressSeed[] = [
     name: 'Taniana',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Taniana. Flowing A-line gown featuring unique cape sleeves that drape to the floor. The bodice features pleating and a scoop neckline, accented with intricate 3D floral appliques along the neckline and shoulders. The back features a deep V-shape adorned with matching floral appliques.',
     images: [
-      p('MAYRA', 'Taniana', 'IMG_5785.jpg'),
+      p('clean', 'IMG_5785_nohead.jpg'),
       p('MAYRA', 'Taniana', 'IMG_5788.jpg'),
       p('MAYRA', 'Taniana', 'IMG_5796.jpg'),
     ],
