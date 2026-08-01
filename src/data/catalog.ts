@@ -376,6 +376,7 @@ const MAYRA_SEEDS: Seed[] = [
   },
   {
     name: 'Miracle',
+    description: 'Classic A-line gown with a structured satin skirt and a long train. The bodice features a sheer illusion neckline and long sheer sleeves, fully embellished with intricate beaded lace appliques that trail down onto the waist. The back is a deep illusion V-shape framed by matching lace details.',
     images: [
       p('MAYRA', 'Miracle', 'IMG_5714.jpg'),
       p('MAYRA', 'Miracle', 'IMG_5715.jpg'),
@@ -387,10 +388,12 @@ const MAYRA_SEEDS: Seed[] = [
   },
   {
     name: 'Roze',
+    description: 'Voluminous blush pink ballgown made entirely of heavily textured, ruffled tulle rosettes. The bodice features a deep plunging V-neckline with ruffled tulle shoulder details and a matching deep V open back, finished with a delicate ribbon sash at the waist.',
     images: [p('MAYRA', 'Roze', 'IMG_5735.jpg'), p('MAYRA', 'Roze', 'IMG_5736.jpg')],
   },
   {
     name: 'Snow',
+    description: 'Minimalist A-line gown crafted from smooth satin. The structured bodice features a square neckline and wide straps, leading to a deep V-back. A large structured bow accents the back waistline with trailing tails over the flowing skirt and train.',
     images: [
       p('MAYRA', 'Snow', 'IMG_5743.jpg'),
       p('MAYRA', 'Snow', 'IMG_5744.jpg'),
@@ -401,6 +404,7 @@ const MAYRA_SEEDS: Seed[] = [
   },
   {
     name: 'Tania',
+    description: 'Ethereal flowing A-line gown with long bishop sleeves. The bodice features delicate pleating and a scoop neckline, accented with pink and green floral embroidery along the neckline, waistline, and cuffs. The back is closed with matching floral embroidery details.',
     images: [
       p('MAYRA', 'Tania', 'IMG_5764.jpg'),
       p('MAYRA', 'Tania', 'IMG_5767.jpg'),
@@ -410,6 +414,7 @@ const MAYRA_SEEDS: Seed[] = [
   },
   {
     name: 'Taniana',
+    description: 'Ethereal flowing A-line gown featuring unique cape sleeves that drape to the floor. The bodice features delicate pleating and a scoop neckline, accented with intricate 3D floral appliques along the neckline and shoulders. The back features a deep V-shape adorned with matching floral appliques.',
     images: [
       p('MAYRA', 'Taniana', 'IMG_5785.jpg'),
       p('MAYRA', 'Taniana', 'IMG_5788.jpg'),
