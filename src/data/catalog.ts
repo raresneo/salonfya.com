@@ -105,7 +105,7 @@ const IMPERIAL_SEEDS: DressSeed[] = [
     // Fișierele plate elia_*.jpg sunt copii ale lui Daiana (SHA identic),
     // deci folosim exclusiv folderul colecției.
     name: 'Elia',
-    description: 'Sleek mermaid silhouette gown featuring a structured lace bodice with pearl detailing, available with an illusion plunging V-neck or strapless sweetheart neckline.',
+    description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, IMPERIAL collection, model Elia. Mermaid silhouette gown featuring a structured lace bodice with pearl detailing, available with an illusion plunging V-neck or strapless sweetheart neckline.',
     images: [
       p('clean', 'IMG_5552_nohead.jpg'),
       p('IMPERIAL', 'Elia', 'IMG_5553.jpg'),
