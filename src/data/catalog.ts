@@ -63,7 +63,7 @@ const build = (collection: Collection, seeds: Seed[]): Dress[] =>
 const IMPERIAL_SEEDS: DressSeed[] = [
   {
     name: 'Alma',
-    description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Alma. A-line gown with spaghetti straps, fully embellished shimmering lace bodice, and a flowing minimalist skirt with an train.',
+    description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Alma. A-line gown with spaghetti straps, fully embellished shimmering lace bodice, and a flowing minimalist skirt with a train.',
     images: [
 p('clean', 'alma_front_nohead.jpg'),
 flat('alma_back.jpg'),
@@ -172,7 +172,7 @@ p('IMPERIAL', 'Mayson', 'IMG_5370.jpg'),
   },
   {
     name: 'Queen',
-    description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Queen. Minimalist and sleeveless scoop-neck ballgown made from , unembellished fabric with a smooth, drape.',
+    description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Queen. Minimalist and sleeveless scoop-neck ballgown made from unembellished fabric with a smooth drape.',
     images: [
 p('clean', 'IMG_5568_nohead.jpg'),
 p('IMPERIAL', 'Queen', 'IMG_5571.jpg'),
@@ -368,7 +368,7 @@ p('MAYRA', 'Elvira', 'IMG_5652.jpg'),
   },
   {
     name: 'Grazia',
-    description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Grazia. Flowing A-line gown with a smooth, draped skirt featuring a high side slit. The corset-style bodice showcases exposed boning and a sweetheart neckline, decorated with sparkling beaded lace appliqué that extends delicately down onto the skirt. The back features a low scoop neckline and thin straps.',
+    description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Grazia. Flowing A-line gown with a smooth draped skirt featuring a high side slit. The corset-style bodice showcases exposed boning and a sweetheart neckline, decorated with sparkling beaded lace appliqué that extends delicately down onto the skirt. The back features a low scoop neckline and thin straps.',
     images: [
 p('clean', 'IMG_5668_nohead.jpg'),
 p('MAYRA', 'Grazia', 'IMG_5669.jpg'),
