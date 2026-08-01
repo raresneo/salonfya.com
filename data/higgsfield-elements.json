@@ -1,0 +1,118 @@
+[
+  {
+    "element_name": "FYA-DRESS-IMP-Alma",
+    "collection": "IMPERIAL",
+    "images": [
+      "public/images/clean/IMPERIAL/alma_front.jpg",
+      "public/images/clean/IMPERIAL/alma_back.jpg",
+      "public/images/clean/IMPERIAL/alma_detail.jpg"
+    ]
+  },
+  {
+    "element_name": "FYA-DRESS-IMP-Argente",
+    "collection": "IMPERIAL",
+    "images": [
+      "public/images/clean/IMPERIAL/argente_front.jpg",
+      "public/images/clean/IMPERIAL/argente_front_2.jpg",
+      "public/images/clean/IMPERIAL/argente_back.jpg",
+      "public/images/clean/IMPERIAL/argente_detail.jpg"
+    ]
+  },
+  {
+    "element_name": "FYA-DRESS-IMP-Aurelia",
+    "collection": "IMPERIAL",
+    "images": [
+      "public/images/clean/IMPERIAL/aurelia_front.jpg",
+      "public/images/clean/IMPERIAL/aurelia_back.jpg",
+      "public/images/clean/IMPERIAL/aurelia_detail.jpg",
+      "public/images/clean/IMPERIAL/aurelia_closeup.jpg"
+    ]
+  },
+  {
+    "element_name": "FYA-DRESS-IMP-Daiana",
+    "collection": "IMPERIAL",
+    "images": [
+      "public/images/clean/IMPERIAL/daiana_front.jpg",
+      "public/images/clean/IMPERIAL/daiana_side.jpg",
+      "public/images/clean/IMPERIAL/daiana_back.jpg",
+      "public/images/clean/IMPERIAL/daiana_detail_1.jpg",
+      "public/images/clean/IMPERIAL/daiana_detail_2.jpg"
+    ]
+  },
+  {
+    "element_name": "FYA-DRESS-IMP-Elia",
+    "collection": "IMPERIAL",
+    "images": [
+      "public/images/clean/IMPERIAL/IMG_5552.jpg",
+      "public/images/clean/IMPERIAL/IMG_5553.jpg",
+      "public/images/clean/IMPERIAL/IMG_5554.jpg",
+      "public/images/clean/IMPERIAL/IMG_5414.jpg",
+      "public/images/clean/IMPERIAL/IMG_5415.jpg"
+    ]
+  },
+  {
+    "element_name": "FYA-DRESS-IMP-Elise",
+    "collection": "IMPERIAL",
+    "images": [
+      "public/images/clean/IMPERIAL/elise_front.jpg",
+      "public/images/clean/IMPERIAL/elise_side.jpg",
+      "public/images/clean/IMPERIAL/elise_back.jpg",
+      "public/images/clean/IMPERIAL/elise_detail.jpg"
+    ]
+  },
+  {
+    "element_name": "FYA-DRESS-IMP-Evora",
+    "collection": "IMPERIAL",
+    "images": [
+      "public/images/clean/IMPERIAL/IMG_5580.jpg",
+      "public/images/clean/IMPERIAL/IMG_5581.jpg",
+      "public/images/clean/IMPERIAL/IMG_5583.jpg",
+      "public/images/clean/IMPERIAL/IMG_5587.jpg"
+    ]
+  },
+  {
+    "element_name": "FYA-DRESS-IMP-IvoryGrace",
+    "collection": "IMPERIAL",
+    "images": [
+      "public/images/clean/IMPERIAL/IMG_5395.jpg",
+      "public/images/clean/IMPERIAL/IMG_5399.jpg",
+      "public/images/clean/IMPERIAL/f202fbc6-6dd7-442b-8121-0cc159e5ff40.JPG"
+    ]
+  },
+  {
+    "element_name": "FYA-DRESS-IMP-Lumiere",
+    "collection": "IMPERIAL",
+    "images": [
+      "public/images/clean/IMPERIAL/IMG_5439.jpg"
+    ]
+  },
+  {
+    "element_name": "FYA-DRESS-IMP-Mayson",
+    "collection": "IMPERIAL",
+    "images": [
+      "public/images/clean/IMPERIAL/IMG_5364.jpg",
+      "public/images/clean/IMPERIAL/IMG_5366.jpg",
+      "public/images/clean/IMPERIAL/IMG_5369.jpg",
+      "public/images/clean/IMPERIAL/IMG_5370.jpg"
+    ]
+  },
+  {
+    "element_name": "FYA-DRESS-IMP-Queen",
+    "collection": "IMPERIAL",
+    "images": [
+      "public/images/clean/IMPERIAL/IMG_5568.jpg",
+      "public/images/clean/IMPERIAL/IMG_5571.jpg",
+      "public/images/clean/IMPERIAL/IMG_5463.jpg"
+    ]
+  },
+  {
+    "element_name": "FYA-DRESS-IMP-Serena",
+    "collection": "IMPERIAL",
+    "images": [
+      "public/images/clean/IMPERIAL/IMG_5423.jpg",
+      "public/images/clean/IMPERIAL/IMG_5424.jpg",
+      "public/images/clean/IMPERIAL/IMG_5573.jpg",
+      "public/images/clean/IMPERIAL/IMG_5460.jpg"
+    ]
+  }
+]

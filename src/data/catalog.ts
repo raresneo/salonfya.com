@@ -63,11 +63,13 @@ const build = (collection: Collection, seeds: Seed[]): Dress[] =>
 const IMPERIAL_SEEDS: Seed[] = [
   {
     name: 'Alma',
+    description: 'Sleek A-line gown with spaghetti straps, fully embellished shimmering lace bodice, and a flowing minimalist skirt with an elegant train.',
     images: [flat('alma_front.jpg'), flat('alma_back.jpg'), flat('alma_detail.jpg')],
     sketches: [flat('alma_sketch_front.png'), flat('alma_sketch_back.png'), flat('alma_sketch_movement.png')],
   },
   {
     name: 'Argente',
+    description: 'Strapless fitted mermaid silhouette with intricate beadwork and floral lace on a sheer bodice, ending in a dramatic flared tulle skirt.',
     images: [
       flat('argente_front.jpg'),
       flat('argente_front_2.jpg'),
@@ -78,6 +80,7 @@ const IMPERIAL_SEEDS: Seed[] = [
   },
   {
     name: 'Aurelia',
+    description: 'Sweetheart neckline ballgown featuring a structured boned corset bodice adorned with delicate floral lace appliques that trail down a voluminous tulle skirt.',
     images: [
       flat('aurelia_front.jpg'),
       flat('aurelia_back.jpg'),
@@ -88,6 +91,7 @@ const IMPERIAL_SEEDS: Seed[] = [
   },
   {
     name: 'Daiana',
+    description: 'Plunging V-neckline A-line gown with shimmering patterned lace, spaghetti straps, an illusion open back, and a flowing sheer skirt with a subtle train.',
     images: [
       flat('daiana_front.jpg'),
       flat('daiana_side.jpg'),
@@ -101,6 +105,7 @@ const IMPERIAL_SEEDS: Seed[] = [
     // Fișierele plate elia_*.jpg sunt copii ale lui Daiana (SHA identic),
     // deci folosim exclusiv folderul colecției.
     name: 'Elia',
+    description: 'Sleek mermaid silhouette gown featuring a structured lace bodice with pearl detailing, available with an illusion plunging V-neck or strapless sweetheart neckline.',
     images: [
       p('IMPERIAL', 'Elia', 'IMG_5552.jpg'),
       p('IMPERIAL', 'Elia', 'IMG_5553.jpg'),
@@ -112,11 +117,13 @@ const IMPERIAL_SEEDS: Seed[] = [
   },
   {
     name: 'Elise',
+    description: 'Opulent off-the-shoulder ballgown with intricate silver beading, lace embroidery across the bodice, and a voluminous cascading tulle skirt with a long train.',
     images: [flat('elise_front.jpg'), flat('elise_side.jpg'), flat('elise_back.jpg'), flat('elise_detail.jpg')],
     sketches: [p('IMPERIAL', 'Elise', 'elise_sketch.png')],
   },
   {
     name: 'Evora',
+    description: 'Romantic A-line gown with illusion long bishop sleeves, a deep V-neckline, fully beaded floral applique bodice, and a pure white flowing tulle skirt.',
     images: [
       p('IMPERIAL', 'Evora', 'IMG_5580.jpg'),
       p('IMPERIAL', 'Evora', 'IMG_5581.jpg'),
@@ -127,6 +134,7 @@ const IMPERIAL_SEEDS: Seed[] = [
   },
   {
     name: 'Ivory Grace',
+    description: 'Modest and elegant long-sleeve ballgown with a high bateau neckline, sleek minimalist skirt, delicate pearl waist belt, and subtle embroidery on the bodice.',
     images: [
       p('IMPERIAL', 'Ivory Grace', 'IMG_5395.jpg'),
       p('IMPERIAL', 'Ivory Grace', 'IMG_5399.jpg'),
@@ -136,11 +144,13 @@ const IMPERIAL_SEEDS: Seed[] = [
   },
   {
     name: 'Lumiere',
+    description: 'Romantic A-line gown featuring illusion lace long sleeves, a sweetheart neckline beneath sheer lace, and a soft, flowing tulle skirt.',
     images: [p('IMPERIAL', 'Lumiere', 'IMG_5439.jpg')],
     sketches: [p('IMPERIAL', 'Lumiere', 'lumiere_sketch.png')],
   },
   {
     name: 'Mayson',
+    description: 'Luxurious long-sleeve V-neck ballgown crafted from textured shimmering fabric, featuring a pleated voluminous skirt and a wide structured waistband.',
     images: [
       p('IMPERIAL', 'Mayson', 'IMG_5364.jpg'),
       p('IMPERIAL', 'Mayson', 'IMG_5366.jpg'),
@@ -151,6 +161,7 @@ const IMPERIAL_SEEDS: Seed[] = [
   },
   {
     name: 'Queen',
+    description: 'Minimalist and sophisticated sleeveless scoop-neck ballgown made from sleek, unembellished fabric with a smooth, elegant drape.',
     images: [
       p('IMPERIAL', 'Queen', 'IMG_5568.jpg'),
       p('IMPERIAL', 'Queen', 'IMG_5571.jpg'),
@@ -160,6 +171,7 @@ const IMPERIAL_SEEDS: Seed[] = [
   },
   {
     name: 'Serena',
+    description: 'Form-fitting sleek mermaid gown with long sleeves, a deep V-neckline, and sheer lace illusion details on the shoulders and back.',
     images: [
       p('IMPERIAL', 'Serena', 'IMG_5423.jpg'),
       p('IMPERIAL', 'Serena', 'IMG_5424.jpg'),
