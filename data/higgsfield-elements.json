@@ -1,53 +1,85 @@
 [
   {
-    "name": "Alma",
-    "collection": "IMPERIAL",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-IMP-Alma",
+    "collection": "Imperial",
+    "dress": "Alma",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Alma. A-line gown with spaghetti straps, fully embellished shimmering lace bodice, and a flowing minimalist skirt with an train.",
+    "images": [
+      "public/images/clean/alma_front_nohead.jpg",
+      "public/images/alma_back.jpg",
+      "public/images/alma_detail.jpg"
+    ],
     "image_notes": [
       "front full view",
       "back full view showing open back and bow",
       "close up detail of the back waist bow"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile"
     ]
   },
   {
-    "name": "Argente",
-    "collection": "IMPERIAL",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-IMP-Argente",
+    "collection": "Imperial",
+    "dress": "Argente",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Argente. Strapless fitted mermaid silhouette with intricate beadwork and floral lace on a sheer bodice, ending in a dramatic flared tulle skirt.",
+    "images": [
+      "public/images/clean/argente_front_nohead.jpg",
+      "public/images/argente_front_2.jpg",
+      "public/images/argente_back.jpg",
+      "public/images/argente_detail.jpg"
+    ],
     "image_notes": [
       "front full view with skirt spread out",
       "front full view walking",
       "back and side profile view",
       "close up detail of the sleeve and bodice beading"
     ],
-    "missing_shots": [
-      "back"
-    ]
+    "has_face_in_primary": false,
+    "cleaned": true,
+    "missing_shots": []
   },
   {
-    "name": "Aurelia",
-    "collection": "IMPERIAL",
-    "soul_id": null,
-    "has_face_in_primary": false,
+    "element_name": "FYA-DRESS-IMP-Aurelia",
+    "collection": "Imperial",
+    "dress": "Aurelia",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Aurelia. Sweetheart neckline ballgown featuring a structured boned corset bodice adorned with floral lace appliques that trail down a voluminous tulle skirt.",
+    "images": [
+      "public/images/clean/aurelia_back_nohead.jpg",
+      "public/images/aurelia_front.jpg",
+      "public/images/aurelia_detail.jpg",
+      "public/images/aurelia_closeup.jpg"
+    ],
     "image_notes": [
-      "back full view showing the train",
       "close up detail of the front bodice",
+      "back full view showing the train",
       "close up detail of the back bodice",
       "front full view"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile"
     ]
   },
   {
-    "name": "Daiana",
-    "collection": "IMPERIAL",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-IMP-Daiana",
+    "collection": "Imperial",
+    "dress": "Daiana",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Daiana. Plunging V-neckline A-line gown with shimmering patterned lace, spaghetti straps, an illusion open back, and a flowing sheer skirt with a subtle train.",
+    "images": [
+      "public/images/clean/daiana_front_nohead.jpg",
+      "public/images/daiana_side.jpg",
+      "public/images/daiana_back.jpg",
+      "public/images/daiana_detail_1.jpg",
+      "public/images/daiana_detail_2.jpg"
+    ],
     "image_notes": [
       "front full view",
       "side profile view",
@@ -55,13 +87,23 @@
       "close up detail of front bodice",
       "side and train detail"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": []
   },
   {
-    "name": "Elia",
-    "collection": "IMPERIAL",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-IMP-Elia",
+    "collection": "Imperial",
+    "dress": "Elia",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, IMPERIAL collection, model Elia. Mermaid silhouette gown featuring a structured lace bodice with pearl detailing, available with an illusion plunging V-neck or strapless sweetheart neckline.",
+    "images": [
+      "public/images/clean/IMG_5552_nohead.jpg",
+      "public/images/IMPERIAL/Elia/IMG_5553.jpg",
+      "public/images/IMPERIAL/Elia/IMG_5554.jpg",
+      "public/images/IMPERIAL/Elia/IMG_5414.jpg",
+      "public/images/IMPERIAL/Elia/IMG_5415.jpg"
+    ],
     "image_notes": [
       "front full view",
       "back full view",
@@ -69,28 +111,46 @@
       "close up detail of the back and train",
       "front full view in different lighting"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile"
     ]
   },
   {
-    "name": "Elise",
-    "collection": "IMPERIAL",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-IMP-Elise",
+    "collection": "Imperial",
+    "dress": "Elise",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Elise. Off-the-shoulder ballgown with intricate silver beading, lace embroidery across the bodice, and a voluminous cascading tulle skirt with a long train.",
+    "images": [
+      "public/images/clean/elise_front_nohead.jpg",
+      "public/images/elise_side.jpg",
+      "public/images/elise_back.jpg",
+      "public/images/elise_detail.jpg"
+    ],
     "image_notes": [
       "front full view",
       "side profile view",
       "back full view",
       "close up detail of the back corset"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": []
   },
   {
-    "name": "Evora",
-    "collection": "IMPERIAL",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-IMP-Evora",
+    "collection": "Imperial",
+    "dress": "Evora",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Evora. A-line gown with illusion long bishop sleeves, a deep V-neckline, fully beaded floral applique bodice, and a pure white flowing tulle skirt.",
+    "images": [
+      "public/images/clean/IMG_5580_nohead.jpg",
+      "public/images/IMPERIAL/Evora/IMG_5581.jpg",
+      "public/images/IMPERIAL/Evora/IMG_5583.jpg",
+      "public/images/IMPERIAL/Evora/IMG_5587.jpg"
+    ],
     "image_notes": [
       "front full view",
       "back full view",
@@ -98,30 +158,46 @@
       "detail of back",
       "front half view"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile"
     ]
   },
   {
-    "name": "Ivory Grace",
-    "collection": "IMPERIAL",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-IMP-Ivory Grace",
+    "collection": "Imperial",
+    "dress": "Ivory Grace",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Ivory Grace. And long-sleeve ballgown with a high bateau neckline, minimalist skirt, pearl waist belt, and subtle embroidery on the bodice.",
+    "images": [
+      "public/images/clean/IMG_5395_nohead.jpg",
+      "public/images/IMPERIAL/Ivory Grace/IMG_5399.jpg",
+      "public/images/IMPERIAL/Ivory Grace/f202fbc6-6dd7-442b-8121-0cc159e5ff40.JPG"
+    ],
     "image_notes": [
       "front full view",
       "back full view",
       "side profile detail"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": []
   },
   {
-    "name": "Lumiere",
-    "collection": "IMPERIAL",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-IMP-Lumiere",
+    "collection": "Imperial",
+    "dress": "Lumiere",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Lumiere. A-line gown featuring illusion lace long sleeves, a sweetheart neckline beneath sheer lace, and a soft, flowing tulle skirt.",
+    "images": [
+      "public/images/clean/IMG_5439_nohead.jpg"
+    ],
     "image_notes": [
       "front half view showing bodice and sleeves"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "back",
       "profile",
@@ -129,10 +205,17 @@
     ]
   },
   {
-    "name": "Mayson",
-    "collection": "IMPERIAL",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-IMP-Mayson",
+    "collection": "Imperial",
+    "dress": "Mayson",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Mayson. Long-sleeve V-neck ballgown crafted from textured shimmering fabric, featuring a pleated voluminous skirt and a wide structured waistband.",
+    "images": [
+      "public/images/clean/IMG_5364_nohead.jpg",
+      "public/images/IMPERIAL/Mayson/IMG_5366.jpg",
+      "public/images/IMPERIAL/Mayson/IMG_5369.jpg",
+      "public/images/IMPERIAL/Mayson/IMG_5370.jpg"
+    ],
     "image_notes": [
       "front full view",
       "back full view",
@@ -140,30 +223,47 @@
       "detail of sleeve and bodice",
       "front full view looking down"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile"
     ]
   },
   {
-    "name": "Queen",
-    "collection": "IMPERIAL",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-IMP-Queen",
+    "collection": "Imperial",
+    "dress": "Queen",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Queen. Minimalist and sleeveless scoop-neck ballgown made from , unembellished fabric with a smooth, drape.",
+    "images": [
+      "public/images/clean/IMG_5568_nohead.jpg",
+      "public/images/IMPERIAL/Queen/IMG_5571.jpg",
+      "public/images/IMPERIAL/Queen/IMG_5463.jpg"
+    ],
     "image_notes": [
       "front full view",
       "back full view",
       "front half view"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile",
       "detail"
     ]
   },
   {
-    "name": "Serena",
-    "collection": "IMPERIAL",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-IMP-Serena",
+    "collection": "Imperial",
+    "dress": "Serena",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Serena. Form-fitting mermaid gown with long sleeves, a deep V-neckline, and sheer lace illusion details on the shoulders and back.",
+    "images": [
+      "public/images/clean/IMG_5423_nohead.jpg",
+      "public/images/IMPERIAL/Serena/IMG_5424.jpg",
+      "public/images/IMPERIAL/Serena/IMG_5573.jpg",
+      "public/images/IMPERIAL/Serena/IMG_5460.jpg"
+    ],
     "image_notes": [
       "front full view",
       "back full view",
@@ -171,527 +271,824 @@
       "close up detail of back",
       "close up detail of front bodice"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": []
   },
   {
-    "name": "Anais",
-    "collection": "ANNA",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-ANN-Anais",
+    "collection": "Anna",
+    "dress": "Anais",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Anais. Plunging deep V-neckline, long sheer puffy bishop sleeves with dotted pattern, beaded lace bodice, soft flowing sparkly tulle skirt.",
+    "images": [
+      "public/images/clean/0A1909F0-C8B1-4B7C-AA3E-2514FAA0D407_nohead.jpg",
+      "public/images/ANNA/Anais/79DC5387-A233-4FAF-A400-365F22270EED.PNG",
+      "public/images/ANNA/Anais/A85332DF-BE08-4DA1-9DF5-CF48706FFDBF.PNG"
+    ],
     "image_notes": [
       "front half view",
       "back full view",
       "front full view"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile",
       "detail"
     ]
   },
   {
-    "name": "Anamara",
-    "collection": "ANNA",
-    "soul_id": null,
-    "has_face_in_primary": false,
-    "image_notes": [
-      "neck and shoulder close up",
-      "back full view",
-      "front full view"
+    "element_name": "FYA-DRESS-ANN-Anamara",
+    "collection": "Anna",
+    "dress": "Anamara",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Anamara. Mermaid silhouette, high illusion neckline over sweetheart bodice, sheer long sleeves, intricate lace appliques covering bodice and skirt, illusion back with button closure down the middle.",
+    "images": [
+      "public/images/clean/744883C6-51FE-44AB-ADDD-D4F57FAFFF68_nohead.PNG",
+      "public/images/IMPERIAL/Anamara/IMG_6316.jpg",
+      "public/images/IMPERIAL/Anamara/3D870093-9834-45A4-9A7A-821B9FFB6889.PNG"
     ],
+    "image_notes": [
+      "front full view",
+      "neck and shoulder close up",
+      "back full view"
+    ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile"
     ]
   },
   {
-    "name": "Anamaria",
-    "collection": "ANNA",
-    "soul_id": null,
-    "has_face_in_primary": false,
+    "element_name": "FYA-DRESS-ANN-Anamaria",
+    "collection": "Anna",
+    "dress": "Anamaria",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Anamaria. High illusion neckline over sweetheart bodice, sheer long sleeves, intricate linear beading on bodice and sleeves, full sparkly tulle skirt, illusion back with button closure.",
+    "images": [
+      "public/images/clean/IMG_5841_nohead.jpg",
+      "public/images/ANNA/Anamaria/IMG_5829.jpg",
+      "public/images/ANNA/Anamaria/IMG_5843.jpg",
+      "public/images/ANNA/Anamaria/IMG_5845.jpg"
+    ],
     "image_notes": [
-      "back full view",
       "front full view",
+      "back full view",
       "detail shoulder on mannequin",
       "detail shoulder on mannequin"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile"
     ]
   },
   {
-    "name": "Anaria",
-    "collection": "ANNA",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-ANN-Anaria",
+    "collection": "Anna",
+    "dress": "Anaria",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Anaria. Plunging V-neckline, sheer long bishop sleeves with beaded lace cuffs, heavily beaded patterned bodice, full shimmering sparkly tulle skirt.",
+    "images": [
+      "public/images/clean/48777E20-17E8-4147-8162-1DFA6FC8ED37_nohead.PNG",
+      "public/images/ANNA/Anaria/753C58D1-6014-43EF-B408-E9D5382C43EE.PNG",
+      "public/images/ANNA/Anaria/E110F78F-1AE3-4F76-9927-C1C38242F2B0.PNG"
+    ],
     "image_notes": [
       "front full view",
       "back half view looking over shoulder",
       "back full view"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile",
       "detail"
     ]
   },
   {
-    "name": "Anastasia",
-    "collection": "ANNA",
-    "soul_id": null,
-    "has_face_in_primary": false,
+    "element_name": "FYA-DRESS-ANN-Anastasia",
+    "collection": "Anna",
+    "dress": "Anastasia",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Anastasia. Cap sleeves with lace, sweetheart bodice with lace appliques, sheer illusion back with button closure down the middle, full soft plain tulle skirt.",
+    "images": [
+      "public/images/clean/811DDE31-7EB2-44F1-8D33-920F6E536A1E_nohead.PNG",
+      "public/images/ANNA/Anastasia/20FF0E7B-AEEA-4216-A8BD-DB3ED5252E97.PNG",
+      "public/images/ANNA/Anastasia/9882240D-72F9-435F-9A1C-213C53DC6380.PNG"
+    ],
     "image_notes": [
-      "back full view",
       "front full view",
+      "back full view",
       "back full view looking over shoulder"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile",
       "detail"
     ]
   },
   {
-    "name": "Anastea",
-    "collection": "ANNA",
-    "soul_id": null,
-    "has_face_in_primary": false,
+    "element_name": "FYA-DRESS-ANN-Anastea",
+    "collection": "Anna",
+    "dress": "Anastea",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Anastea. Smooth satin fabric, off-the-shoulder straps, draped sweetheart bodice, short puffed sleeves, full pleated satin skirt, corset lacing on back.",
+    "images": [
+      "public/images/clean/22696034-4E9C-4BE8-AAE9-528DBC3C1ED7_nohead.PNG",
+      "public/images/ANNA/Anastea/IMG_6002.jpg",
+      "public/images/ANNA/Anastea/162B7262-5C38-4385-9346-FDB3B1527BD4.PNG",
+      "public/images/ANNA/Anastea/C5E124D3-D23F-46C6-9FFF-B48DBC1B5C58.PNG"
+    ],
     "image_notes": [
+      "front full view",
       "corset back detail on mannequin",
       "back full view",
-      "front full view",
       "front half view"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile"
     ]
   },
   {
-    "name": "Anatolia",
-    "collection": "ANNA",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-ANN-Anatolia",
+    "collection": "Anna",
+    "dress": "Anatolia",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Anatolia. Illusion long sleeves, plunging V-neckline with scalloped lace edge, lace appliques cascading down the bodice and skirt, full tulle skirt.",
+    "images": [
+      "public/images/clean/IMG_5851_nohead.jpg",
+      "public/images/ANNA/Anatolia/IMG_5855.jpg"
+    ],
     "image_notes": [
       "front full view",
       "back full view"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile",
       "detail"
     ]
   },
   {
-    "name": "Anavelle",
-    "collection": "ANNA",
-    "soul_id": null,
-    "has_face_in_primary": false,
+    "element_name": "FYA-DRESS-ANN-Anavelle",
+    "collection": "Anna",
+    "dress": "Anavelle",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Anavelle. Long sheer sleeves, fully beaded bodice and sleeves, deep V-back with button closure down the middle, full sparkly tulle skirt with train.",
+    "images": [
+      "public/images/clean/F0984693-7165-430E-A06E-8451F8492F3A_nohead.PNG",
+      "public/images/ANNA/Anavelle/A74C3A1A-C6FF-4C80-BBF4-6E3736B9F525.PNG",
+      "public/images/ANNA/Anavelle/FC5646E0-8C55-4E53-B5C4-FE51E2B46449.PNG"
+    ],
     "image_notes": [
-      "back full view",
       "front full view",
+      "back full view",
       "side full view"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "detail"
     ]
   },
   {
-    "name": "Anelie",
-    "collection": "ANNA",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-ANN-Anelie",
+    "collection": "Anna",
+    "dress": "Anelie",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Anelie. Off-the-shoulder draped tulle straps, sweetheart neckline, heavily beaded bodice with pearls and crystals, full sparkly tulle skirt.",
+    "images": [
+      "public/images/clean/309257BD-2244-49A4-A5D5-50358890D6D5_nohead.PNG",
+      "public/images/ANNA/Anelie/3F333F5B-B61B-4A2E-87D1-8325BBA0CBF7.PNG",
+      "public/images/ANNA/Anelie/B16FAF52-4CD5-4C75-A5D3-04E5ECE96EEB.PNG"
+    ],
     "image_notes": [
       "front half view",
       "front full view",
       "back full view"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile",
       "detail"
     ]
   },
   {
-    "name": "Annabelle",
-    "collection": "ANNA",
-    "soul_id": null,
-    "has_face_in_primary": false,
+    "element_name": "FYA-DRESS-ANN-Annabelle",
+    "collection": "Anna",
+    "dress": "Annabelle",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Annabelle. High illusion neckline over sweetheart bodice, long sheer lace sleeves with puffed shoulders, deep V front illusion, full tulle skirt with lace appliques cascading down, deep V-back.",
+    "images": [
+      "public/images/clean/IMG_5875_nohead.jpg",
+      "public/images/ANNA/Annabelle/IMG_5868.jpg",
+      "public/images/ANNA/Annabelle/IMG_5872.jpg",
+      "public/images/ANNA/Annabelle/IMG_5881.jpg"
+    ],
     "image_notes": [
+      "front full view",
       "back full view",
       "back half view",
-      "front full view",
       "detail of sleeve beading"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile"
     ]
   },
   {
-    "name": "Annador",
-    "collection": "ANNA",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-ANN-Annador",
+    "collection": "Anna",
+    "dress": "Annador",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Annador. Off-the-shoulder draped soft tulle straps, sweetheart neckline, lace appliques on bodice, full soft tulle skirt.",
+    "images": [
+      "public/images/clean/0DB5AAD1-EEE2-40B7-926B-403B31D9EEE2_nohead.PNG",
+      "public/images/ANNA/Annador/BBACE0F9-1649-4353-93B4-A7D453D0991C.PNG"
+    ],
     "image_notes": [
       "front full view",
       "back full view"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile",
       "detail"
     ]
   },
   {
-    "name": "Annette",
-    "collection": "ANNA",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-ANN-Annette",
+    "collection": "Anna",
+    "dress": "Annette",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Annette. Off-the-shoulder sheer tulle straps, plunging sweetheart neckline, intricately beaded and crystal-embellished bodice, soft plain tulle skirt.",
+    "images": [
+      "public/images/clean/IMG_5917_nohead.jpg",
+      "public/images/ANNA/Annette/IMG_5918.jpg",
+      "public/images/ANNA/Annette/IMG_5919.jpg",
+      "public/images/ANNA/Annette/35C61BE9-0D54-4949-881A-50C8B2229576.PNG"
+    ],
     "image_notes": [
       "front half view",
       "front full view",
       "side full view",
       "detail of bodice on mannequin"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "back"
     ]
   },
   {
-    "name": "Just Anna",
-    "collection": "ANNA",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-ANN-Just Anna",
+    "collection": "Anna",
+    "dress": "Just Anna",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Just Anna. Off-the-shoulder puffed sheer sleeves, draped sweetheart neckline, intricately beaded bodice with crystals, full sparkly tulle skirt.",
+    "images": [
+      "public/images/clean/IMG_5889_nohead.jpg",
+      "public/images/ANNA/Just Anna/IMG_5890.jpg",
+      "public/images/ANNA/Just Anna/IMG_5908.jpg"
+    ],
     "image_notes": [
       "front full view",
       "back full view"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile",
       "detail"
     ]
   },
   {
-    "name": "Adania",
-    "collection": "MAYRA",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-MAY-Adania",
+    "collection": "Mayra",
+    "dress": "Adania",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Adania. Ornate fit-and-flare gown densely covered in pearls, beads, and sequins in a symmetrical butterfly-like pattern. The bodice has a sweetheart neckline with thin beaded straps. The gown has a deep V-neckline at the back and flows into a subtle train, with the pearled detailing continuing densely over the skirt.",
+    "images": [
+      "public/images/clean/IMG_5591_nohead.jpg",
+      "public/images/MAYRA/Adania/IMG_5597.jpg",
+      "public/images/MAYRA/Adania/IMG_5603.jpg",
+      "public/images/MAYRA/Adania/IMG_5607.jpg"
+    ],
     "image_notes": [
       "front full view",
       "back full view",
       "front half view",
       "detail of bodice on mannequin"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile"
     ]
   },
   {
-    "name": "Celina",
-    "collection": "MAYRA",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-MAY-Celina",
+    "collection": "Mayra",
+    "dress": "Celina",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Celina. Minimalist and fit-and-flare gown crafted from smooth crepe. The bodice features a clean, high boat neckline and solid white front. The long sleeves are made of sheer illusion mesh embellished with lace appliqué and beadwork. The back features a deep V-cut down to the waistline.",
+    "images": [
+      "public/images/clean/IMG_5616_nohead.jpg",
+      "public/images/MAYRA/Celina/IMG_5618.jpg",
+      "public/images/MAYRA/Celina/IMG_5620.jpg",
+      "public/images/MAYRA/Celina/IMG_5626.JPEG"
+    ],
     "image_notes": [
+      "front full view",
       "side full view sitting",
       "back half view looking over shoulder",
-      "back full view walking",
       "detail of shoulder beading"
     ],
-    "missing_shots": [
-      "front"
-    ]
+    "has_face_in_primary": false,
+    "cleaned": true,
+    "missing_shots": []
   },
   {
-    "name": "Desideria",
-    "collection": "MAYRA",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-MAY-Desideria",
+    "collection": "Mayra",
+    "dress": "Desideria",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Desideria. A-line gown covered entirely in intricate glittering botanical lace. The bodice features a plunging illusion V-neckline and sheer long sleeves adorned with the same matching lace pattern. The back showcases a deep V-cut matching the front, and the skirt flows gently to a small train.",
+    "images": [
+      "public/images/clean/IMG_5631_nohead.jpg",
+      "public/images/MAYRA/Desideria/IMG_5637.jpg",
+      "public/images/MAYRA/Desideria/IMG_5638.jpg",
+      "public/images/MAYRA/Desideria/IMG_5640.jpg"
+    ],
     "image_notes": [
       "front full view",
       "back full view",
       "detail of bodice on mannequin",
       "detail of back beading"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile"
     ]
   },
   {
-    "name": "Elvira",
-    "collection": "MAYRA",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-MAY-Elvira",
+    "collection": "Mayra",
+    "dress": "Elvira",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Elvira. A-line gown featuring an illusion bodice adorned with floral lace appliqué and off-the-shoulder draped lace sleeves. The sweetheart neckline is softened by the illusion mesh. The lightweight tulle skirt flows beautifully into a long train. The back features a scoop cut framed by matching floral lace.",
+    "images": [
+      "public/images/clean/IMG_5648_nohead.jpg",
+      "public/images/MAYRA/Elvira/IMG_5651.jpg",
+      "public/images/MAYRA/Elvira/IMG_5652.jpg"
+    ],
     "image_notes": [
       "front full view",
       "front full view with skirt spread",
       "back full view"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile",
       "detail"
     ]
   },
   {
-    "name": "Grazia",
-    "collection": "MAYRA",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-MAY-Grazia",
+    "collection": "Mayra",
+    "dress": "Grazia",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Grazia. Flowing A-line gown with a smooth, draped skirt featuring a high side slit. The corset-style bodice showcases exposed boning and a sweetheart neckline, decorated with sparkling beaded lace appliqué that extends delicately down onto the skirt. The back features a low scoop neckline and thin straps.",
+    "images": [
+      "public/images/clean/IMG_5668_nohead.jpg",
+      "public/images/MAYRA/Grazia/IMG_5669.jpg",
+      "public/images/MAYRA/Grazia/ED2F8FEC-0716-44BC-B7C6-29E39267E930.jpg"
+    ],
     "image_notes": [
       "front full view",
       "back full view with bridesmaids",
       "detail of shoulder sleeve on mannequin"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile"
     ]
   },
   {
-    "name": "Isadora",
-    "collection": "MAYRA",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-MAY-Isadora",
+    "collection": "Mayra",
+    "dress": "Isadora",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Isadora. Fit-and-flare gown heavily embellished with beaded botanical lace over a sheer bodice. The gown features a plunging V-neckline and is paired with matching detachable long sheer sleeves. The back showcases a deep open V-cut framed by intricate lace, flowing into a dramatic train.",
+    "images": [
+      "public/images/clean/IMG_5681_nohead.jpg",
+      "public/images/MAYRA/Isadora/IMG_5682.jpg",
+      "public/images/MAYRA/Isadora/IMG_5691.jpg"
+    ],
     "image_notes": [
       "front full view",
       "back full view",
       "detail of bodice on mannequin"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile"
     ]
   },
   {
-    "name": "Luminia",
-    "collection": "MAYRA",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-MAY-Luminia",
+    "collection": "Mayra",
+    "dress": "Luminia",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Luminia. A-line gown with a flowing, soft tulle skirt. The bodice features a deep plunging V-neckline with illusion mesh paneling and thick straps, adorned with swirling symmetrical lace appliqué. The gown can be paired with an optional sheer high-neck cape that drapes elegantly over the shoulders. The back of the gown itself features a deep V-shape.",
+    "images": [
+      "public/images/clean/IMG_5697_nohead.jpg",
+      "public/images/MAYRA/Luminia/IMG_5698.jpg",
+      "public/images/MAYRA/Luminia/IMG_5699.jpg",
+      "public/images/MAYRA/Luminia/IMG_5709.jpg",
+      "public/images/MAYRA/Luminia/IMG_5710.jpg"
+    ],
     "image_notes": [
       "front full view with skirt spread",
       "back full view",
       "back full view looking over shoulder",
       "detail of cape on mannequin"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile"
     ]
   },
   {
-    "name": "Miracle",
-    "collection": "MAYRA",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-MAY-Miracle",
+    "collection": "Mayra",
+    "dress": "Miracle",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Miracle. A-line gown with a structured satin skirt and a long train. The bodice features a sheer illusion neckline and long sheer sleeves, fully embellished with intricate beaded lace appliques that trail down onto the waist. The back is a deep illusion V-shape framed by matching lace details.",
+    "images": [
+      "public/images/clean/IMG_5714_nohead.jpg",
+      "public/images/MAYRA/Miracle/IMG_5715.jpg",
+      "public/images/MAYRA/Miracle/IMG_5717.jpg",
+      "public/images/MAYRA/Miracle/IMG_5718.jpg",
+      "public/images/MAYRA/Miracle/IMG_5727.jpg",
+      "public/images/MAYRA/Miracle/IMG_5729.jpg"
+    ],
     "image_notes": [
       "front full view",
+      "back full view",
       "side full view sitting",
-      "detail of front bodice on mannequin",
-      "detail of back on mannequin"
+      "detail of front bodice",
+      "detail of back",
+      "front half view"
     ],
-    "missing_shots": [
-      "back"
-    ]
+    "has_face_in_primary": false,
+    "cleaned": true,
+    "missing_shots": []
   },
   {
-    "name": "Roze",
-    "collection": "MAYRA",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-MAY-Roze",
+    "collection": "Mayra",
+    "dress": "Roze",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Roze. Voluminous blush pink ballgown made entirely of heavily textured, ruffled tulle rosettes. The bodice features a deep plunging V-neckline with ruffled tulle shoulder details and a matching deep V open back, finished with a ribbon sash at the waist.",
+    "images": [
+      "public/images/clean/IMG_5735_nohead.jpg",
+      "public/images/MAYRA/Roze/IMG_5736.jpg"
+    ],
     "image_notes": [
       "front full view",
       "back full view looking over shoulder"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile",
       "detail"
     ]
   },
   {
-    "name": "Snow",
-    "collection": "MAYRA",
-    "soul_id": null,
-    "has_face_in_primary": false,
+    "element_name": "FYA-DRESS-MAY-Snow",
+    "collection": "Mayra",
+    "dress": "Snow",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Snow. Minimalist A-line gown crafted from smooth satin. The structured bodice features a square neckline and wide straps, leading to a deep V-back. A large structured bow accents the back waistline with trailing tails over the flowing skirt and train.",
+    "images": [
+      "public/images/clean/IMG_5744_nohead.jpg",
+      "public/images/MAYRA/Snow/IMG_5743.jpg",
+      "public/images/MAYRA/Snow/IMG_5748.jpg",
+      "public/images/MAYRA/Snow/IMG_5753.jpg",
+      "public/images/MAYRA/Snow/IMG_5757.jpg"
+    ],
     "image_notes": [
-      "back full view",
       "front full view",
+      "back full view",
       "front full view looking over shoulder",
       "back full view with skirt spread"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile",
       "detail"
     ]
   },
   {
-    "name": "Tania",
-    "collection": "MAYRA",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-MAY-Tania",
+    "collection": "Mayra",
+    "dress": "Tania",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Tania. Flowing A-line gown with long bishop sleeves. The bodice features pleating and a scoop neckline, accented with pink and green floral embroidery along the neckline, waistline, and cuffs. The back is closed with matching floral embroidery details.",
+    "images": [
+      "public/images/clean/IMG_5764_nohead.jpg",
+      "public/images/MAYRA/Tania/IMG_5767.jpg",
+      "public/images/MAYRA/Tania/IMG_5771.jpg",
+      "public/images/MAYRA/Tania/IMG_5781.jpg"
+    ],
     "image_notes": [
       "front full view",
       "side profile view",
       "back full view",
       "detail of back waist flowers"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": []
   },
   {
-    "name": "Taniana",
-    "collection": "MAYRA",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-MAY-Taniana",
+    "collection": "Mayra",
+    "dress": "Taniana",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Taniana. Flowing A-line gown featuring unique cape sleeves that drape to the floor. The bodice features pleating and a scoop neckline, accented with intricate 3D floral appliques along the neckline and shoulders. The back features a deep V-shape adorned with matching floral appliques.",
+    "images": [
+      "public/images/clean/IMG_5785_nohead.jpg",
+      "public/images/MAYRA/Taniana/IMG_5788.jpg",
+      "public/images/MAYRA/Taniana/IMG_5796.jpg"
+    ],
     "image_notes": [
       "front full view",
       "back full view",
       "detail of back corset"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile"
     ]
   },
   {
-    "name": "Aveline",
-    "collection": "BEVERLY",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-BEV-Aveline",
+    "collection": "Beverly",
+    "dress": "Aveline",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Aveline. A-line gown with a flowing tulle skirt. The corset bodice is slightly sheer with visible boning, featuring a subtle sweetheart neckline and beaded off-the-shoulder drape sleeves. 3D floral appliques and beadwork decorate the bodice and trail onto the top of the skirt. The back is an open corset style with matching floral details.",
+    "images": [
+      "public/images/clean/115CCF60-8679-410A-8370-63E6A9F89212_nohead.PNG",
+      "public/images/BEVERLY/Aveline/AAAF1202-841B-4ECB-99D7-288B50AB6844.PNG"
+    ],
     "image_notes": [
       "front full view",
       "back full view"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile",
       "detail"
     ]
   },
   {
-    "name": "Beauty",
-    "collection": "BEVERLY",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-BEV-Beauty",
+    "collection": "Beverly",
+    "dress": "Beauty",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Beauty. Fitted trumpet gown completely covered in intricate geometric and floral beadwork. The bodice features a sweetheart neckline with thin spaghetti straps that lead to a dramatic open criss-cross back. A voluminous detachable tulle overskirt with matching beadwork at the waist adds a layer of grandeur.",
+    "images": [
+      "public/images/clean/2C8B1C4E-9132-4164-A376-2CA5D84F83B2_nohead.PNG",
+      "public/images/BEVERLY/Beauty/38BFFE6C-B36C-4166-A82C-A9FD2EE8C200.PNG",
+      "public/images/BEVERLY/Beauty/1ED51795-BB30-42F8-9E60-27A53172F5C5.jpg"
+    ],
     "image_notes": [
       "front full view",
       "front full view with leg slit",
       "detail of back beading"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile",
       "back"
     ]
   },
   {
-    "name": "Bety",
-    "collection": "BEVERLY",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-BEV-Bety",
+    "collection": "Beverly",
+    "dress": "Bety",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Bety. Flowing A-line gown with a thigh-high slit. The corset bodice features a sweetheart neckline with thin spaghetti straps and off-the-shoulder tulle drape sleeves. The bodice and top of the skirt are adorned with intricate trailing beadwork and tiny 3D floral appliques. The back features a deep open V-shape.",
+    "images": [
+      "public/images/clean/40C0C4BB-6FFA-4766-9C74-936E4B33A0B7_nohead.PNG",
+      "public/images/BEVERLY/Bety/7C7BAEA6-5AA1-47F0-AB66-0932F85F1BFC.PNG",
+      "public/images/BEVERLY/Bety/D890182A-3BF8-4437-BE26-D4BE930405DF.PNG"
+    ],
     "image_notes": [
       "detail of front bodice",
       "back full view with leg slit",
       "front full view"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile"
     ]
   },
   {
-    "name": "Candy",
-    "collection": "BEVERLY",
-    "soul_id": null,
-    "has_face_in_primary": true,
-    "image_notes": [
-      "back full view",
-      "back full view with skirt spread",
-      "front full view"
+    "element_name": "FYA-DRESS-BEV-Candy",
+    "collection": "Beverly",
+    "dress": "Candy",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Candy. A-line gown with a softly pleated tulle skirt. The bodice has a deep plunging V-neckline with a sheer insert and long fitted sleeves. The entire bodice and sleeves are adorned with bold floral lace appliques that trail slightly past the waist. The back features a sheer illusion panel with matching lace appliques and a row of buttons down the center.",
+    "images": [
+      "public/images/clean/C646F8AC-F3B2-4131-B600-918E762A84B9_nohead.PNG",
+      "public/images/clean/25F6D5C5-6164-469C-8EE4-7DCEF85EEF14_nohead.PNG",
+      "public/images/BEVERLY/Candy/658A28B1-4FB0-476A-8E4C-681794EDDC36.PNG"
     ],
+    "image_notes": [
+      "front full view",
+      "back full view",
+      "back full view with skirt spread"
+    ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile",
       "detail"
     ]
   },
   {
-    "name": "Cediz",
-    "collection": "BEVERLY",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-BEV-Cediz",
+    "collection": "Beverly",
+    "dress": "Cediz",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Cediz. A-line gown with a flowing tulle skirt. The corset bodice is ruched and draped, featuring a sweetheart neckline and beaded shoulder straps that form a sheer drape effect over the shoulders. Intricate vine-like beading and floral appliques accent the waist, bustline, and back. The back features a deep open V-shape with a row of buttons down the center.",
+    "images": [
+      "public/images/clean/AC2C54DB-1A39-402F-BAAB-C1A39DDE0C8C_nohead.PNG",
+      "public/images/clean/7BDA1B11-69AA-4CF2-8B80-2DF0FB5B0305_nohead.PNG",
+      "public/images/BEVERLY/Cediz/CDC70D0B-80B0-436E-A138-4A64FE5051B2.PNG"
+    ],
     "image_notes": [
-      "back full view",
       "front full view",
+      "back full view",
       "detail of front bodice"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile"
     ]
   },
   {
-    "name": "Celestia",
-    "collection": "BEVERLY",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-BEV-Celestia",
+    "collection": "Beverly",
+    "dress": "Celestia",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Celestia. Fitted column gown completely covered in wavy, intricate beadwork. The straight off-the-shoulder neckline features dramatic beaded fringe that drapes over the upper arms. The back matches the front with an open upper back and a line of buttons trailing down to a sweep train.",
+    "images": [
+      "public/images/clean/2107F38F-0DD1-4497-BF3E-6AFFCB417580_nohead.PNG",
+      "public/images/BEVERLY/Celestia/B5632105-393D-4F7E-B4D3-DB5FD9F935FF.PNG"
+    ],
     "image_notes": [
       "front full view",
       "back full view"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile",
       "detail"
     ]
   },
   {
-    "name": "Fyona",
-    "collection": "BEVERLY",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-BEV-Fyona",
+    "collection": "Beverly",
+    "dress": "Fyona",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Fyona. Flowing A-line gown with a voluminous layered tulle skirt. The corset bodice is sheer with visible boning, featuring a sweetheart neckline and off-the-shoulder draped tulle sleeves. The bodice is densely covered in intricate 3D floral appliques and lace that cascade down into the skirt. The back is an open corset style with matching floral details.",
+    "images": [
+      "public/images/clean/E325D880-0FDD-42A5-A4E6-3731EFEBBF8A_nohead.PNG",
+      "public/images/clean/59B72D64-68F1-4BFD-8C16-8A65FFCD7366_nohead.PNG",
+      "public/images/BEVERLY/Fyona/44F1F915-D193-41D9-A6E3-1CAA83D39058.jpg"
+    ],
     "image_notes": [
-      "back full view",
       "front full view",
+      "back full view",
       "detail of front bodice"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile"
     ]
   },
   {
-    "name": "Marisa",
-    "collection": "BEVERLY",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-BEV-Marisa",
+    "collection": "Beverly",
+    "dress": "Marisa",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Marisa. Fitted trumpet gown with a unique geometric grid and large scroll lace pattern. The sweetheart neckline features a deep plunging slit and thin straps, along with off-the-shoulder lace sleeves. The bodice is structured with visible boning. The back is an open corset style.",
+    "images": [
+      "public/images/clean/230565A2-30C0-42B2-9489-FE788A454878_nohead.PNG",
+      "public/images/BEVERLY/Marisa/38B36E35-0C78-4040-BD34-0179CA259ED4.PNG",
+      "public/images/BEVERLY/Marisa/3C36FB67-DB80-4606-B3FF-D1C53E7638C2.PNG",
+      "public/images/BEVERLY/Marisa/B6C95714-06F6-44F8-8FD9-8D534D00AB86.PNG"
+    ],
     "image_notes": [
-      "side full view",
       "front full view",
-      "detail of front bodice",
+      "side full view",
+      "back full view",
       "front full view looking down"
     ],
-    "missing_shots": [
-      "back"
-    ]
+    "has_face_in_primary": false,
+    "cleaned": true,
+    "missing_shots": []
   },
   {
-    "name": "Nolli",
-    "collection": "BEVERLY",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-BEV-Nolli",
+    "collection": "Beverly",
+    "dress": "Nolli",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Nolli. A-line gown with a softly pleated tulle skirt. The bodice features a sweetheart neckline with a sheer illusion panel creating a high scoop neckline and long sheer sleeves with subtle wrist appliques. floral lace appliques decorate the bodice and trail gently onto the upper skirt. The back features a sheer illusion panel with matching lace appliques and a row of buttons down the center.",
+    "images": [
+      "public/images/clean/1AF62A14-D463-4296-996D-4407D0D05C0C_nohead.PNG",
+      "public/images/BEVERLY/Nolli/791B9E80-C741-4596-9D8B-98B623FF0BF9.PNG",
+      "public/images/BEVERLY/Nolli/788465EE-72EB-4D98-AF47-976F66A94BE3.jpg",
+      "public/images/BEVERLY/Nolli/8B0FFD39-1E26-4F31-B784-AE7BA3AF65B4.jpg"
+    ],
     "image_notes": [
       "front full view",
       "back full view",
       "detail of front bodice",
       "detail of back bodice"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile"
     ]
   },
   {
-    "name": "Solea",
-    "collection": "BEVERLY",
-    "soul_id": null,
-    "has_face_in_primary": true,
+    "element_name": "FYA-DRESS-BEV-Solea",
+    "collection": "Beverly",
+    "dress": "Solea",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Solea. A-line gown made entirely of shimmering star-patterned tulle. The bodice features a deep plunging V-neckline down to the waist and voluminous sheer long sleeves gathered at the wrists. The back is completely open in a deep V-shape. The lightweight skirt flows fluidly to a long sheer train.",
+    "images": [
+      "public/images/clean/1F094A24-E99A-40BC-82F4-0FA8E7DC3167_nohead.PNG",
+      "public/images/BEVERLY/Solea/9018FCB1-33DE-486D-9511-C42292ED2A65.PNG",
+      "public/images/BEVERLY/Solea/B9A677F9-769E-452A-91B7-93DC86E26CC2.PNG"
+    ],
     "image_notes": [
       "front full view",
       "back full view",
       "front full view with skirt spread"
     ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile",
       "detail"
     ]
   },
   {
-    "name": "Valensia",
-    "collection": "BEVERLY",
-    "soul_id": null,
-    "has_face_in_primary": true,
-    "image_notes": [
-      "back full view looking over shoulder",
-      "front full view"
+    "element_name": "FYA-DRESS-BEV-Valensia",
+    "collection": "Beverly",
+    "dress": "Valensia",
+    "category": "prop",
+    "description": "Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Valensia. Long-sleeve A-line gown made entirely of dense floral and nature-inspired lace. The bodice features a high mock neckline and long fitted sleeves. The back is fully covered in the same intricate lace with a row of small buttons down the center.",
+    "images": [
+      "public/images/clean/E91DF7E3-18B8-482B-8F6A-E1ABDCF9F46F_nohead.PNG",
+      "public/images/clean/8FC77535-6FF4-4D57-AB1F-9CAE439BEA3B_nohead.PNG"
     ],
+    "image_notes": [
+      "front full view",
+      "back full view looking over shoulder"
+    ],
+    "has_face_in_primary": false,
+    "cleaned": true,
     "missing_shots": [
       "profile",
       "detail"
