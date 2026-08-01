@@ -5,7 +5,7 @@ export const notes = {
   // IMPERIAL
   "Alma": { notes: ["front full view", "back full view showing open back and bow", "close up detail of the back waist bow"], missing: ["profile"] },
   "Argente": { notes: ["front full view with skirt spread out", "front full view walking", "back and side profile view", "close up detail of the sleeve and bodice beading"], missing: ["back"] },
-  "Aurelia": { notes: ["back full view showing the train", "close up detail of the front bodice", "close up detail of the back bodice", "front full view"], missing: ["profile"] },
+  "Aurelia": { notes: ["front full view", "back full view showing the train", "close up detail of the front bodice", "close up detail of the back bodice"], missing: ["profile"] },
   "Daiana": { notes: ["front full view", "side profile view", "back full view", "close up detail of front bodice", "side and train detail"], missing: [] },
   "Elia": { notes: ["front full view", "back full view", "close up detail of the front bodice", "close up detail of the back and train", "front full view in different lighting"], missing: ["profile"] },
   "Elise": { notes: ["front full view", "side profile view", "back full view", "close up detail of the back corset"], missing: [] },
