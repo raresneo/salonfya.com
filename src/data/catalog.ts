@@ -193,7 +193,7 @@ const ANNA_SEEDS: DressSeed[] = [
     name: 'Anais',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Anais. Plunging deep V-neckline, long sheer puffy bishop sleeves with dotted pattern, beaded lace bodice, soft flowing sparkly tulle skirt.',
     images: [
-      p('ANNA', 'Anais', '0A1909F0-C8B1-4B7C-AA3E-2514FAA0D407.jpg'),
+      p('clean', '0A1909F0-C8B1-4B7C-AA3E-2514FAA0D407_nohead.jpg'),
       p('ANNA', 'Anais', '79DC5387-A233-4FAF-A400-365F22270EED.PNG'),
       p('ANNA', 'Anais', 'A85332DF-BE08-4DA1-9DF5-CF48706FFDBF.PNG'),
     ],
@@ -222,7 +222,7 @@ const ANNA_SEEDS: DressSeed[] = [
     name: 'Anaria',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Anaria. Plunging V-neckline, sheer long bishop sleeves with beaded lace cuffs, heavily beaded patterned bodice, full shimmering sparkly tulle skirt.',
     images: [
-      p('ANNA', 'Anaria', '48777E20-17E8-4147-8162-1DFA6FC8ED37.PNG'),
+      p('clean', '48777E20-17E8-4147-8162-1DFA6FC8ED37_nohead.PNG'),
       p('ANNA', 'Anaria', '753C58D1-6014-43EF-B408-E9D5382C43EE.PNG'),
       p('ANNA', 'Anaria', 'E110F78F-1AE3-4F76-9927-C1C38242F2B0.PNG'),
     ],
@@ -250,7 +250,7 @@ const ANNA_SEEDS: DressSeed[] = [
   {
     name: 'Anatolia',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Anatolia. Illusion long sleeves, plunging V-neckline with scalloped lace edge, lace appliques cascading down the bodice and skirt, full tulle skirt.',
-    images: [p('ANNA', 'Anatolia', 'IMG_5851.jpg'), p('ANNA', 'Anatolia', 'IMG_5855.jpg')],
+    images: [p('clean', 'IMG_5851_nohead.jpg'), p('ANNA', 'Anatolia', 'IMG_5855.jpg')],
   },
   {
     name: 'Anavelle',
@@ -265,7 +265,7 @@ const ANNA_SEEDS: DressSeed[] = [
     name: 'Anelie',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Anelie. Off-the-shoulder draped tulle straps, sweetheart neckline, heavily beaded bodice with pearls and crystals, full sparkly tulle skirt.',
     images: [
-      p('ANNA', 'Anelie', '309257BD-2244-49A4-A5D5-50358890D6D5.PNG'),
+      p('clean', '309257BD-2244-49A4-A5D5-50358890D6D5_nohead.PNG'),
       p('ANNA', 'Anelie', '3F333F5B-B61B-4A2E-87D1-8325BBA0CBF7.PNG'),
       p('ANNA', 'Anelie', 'B16FAF52-4CD5-4C75-A5D3-04E5ECE96EEB.PNG'),
     ],
@@ -284,7 +284,7 @@ const ANNA_SEEDS: DressSeed[] = [
     name: 'Annador',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Annador. Off-the-shoulder draped soft tulle straps, sweetheart neckline, lace appliques on bodice, full soft tulle skirt.',
     images: [
-      p('ANNA', 'Annador', '0DB5AAD1-EEE2-40B7-926B-403B31D9EEE2.PNG'),
+      p('clean', '0DB5AAD1-EEE2-40B7-926B-403B31D9EEE2_nohead.PNG'),
       p('ANNA', 'Annador', 'BBACE0F9-1649-4353-93B4-A7D453D0991C.PNG'),
     ],
     sketches: [p('ANNA', 'Annador', 'anna_annador_sketch.png')],
@@ -293,7 +293,7 @@ const ANNA_SEEDS: DressSeed[] = [
     name: 'Annette',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Annette. Off-the-shoulder sheer tulle straps, plunging sweetheart neckline, intricately beaded and crystal-embellished bodice, soft plain tulle skirt.',
     images: [
-      p('ANNA', 'Annette', 'IMG_5917.jpg'),
+      p('clean', 'IMG_5917_nohead.jpg'),
       p('ANNA', 'Annette', 'IMG_5918.jpg'),
       p('ANNA', 'Annette', 'IMG_5919.jpg'),
       p('ANNA', 'Annette', '35C61BE9-0D54-4949-881A-50C8B2229576.PNG'),
@@ -303,7 +303,7 @@ const ANNA_SEEDS: DressSeed[] = [
     name: 'Just Anna',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Just Anna. Off-the-shoulder puffed sheer sleeves, draped sweetheart neckline, intricately beaded bodice with crystals, full sparkly tulle skirt.',
     images: [
-      p('ANNA', 'Just Anna', 'IMG_5889.jpg'),
+      p('clean', 'IMG_5889_nohead.jpg'),
       p('ANNA', 'Just Anna', 'IMG_5890.jpg'),
       p('ANNA', 'Just Anna', 'IMG_5908.jpg'),
     ],
