@@ -225,7 +225,7 @@ const Homepage: React.FC = () => {
 
         <div className="strip">
           <Reveal as="figure" mode="wipe">
-            <SmartImage src="/images/daiana_front.jpg" alt="Rochie de mireasă FYA" />
+            <SmartImage src="/images/alma_back.jpg" alt="Rochie de mireasă FYA" />
           </Reveal>
           <Reveal as="figure" mode="wipe" index={1}>
             <SmartImage src="/images/aurelia_closeup.jpg" alt="Detaliu de corset lucrat manual" />
