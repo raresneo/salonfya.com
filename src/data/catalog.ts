@@ -442,7 +442,7 @@ const BEVERLY_SEEDS: DressSeed[] = [
     name: 'Aveline',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Aveline. A-line gown with a flowing tulle skirt. The corset bodice is slightly sheer with visible boning, featuring a subtle sweetheart neckline and beaded off-the-shoulder drape sleeves. 3D floral appliques and beadwork decorate the bodice and trail onto the top of the skirt. The back is an open corset style with matching floral details.',
     images: [
-      p('BEVERLY', 'Aveline', '115CCF60-8679-410A-8370-63E6A9F89212.PNG'),
+      p('clean', '115CCF60-8679-410A-8370-63E6A9F89212_nohead.PNG'),
       p('BEVERLY', 'Aveline', 'AAAF1202-841B-4ECB-99D7-288B50AB6844.PNG'),
     ],
   },
@@ -450,7 +450,7 @@ const BEVERLY_SEEDS: DressSeed[] = [
     name: 'Beauty',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Beauty. Fitted trumpet gown completely covered in intricate geometric and floral beadwork. The bodice features a sweetheart neckline with thin spaghetti straps that lead to a dramatic open criss-cross back. A voluminous detachable tulle overskirt with matching beadwork at the waist adds a layer of grandeur.',
     images: [
-      p('BEVERLY', 'Beauty', '2C8B1C4E-9132-4164-A376-2CA5D84F83B2.PNG'),
+      p('clean', '2C8B1C4E-9132-4164-A376-2CA5D84F83B2_nohead.PNG'),
       p('BEVERLY', 'Beauty', '38BFFE6C-B36C-4166-A82C-A9FD2EE8C200.PNG'),
       p('BEVERLY', 'Beauty', '1ED51795-BB30-42F8-9E60-27A53172F5C5.jpg'),
     ],
@@ -459,7 +459,7 @@ const BEVERLY_SEEDS: DressSeed[] = [
     name: 'Bety',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Bety. Flowing A-line gown with a thigh-high slit. The corset bodice features a sweetheart neckline with thin spaghetti straps and off-the-shoulder tulle drape sleeves. The bodice and top of the skirt are adorned with intricate trailing beadwork and tiny 3D floral appliques. The back features a deep open V-shape.',
     images: [
-      p('BEVERLY', 'Bety', '40C0C4BB-6FFA-4766-9C74-936E4B33A0B7.PNG'),
+      p('clean', '40C0C4BB-6FFA-4766-9C74-936E4B33A0B7_nohead.PNG'),
       p('BEVERLY', 'Bety', '7C7BAEA6-5AA1-47F0-AB66-0932F85F1BFC.PNG'),
       p('BEVERLY', 'Bety', 'D890182A-3BF8-4437-BE26-D4BE930405DF.PNG'),
     ],
@@ -468,7 +468,7 @@ const BEVERLY_SEEDS: DressSeed[] = [
     name: 'Candy',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Candy. A-line gown with a softly pleated tulle skirt. The bodice has a deep plunging V-neckline with a sheer insert and long fitted sleeves. The entire bodice and sleeves are adorned with bold floral lace appliques that trail slightly past the waist. The back features a sheer illusion panel with matching lace appliques and a row of buttons down the center.',
     images: [
-      p('BEVERLY', 'Candy', '25F6D5C5-6164-469C-8EE4-7DCEF85EEF14.PNG'),
+      p('clean', '25F6D5C5-6164-469C-8EE4-7DCEF85EEF14_nohead.PNG'),
       p('BEVERLY', 'Candy', '658A28B1-4FB0-476A-8E4C-681794EDDC36.PNG'),
       p('BEVERLY', 'Candy', 'C646F8AC-F3B2-4131-B600-918E762A84B9.PNG'),
     ],
@@ -477,7 +477,7 @@ const BEVERLY_SEEDS: DressSeed[] = [
     name: 'Cediz',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Cediz. A-line gown with a flowing tulle skirt. The corset bodice is ruched and draped, featuring a sweetheart neckline and beaded shoulder straps that form a sheer drape effect over the shoulders. Intricate vine-like beading and floral appliques accent the waist, bustline, and back. The back features a deep open V-shape with a row of buttons down the center.',
     images: [
-      p('BEVERLY', 'Cediz', '7BDA1B11-69AA-4CF2-8B80-2DF0FB5B0305.PNG'),
+      p('clean', '7BDA1B11-69AA-4CF2-8B80-2DF0FB5B0305_nohead.PNG'),
       p('BEVERLY', 'Cediz', 'AC2C54DB-1A39-402F-BAAB-C1A39DDE0C8C.PNG'),
       p('BEVERLY', 'Cediz', 'CDC70D0B-80B0-436E-A138-4A64FE5051B2.PNG'),
     ],
@@ -486,7 +486,7 @@ const BEVERLY_SEEDS: DressSeed[] = [
     name: 'Celestia',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Celestia. Fitted column gown completely covered in wavy, intricate beadwork. The straight off-the-shoulder neckline features dramatic beaded fringe that drapes over the upper arms. The back matches the front with an open upper back and a line of buttons trailing down to a sweep train.',
     images: [
-      p('BEVERLY', 'Celestia', '2107F38F-0DD1-4497-BF3E-6AFFCB417580.PNG'),
+      p('clean', '2107F38F-0DD1-4497-BF3E-6AFFCB417580_nohead.PNG'),
       p('BEVERLY', 'Celestia', 'B5632105-393D-4F7E-B4D3-DB5FD9F935FF.PNG'),
     ],
   },
@@ -494,7 +494,7 @@ const BEVERLY_SEEDS: DressSeed[] = [
     name: 'Fyona',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Fyona. Flowing A-line gown with a voluminous layered tulle skirt. The corset bodice is sheer with visible boning, featuring a sweetheart neckline and off-the-shoulder draped tulle sleeves. The bodice is densely covered in intricate 3D floral appliques and lace that cascade down into the skirt. The back is an open corset style with matching floral details.',
     images: [
-      p('BEVERLY', 'Fyona', '59B72D64-68F1-4BFD-8C16-8A65FFCD7366.PNG'),
+      p('clean', '59B72D64-68F1-4BFD-8C16-8A65FFCD7366_nohead.PNG'),
       p('BEVERLY', 'Fyona', 'E325D880-0FDD-42A5-A4E6-3731EFEBBF8A.PNG'),
       p('BEVERLY', 'Fyona', '44F1F915-D193-41D9-A6E3-1CAA83D39058.jpg'),
     ],
@@ -503,7 +503,7 @@ const BEVERLY_SEEDS: DressSeed[] = [
     name: 'Marisa',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Marisa. Fitted trumpet gown with a unique geometric grid and large scroll lace pattern. The sweetheart neckline features a deep plunging slit and thin straps, along with off-the-shoulder lace sleeves. The bodice is structured with visible boning. The back is an open corset style.',
     images: [
-      p('BEVERLY', 'Marisa', '230565A2-30C0-42B2-9489-FE788A454878.PNG'),
+      p('clean', '230565A2-30C0-42B2-9489-FE788A454878_nohead.PNG'),
       p('BEVERLY', 'Marisa', '38B36E35-0C78-4040-BD34-0179CA259ED4.PNG'),
       p('BEVERLY', 'Marisa', '3C36FB67-DB80-4606-B3FF-D1C53E7638C2.PNG'),
       p('BEVERLY', 'Marisa', 'B6C95714-06F6-44F8-8FD9-8D534D00AB86.PNG'),
@@ -513,7 +513,7 @@ const BEVERLY_SEEDS: DressSeed[] = [
     name: 'Nolli',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Nolli. A-line gown with a softly pleated tulle skirt. The bodice features a sweetheart neckline with a sheer illusion panel creating a high scoop neckline and long sheer sleeves with subtle wrist appliques. floral lace appliques decorate the bodice and trail gently onto the upper skirt. The back features a sheer illusion panel with matching lace appliques and a row of buttons down the center.',
     images: [
-      p('BEVERLY', 'Nolli', '1AF62A14-D463-4296-996D-4407D0D05C0C.PNG'),
+      p('clean', '1AF62A14-D463-4296-996D-4407D0D05C0C_nohead.PNG'),
       p('BEVERLY', 'Nolli', '791B9E80-C741-4596-9D8B-98B623FF0BF9.PNG'),
       p('BEVERLY', 'Nolli', '788465EE-72EB-4D98-AF47-976F66A94BE3.jpg'),
       p('BEVERLY', 'Nolli', '8B0FFD39-1E26-4F31-B784-AE7BA3AF65B4.jpg'),
@@ -523,7 +523,7 @@ const BEVERLY_SEEDS: DressSeed[] = [
     name: 'Solea',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Solea. A-line gown made entirely of shimmering star-patterned tulle. The bodice features a deep plunging V-neckline down to the waist and voluminous sheer long sleeves gathered at the wrists. The back is completely open in a deep V-shape. The lightweight skirt flows fluidly to a long sheer train.',
     images: [
-      p('BEVERLY', 'Solea', '1F094A24-E99A-40BC-82F4-0FA8E7DC3167.PNG'),
+      p('clean', '1F094A24-E99A-40BC-82F4-0FA8E7DC3167_nohead.PNG'),
       p('BEVERLY', 'Solea', '9018FCB1-33DE-486D-9511-C42292ED2A65.PNG'),
       p('BEVERLY', 'Solea', 'B9A677F9-769E-452A-91B7-93DC86E26CC2.PNG'),
     ],
@@ -532,7 +532,7 @@ const BEVERLY_SEEDS: DressSeed[] = [
     name: 'Valensia',
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Valensia. Long-sleeve A-line gown made entirely of dense floral and nature-inspired lace. The bodice features a high mock neckline and long fitted sleeves. The back is fully covered in the same intricate lace with a row of small buttons down the center.',
     images: [
-      p('BEVERLY', 'Valensia', '8FC77535-6FF4-4D57-AB1F-9CAE439BEA3B.PNG'),
+      p('clean', '8FC77535-6FF4-4D57-AB1F-9CAE439BEA3B_nohead.PNG'),
       p('BEVERLY', 'Valensia', 'E91DF7E3-18B8-482B-8F6A-E1ABDCF9F46F.PNG'),
     ],
   },
