@@ -48,8 +48,6 @@ function generate() {
       return `https://salonfya.com${img.replace(/ /g, '%20')}`;
     });
 
-    const has_face = false; 
-
     elements.push({
       element_name: elemName,
       collection: dress.collection.charAt(0).toUpperCase() + dress.collection.slice(1).toLowerCase(),
@@ -57,9 +55,9 @@ function generate() {
       category: 'prop',
       description: dress.description || '',
       images: images,
-      image_notes: "1 = cadru întreg față fără cap, 2 = spate", // Placeholder, since we just parsed
-      has_face_in_primary: has_face,
-      cleaned: false,
+      image_notes: null,
+      has_face_in_primary: null,
+      cleaned: null,
       missing_shots: []
     });
 
