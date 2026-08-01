@@ -433,6 +433,7 @@ const MAYRA_SEEDS: Seed[] = [
 const BEVERLY_SEEDS: Seed[] = [
   {
     name: 'Aveline',
+    description: 'Elegant A-line gown with a flowing tulle skirt. The corset bodice is slightly sheer with visible boning, featuring a subtle sweetheart neckline and delicate beaded off-the-shoulder drape sleeves. Dainty 3D floral appliques and beadwork decorate the bodice and trail onto the top of the skirt. The back is an open corset style with matching floral details.',
     images: [
       p('BEVERLY', 'Aveline', '115CCF60-8679-410A-8370-63E6A9F89212.PNG'),
       p('BEVERLY', 'Aveline', 'AAAF1202-841B-4ECB-99D7-288B50AB6844.PNG'),
@@ -440,6 +441,7 @@ const BEVERLY_SEEDS: Seed[] = [
   },
   {
     name: 'Beauty',
+    description: 'Breathtaking fitted trumpet gown completely covered in intricate geometric and floral beadwork. The bodice features a sweetheart neckline with thin spaghetti straps that lead to a dramatic open criss-cross back. A voluminous detachable tulle overskirt with matching beadwork at the waist adds a layer of grandeur.',
     images: [
       p('BEVERLY', 'Beauty', '2C8B1C4E-9132-4164-A376-2CA5D84F83B2.PNG'),
       p('BEVERLY', 'Beauty', '38BFFE6C-B36C-4166-A82C-A9FD2EE8C200.PNG'),
@@ -448,6 +450,7 @@ const BEVERLY_SEEDS: Seed[] = [
   },
   {
     name: 'Bety',
+    description: 'Romantic flowing A-line gown with a thigh-high slit. The corset bodice features a sweetheart neckline with thin spaghetti straps and delicate off-the-shoulder tulle drape sleeves. The bodice and top of the skirt are adorned with intricate trailing beadwork and tiny 3D floral appliques. The back features a deep open V-shape.',
     images: [
       p('BEVERLY', 'Bety', '40C0C4BB-6FFA-4766-9C74-936E4B33A0B7.PNG'),
       p('BEVERLY', 'Bety', '7C7BAEA6-5AA1-47F0-AB66-0932F85F1BFC.PNG'),
@@ -456,6 +459,7 @@ const BEVERLY_SEEDS: Seed[] = [
   },
   {
     name: 'Candy',
+    description: 'Classic A-line gown with a softly pleated tulle skirt. The bodice has a deep plunging V-neckline with a sheer insert and long fitted sleeves. The entire bodice and sleeves are adorned with bold floral lace appliques that trail slightly past the waist. The back features a sheer illusion panel with matching lace appliques and a row of classic buttons down the center.',
     images: [
       p('BEVERLY', 'Candy', '25F6D5C5-6164-469C-8EE4-7DCEF85EEF14.PNG'),
       p('BEVERLY', 'Candy', '658A28B1-4FB0-476A-8E4C-681794EDDC36.PNG'),
@@ -464,6 +468,7 @@ const BEVERLY_SEEDS: Seed[] = [
   },
   {
     name: 'Cediz',
+    description: 'Whimsical A-line gown with a flowing tulle skirt. The corset bodice is ruched and draped, featuring a sweetheart neckline and delicate beaded shoulder straps that form a sheer drape effect over the shoulders. Intricate vine-like beading and floral appliques accent the waist, bustline, and back. The back features a deep open V-shape with a row of buttons down the center.',
     images: [
       p('BEVERLY', 'Cediz', '7BDA1B11-69AA-4CF2-8B80-2DF0FB5B0305.PNG'),
       p('BEVERLY', 'Cediz', 'AC2C54DB-1A39-402F-BAAB-C1A39DDE0C8C.PNG'),
@@ -472,6 +477,7 @@ const BEVERLY_SEEDS: Seed[] = [
   },
   {
     name: 'Celestia',
+    description: 'Glamorous fitted column gown completely covered in wavy, intricate beadwork. The straight off-the-shoulder neckline features dramatic beaded fringe that drapes over the upper arms. The back matches the front with an open upper back and a line of classic buttons trailing down to a sweep train.',
     images: [
       p('BEVERLY', 'Celestia', '2107F38F-0DD1-4497-BF3E-6AFFCB417580.PNG'),
       p('BEVERLY', 'Celestia', 'B5632105-393D-4F7E-B4D3-DB5FD9F935FF.PNG'),
@@ -479,6 +485,7 @@ const BEVERLY_SEEDS: Seed[] = [
   },
   {
     name: 'Fyona',
+    description: 'Romantic flowing A-line gown with a voluminous layered tulle skirt. The corset bodice is sheer with visible boning, featuring a sweetheart neckline and delicate off-the-shoulder draped tulle sleeves. The bodice is densely covered in intricate 3D floral appliques and lace that cascade down into the skirt. The back is an open corset style with matching floral details.',
     images: [
       p('BEVERLY', 'Fyona', '59B72D64-68F1-4BFD-8C16-8A65FFCD7366.PNG'),
       p('BEVERLY', 'Fyona', 'E325D880-0FDD-42A5-A4E6-3731EFEBBF8A.PNG'),
@@ -487,6 +494,7 @@ const BEVERLY_SEEDS: Seed[] = [
   },
   {
     name: 'Marisa',
+    description: 'Stunning fitted trumpet gown with a unique geometric grid and large scroll lace pattern. The sweetheart neckline features a deep plunging slit and delicate thin straps, along with off-the-shoulder lace sleeves. The bodice is structured with visible boning. The back is an open corset style.',
     images: [
       p('BEVERLY', 'Marisa', '230565A2-30C0-42B2-9489-FE788A454878.PNG'),
       p('BEVERLY', 'Marisa', '38B36E35-0C78-4040-BD34-0179CA259ED4.PNG'),
@@ -496,6 +504,7 @@ const BEVERLY_SEEDS: Seed[] = [
   },
   {
     name: 'Nolli',
+    description: 'Elegant A-line gown with a softly pleated tulle skirt. The bodice features a sweetheart neckline with a sheer illusion panel creating a high scoop neckline and long sheer sleeves with subtle wrist appliques. Dainty floral lace appliques decorate the bodice and trail gently onto the upper skirt. The back features a sheer illusion panel with matching lace appliques and a row of classic buttons down the center.',
     images: [
       p('BEVERLY', 'Nolli', '1AF62A14-D463-4296-996D-4407D0D05C0C.PNG'),
       p('BEVERLY', 'Nolli', '791B9E80-C741-4596-9D8B-98B623FF0BF9.PNG'),
@@ -505,6 +514,7 @@ const BEVERLY_SEEDS: Seed[] = [
   },
   {
     name: 'Solea',
+    description: 'Ethereal A-line gown made entirely of shimmering star-patterned tulle. The bodice features a deep plunging V-neckline down to the waist and voluminous sheer long sleeves gathered at the wrists. The back is completely open in a deep V-shape. The lightweight skirt flows fluidly to a long sheer train.',
     images: [
       p('BEVERLY', 'Solea', '1F094A24-E99A-40BC-82F4-0FA8E7DC3167.PNG'),
       p('BEVERLY', 'Solea', '9018FCB1-33DE-486D-9511-C42292ED2A65.PNG'),
@@ -513,6 +523,7 @@ const BEVERLY_SEEDS: Seed[] = [
   },
   {
     name: 'Valensia',
+    description: 'Modest long-sleeve A-line gown made entirely of dense floral and nature-inspired lace. The bodice features a high mock neckline and long fitted sleeves. The back is fully covered in the same intricate lace with a row of small buttons down the center.',
     images: [
       p('BEVERLY', 'Valensia', '8FC77535-6FF4-4D57-AB1F-9CAE439BEA3B.PNG'),
       p('BEVERLY', 'Valensia', 'E91DF7E3-18B8-482B-8F6A-E1ABDCF9F46F.PNG'),
