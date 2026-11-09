@@ -5,6 +5,7 @@ import { COLLECTIONS, collectionBySlug } from '../data/publicCatalog';
 import { useCollection } from '../lib/useCatalog';
 import { collectionSeo, notFoundSeo, useSeo } from '../lib/seo';
 import DressCard from '../ui/DressCard';
+import HeroMedia from '../ui/HeroMedia';
 import { Reveal } from '../lib/motion';
 
 type CollectionPageProps = { slug?: string };
@@ -39,13 +40,7 @@ const CollectionPage: React.FC<CollectionPageProps> = ({ slug }) => {
     <>
       <section className="phero">
         <div className="phero-media">
-          {meta.video ? (
-            <video autoPlay muted loop playsInline preload="none" poster={meta.cover} aria-hidden="true">
-              <source src={meta.video} type="video/mp4" />
-            </video>
-          ) : (
-            <img src={meta.cover} alt="" aria-hidden="true" />
-          )}
+          <HeroMedia video={meta.video} poster={meta.cover} preload="none" />
         </div>
         <div className="phero-in">
           <p className="eyebrow eyebrow--light">Colecția</p>

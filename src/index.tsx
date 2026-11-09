@@ -6,6 +6,8 @@ import './index.css';
 import './styles/booking.css';
 import './styles/map.css';
 import './styles/legacy-vars.css';
+// Tema 2026: tokenuri și layout peste index.css, înaintea corecturilor.
+import './styles/theme-2026.css';
 // Ultimul: corecturile mobile și de accesibilitate trebuie să câștige cascada.
 import './styles/mobile-fixes.css';
 import App from './App';
