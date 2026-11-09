@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { COLLECTIONS } from '../data/catalog';
+import { COLLECTIONS } from '../data/publicCatalog';
 import { useCatalog } from '../lib/useCatalog';
 import { Reveal, SmartImage } from '../lib/motion';
 import { SALON } from '../data/salon';
@@ -225,7 +225,7 @@ const Homepage: React.FC = () => {
 
         <div className="strip">
           <Reveal as="figure" mode="wipe">
-            <SmartImage src="/images/alma_back.jpg" alt="Rochie de mireasă FYA" />
+            <SmartImage src="/images/argente_back.jpg" alt="Rochie de mireasă FYA" />
           </Reveal>
           <Reveal as="figure" mode="wipe" index={1}>
             <SmartImage src="/images/aurelia_closeup.jpg" alt="Detaliu de corset lucrat manual" />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 
-import { COLLECTIONS, collectionBySlug } from '../data/catalog';
+import { COLLECTIONS, collectionBySlug } from '../data/publicCatalog';
 import { useCollection } from '../lib/useCatalog';
 import DressCard from '../ui/DressCard';
 import { Reveal } from '../lib/motion';
@@ -99,6 +99,7 @@ const CollectionPage: React.FC<CollectionPageProps> = ({ slug }) => {
           {others.map((item) => (
             <Link key={item.slug} className="btn btn--ghost" to={item.path}>
               <span>{item.collection}</span>
+              <i>&rarr;</i>
             </Link>
           ))}
           <Link className="btn" to="/programare">
