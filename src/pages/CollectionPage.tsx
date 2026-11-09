@@ -43,7 +43,7 @@ const CollectionPage: React.FC<CollectionPageProps> = ({ slug }) => {
           )}
         </div>
         <div className="phero-in">
-          <p className="eyebrow">Colecția</p>
+          <p className="eyebrow eyebrow--light">Colecția</p>
           <h1 className="display" style={{ fontSize: 'clamp(3rem, 8vw, 6.5rem)' }}>
             {meta.collection}
           </h1>
