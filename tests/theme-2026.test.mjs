@@ -233,3 +233,53 @@ test('mișcare ușoară: fără wipe clip-path, fără bandă rulantă, reduced 
     assert.ok(Number(match[1]) <= 0.8, `tranziție prea lungă: ${match[0]}`);
   }
 });
+
+test('hero: text lizibil și peste un cadru video complet alb (scrim compus peste alb)', () => {
+  // Worst case: pixelul de sub text e alb pur. Ignorăm gradientul din .hero-media,
+  // care doar întunecă suplimentar, deci rezultatul e o limită inferioară.
+  const block = /\.hero-in::before \{([^}]*)\}/.exec(theme);
+  assert.ok(block, 'scrimul sub textul hero există');
+  const body = block[1];
+  assert.match(body, /position: absolute;/);
+  assert.match(body, /z-index: -1;/);
+  assert.match(theme, /\.hero-in \{ isolation: isolate; \}/);
+  const top = Number(/inset: -(\d+)px 0 0 0;/.exec(body)[1]);
+  const stops = [...body.matchAll(/oklch\(([\d.]+)% ([\d.]+) ([\d.]+) \/ ([\d.]+)\) (\d+)(px|%)/g)]
+    .map(([, l, c, h, alpha, pos, unit]) => ({ color: [l / 100, Number(c), Number(h)], alpha: Number(alpha), pos: Number(pos), unit }));
+  assert.ok(stops.length >= 3, 'stopurile scrimului au fost citite');
+  // Textul începe la `top` px sub marginea scrimului: de acolo până jos alpha nu scade.
+  const textStops = stops.filter((s) => s.unit === '%' || s.pos >= top);
+  assert.equal(textStops[0].unit, 'px');
+  assert.equal(textStops[0].pos, top, 'opacitatea plină începe exact unde începe textul');
+  for (let i = 1; i < textStops.length; i += 1) assert.ok(textStops[i].alpha >= textStops[i - 1].alpha);
+  const alpha = Math.min(...textStops.map((s) => s.alpha));
+
+  // Compunere în sRGB gamma, ca în browser: scrim peste alb.
+  const toLinear = ([L, C, h]) => {
+    const a = C * Math.cos((h * Math.PI) / 180);
+    const b = C * Math.sin((h * Math.PI) / 180);
+    const l = (L + 0.3963377774 * a + 0.2158037573 * b) ** 3;
+    const m = (L - 0.1055613458 * a - 0.0638541728 * b) ** 3;
+    const s = (L - 0.0894841775 * a - 1.291485548 * b) ** 3;
+    const clamp = (v) => Math.min(1, Math.max(0, v));
+    return [
+      clamp(4.0767416621 * l - 3.3077115913 * m + 0.2309699292 * s),
+      clamp(-1.2684380046 * l + 2.6097574011 * m - 0.3413193965 * s),
+      clamp(-0.0041960863 * l - 0.7034186147 * m + 1.707614701 * s),
+    ];
+  };
+  const encode = (v) => (v <= 0.0031308 ? 12.92 * v : 1.055 * v ** (1 / 2.4) - 0.055);
+  const decode = (v) => (v <= 0.04045 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4);
+  const lum = ([r, g, b]) => 0.2126 * r + 0.7152 * g + 0.0722 * b;
+  const scrim = toLinear(textStops[0].color).map(encode);
+  const composite = scrim.map((c) => decode(alpha * c + (1 - alpha) * 1));
+  const ratio = (fg) => (lum(toLinear(tokens[fg])) + 0.05) / (lum(composite) + 0.05);
+
+  // Eyebrow-ul și subtitlul folosesc acum textul deschis, nu varianta estompată.
+  assert.match(theme, /\.hero \.eyebrow--light, \.hero \.lead \{ color: var\(--on-plum\); \}/);
+  for (const fg of ['on-plum', 'sand']) {
+    assert.ok(ratio(fg) >= 4.5, `${fg} peste cadru alb + scrim ${alpha}: ${ratio(fg).toFixed(2)} < 4.5`);
+  }
+  // Varianta veche (on-plum-dim) ar fi picat aici; păstrăm dovada ca regresie.
+  assert.ok(ratio('on-plum-dim') < ratio('on-plum'));
+});

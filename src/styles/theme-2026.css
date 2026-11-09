@@ -105,6 +105,18 @@
     oklch(19% 0.045 345 / .28) 42%,
     oklch(19% 0.045 345 / .88) 100%);
 }
+/* Scrim legat de blocul de text, nu de înălțimea ecranului: oricât de deschis
+   e cadrul video, tot textul stă pe cel puțin .78 plum. Începe cu 96px deasupra
+   textului ca trecerea să nu se vadă ca o bandă. */
+.hero-in { isolation: isolate; }
+.hero-in::before {
+  content: ""; position: absolute; inset: -96px 0 0 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(180deg,
+    oklch(19% 0.045 345 / 0) 0px,
+    oklch(19% 0.045 345 / .78) 96px,
+    oklch(19% 0.045 345 / .86) 100%);
+}
+.hero .eyebrow--light, .hero .lead { color: var(--on-plum); }
 .hero h1 { margin-block: var(--s-4); }
 .hero-cta { margin-top: var(--s-6); }
 .hero-scroll { display: none; }
