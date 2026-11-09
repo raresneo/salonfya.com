@@ -5,9 +5,9 @@ import { COLLECTIONS } from '../data/publicCatalog';
 import { useCatalog } from '../lib/useCatalog';
 import { Reveal, SmartImage } from '../lib/motion';
 import { SALON } from '../data/salon';
+import HeroMedia from '../ui/HeroMedia';
 
 const RATIOS = ['r34', 'r45', 'r11', 'r23'];
-const SPEEDS = ['0.16', '0.26', '0.2', '0.3'];
 
 const Homepage: React.FC = () => {
   const { dresses } = useCatalog();
@@ -19,9 +19,7 @@ const Homepage: React.FC = () => {
       {/* ---------------------------------- hero --------------------------------- */}
       <section className="hero">
         <div className="hero-media">
-          <video autoPlay muted loop playsInline preload="metadata" poster="/images/history_hero_portrait.png" aria-hidden="true">
-            <source src="/images/CINEMATIC.mp4" type="video/mp4" />
-          </video>
+          <HeroMedia video="/images/CINEMATIC.mp4" poster="/images/history_hero_portrait.png" />
         </div>
 
         <div className="hero-in">
@@ -137,7 +135,7 @@ const Homepage: React.FC = () => {
           {COLLECTIONS.map((item, i) => (
             <Reveal key={item.slug} mode="wipe" index={i} as="div">
               <Link className="item" to={item.path}>
-                <div className={`item-frame ${RATIOS[i]}`} data-par={SPEEDS[i]} data-label={item.collection}>
+                <div className={`item-frame ${RATIOS[i]}`} data-label={item.collection}>
                   <SmartImage src={item.cover} alt={`Colecția ${item.collection}`} sizes="(max-width: 860px) 100vw, 45vw" />
                 </div>
                 <div className="item-meta">
