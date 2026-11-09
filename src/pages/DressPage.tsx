@@ -6,6 +6,7 @@ import { useWishlist } from '../lib/useWishlist';
 import { Reveal, SmartImage } from '../lib/motion';
 import { priceLabel } from '../ui/DressCard';
 import { SALON } from '../data/salon';
+import { PUBLIC_SKETCH_NOTE, UNKNOWN_PUBLIC_DESCRIPTION } from '../data/publicDressCopy';
 
 const DressPage: React.FC = () => {
   const { id } = useParams();
@@ -116,14 +117,7 @@ const DressPage: React.FC = () => {
             </h1>
           </div>
 
-          {dress.description ? (
-            <p className="body">{dress.description}</p>
-          ) : (
-            <p className="body">
-              Modelul se probează în atelier, unde vedem împreună cum cade pe tine și ce ajustăm. Croiala, mărimea și
-              finisajele se stabilesc la fața locului.
-            </p>
-          )}
+          <p className="body">{dress.description || UNKNOWN_PUBLIC_DESCRIPTION}</p>
 
           <dl className="dress-specs">
             <div className="spec">
@@ -180,7 +174,7 @@ const DressPage: React.FC = () => {
           </div>
 
           {dress.sketches && dress.sketches.length > 0 && (
-            <p className="sketch-note">Schițele de mai jos sunt conceptul original, desenat înainte de croială.</p>
+            <p className="sketch-note">{PUBLIC_SKETCH_NOTE}</p>
           )}
 
           <div style={{ display: 'flex', justifyContent: 'space-between', gap: 16, paddingTop: 8 }}>

@@ -1,8 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 
 import { Collection, Dress, DressType } from '../types';
-import { LOCAL_CATALOG } from '../data/publicCatalog';
-import { filterAvailableDresses } from '../data/catalogAvailability';
+import { LOCAL_CATALOG, withPublicDescriptions } from '../data/publicCatalog';
 import { isSupabaseConfigured, supabase } from './supabase';
 
 /**
@@ -67,7 +66,7 @@ const dedupe = (list: Dress[]): Dress[] => {
   const seenCovers = new Set<string>();
   const out: Dress[] = [];
 
-  for (const dress of filterAvailableDresses(list)) {
+  for (const dress of withPublicDescriptions(list)) {
     const cover = (dress.imageUrl || '').toLowerCase();
     if (seenIds.has(dress.id)) continue;
     if (cover && seenCovers.has(cover)) continue;
