@@ -1,10 +1,11 @@
 import { Collection } from '../types';
 import { COLLECTIONS as ORIGINAL_COLLECTIONS, LOCAL_CATALOG as ORIGINAL_CATALOG } from './catalog';
 import type { CollectionMeta } from './catalog';
-import { filterAvailableDresses } from './catalogAvailability';
+import { withPublicDescriptions } from './publicDressCopy';
+export { withPublicDescriptions } from './publicDressCopy';
 
 /** Public projection only. Original seed records, DB rows and image files remain intact. */
-export const LOCAL_CATALOG = filterAvailableDresses(ORIGINAL_CATALOG);
+export const LOCAL_CATALOG = withPublicDescriptions(ORIGINAL_CATALOG);
 
 export const COLLECTIONS: CollectionMeta[] = ORIGINAL_COLLECTIONS.map((meta) =>
   meta.collection === Collection.ANNA
