@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 
-import { COLLECTIONS, collectionBySlug } from '../data/catalog';
+import { COLLECTIONS, collectionBySlug } from '../data/publicCatalog';
 import { useCollection } from '../lib/useCatalog';
 import DressCard from '../ui/DressCard';
 import { Reveal } from '../lib/motion';
