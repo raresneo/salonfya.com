@@ -27,8 +27,10 @@ const compile = (path, imports = {}) => {
   }).outputText + `\n// isolated import ${serial++}`);
 };
 const policy = compile('../src/data/catalogAvailability.ts');
+const copy = compile('../src/data/publicDressCopy.ts', { './catalogAvailability': policy });
 const types = compile('../src/types.ts');
 const { UNAVAILABLE_MODELS, filterAvailableDresses } = await import(policy);
+const { PUBLIC_COPY_MODELS, UNKNOWN_PUBLIC_DESCRIPTION, withPublicDescriptions } = await import(copy);
 const local = [
   ...UNAVAILABLE_MODELS.map(([collection, name], index) => ({
     id: `local-withdrawn-${index}`, collection, name, imageUrl: `/withdrawn-${index}.jpg`,
@@ -47,7 +49,10 @@ const react = url(`
   export const useMemo = (fn) => fn();
   export const useCallback = (fn) => fn;
 `);
-const publicCatalog = url(`export const LOCAL_CATALOG = ${JSON.stringify(local)};`);
+const publicCatalog = url(`
+  export const LOCAL_CATALOG = ${JSON.stringify(local)};
+  export { withPublicDescriptions } from '${copy}';
+`);
 const supabase = url(`
   export const isSupabaseConfigured = true;
   export const supabase = { from: () => ({ select: async () => globalThis.__fyaHookTest.result }) };
@@ -75,7 +80,7 @@ test('actual useCatalog filters the initial render and mapped Supabase rows', as
     data: [...dbRows, { id: 'db-argente', name: 'Argente', collection_id: 'IMPERIAL', images: ['/argente.jpg'] }],
     error: null,
   });
-  assert.deepEqual(initial.dresses, filterAvailableDresses(local));
+  assert.deepEqual(initial.dresses, withPublicDescriptions(local));
   assert.equal(initial.loading, true);
   assert.equal(settled.source, 'db');
   assert.equal(settled.loading, false);
@@ -91,7 +96,7 @@ test('actual useCatalog error, empty and all-withdrawn responses use safe fallba
     const { settled } = await loadCatalog(result);
     assert.equal(settled.source, 'local');
     assert.equal(settled.loading, false);
-    assert.deepEqual(settled.dresses, filterAvailableDresses(local));
+    assert.deepEqual(settled.dresses, withPublicDescriptions(local));
   }
 });
 
@@ -104,6 +109,23 @@ test('withdrawn database covers cannot shadow an available model during deduplic
     error: null,
   });
   assert.deepEqual(settled.dresses.map((dress) => dress.id), ['db-argente']);
+});
+
+test('actual Supabase mapping applies Romanian copy to all 27, neutralizes unknowns and excludes all 21', async () => {
+  const active = PUBLIC_COPY_MODELS.map(([collection, name], index) => ({
+    id: `uuid-active-${index}`, collection_id: collection.toUpperCase(), name,
+    description: 'Wedding dress strapless mermaid', images: [`/active-${index}.jpg`],
+  }));
+  const unknown = { id: 'uuid-unknown', collection_id: 'ANNA', name: 'Unknown', description: 'English stock promise', images: ['/unknown.jpg'] };
+  const { settled } = await loadCatalog({ data: [...active, ...dbRows, unknown], error: null });
+  assert.equal(settled.source, 'db');
+  assert.equal(settled.dresses.length, 28);
+  for (const [index, [collection, name]] of PUBLIC_COPY_MODELS.entries()) {
+    const model = settled.dresses.find((dress) => dress.id === `uuid-active-${index}`);
+    assert.equal(model.description, withPublicDescriptions([{ collection, name, description: '' }])[0].description);
+  }
+  assert.equal(settled.dresses.find((dress) => dress.id === 'uuid-unknown').description, UNKNOWN_PUBLIC_DESCRIPTION);
+  assert.equal(settled.dresses.some((dress) => dress.id.startsWith('db-withdrawn-')), false);
 });
 
 const wishlistCatalog = url('export const useCatalog = () => globalThis.__fyaHookTest.catalog;');
