@@ -43,7 +43,7 @@ const CollectionPage: React.FC<CollectionPageProps> = ({ slug }) => {
           )}
         </div>
         <div className="phero-in">
-          <p className="eyebrow eyebrow--light">Colecția</p>
+          <p className="eyebrow">Colecția</p>
           <h1 className="display" style={{ fontSize: 'clamp(3rem, 8vw, 6.5rem)' }}>
             {meta.collection}
           </h1>
@@ -99,7 +99,6 @@ const CollectionPage: React.FC<CollectionPageProps> = ({ slug }) => {
           {others.map((item) => (
             <Link key={item.slug} className="btn btn--ghost" to={item.path}>
               <span>{item.collection}</span>
-              <i>&rarr;</i>
             </Link>
           ))}
           <Link className="btn" to="/programare">

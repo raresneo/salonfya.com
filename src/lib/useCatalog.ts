@@ -5,7 +5,13 @@ import { LOCAL_CATALOG } from '../data/publicCatalog';
 import { filterAvailableDresses } from '../data/catalogAvailability';
 import { isSupabaseConfigured, supabase } from './supabase';
 
-/** Normalize database collection IDs before applying exact collection/model availability. */
+/**
+ * Normalizează valoarea colecției venită din baza de date.
+ *
+ * În `dresses.collection_id` stăm cu 'IMPERIAL', iar enum-ul din aplicație e
+ * 'Imperial'. Comparația directă returna mereu fals, deci paginile de colecție
+ * apăreau goale chiar și cu rochii în tabelă.
+ */
 const normalizeCollection = (value?: string | null): Collection | undefined => {
   const key = (value || '').trim().toUpperCase();
   if (!key) return undefined;
@@ -48,7 +54,14 @@ const mapRow = (row: Record<string, any>): Dress => {
   };
 };
 
-/** Filter before deduplication so withdrawn records cannot shadow an available cover. */
+/**
+ * Scoate duplicatele, pe id și pe fotografia de copertă.
+ *
+ * A doua verificare contează: în repo existau modele cu nume diferite dar cu
+ * exact aceleași fișiere (Elia era Daiana redenumită, Evora apărea și în
+ * Beverly). Dacă cineva reintroduce așa ceva din /admin, gridul nu o mai
+ * afișează de două ori.
+ */
 const dedupe = (list: Dress[]): Dress[] => {
   const seenIds = new Set<string>();
   const seenCovers = new Set<string>();
@@ -70,13 +83,20 @@ const dedupe = (list: Dress[]): Dress[] => {
 export type CatalogState = {
   dresses: Dress[];
   loading: boolean;
+  /** De unde vin datele afișate acum. */
   source: 'db' | 'local';
+  /** Setat doar când Supabase a răspuns cu eroare; afișarea continuă din local. */
   warning?: string;
 };
 
 const LOCAL = dedupe(LOCAL_CATALOG);
 
-/** Both initial render and every DB/error/empty fallback use the same public policy. */
+/**
+ * Catalogul afișat pe site.
+ *
+ * Ordinea de preferință: Supabase (ce editează echipa din /admin), apoi
+ * catalogul local din repo. Nu lăsăm niciodată pagina fără produse.
+ */
 export const useCatalog = (): CatalogState => {
   const [state, setState] = useState<CatalogState>({
     dresses: LOCAL,
@@ -121,6 +141,7 @@ export const useCatalog = (): CatalogState => {
   return state;
 };
 
+/** Rochiile unei colecții, în ordinea din catalog. */
 export const useCollection = (collection?: Collection) => {
   const catalog = useCatalog();
   const dresses = useMemo(
