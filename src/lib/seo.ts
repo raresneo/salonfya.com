@@ -27,7 +27,7 @@ export type SeoMeta = {
 export const HOME_SEO: SeoMeta = {
   title: 'Salon FYA · Rochii de mireasă croite în atelier, Oradea',
   description:
-    'Atelier de rochii de mireasă în Oradea, pe Strada Vasile Alecsandri 21. Design, execuție și ajustări făcute la noi, nu externalizate. Colecțiile Imperial, Anna, Mayra și Beverly. Probe doar pe bază de programare.',
+    'Atelier de rochii de mireasă în Oradea, pe Mihail Kogălniceanu nr. 44. Design, execuție și ajustări făcute la noi, nu externalizate. Colecțiile Imperial, Anna, Mayra și Beverly. Probe doar pe bază de programare.',
   path: '/',
   robots: 'index,follow',
 };

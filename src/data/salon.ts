@@ -1,8 +1,9 @@
 /**
  * Datele publice ale salonului, într-un singur loc.
  *
- * Sursa: fișa WhatsApp Business și paginile sociale conectate ale salonului.
- * Dacă se schimbă numărul, adresa sau un profil, se schimbă doar aici.
+ * Adresa actuală: confirmată de Rareș la 9 noiembrie 2026.
+ * Hărțile caută adresa completă; fără coordonate sau cod poștal neverificate.
+ * Celelalte date: fișa WhatsApp Business și paginile sociale conectate.
  */
 export const SALON = {
   name: 'Salon FYA',
@@ -11,10 +12,9 @@ export const SALON = {
 
   city: 'Oradea',
   county: 'Bihor',
-  street: 'Strada Vasile Alecsandri 21',
-  postalCode: '410072',
-  address: 'Strada Vasile Alecsandri 21, Oradea',
-  addressFull: 'Strada Vasile Alecsandri 21, 410072 Oradea, Bihor',
+  street: 'Mihail Kogălniceanu nr. 44',
+  address: 'Mihail Kogălniceanu nr. 44, Oradea',
+  addressFull: 'Mihail Kogălniceanu nr. 44, Oradea, Bihor',
 
   phone: '+40 727 844 228',
   phoneHref: '+40727844228',
@@ -24,9 +24,9 @@ export const SALON = {
   hours: 'Doar pe bază de programare',
   hoursNote: 'Ne potrivim după programul tău, inclusiv în weekend.',
 
-  maps: 'https://maps.google.com/?q=Strada+Vasile+Alecsandri+21,+410072+Oradea,+Romania',
+  maps: 'https://maps.google.com/?q=Mihail+Kog%C4%83lniceanu+nr.+44,+Oradea,+Romania',
   mapsEmbed:
-    'https://www.google.com/maps?q=Strada+Vasile+Alecsandri+21,+410072+Oradea,+Romania&output=embed',
+    'https://www.google.com/maps?q=Mihail+Kog%C4%83lniceanu+nr.+44,+Oradea,+Romania&output=embed',
 
   /**
    * Profilurile sociale, linkuri curate.
