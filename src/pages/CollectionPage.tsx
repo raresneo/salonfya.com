@@ -1,8 +1,9 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 
 import { COLLECTIONS, collectionBySlug } from '../data/publicCatalog';
 import { useCollection } from '../lib/useCatalog';
+import { collectionSeo, notFoundSeo, useSeo } from '../lib/seo';
 import DressCard from '../ui/DressCard';
 import { Reveal } from '../lib/motion';
 
@@ -10,8 +11,12 @@ type CollectionPageProps = { slug?: string };
 
 const CollectionPage: React.FC<CollectionPageProps> = ({ slug }) => {
   const params = useParams();
+  const location = useLocation();
   const meta = collectionBySlug(slug || params.slug);
   const { dresses, loading } = useCollection(meta?.collection);
+
+  // /colectia/imperial și /imperial sunt aceeași pagină: canonical pe /imperial.
+  useSeo(meta ? collectionSeo(meta) : notFoundSeo(location.pathname));
 
   if (!meta) {
     return (
