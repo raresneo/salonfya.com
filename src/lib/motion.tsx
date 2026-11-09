@@ -79,9 +79,10 @@ export const Reveal: React.FC<RevealProps> = ({
 /* ------------------------------ Scroll FX -------------------------------- */
 
 /**
- * Un singur rAF pentru tot ce depinde de scroll: bara de progres, starea
- * navului și parallax-ul. Nodurile cu parallax se declară cu `data-par`
- * (valoarea e viteza) și se recitesc la fiecare schimbare de rută.
+ * Tot ce depinde de scroll: bara de progres, starea navului și parallax-ul.
+ * Calculăm doar la scroll/resize, cel mult o dată pe frame. Varianta veche
+ * rula un rAF continuu și citea layoutul la fiecare frame chiar și cu pagina
+ * nemișcată, ceea ce consuma baterie și cadre pe mobil.
  */
 export const useScrollFx = (routeKey: string) => {
   const [solid, setSolid] = useState(false);
@@ -90,24 +91,19 @@ export const useScrollFx = (routeKey: string) => {
   useEffect(() => {
     let frame = 0;
     let nodes: HTMLElement[] = [];
-    let lastSolid = false;
+    // null forțează sincronizarea la prima măsurare după schimbarea rutei,
+    // altfel navul rămânea „solid” când veneai de pe o pagină derulată.
+    let lastSolid: boolean | null = null;
     const reduced = prefersReduced();
 
-    const collect = () => {
-      nodes = Array.from(document.querySelectorAll<HTMLElement>('[data-par]'));
-    };
-
-    // Nodurile lazy apar după primul render, deci recitim de câteva ori.
-    collect();
-    const timers = [120, 400, 1000].map((delay) => window.setTimeout(collect, delay));
-
-    const tick = () => {
+    const update = () => {
+      frame = 0;
       const vh = window.innerHeight;
-      const scrolled = window.scrollY || window.pageYOffset;
+      const scrolled = window.scrollY || window.pageYOffset || 0;
       const max = document.documentElement.scrollHeight - vh;
 
       if (progressRef.current) {
-        progressRef.current.style.transform = `scaleX(${max > 0 ? scrolled / max : 0})`;
+        progressRef.current.style.transform = `scaleX(${max > 0 ? Math.min(1, scrolled / max) : 0})`;
       }
 
       const nextSolid = scrolled > Math.min(vh * 0.8, 560);
@@ -125,15 +121,30 @@ export const useScrollFx = (routeKey: string) => {
           node.style.setProperty('--py', `${(mid * speed * -90).toFixed(2)}px`);
         }
       }
-
-      frame = requestAnimationFrame(tick);
     };
 
-    frame = requestAnimationFrame(tick);
+    const schedule = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+
+    const collect = () => {
+      nodes = Array.from(document.querySelectorAll<HTMLElement>('[data-par]'));
+      schedule();
+    };
+
+    // Nodurile lazy apar după primul render, deci recitim de câteva ori.
+    collect();
+    const timers = [120, 400, 1000].map((delay) => window.setTimeout(collect, delay));
+
+    window.addEventListener('scroll', schedule, { passive: true });
+    window.addEventListener('resize', schedule, { passive: true });
 
     return () => {
-      cancelAnimationFrame(frame);
+      if (frame) cancelAnimationFrame(frame);
+      frame = 0;
       timers.forEach((timer) => window.clearTimeout(timer));
+      window.removeEventListener('scroll', schedule);
+      window.removeEventListener('resize', schedule);
     };
   }, [routeKey]);
 

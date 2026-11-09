@@ -1,0 +1,90 @@
+/* ============================================================
+   Bugfixes mobile, contrast și accesibilitate.
+   Fișier încărcat ultimul, ca să suprascrie index.css fără a
+   schimba tema: aceleași culori, fonturi și imagini.
+   ============================================================ */
+
+/* ---------- nav peste hero întunecat ----------
+   Peste video/imagine, textul deschis pierdea contrast în zonele luminoase.
+   O umbră scurtă doar în spatele navului, numai cât navul e transparent. */
+
+.nav::before {
+  content: ""; position: absolute; inset: 0 0 -32px 0; z-index: -2; pointer-events: none;
+  background: linear-gradient(180deg, oklch(16.5% 0.036 340 / .62), oklch(16.5% 0.036 340 / 0));
+  opacity: 0; transition: opacity .5s ease;
+}
+.nav:not(.solid):not(.ink)::before { opacity: 1; }
+.nav:not(.solid):not(.ink) .nav-link { color: var(--on-plum); }
+/* Teracota pe plum nu are contrast suficient la 12px; pe fundal închis folosim nisipul. */
+.nav:not(.solid):not(.ink) .nav-link:hover,
+.nav:not(.solid):not(.ink) .nav-link:focus-visible,
+.nav:not(.solid):not(.ink) .nav-link.on { color: var(--sand); }
+
+/* ---------- CTA fără suprapuneri ----------
+   Peste 980px headerul are deja „Programează o probă”; butonul flotant
+   dubla CTA-ul și acoperea carduri și footerul. Rămâne doar pe tabletă. */
+
+@media (min-width: 980px) { .fab { display: none; } }
+@media (min-width: 700px) and (max-width: 979px) {
+  .foot { padding-bottom: calc(var(--s-8) + 88px); }
+}
+
+/* Meniul mobil stătea sub bara de jos (z-index 62 vs 70). */
+.sheet {
+  z-index: calc(var(--z-bar) + 2);
+  visibility: hidden;
+  transition: transform .7s var(--e-out), visibility 0s linear .7s;
+}
+/* Închis, meniul nu mai poate primi focus sau tap-uri invizibile. */
+.sheet.open { visibility: visible; transition: transform .7s var(--e-out), visibility 0s; }
+
+/* ---------- pagina rochiei ----------
+   Mobil: imaginea principală, apoi numele, descrierea și CTA-ul, apoi restul
+   galeriei. Desktop: galeria în stânga, informațiile fixe în dreapta. */
+
+.dress {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "lead" "info" "rest";
+  row-gap: var(--s-8);
+}
+.gallery--lead { grid-area: lead; }
+.dress > .dress-info { grid-area: info; }
+.gallery--rest { grid-area: rest; }
+/* Doar prima imagine a paginii e mare; restul galeriei rămâne în grilă. */
+.gallery--rest > :first-child { aspect-ratio: 3/4; grid-column: auto; }
+
+@media (min-width: 1024px) {
+  .dress {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    grid-template-areas: "lead info" "rest info";
+    grid-template-rows: auto 1fr;
+    row-gap: clamp(8px, 1.2vw, 16px);
+  }
+  .dress > .dress-info { align-self: start; }
+}
+
+/* ---------- tap targets ---------- */
+
+.burger { width: 44px; height: 44px; padding: 0; margin: -10px -11px; place-content: center; }
+
+@media (pointer: coarse) {
+  .mark { display: inline-flex; align-items: center; min-height: 44px; margin-block: -11px; }
+  .chip { min-height: 44px; }
+  .link-go { min-height: 44px; }
+  .sheet-close, .lb-close {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-width: 44px; min-height: 44px; padding-inline: var(--s-3); margin-right: calc(var(--s-3) * -1);
+  }
+  .sheet a { display: block; min-height: 44px; }
+  .foot-col ul { gap: 0; }
+  .foot-col a { display: inline-flex; align-items: center; min-height: 44px; }
+}
+
+/* ---------- reduced motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  /* index.html are clasa scroll-smooth, care ignora preferința. */
+  html { scroll-behavior: auto !important; }
+  .band-track { animation: none !important; }
+  .nav::before, .sheet, .veil { transition: none !important; }
+}

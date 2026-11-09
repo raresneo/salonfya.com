@@ -1,15 +1,17 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 
 import { useCatalog } from '../lib/useCatalog';
 import { useWishlist } from '../lib/useWishlist';
-import { Reveal, SmartImage } from '../lib/motion';
+import { SmartImage } from '../lib/motion';
+import { dressSeo, unavailableDressSeo, useSeo } from '../lib/seo';
 import { priceLabel } from '../ui/DressCard';
 import { SALON } from '../data/salon';
 import { PUBLIC_SKETCH_NOTE, UNKNOWN_PUBLIC_DESCRIPTION } from '../data/publicDressCopy';
 
 const DressPage: React.FC = () => {
   const { id } = useParams();
+  const location = useLocation();
   const { dresses, loading } = useCatalog();
   const wishlist = useWishlist();
   const [zoom, setZoom] = useState<string | null>(null);
@@ -23,6 +25,9 @@ const DressPage: React.FC = () => {
     return { prev: family[at - 1], next: family[at + 1] };
   }, [dresses, dress]);
 
+  // Cât timp catalogul se încarcă și rochia nu e găsită, păstrăm SEO-ul curent.
+  useSeo(dress ? dressSeo(dress) : loading ? null : unavailableDressSeo(location.pathname));
+
   useEffect(() => {
     if (!zoom) return;
     const onKey = (event: KeyboardEvent) => {
@@ -35,13 +40,6 @@ const DressPage: React.FC = () => {
       document.body.classList.remove('is-locked');
     };
   }, [zoom]);
-
-  useEffect(() => {
-    if (dress) document.title = `${dress.name} · Salon FYA`;
-    return () => {
-      document.title = 'Salon FYA · Rochii de mireasă croite în atelier, Oradea';
-    };
-  }, [dress]);
 
   if (loading && !dress) {
     return (
@@ -77,32 +75,18 @@ const DressPage: React.FC = () => {
   }
 
   const gallery = dress.images && dress.images.length > 0 ? dress.images : [dress.imageUrl];
+  const [lead, ...rest] = gallery;
+  const sketches = dress.sketches || [];
   const saved = wishlist.has(dress.id);
 
   return (
     <>
+      {/* Pe mobil ordinea e: imaginea principală, informațiile și CTA-ul, apoi restul galeriei. */}
       <section className="dress">
-        <div className="gallery">
-          {gallery.map((src, i) => (
-            <figure key={`${src}-${i}`} onClick={() => setZoom(src)}>
-              <SmartImage
-                src={src}
-                alt={`${dress.name}, imaginea ${i + 1}`}
-                eager={i === 0}
-                sizes="(max-width: 640px) 100vw, 55vw"
-              />
-            </figure>
-          ))}
-
-          {dress.sketches && dress.sketches.length > 0 && (
-            <>
-              {dress.sketches.map((src, i) => (
-                <figure key={`sketch-${i}`} onClick={() => setZoom(src)}>
-                  <SmartImage src={src} alt={`Schița de design pentru ${dress.name}`} />
-                </figure>
-              ))}
-            </>
-          )}
+        <div className="gallery gallery--lead">
+          <figure onClick={() => setZoom(lead)}>
+            <SmartImage src={lead} alt={`${dress.name}, imaginea 1`} eager sizes="(max-width: 1023px) 100vw, 55vw" />
+          </figure>
         </div>
 
         <div className="dress-info">
@@ -173,11 +157,9 @@ const DressPage: React.FC = () => {
             </a>
           </div>
 
-          {dress.sketches && dress.sketches.length > 0 && (
-            <p className="sketch-note">{PUBLIC_SKETCH_NOTE}</p>
-          )}
+          {sketches.length > 0 && <p className="sketch-note">{PUBLIC_SKETCH_NOTE}</p>}
 
-          <div style={{ display: 'flex', justifyContent: 'space-between', gap: 16, paddingTop: 8 }}>
+          <div className="dress-pager" style={{ display: 'flex', justifyContent: 'space-between', gap: 16, paddingTop: 8 }}>
             {neighbours.prev ? (
               <Link className="link-go" to={`/rochie/${neighbours.prev.id}`}>
                 <u /> {neighbours.prev.name}
@@ -192,6 +174,21 @@ const DressPage: React.FC = () => {
             )}
           </div>
         </div>
+
+        {(rest.length > 0 || sketches.length > 0) && (
+          <div className="gallery gallery--rest">
+            {rest.map((src, i) => (
+              <figure key={`${src}-${i}`} onClick={() => setZoom(src)}>
+                <SmartImage src={src} alt={`${dress.name}, imaginea ${i + 2}`} sizes="(max-width: 640px) 100vw, 28vw" />
+              </figure>
+            ))}
+            {sketches.map((src, i) => (
+              <figure key={`sketch-${i}`} onClick={() => setZoom(src)}>
+                <SmartImage src={src} alt={`Schița de design pentru ${dress.name}`} />
+              </figure>
+            ))}
+          </div>
+        )}
       </section>
 
       {zoom && (

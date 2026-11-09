@@ -7,6 +7,9 @@ import Footer from './ui/Footer';
 import Preloader from './ui/Preloader';
 import { Cursor, useScrollFx } from './lib/motion';
 import { useWishlist } from './lib/useWishlist';
+import { hasDarkHero } from './lib/routes';
+import { applySeo, notFoundSeo, staticRouteSeo, useSeo } from './lib/seo';
+import { COLLECTIONS } from './data/catalog';
 import { SALON } from './data/salon';
 
 const Homepage = lazy(() => import('./pages/Homepage'));
@@ -19,8 +22,8 @@ const Admin = lazy(() => import('./pages/Admin'));
 
 const PIXEL_ID = '615819990278598';
 
-/** Rutele care au hero întunecat pe toată lățimea; restul primesc nav pe text închis. */
-const DARK_HERO = ['/', '/imperial', '/anna', '/mayra', '/beverly', '/atelier', '/programare'];
+/** Sluguri de colecție, pentru rutele cu hero întunecat. */
+const COLLECTION_SLUGS = COLLECTIONS.map((item) => item.slug);
 
 const Fallback: React.FC = () => (
   <div className="sec" style={{ minHeight: '60vh', display: 'grid', placeItems: 'center' }}>
@@ -28,24 +31,29 @@ const Fallback: React.FC = () => (
   </div>
 );
 
-const NotFound: React.FC = () => (
-  <section className="sec" style={{ paddingTop: 'clamp(140px, 22vh, 240px)' }}>
-    <p className="eyebrow">Eroare 404</p>
-    <h1 className="h2" style={{ marginBlock: 24 }}>
-      Pagina asta nu există
-    </h1>
-    <p className="body">Probabil linkul e vechi. Colecțiile sunt toate aici.</p>
-    <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', marginTop: 32 }}>
-      <Link className="btn" to="/colectii">
-        <span>Vezi colecțiile</span>
-        <i>&rarr;</i>
-      </Link>
-      <Link className="btn btn--outline" to="/">
-        <span>Acasă</span>
-      </Link>
-    </div>
-  </section>
-);
+const NotFound: React.FC = () => {
+  const location = useLocation();
+  useSeo(notFoundSeo(location.pathname));
+
+  return (
+    <section className="sec" style={{ paddingTop: 'clamp(140px, 22vh, 240px)' }}>
+      <p className="eyebrow">Eroare 404</p>
+      <h1 className="h2" style={{ marginBlock: 24 }}>
+        Pagina asta nu există
+      </h1>
+      <p className="body">Probabil linkul e vechi. Colecțiile sunt toate aici.</p>
+      <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', marginTop: 32 }}>
+        <Link className="btn" to="/colectii">
+          <span>Vezi colecțiile</span>
+          <i>&rarr;</i>
+        </Link>
+        <Link className="btn btn--outline" to="/">
+          <span>Acasă</span>
+        </Link>
+      </div>
+    </section>
+  );
+};
 
 export default function App() {
   const location = useLocation();
@@ -54,7 +62,15 @@ export default function App() {
   const wishlist = useWishlist();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // Instant: clasa scroll-smooth din index.html făcea fiecare navigare să
+    // deruleze animat până sus, lent pe paginile lungi.
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' as ScrollBehavior });
+  }, [location.pathname]);
+
+  // SEO pentru rutele fără date proprii. Colecțiile, rochiile și 404 îl setează singure.
+  useEffect(() => {
+    const meta = staticRouteSeo(location.pathname);
+    if (meta) applySeo(meta);
   }, [location.pathname]);
 
   useEffect(() => {
@@ -91,7 +107,7 @@ export default function App() {
   }, []);
 
   const isAdmin = location.pathname.startsWith('/admin');
-  const forceInk = !DARK_HERO.includes(location.pathname);
+  const forceInk = !hasDarkHero(location.pathname, COLLECTION_SLUGS);
 
   return (
     <>

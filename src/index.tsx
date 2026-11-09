@@ -6,6 +6,8 @@ import './index.css';
 import './styles/booking.css';
 import './styles/map.css';
 import './styles/legacy-vars.css';
+// Ultimul: corecturile mobile și de accesibilitate trebuie să câștige cascada.
+import './styles/mobile-fixes.css';
 import App from './App';
 
 const rootElement = document.getElementById('root');
