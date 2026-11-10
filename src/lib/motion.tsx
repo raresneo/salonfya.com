@@ -262,7 +262,6 @@ export const SmartImage: React.FC<SmartImageProps> = ({ src, alt, eager, classNa
       onLoad={() => setLoaded(true)}
       onError={markFailed}
     />
-    {/^\/images\/(AURORA|NOBLESSE)\//.test(src) && <span className="ai-image-note">Imagine generată cu AI</span>}
     </>
   );
 };

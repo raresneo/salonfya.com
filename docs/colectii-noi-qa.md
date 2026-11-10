@@ -9,7 +9,7 @@
 - New `scripts/optimize-images.cjs` added because it was absent from main and all existing branches/PRs.
 - Sale prices only, RON, from the supplied CSV. No old prices or discounts.
 - Public names are CARA, EMMA, MEGAN, the remaining Aurora names, and FYA2801-FYA2840. QUEEN has ID `aurora-queen`.
-- Every new image placement (cards, home collection covers, hero, product gallery, lightbox) carries `Imagine generată cu AI`.
+- AI disclosure was removed at the owner's explicit request on November10,21:46. Generated-image origin is unchanged.
 - No generation or paid services used.
 
 ## Data behavior

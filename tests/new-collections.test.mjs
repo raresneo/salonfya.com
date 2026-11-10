@@ -33,9 +33,9 @@ test('proposed SQL only inserts 51 new dresses, no updates/deletes or old collec
  assert.doesNotMatch(sql,/\b(?:UPDATE|DELETE|ALTER|DROP|CREATE)\b|INW|Innocentia|Beatrice|With Love/i);
  for(const x of [...AURORA_SEEDS,...NOBLESSE_SEEDS])assert.ok(sql.includes(`'${x.name}'`));
 });
-test('routes, generated-image labels and exact sale-price projection are wired',()=>{
+test('routes, owner-requested unlabelled images and exact sale-price projection are wired',()=>{
  assert.match(read('src/App.tsx'),/path="\/aurora"/);assert.match(read('src/App.tsx'),/path="\/noblesse"/);
- for(const p of ['src/lib/motion.tsx','src/ui/HeroMedia.tsx','src/pages/DressPage.tsx'])assert.match(read(p),/Imagine generată cu AI/);
+ for(const p of ['src/lib/motion.tsx','src/ui/HeroMedia.tsx','src/pages/DressPage.tsx'])assert.doesNotMatch(read(p),/Imagine generată cu AI/);
  assert.match(read('src/data/catalog.ts'),/price: seed.price/);
  assert.doesNotMatch(source,/reduc|discount|oldPrice|rentPrice/i);
 });

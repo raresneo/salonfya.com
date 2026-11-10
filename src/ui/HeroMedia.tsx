@@ -17,7 +17,7 @@ type HeroMediaProps = {
 const HeroMedia: React.FC<HeroMediaProps> = ({ video, poster, preload = 'metadata' }) => {
   const reduced = useReducedMotion();
 
-  if (!video || reduced) return <><img src={poster} alt="" aria-hidden="true" />{/^\/images\/(AURORA|NOBLESSE)\//.test(poster) && <span className="ai-image-note">Imagine generată cu AI</span>}</>;
+  if (!video || reduced) return <><img src={poster} alt="" aria-hidden="true" /></>;
 
   return (
     <video autoPlay muted loop playsInline preload={preload} poster={poster} aria-hidden="true">

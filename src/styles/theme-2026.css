@@ -220,18 +220,6 @@
   .line > span { transform: none; }
 }
 
-/* Source disclosure stays attached to each new generated image. */
-.card-frame:has(.ai-image-note), .item-frame:has(.ai-image-note),
-.gallery figure:has(.ai-image-note) { position: relative; }
-.ai-image-note {
-  position: absolute; right: 8px; bottom: 8px; z-index: 3;
-  max-width: calc(100% - 16px); padding: 5px 8px;
-  font: 400 12px/1.3 var(--sans, sans-serif); letter-spacing: 0;
-  color: #fff; background: rgba(27, 18, 25, .84);
-  border-radius: 2px; pointer-events: none;
-}
-.phero-media .ai-image-note { bottom: auto; top: 92px; }
-.lb .ai-image-note { position: fixed; bottom: 18px; right: 18px; }
 .sheet { overflow-y: auto; overscroll-behavior: contain; }
 
 /* Portrait source images stay whole rather than being cropped into a wide hero. */
@@ -245,7 +233,6 @@
 }
 .phero--new-collection .phero-media img { object-fit: contain; animation: none; }
 .phero--new-collection .phero-media::after { display: none; }
-.phero--new-collection .phero-media .ai-image-note { top: auto; bottom: 8px; }
 .phero--new-collection .phero-in { grid-column: 1; grid-row: 1; }
 .phero--new-collection .lead { color: var(--ivory); }
 @media (max-width: 700px) {
