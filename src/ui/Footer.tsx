@@ -10,7 +10,7 @@ const Footer: React.FC = () => (
       <div>
         <p className="foot-mark">FYA</p>
         <p>
-          Atelier de rochii de mireasă și de seară. Design, execuție și reparații făcute la noi, în Oradea.
+          Salon și atelier de rochii de mireasă și de seară în Oradea. Rochii la comandă, ajustări și reparații.
         </p>
       </div>
 
