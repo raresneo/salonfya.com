@@ -16,8 +16,8 @@ const Atelier: React.FC = () => (
           Totul se întâmplă <span className="it">în același loc</span>
         </h1>
         <p className="lead body--light">
-          De la prima schiță până la ultima ajustare înainte de nuntă. Nu externalizăm lucrul la rochii, deci vedem și
-          verificăm fiecare detaliu.
+          De la prima probă până la ultima ajustare înainte de nuntă. Rochiile la comandă le croim aici, iar pe cele din
+          colecții le ajustăm pe tine în același atelier.
         </p>
       </div>
     </section>
@@ -28,30 +28,30 @@ const Atelier: React.FC = () => (
           De ce contează
         </Reveal>
         <Reveal index={1} className="manifest-state" style={{ marginTop: 24 }}>
-          Un salon care externalizează croitoria îți poate spune doar <span className="it">nu se mai poate</span>.
+          Când atelierul e la același etaj, o modificare nu mai înseamnă <span className="it">așteptare</span>.
         </Reveal>
       </div>
       <div className="manifest-side">
         <Reveal as="p" index={2} className="body">
-          Când croitoria e în casă, o modificare nu mai e o negociere cu un furnizor. Se măsoară, se desface, se coase
-          din nou. Asta schimbă complet ce îți putem promite cu trei săptămâni înainte de nuntă.
+          Se măsoară, se desface și se coase din nou, la noi. Asta contează mai ales cu trei săptămâni înainte de
+          nuntă.
         </Reveal>
         <Reveal as="div" index={3}>
           <dl className="pair">
-            <dt>Design și execuție</dt>
-            <dd>Schițăm, tăiem, cusem și brodăm în atelierul propriu.</dd>
+            <dt>La comandă</dt>
+            <dd>Pentru rochiile la comandă schițăm, croim și cusem în atelierul propriu.</dd>
           </dl>
         </Reveal>
         <Reveal as="div" index={4}>
           <dl className="pair">
-            <dt>Reparații</dt>
-            <dd>Inclusiv pe rochii care nu sunt cumpărate de la noi.</dd>
+            <dt>Din colecții</dt>
+            <dd>Rochiile din colecții sunt alese de noi și ajustate pe tine aici.</dd>
           </dl>
         </Reveal>
         <Reveal as="div" index={5}>
           <dl className="pair">
-            <dt>Acoperire</dt>
-            <dd>Vin mirese din {SALON.reach.join(', ')}.</dd>
+            <dt>Reparații</dt>
+            <dd>Inclusiv pe rochii care nu sunt cumpărate de la noi.</dd>
           </dl>
         </Reveal>
       </div>
@@ -86,12 +86,15 @@ const Atelier: React.FC = () => (
             <Reveal as="article" className="step">
               <p className="step-n tnum">02</p>
               <h3 className="h3">Măsuri și schiță</h3>
-              <p>Luăm măsurile și desenăm varianta ta, cu modificările pe care le vrei față de model.</p>
+              <p>
+                Luăm măsurile. Pentru o rochie la comandă desenăm varianta ta; pentru una din colecții notăm ce ajustăm
+                față de model.
+              </p>
             </Reveal>
             <Reveal as="article" className="step">
               <p className="step-n tnum">03</p>
               <h3 className="h3">Proba intermediară</h3>
-              <p>Vezi rochia pe jumătate lucrată. Aici se corectează liniile, nu la final.</p>
+              <p>Vezi rochia în lucru. Aici se corectează liniile, nu la final.</p>
             </Reveal>
             <Reveal as="article" className="step">
               <p className="step-n tnum">04</p>
@@ -113,13 +116,13 @@ const Atelier: React.FC = () => (
     <section className="sec sec--warm sec--tight">
       <div className="strip">
         <Reveal as="figure" mode="wipe">
-          <SmartImage src="/images/atelier_hands_sewing.png" alt="Cusut manual în atelier" />
+          <SmartImage src="/images/atelier_hands_sewing.png" alt="Lucru la o rochie în atelier" />
         </Reveal>
         <Reveal as="figure" mode="wipe" index={1}>
           <SmartImage src="/images/feminity_vintage.png" alt="Probă de rochie în showroom" />
         </Reveal>
         <Reveal as="figure" mode="wipe" index={2}>
-          <SmartImage src="/images/jardin_vintage.png" alt="Rochie finalizată în atelier" />
+          <SmartImage src="/images/jardin_vintage.png" alt="Rochie de mireasă FYA" />
         </Reveal>
       </div>
     </section>
