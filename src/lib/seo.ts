@@ -25,9 +25,9 @@ export type SeoMeta = {
 
 /** Identic cu index.html, ca revenirea pe homepage să nu schimbe nimic. */
 export const HOME_SEO: SeoMeta = {
-  title: 'Salon FYA · Rochii de mireasă croite în atelier, Oradea',
+  title: 'Salon FYA · Rochii de mireasă alese și ajustate în atelier, Oradea',
   description:
-    'Atelier de rochii de mireasă în Oradea, pe Mihail Kogălniceanu nr. 44. Design, execuție și ajustări făcute la noi, nu externalizate. Colecțiile Imperial, Anna, Mayra și Beverly. Probe doar pe bază de programare.',
+    'Salon de rochii de mireasă în Oradea, pe Mihail Kogălniceanu nr. 44. Rochii alese de noi, probă și ajustări în atelierul din salon. Colecțiile Imperial, Anna, Mayra și Beverly. Probe doar pe bază de programare.',
   path: '/',
   robots: 'index,follow',
 };
