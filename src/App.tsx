@@ -1,11 +1,10 @@
-import React, { Suspense, lazy, useEffect, useState } from 'react';
+import React, { Suspense, lazy, useEffect } from 'react';
 import { Link, Route, Routes, useLocation } from 'react-router-dom';
 import ReactPixel from 'react-facebook-pixel';
 
 import Nav from './ui/Nav';
 import Footer from './ui/Footer';
-import Preloader from './ui/Preloader';
-import { Cursor, useScrollFx } from './lib/motion';
+import { useScrollFx } from './lib/motion';
 import { useWishlist } from './lib/useWishlist';
 import { hasDarkHero } from './lib/routes';
 import { applySeo, notFoundSeo, staticRouteSeo, useSeo } from './lib/seo';
@@ -57,7 +56,6 @@ const NotFound: React.FC = () => {
 
 export default function App() {
   const location = useLocation();
-  const [booted, setBooted] = useState(false);
   const { solid, progressRef } = useScrollFx(location.pathname);
   const wishlist = useWishlist();
 
@@ -73,9 +71,11 @@ export default function App() {
     if (meta) applySeo(meta);
   }, [location.pathname]);
 
+  // Fără preloader: pagina apare imediat, `ready` pornește doar intrarea scurtă a titlului.
   useEffect(() => {
-    if (booted) document.body.classList.add('ready');
-  }, [booted]);
+    const frame = requestAnimationFrame(() => document.body.classList.add('ready'));
+    return () => cancelAnimationFrame(frame);
+  }, []);
 
   useEffect(() => {
     ReactPixel.init(PIXEL_ID, undefined, { autoConfig: true, debug: false });
@@ -115,10 +115,7 @@ export default function App() {
         Sari la conținut
       </a>
 
-      {!booted && <Preloader onDone={() => setBooted(true)} />}
-
       <div className="prog" ref={progressRef} aria-hidden="true" />
-      <Cursor />
 
       {!isAdmin && <Nav solid={solid} forceInk={forceInk} wishlistCount={wishlist.count} />}
 

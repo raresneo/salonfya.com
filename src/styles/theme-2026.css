@@ -1,0 +1,221 @@
+/* ============================================================
+   SALON FYA · tema 2026
+   Editorial curat: crem ca fundal, plum ca voce, lemn de trandafir
+   ca accent discret. Imaginile existente conduc; textul le servește.
+   Mobile first. Fără fonturi, imagini sau video noi.
+   Încărcat după index.css și înaintea mobile-fixes.css.
+   ============================================================ */
+
+:root {
+  --ivory: oklch(97.2% 0.010 80);
+  --ivory-warm: oklch(94.6% 0.016 78);
+  --sand: oklch(91.5% 0.020 76);
+  --sand-deep: oklch(86.5% 0.022 74);
+
+  --ink: oklch(23% 0.035 345);
+  --plum: oklch(30% 0.075 345);
+  --plum-deep: oklch(19% 0.045 345);
+  --plum-lift: oklch(34% 0.070 345);
+  --plum-line: oklch(42% 0.060 345);
+
+  --muted: oklch(44% 0.026 345);
+  /* etichete: un plum prăfuit în locul olivului */
+  --olive: oklch(45% 0.070 355);
+  /* accentul discret: lemn de trandafir, doar pe linkuri și stări active */
+  --clay: oklch(47% 0.100 15);
+  --clay-deep: oklch(40% 0.095 15);
+
+  --on-plum: oklch(95% 0.010 80);
+  --on-plum-dim: oklch(78% 0.016 80);
+
+  --gut: clamp(20px, 5vw, 72px);
+}
+
+/* ---------- tipografie lizibilă ---------- */
+
+.display, .h2, .h3, .dress-name, .manifest-state { font-weight: 500; }
+.display { font-size: clamp(2.375rem, 9.5vw, 6.5rem); line-height: 1; letter-spacing: -.015em; }
+.h2 { font-size: clamp(1.875rem, 5vw, 3.5rem); line-height: 1.08; letter-spacing: -.01em; }
+.h3 { font-size: clamp(1.375rem, 2.4vw, 1.875rem); line-height: 1.15; }
+.lead { font-size: clamp(1.0625rem, 1.3vw, 1.25rem); line-height: 1.6; }
+.manifest-state { font-size: clamp(1.5rem, 3vw, 2.5rem); line-height: 1.22; }
+
+/* Nicio etichetă sub 12px. */
+.eyebrow { font-size: .75rem; letter-spacing: .14em; }
+.link-go { font-size: .75rem; letter-spacing: .12em; }
+.pair dt, .spec dt, .item-num, .quote-by { font-size: .75rem; letter-spacing: .12em; }
+.pair dd { font-size: 1rem; }
+.atelier-pin figcaption { font-size: .75rem; letter-spacing: .12em; }
+.chip { font-size: .75rem; letter-spacing: .1em; }
+.card-tag { font-size: .75rem; letter-spacing: .1em; padding: 6px 10px; background: oklch(97.2% 0.010 80 / .94); }
+.card-hint { font-size: .8125rem; }
+.item-note { font-size: .875rem; }
+.nav-count { font-size: .75rem; min-width: 20px; height: 20px; border-radius: 10px; }
+.book-side dt, .field label { font-size: .75rem; letter-spacing: .12em; }
+.mbar a { font-size: .75rem; letter-spacing: .08em; }
+.foot-col h4 { font-size: .75rem; }
+.cal legend { font-size: .75rem; }
+.cal-dow { font-size: .75rem; }
+.cal-mon { font-size: .75rem; letter-spacing: .06em; }
+.cal-slot { font-size: .75rem; }
+.band-track span { font-size: .75rem; }
+.band-track span::after { content: "\00B7"; font-size: .75rem; opacity: .6; }
+
+/* ---------- spațiu coerent ---------- */
+
+.sec { padding: clamp(64px, 10vw, 136px) var(--gut); }
+.sec--tight { padding-block: clamp(48px, 7vw, 96px); }
+.callout { border: 1px solid var(--sand-deep); }
+
+/* ---------- butoane: plum pe crem, crem pe plum ---------- */
+
+.btn { background: var(--plum); color: var(--on-plum); }
+.btn:hover { background: var(--plum-lift); transform: none; }
+.hero .btn:not(.btn--ghost):not(.btn--outline),
+.phero .btn:not(.btn--ghost):not(.btn--outline),
+.sec--deep .btn:not(.btn--ghost):not(.btn--outline),
+.sec--plum .btn:not(.btn--ghost):not(.btn--outline) { background: var(--ivory); color: var(--plum); }
+.hero .btn:not(.btn--ghost):not(.btn--outline):hover,
+.phero .btn:not(.btn--ghost):not(.btn--outline):hover,
+.sec--deep .btn:not(.btn--ghost):not(.btn--outline):hover,
+.sec--plum .btn:not(.btn--ghost):not(.btn--outline):hover { background: var(--sand); }
+.btn--outline { box-shadow: inset 0 0 0 1px var(--plum-line); }
+
+.hero :focus-visible, .phero :focus-visible, .sec--deep :focus-visible, .sec--plum :focus-visible,
+.foot :focus-visible, .sheet :focus-visible, .mbar :focus-visible { outline-color: var(--sand); }
+
+/* ---------- nav compact ---------- */
+
+.nav { padding: 14px var(--gut); }
+.nav.solid { padding: 10px var(--gut); }
+.mark { font-size: 1.25rem; letter-spacing: .24em; }
+.nav-link { font-size: .8125rem; letter-spacing: .1em; }
+.nav .btn { min-height: 44px; padding: 11px 20px; }
+/* Pe paginile deschise navul are fond de la început: textul nu trece peste poze. */
+.nav.ink::after { opacity: .96; }
+.nav.ink, .nav.solid { box-shadow: 0 1px 0 var(--sand-deep); }
+
+/* ---------- hero: imaginea conduce ---------- */
+
+.hero-media video, .hero-media img { opacity: 1; transform: none; }
+.hero-media::after {
+  background: linear-gradient(180deg,
+    oklch(19% 0.045 345 / .50) 0%,
+    oklch(19% 0.045 345 / .12) 18%,
+    oklch(19% 0.045 345 / .28) 42%,
+    oklch(19% 0.045 345 / .88) 100%);
+}
+/* Scrim legat de blocul de text, nu de înălțimea ecranului: oricât de deschis
+   e cadrul video, tot textul stă pe cel puțin .78 plum. Începe cu 96px deasupra
+   textului ca trecerea să nu se vadă ca o bandă. */
+.hero-in { isolation: isolate; }
+.hero-in::before {
+  content: ""; position: absolute; inset: -96px 0 0 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(180deg,
+    oklch(19% 0.045 345 / 0) 0px,
+    oklch(19% 0.045 345 / .78) 96px,
+    oklch(19% 0.045 345 / .86) 100%);
+}
+.hero .eyebrow--light, .hero .lead { color: var(--on-plum); }
+.hero h1 { margin-block: var(--s-4); }
+.hero-cta { margin-top: var(--s-6); }
+.hero-scroll { display: none; }
+
+.phero {
+  display: grid; align-content: end;
+  min-height: clamp(380px, 62svh, 640px);
+  padding: clamp(112px, 16vh, 184px) var(--gut) clamp(40px, 7vh, 80px);
+}
+.phero-media img, .phero-media video { opacity: 1; animation-duration: .5s; }
+.phero-media::after {
+  background: linear-gradient(180deg,
+    oklch(19% 0.045 345 / .45) 0%,
+    oklch(19% 0.045 345 / .18) 30%,
+    oklch(19% 0.045 345 / .84) 100%);
+}
+.phero h1 { margin-block: var(--s-3) var(--s-4); }
+
+.atelier-pin img { opacity: 1; animation-name: img-in; }
+
+/* ---------- mișcare: scurtă, fără efecte grele ---------- */
+
+[data-reveal] {
+  transform: translate3d(0, 12px, 0);
+  transition: opacity .55s var(--e-out), transform .6s var(--e-out);
+  transition-delay: calc(var(--i, 0) * 50ms);
+}
+[data-reveal="wipe"] { clip-path: none; opacity: 0; transform: none; transition: opacity .6s var(--e-out); }
+[data-reveal="wipe"].is-in { clip-path: none; opacity: 1; }
+.line > span { transition: transform .7s var(--e-out); transition-delay: calc(var(--i, 0) * 60ms); }
+.item-frame img, .card-frame img, .gallery img, .strip img { transition-duration: .8s; animation-duration: .45s; }
+.cursor { display: none; }
+
+/* Banda devine un rând static, fără derulare continuă. */
+.band { background: var(--ivory-warm); color: var(--plum); border-block: 1px solid var(--sand-deep); }
+.band-track {
+  animation: none; width: auto; flex-wrap: wrap; justify-content: center;
+  white-space: normal; gap: var(--s-3) var(--s-8); padding-inline: var(--gut);
+}
+.band-track > span:nth-child(n+6) { display: none; }
+.band-track > span:nth-child(5)::after { content: none; }
+
+/* ---------- catalog: 2 coloane pe mobil ---------- */
+
+.item-frame, .card-frame { background: var(--sand); }
+.chip.on { background: var(--plum); color: var(--on-plum); }
+.cat-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+
+@media (max-width: 699px) {
+  .cat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 12px; }
+  .card-body { display: grid; gap: 4px; }
+  .card-name { font-size: 1.125rem; }
+  .card-hint { white-space: normal; }
+
+  /* filtrele pe un rând derulabil, fără să lărgească pagina */
+  .filters {
+    flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none;
+    margin-inline: calc(var(--gut) * -1); padding-inline: var(--gut);
+  }
+  .filters::-webkit-scrollbar { display: none; }
+  .chip { flex: 0 0 auto; }
+}
+
+/* ---------- produs: imagine, informații și CTA, apoi galeria ---------- */
+
+.dress { padding-top: clamp(76px, 12vh, 136px); }
+.dress-name { font-size: clamp(2.25rem, 6vw, 3.5rem); line-height: 1; }
+
+@media (max-width: 1023px) {
+  .dress { padding-top: 60px; }
+  /* imaginea principală de la margine la margine */
+  .gallery--lead { margin-inline: calc(var(--gut) * -1); }
+  /* restul galeriei: derulare orizontală nativă, conținută în pagină */
+  .gallery--rest {
+    display: flex; gap: var(--s-2); overflow-x: auto;
+    scroll-snap-type: x mandatory; scroll-padding-inline: var(--gut); scrollbar-width: none;
+    margin-inline: calc(var(--gut) * -1); padding-inline: var(--gut);
+  }
+  .gallery--rest::-webkit-scrollbar { display: none; }
+  .gallery--rest > figure { flex: 0 0 72%; scroll-snap-align: start; }
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+  .gallery--rest > figure { flex-basis: 44%; }
+}
+
+/* ---------- bara de jos ---------- */
+
+.mbar a.cta { background: var(--ivory); color: var(--plum); }
+
+/* ---------- tap targets ---------- */
+
+@media (pointer: coarse) {
+  .cal-slot { min-height: 44px; }
+  .chip { min-height: 44px; }
+}
+
+/* ---------- reduced motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal], [data-reveal="wipe"] { opacity: 1; transform: none; clip-path: none; }
+  .line > span { transform: none; }
+}
