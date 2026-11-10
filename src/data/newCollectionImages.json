@@ -1,0 +1,1218 @@
+[
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2801",
+    "pret_vanzare_lei": 4900,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2801_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2801/FYA2801_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2801",
+    "pret_vanzare_lei": 4900,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2801_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2801/FYA2801_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2801",
+    "pret_vanzare_lei": 4900,
+    "cadru": "detaliu",
+    "nume_fisier": "FYA2801_03_detaliu.jpg",
+    "path": "/images/NOBLESSE/FYA2801/FYA2801_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2802",
+    "pret_vanzare_lei": 4900,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2802_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2802/FYA2802_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2802",
+    "pret_vanzare_lei": 4900,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2802_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2802/FYA2802_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2802",
+    "pret_vanzare_lei": 4900,
+    "cadru": "detaliu_asezata",
+    "nume_fisier": "FYA2802_03_detaliu_asezata.jpg",
+    "path": "/images/NOBLESSE/FYA2802/FYA2802_03_detaliu_asezata.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2803",
+    "pret_vanzare_lei": 7900,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2803_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2803/FYA2803_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2803",
+    "pret_vanzare_lei": 7900,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2803_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2803/FYA2803_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2803",
+    "pret_vanzare_lei": 7900,
+    "cadru": "detaliu_asezata",
+    "nume_fisier": "FYA2803_03_detaliu_asezata.jpg",
+    "path": "/images/NOBLESSE/FYA2803/FYA2803_03_detaliu_asezata.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2804",
+    "pret_vanzare_lei": 4900,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2804_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2804/FYA2804_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2804",
+    "pret_vanzare_lei": 4900,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2804_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2804/FYA2804_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2804",
+    "pret_vanzare_lei": 4900,
+    "cadru": "detaliu_asezata",
+    "nume_fisier": "FYA2804_03_detaliu_asezata.jpg",
+    "path": "/images/NOBLESSE/FYA2804/FYA2804_03_detaliu_asezata.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2805",
+    "pret_vanzare_lei": 5400,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2805_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2805/FYA2805_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2805",
+    "pret_vanzare_lei": 5400,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2805_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2805/FYA2805_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2805",
+    "pret_vanzare_lei": 5400,
+    "cadru": "detaliu_asezata",
+    "nume_fisier": "FYA2805_03_detaliu_asezata.jpg",
+    "path": "/images/NOBLESSE/FYA2805/FYA2805_03_detaliu_asezata.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2806",
+    "pret_vanzare_lei": 7900,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2806_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2806/FYA2806_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2806",
+    "pret_vanzare_lei": 7900,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2806_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2806/FYA2806_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2806",
+    "pret_vanzare_lei": 7900,
+    "cadru": "detaliu_asezata",
+    "nume_fisier": "FYA2806_03_detaliu_asezata.jpg",
+    "path": "/images/NOBLESSE/FYA2806/FYA2806_03_detaliu_asezata.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2807",
+    "pret_vanzare_lei": 7900,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2807_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2807/FYA2807_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2807",
+    "pret_vanzare_lei": 7900,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2807_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2807/FYA2807_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2807",
+    "pret_vanzare_lei": 7900,
+    "cadru": "detaliu_asezata",
+    "nume_fisier": "FYA2807_03_detaliu_asezata.jpg",
+    "path": "/images/NOBLESSE/FYA2807/FYA2807_03_detaliu_asezata.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2808",
+    "pret_vanzare_lei": 5900,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2808_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2808/FYA2808_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2808",
+    "pret_vanzare_lei": 5900,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2808_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2808/FYA2808_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2808",
+    "pret_vanzare_lei": 5900,
+    "cadru": "spate_voal",
+    "nume_fisier": "FYA2808_03_spate_voal.jpg",
+    "path": "/images/NOBLESSE/FYA2808/FYA2808_03_spate_voal.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2809",
+    "pret_vanzare_lei": 7900,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2809_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2809/FYA2809_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2809",
+    "pret_vanzare_lei": 7900,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2809_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2809/FYA2809_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2809",
+    "pret_vanzare_lei": 7900,
+    "cadru": "detaliu_asezata",
+    "nume_fisier": "FYA2809_03_detaliu_asezata.jpg",
+    "path": "/images/NOBLESSE/FYA2809/FYA2809_03_detaliu_asezata.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2810",
+    "pret_vanzare_lei": 5500,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2810_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2810/FYA2810_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2810",
+    "pret_vanzare_lei": 5500,
+    "cadru": "detaliu_asezata",
+    "nume_fisier": "FYA2810_02_detaliu_asezata.jpg",
+    "path": "/images/NOBLESSE/FYA2810/FYA2810_02_detaliu_asezata.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2810",
+    "pret_vanzare_lei": 5500,
+    "cadru": "trei_sferturi_fara_supra",
+    "nume_fisier": "FYA2810_03_trei_sferturi_fara_supra.jpg",
+    "path": "/images/NOBLESSE/FYA2810/FYA2810_03_trei_sferturi_fara_supra.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2811",
+    "pret_vanzare_lei": 4900,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2811_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2811/FYA2811_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2811",
+    "pret_vanzare_lei": 4900,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2811_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2811/FYA2811_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2811",
+    "pret_vanzare_lei": 4900,
+    "cadru": "detaliu_asezata",
+    "nume_fisier": "FYA2811_03_detaliu_asezata.jpg",
+    "path": "/images/NOBLESSE/FYA2811/FYA2811_03_detaliu_asezata.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2812",
+    "pret_vanzare_lei": 5400,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2812_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2812/FYA2812_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2812",
+    "pret_vanzare_lei": 5400,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2812_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2812/FYA2812_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2812",
+    "pret_vanzare_lei": 5400,
+    "cadru": "detaliu_asezata",
+    "nume_fisier": "FYA2812_03_detaliu_asezata.jpg",
+    "path": "/images/NOBLESSE/FYA2812/FYA2812_03_detaliu_asezata.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2813",
+    "pret_vanzare_lei": 5400,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2813_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2813/FYA2813_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2813",
+    "pret_vanzare_lei": 5400,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2813_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2813/FYA2813_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2813",
+    "pret_vanzare_lei": 5400,
+    "cadru": "detaliu_asezata",
+    "nume_fisier": "FYA2813_03_detaliu_asezata.jpg",
+    "path": "/images/NOBLESSE/FYA2813/FYA2813_03_detaliu_asezata.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2814",
+    "pret_vanzare_lei": 4900,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2814_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2814/FYA2814_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2814",
+    "pret_vanzare_lei": 4900,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2814_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2814/FYA2814_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2814",
+    "pret_vanzare_lei": 4900,
+    "cadru": "detaliu_asezata",
+    "nume_fisier": "FYA2814_03_detaliu_asezata.jpg",
+    "path": "/images/NOBLESSE/FYA2814/FYA2814_03_detaliu_asezata.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2815",
+    "pret_vanzare_lei": 4500,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2815_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2815/FYA2815_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2815",
+    "pret_vanzare_lei": 4500,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2815_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2815/FYA2815_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2815",
+    "pret_vanzare_lei": 4500,
+    "cadru": "spate",
+    "nume_fisier": "FYA2815_03_spate.jpg",
+    "path": "/images/NOBLESSE/FYA2815/FYA2815_03_spate.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2816",
+    "pret_vanzare_lei": 7900,
+    "cadru": "detaliu_cu_bolero",
+    "nume_fisier": "FYA2816_01_detaliu_cu_bolero.jpg",
+    "path": "/images/NOBLESSE/FYA2816/FYA2816_01_detaliu_cu_bolero.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2816",
+    "pret_vanzare_lei": 7900,
+    "cadru": "plan_intreg_fara_bolero",
+    "nume_fisier": "FYA2816_02_plan_intreg_fara_bolero.jpg",
+    "path": "/images/NOBLESSE/FYA2816/FYA2816_02_plan_intreg_fara_bolero.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2816",
+    "pret_vanzare_lei": 7900,
+    "cadru": "trei_sferturi_buzunare",
+    "nume_fisier": "FYA2816_03_trei_sferturi_buzunare.jpg",
+    "path": "/images/NOBLESSE/FYA2816/FYA2816_03_trei_sferturi_buzunare.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2817",
+    "pret_vanzare_lei": 5600,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2817_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2817/FYA2817_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2817",
+    "pret_vanzare_lei": 5600,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2817_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2817/FYA2817_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2817",
+    "pret_vanzare_lei": 5600,
+    "cadru": "spate",
+    "nume_fisier": "FYA2817_03_spate.jpg",
+    "path": "/images/NOBLESSE/FYA2817/FYA2817_03_spate.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2818",
+    "pret_vanzare_lei": 7900,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2818_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2818/FYA2818_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2818",
+    "pret_vanzare_lei": 7900,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2818_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2818/FYA2818_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2818",
+    "pret_vanzare_lei": 7900,
+    "cadru": "spate",
+    "nume_fisier": "FYA2818_03_spate.jpg",
+    "path": "/images/NOBLESSE/FYA2818/FYA2818_03_spate.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2819",
+    "pret_vanzare_lei": 5600,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2819_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2819/FYA2819_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2819",
+    "pret_vanzare_lei": 5600,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2819_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2819/FYA2819_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2819",
+    "pret_vanzare_lei": 5600,
+    "cadru": "detaliu",
+    "nume_fisier": "FYA2819_03_detaliu.jpg",
+    "path": "/images/NOBLESSE/FYA2819/FYA2819_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2820",
+    "pret_vanzare_lei": 5600,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2820_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2820/FYA2820_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2820",
+    "pret_vanzare_lei": 5600,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2820_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2820/FYA2820_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2820",
+    "pret_vanzare_lei": 5600,
+    "cadru": "detaliu",
+    "nume_fisier": "FYA2820_03_detaliu.jpg",
+    "path": "/images/NOBLESSE/FYA2820/FYA2820_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2821",
+    "pret_vanzare_lei": 5600,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2821_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2821/FYA2821_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2821",
+    "pret_vanzare_lei": 5600,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2821_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2821/FYA2821_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2821",
+    "pret_vanzare_lei": 5600,
+    "cadru": "spate",
+    "nume_fisier": "FYA2821_03_spate.jpg",
+    "path": "/images/NOBLESSE/FYA2821/FYA2821_03_spate.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2822",
+    "pret_vanzare_lei": 4500,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2822_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2822/FYA2822_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2822",
+    "pret_vanzare_lei": 4500,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2822_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2822/FYA2822_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2822",
+    "pret_vanzare_lei": 4500,
+    "cadru": "detaliu",
+    "nume_fisier": "FYA2822_03_detaliu.jpg",
+    "path": "/images/NOBLESSE/FYA2822/FYA2822_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2823",
+    "pret_vanzare_lei": 5400,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2823_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2823/FYA2823_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2823",
+    "pret_vanzare_lei": 5400,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2823_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2823/FYA2823_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2823",
+    "pret_vanzare_lei": 5400,
+    "cadru": "detaliu",
+    "nume_fisier": "FYA2823_03_detaliu.jpg",
+    "path": "/images/NOBLESSE/FYA2823/FYA2823_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2824",
+    "pret_vanzare_lei": 8600,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2824_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2824/FYA2824_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2824",
+    "pret_vanzare_lei": 8600,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2824_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2824/FYA2824_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2824",
+    "pret_vanzare_lei": 8600,
+    "cadru": "detaliu",
+    "nume_fisier": "FYA2824_03_detaliu.jpg",
+    "path": "/images/NOBLESSE/FYA2824/FYA2824_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2825",
+    "pret_vanzare_lei": 5400,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2825_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2825/FYA2825_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2825",
+    "pret_vanzare_lei": 5400,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2825_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2825/FYA2825_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2825",
+    "pret_vanzare_lei": 5400,
+    "cadru": "detaliu",
+    "nume_fisier": "FYA2825_03_detaliu.jpg",
+    "path": "/images/NOBLESSE/FYA2825/FYA2825_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2826",
+    "pret_vanzare_lei": 7900,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2826_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2826/FYA2826_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2826",
+    "pret_vanzare_lei": 7900,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2826_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2826/FYA2826_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2826",
+    "pret_vanzare_lei": 7900,
+    "cadru": "spate",
+    "nume_fisier": "FYA2826_03_spate.jpg",
+    "path": "/images/NOBLESSE/FYA2826/FYA2826_03_spate.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2827",
+    "pret_vanzare_lei": 6500,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2827_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2827/FYA2827_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2827",
+    "pret_vanzare_lei": 6500,
+    "cadru": "detaliu",
+    "nume_fisier": "FYA2827_02_detaliu.jpg",
+    "path": "/images/NOBLESSE/FYA2827/FYA2827_02_detaliu.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2827",
+    "pret_vanzare_lei": 6500,
+    "cadru": "trei_sferturi_bolero",
+    "nume_fisier": "FYA2827_03_trei_sferturi_bolero.jpg",
+    "path": "/images/NOBLESSE/FYA2827/FYA2827_03_trei_sferturi_bolero.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2828",
+    "pret_vanzare_lei": 6900,
+    "cadru": "detaliu",
+    "nume_fisier": "FYA2828_01_detaliu.jpg",
+    "path": "/images/NOBLESSE/FYA2828/FYA2828_01_detaliu.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2828",
+    "pret_vanzare_lei": 6900,
+    "cadru": "plan_intreg_lunga",
+    "nume_fisier": "FYA2828_02_plan_intreg_lunga.jpg",
+    "path": "/images/NOBLESSE/FYA2828/FYA2828_02_plan_intreg_lunga.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2828",
+    "pret_vanzare_lei": 6900,
+    "cadru": "trei_sferturi_scurta",
+    "nume_fisier": "FYA2828_03_trei_sferturi_scurta.jpg",
+    "path": "/images/NOBLESSE/FYA2828/FYA2828_03_trei_sferturi_scurta.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2829",
+    "pret_vanzare_lei": 7900,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2829_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2829/FYA2829_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2829",
+    "pret_vanzare_lei": 7900,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2829_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2829/FYA2829_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2829",
+    "pret_vanzare_lei": 7900,
+    "cadru": "detaliu",
+    "nume_fisier": "FYA2829_03_detaliu.jpg",
+    "path": "/images/NOBLESSE/FYA2829/FYA2829_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2830",
+    "pret_vanzare_lei": 6500,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2830_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2830/FYA2830_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2830",
+    "pret_vanzare_lei": 6500,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2830_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2830/FYA2830_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2830",
+    "pret_vanzare_lei": 6500,
+    "cadru": "detaliu",
+    "nume_fisier": "FYA2830_03_detaliu.jpg",
+    "path": "/images/NOBLESSE/FYA2830/FYA2830_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2831",
+    "pret_vanzare_lei": 7900,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2831_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2831/FYA2831_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2831",
+    "pret_vanzare_lei": 7900,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2831_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2831/FYA2831_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2831",
+    "pret_vanzare_lei": 7900,
+    "cadru": "detaliu",
+    "nume_fisier": "FYA2831_03_detaliu.jpg",
+    "path": "/images/NOBLESSE/FYA2831/FYA2831_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2832",
+    "pret_vanzare_lei": 4900,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2832_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2832/FYA2832_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2832",
+    "pret_vanzare_lei": 4900,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2832_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2832/FYA2832_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2832",
+    "pret_vanzare_lei": 4900,
+    "cadru": "detaliu",
+    "nume_fisier": "FYA2832_03_detaliu.jpg",
+    "path": "/images/NOBLESSE/FYA2832/FYA2832_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2833",
+    "pret_vanzare_lei": 5900,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2833_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2833/FYA2833_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2833",
+    "pret_vanzare_lei": 5900,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2833_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2833/FYA2833_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2833",
+    "pret_vanzare_lei": 5900,
+    "cadru": "detaliu",
+    "nume_fisier": "FYA2833_03_detaliu.jpg",
+    "path": "/images/NOBLESSE/FYA2833/FYA2833_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2834",
+    "pret_vanzare_lei": 5600,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2834_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2834/FYA2834_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2834",
+    "pret_vanzare_lei": 5600,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2834_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2834/FYA2834_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2834",
+    "pret_vanzare_lei": 5600,
+    "cadru": "detaliu",
+    "nume_fisier": "FYA2834_03_detaliu.jpg",
+    "path": "/images/NOBLESSE/FYA2834/FYA2834_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2835",
+    "pret_vanzare_lei": 6600,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2835_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2835/FYA2835_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2835",
+    "pret_vanzare_lei": 6600,
+    "cadru": "spate",
+    "nume_fisier": "FYA2835_02_spate.jpg",
+    "path": "/images/NOBLESSE/FYA2835/FYA2835_02_spate.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2836",
+    "pret_vanzare_lei": 5600,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2836_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2836/FYA2836_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2836",
+    "pret_vanzare_lei": 5600,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2836_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2836/FYA2836_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2836",
+    "pret_vanzare_lei": 5600,
+    "cadru": "detaliu",
+    "nume_fisier": "FYA2836_03_detaliu.jpg",
+    "path": "/images/NOBLESSE/FYA2836/FYA2836_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2837",
+    "pret_vanzare_lei": 6500,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2837_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2837/FYA2837_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2837",
+    "pret_vanzare_lei": 6500,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2837_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2837/FYA2837_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2837",
+    "pret_vanzare_lei": 6500,
+    "cadru": "spate",
+    "nume_fisier": "FYA2837_03_spate.jpg",
+    "path": "/images/NOBLESSE/FYA2837/FYA2837_03_spate.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2838",
+    "pret_vanzare_lei": 7900,
+    "cadru": "detaliu_corset",
+    "nume_fisier": "FYA2838_01_detaliu_corset.jpg",
+    "path": "/images/NOBLESSE/FYA2838/FYA2838_01_detaliu_corset.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2838",
+    "pret_vanzare_lei": 7900,
+    "cadru": "set_sirena",
+    "nume_fisier": "FYA2838_02_set_sirena.jpg",
+    "path": "/images/NOBLESSE/FYA2838/FYA2838_02_set_sirena.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2838",
+    "pret_vanzare_lei": 7900,
+    "cadru": "set_tul",
+    "nume_fisier": "FYA2838_03_set_tul.jpg",
+    "path": "/images/NOBLESSE/FYA2838/FYA2838_03_set_tul.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2839",
+    "pret_vanzare_lei": 4900,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2839_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2839/FYA2839_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2839",
+    "pret_vanzare_lei": 4900,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2839_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2839/FYA2839_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2839",
+    "pret_vanzare_lei": 4900,
+    "cadru": "detaliu",
+    "nume_fisier": "FYA2839_03_detaliu.jpg",
+    "path": "/images/NOBLESSE/FYA2839/FYA2839_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2840",
+    "pret_vanzare_lei": 5900,
+    "cadru": "plan_intreg",
+    "nume_fisier": "FYA2840_01_plan_intreg.jpg",
+    "path": "/images/NOBLESSE/FYA2840/FYA2840_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2840",
+    "pret_vanzare_lei": 5900,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "FYA2840_02_trei_sferturi.jpg",
+    "path": "/images/NOBLESSE/FYA2840/FYA2840_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Noblesse",
+    "cod": "FYA2840",
+    "pret_vanzare_lei": 5900,
+    "cadru": "detaliu",
+    "nume_fisier": "FYA2840_03_detaliu.jpg",
+    "path": "/images/NOBLESSE/FYA2840/FYA2840_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "CARA",
+    "pret_vanzare_lei": 5400,
+    "cadru": "plan_intreg",
+    "nume_fisier": "CARA_01_plan_intreg.jpg",
+    "path": "/images/AURORA/CARA/CARA_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "CARA",
+    "pret_vanzare_lei": 5400,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "CARA_02_trei_sferturi.jpg",
+    "path": "/images/AURORA/CARA/CARA_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "CARA",
+    "pret_vanzare_lei": 5400,
+    "cadru": "detaliu",
+    "nume_fisier": "CARA_03_detaliu.jpg",
+    "path": "/images/AURORA/CARA/CARA_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "EMMA",
+    "pret_vanzare_lei": 6900,
+    "cadru": "plan_intreg",
+    "nume_fisier": "EMMA_01_plan_intreg.jpg",
+    "path": "/images/AURORA/EMMA/EMMA_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "EMMA",
+    "pret_vanzare_lei": 6900,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "EMMA_02_trei_sferturi.jpg",
+    "path": "/images/AURORA/EMMA/EMMA_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "EMMA",
+    "pret_vanzare_lei": 6900,
+    "cadru": "detaliu",
+    "nume_fisier": "EMMA_03_detaliu.jpg",
+    "path": "/images/AURORA/EMMA/EMMA_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "MEGAN",
+    "pret_vanzare_lei": 6900,
+    "cadru": "plan_intreg",
+    "nume_fisier": "MEGAN_01_plan_intreg.jpg",
+    "path": "/images/AURORA/MEGAN/MEGAN_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "MEGAN",
+    "pret_vanzare_lei": 6900,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "MEGAN_02_trei_sferturi.jpg",
+    "path": "/images/AURORA/MEGAN/MEGAN_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "MEGAN",
+    "pret_vanzare_lei": 6900,
+    "cadru": "detaliu",
+    "nume_fisier": "MEGAN_03_detaliu.jpg",
+    "path": "/images/AURORA/MEGAN/MEGAN_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "ELSA",
+    "pret_vanzare_lei": 6900,
+    "cadru": "plan_intreg",
+    "nume_fisier": "ELSA_01_plan_intreg.jpg",
+    "path": "/images/AURORA/ELSA/ELSA_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "ELSA",
+    "pret_vanzare_lei": 6900,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "ELSA_02_trei_sferturi.jpg",
+    "path": "/images/AURORA/ELSA/ELSA_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "ELSA",
+    "pret_vanzare_lei": 6900,
+    "cadru": "detaliu",
+    "nume_fisier": "ELSA_03_detaliu.jpg",
+    "path": "/images/AURORA/ELSA/ELSA_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "EMILY",
+    "pret_vanzare_lei": 5400,
+    "cadru": "plan_intreg",
+    "nume_fisier": "EMILY_01_plan_intreg.jpg",
+    "path": "/images/AURORA/EMILY/EMILY_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "EMILY",
+    "pret_vanzare_lei": 5400,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "EMILY_02_trei_sferturi.jpg",
+    "path": "/images/AURORA/EMILY/EMILY_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "EMILY",
+    "pret_vanzare_lei": 5400,
+    "cadru": "detaliu",
+    "nume_fisier": "EMILY_03_detaliu.jpg",
+    "path": "/images/AURORA/EMILY/EMILY_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "ESMERALDA",
+    "pret_vanzare_lei": 5400,
+    "cadru": "plan_intreg",
+    "nume_fisier": "ESMERALDA_01_plan_intreg.jpg",
+    "path": "/images/AURORA/ESMERALDA/ESMERALDA_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "ESMERALDA",
+    "pret_vanzare_lei": 5400,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "ESMERALDA_02_trei_sferturi.jpg",
+    "path": "/images/AURORA/ESMERALDA/ESMERALDA_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "ESMERALDA",
+    "pret_vanzare_lei": 5400,
+    "cadru": "detaliu",
+    "nume_fisier": "ESMERALDA_03_detaliu.jpg",
+    "path": "/images/AURORA/ESMERALDA/ESMERALDA_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "KAMILA",
+    "pret_vanzare_lei": 5900,
+    "cadru": "plan_intreg",
+    "nume_fisier": "KAMILA_01_plan_intreg.jpg",
+    "path": "/images/AURORA/KAMILA/KAMILA_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "KAMILA",
+    "pret_vanzare_lei": 5900,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "KAMILA_02_trei_sferturi.jpg",
+    "path": "/images/AURORA/KAMILA/KAMILA_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "KAMILA",
+    "pret_vanzare_lei": 5900,
+    "cadru": "spate",
+    "nume_fisier": "KAMILA_03_spate.jpg",
+    "path": "/images/AURORA/KAMILA/KAMILA_03_spate.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "MIA",
+    "pret_vanzare_lei": 4500,
+    "cadru": "plan_intreg",
+    "nume_fisier": "MIA_01_plan_intreg.jpg",
+    "path": "/images/AURORA/MIA/MIA_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "MIA",
+    "pret_vanzare_lei": 4500,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "MIA_02_trei_sferturi.jpg",
+    "path": "/images/AURORA/MIA/MIA_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "MIA",
+    "pret_vanzare_lei": 4500,
+    "cadru": "detaliu",
+    "nume_fisier": "MIA_03_detaliu.jpg",
+    "path": "/images/AURORA/MIA/MIA_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "QUEEN",
+    "pret_vanzare_lei": 7900,
+    "cadru": "plan_intreg",
+    "nume_fisier": "QUEEN_01_plan_intreg.jpg",
+    "path": "/images/AURORA/QUEEN/QUEEN_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "QUEEN",
+    "pret_vanzare_lei": 7900,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "QUEEN_02_trei_sferturi.jpg",
+    "path": "/images/AURORA/QUEEN/QUEEN_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "QUEEN",
+    "pret_vanzare_lei": 7900,
+    "cadru": "detaliu",
+    "nume_fisier": "QUEEN_03_detaliu.jpg",
+    "path": "/images/AURORA/QUEEN/QUEEN_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "ROSALIE",
+    "pret_vanzare_lei": 5400,
+    "cadru": "plan_intreg",
+    "nume_fisier": "ROSALIE_01_plan_intreg.jpg",
+    "path": "/images/AURORA/ROSALIE/ROSALIE_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "ROSALIE",
+    "pret_vanzare_lei": 5400,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "ROSALIE_02_trei_sferturi.jpg",
+    "path": "/images/AURORA/ROSALIE/ROSALIE_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "ROSALIE",
+    "pret_vanzare_lei": 5400,
+    "cadru": "detaliu",
+    "nume_fisier": "ROSALIE_03_detaliu.jpg",
+    "path": "/images/AURORA/ROSALIE/ROSALIE_03_detaliu.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "SAKURA",
+    "pret_vanzare_lei": 6500,
+    "cadru": "plan_intreg",
+    "nume_fisier": "SAKURA_01_plan_intreg.jpg",
+    "path": "/images/AURORA/SAKURA/SAKURA_01_plan_intreg.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "SAKURA",
+    "pret_vanzare_lei": 6500,
+    "cadru": "trei_sferturi",
+    "nume_fisier": "SAKURA_02_trei_sferturi.jpg",
+    "path": "/images/AURORA/SAKURA/SAKURA_02_trei_sferturi.jpg"
+  },
+  {
+    "colectie": "Aurora",
+    "cod": "SAKURA",
+    "pret_vanzare_lei": 6500,
+    "cadru": "detaliu",
+    "nume_fisier": "SAKURA_03_detaliu.jpg",
+    "path": "/images/AURORA/SAKURA/SAKURA_03_detaliu.jpg"
+  }
+]

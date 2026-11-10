@@ -54,10 +54,14 @@ const descriptions = new Map<string, string>(
   ])
 );
 
-export const publicDressDescription = (dress: Pick<Dress, 'collection' | 'name'>): string =>
-  dress.collection
+export const publicDressDescription = (dress: Pick<Dress, 'collection' | 'name'>): string => {
+  const isAurora = dress.collection === 'Aurora' && ['CARA', 'EMMA', 'MEGAN', 'ELSA', 'EMILY', 'ESMERALDA', 'KAMILA', 'MIA', 'QUEEN', 'ROSALIE', 'SAKURA'].includes(dress.name);
+  const isNoblesse = dress.collection === 'Noblesse' && /^FYA28(?:0[1-9]|[1-3][0-9]|40)$/.test(dress.name);
+  if (isAurora || isNoblesse) return `${dress.name}, din colecția ${dress.collection} a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.`;
+  return dress.collection
     ? descriptions.get(key(dress.collection, dress.name)) || UNKNOWN_PUBLIC_DESCRIPTION
     : UNKNOWN_PUBLIC_DESCRIPTION;
+};
 
 /**
  * Apply after DB row mapping and to the local fallback alike. Never trust legacy

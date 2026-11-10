@@ -14,6 +14,8 @@ import { isSupabaseConfigured, supabase } from './supabase';
 const normalizeCollection = (value?: string | null): Collection | undefined => {
   const key = (value || '').trim().toUpperCase();
   if (!key) return undefined;
+  if (key.includes('AURORA')) return Collection.AURORA;
+  if (key.includes('NOBLESSE')) return Collection.NOBLESSE;
   if (key.includes('IMPERIAL')) return Collection.IMPERIAL;
   if (key.includes('BEVERLY')) return Collection.BEVERLY;
   if (key.includes('MAYRA')) return Collection.MAYRA;
@@ -89,6 +91,14 @@ export type CatalogState = {
 };
 
 const LOCAL = dedupe(LOCAL_CATALOG);
+const NEW_COLLECTIONS = new Set([Collection.AURORA, Collection.NOBLESSE]);
+
+/** The approved CSV is the source for these new collections until a separate DB import. */
+export const withNewCollections = (rows: Dress[]): Dress[] =>
+  dedupe([
+    ...rows.filter((dress) => !dress.collection || !NEW_COLLECTIONS.has(dress.collection)),
+    ...LOCAL.filter((dress) => dress.collection && NEW_COLLECTIONS.has(dress.collection)),
+  ]);
 
 /**
  * Catalogul afișat pe site.
@@ -125,7 +135,7 @@ export const useCatalog = (): CatalogState => {
       const rows = dedupe((data || []).map(mapRow).filter((dress) => dress.images && dress.images.length > 0));
 
       setState({
-        dresses: rows.length > 0 ? rows : LOCAL,
+        dresses: rows.length > 0 ? withNewCollections(rows) : LOCAL,
         loading: false,
         source: rows.length > 0 ? 'db' : 'local',
       });

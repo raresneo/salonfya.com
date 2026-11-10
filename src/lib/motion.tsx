@@ -11,7 +11,7 @@ type RevealProps = {
   mode?: 'up' | 'wipe';
   /** Index pentru stagger, se transformă în delay de 80ms per pas. */
   index?: number;
-  as?: 'div' | 'section' | 'article' | 'figure' | 'p' | 'span' | 'li';
+  as?: 'div' | 'section' | 'article' | 'figure' | 'p' | 'span' | 'li' | 'h2';
   className?: string;
   style?: React.CSSProperties;
 };
@@ -250,6 +250,7 @@ export const SmartImage: React.FC<SmartImageProps> = ({ src, alt, eager, classNa
   };
 
   return (
+    <>
     <img
       ref={ref}
       src={src}
@@ -261,5 +262,7 @@ export const SmartImage: React.FC<SmartImageProps> = ({ src, alt, eager, classNa
       onLoad={() => setLoaded(true)}
       onError={markFailed}
     />
+    {/^\/images\/(AURORA|NOBLESSE)\//.test(src) && <span className="ai-image-note">Imagine generată cu AI</span>}
+    </>
   );
 };

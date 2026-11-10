@@ -96,7 +96,7 @@ test('homepage: textul nou aprobat apare exact', () => {
     'Rochia ta,', 'ajustată pe tine în Oradea.',
     'Alegi dintre colecțiile noastre, iar ultima ajustare se face în atelierul din salon, cu tine la probă.',
     'Proba, ajustarea sau redresarea, toate în același loc.',
-    'Fiecare rochie din colecții e aleasă de noi, iar ajustările le facem în atelierul propriu.',
+    'Rochii alese de noi, ajustate pe tine în atelierul din Oradea.',
     'Colecțiile noastre, un singur atelier de ajustări',
     'Atelier de ajustări', 'Colecții alese de noi', 'Ajustări în casă', 'Probe pe bază de programare',
     'Alegerea', 'Proba', 'Ajustarea', 'Continuăm până la proba finală, oricâte sunt nevoie.',

@@ -128,6 +128,8 @@ export default function App() {
             <Route path="/anna" element={<CollectionPage slug="anna" />} />
             <Route path="/mayra" element={<CollectionPage slug="mayra" />} />
             <Route path="/beverly" element={<CollectionPage slug="beverly" />} />
+            <Route path="/aurora" element={<CollectionPage slug="aurora" />} />
+            <Route path="/noblesse" element={<CollectionPage slug="noblesse" />} />
             <Route path="/colectia/:slug" element={<CollectionPage />} />
             <Route path="/rochie/:id" element={<DressPage />} />
             <Route path="/atelier" element={<Atelier />} />

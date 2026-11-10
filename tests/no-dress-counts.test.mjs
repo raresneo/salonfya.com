@@ -88,7 +88,7 @@ test('catalog: filtrele fără numere; filtrele colecțiilor goale rămân ascun
 
 test('catalog: intro fără „Patru colecții” și fără croitorie pentru colecții', () => {
   const body = text(renderIndex({ Imperial: 1 }));
-  assert.ok(body.includes('Colecțiile noastre, alese de noi și ajustate pe tine în atelierul din Oradea.'));
+  assert.ok(body.includes('Rochii alese de noi, ajustate pe tine în atelierul din Oradea.'));
   assert.doesNotMatch(body, /Patru colecții|croite și ajustate/i);
 });
 

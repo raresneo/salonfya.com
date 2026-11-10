@@ -163,7 +163,7 @@ test('autoplay există doar în HeroMedia; paginile nu mai pornesc video direct'
   for (const page of ['src/pages/Homepage.tsx', 'src/pages/CollectionPage.tsx']) {
     assert.doesNotMatch(read(page), /<video|autoPlay/, page);
   }
-  assert.match(read('src/ui/HeroMedia.tsx'), /if \(!video \|\| reduced\) return <img/);
+  assert.match(read('src/ui/HeroMedia.tsx'), /if \(!video \|\| reduced\) return <><img/);
 });
 
 test('lizibilitate: orice etichetă sub 12px din tema veche e ridicată la cel puțin .75rem', () => {

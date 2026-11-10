@@ -195,6 +195,7 @@ const DressPage: React.FC = () => {
         <div className="lb" onClick={() => setZoom(null)} role="dialog" aria-label={`${dress.name} mărit`}>
           <button className="lb-close">Închide</button>
           <img src={zoom} alt={dress.name} />
+          {/^\/images\/(AURORA|NOBLESSE)\//.test(zoom) && <span className="ai-image-note">Imagine generată cu AI</span>}
         </div>
       )}
     </>

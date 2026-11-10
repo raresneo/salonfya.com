@@ -38,7 +38,7 @@ const compile = (path, imports = {}) => {
 const types = compile('../src/types.ts');
 const policy = compile('../src/data/catalogAvailability.ts', { '../types': types });
 const copy = compile('../src/data/publicDressCopy.ts', { './catalogAvailability': policy });
-const catalog = compile('../src/data/catalog.ts', { '../types': types });
+const catalog = compile('../src/data/catalog.ts', { '../types': types, './newCollections': compile('../src/data/newCollections.ts') });
 const publicCatalog = compile('../src/data/publicCatalog.ts', {
   '../types': types, './catalog': catalog, './publicDressCopy': copy, './catalogAvailability': policy,
 });
@@ -56,8 +56,8 @@ const UNSAFE = /strapless|mermaid|silk|mătase|satin|dantel|stoc|garant|reducer|
 
 /* ------------------------------ catalog intact ------------------------------ */
 
-test('real public catalog still has exactly 27 active models, 7/5/10/5, no withdrawals', () => {
-  assert.equal(LOCAL_CATALOG.length, 27);
+test('real public catalog retains the 27 existing models and adds 51 approved new models, no withdrawals', () => {
+  assert.equal(LOCAL_CATALOG.length, 78);
   const counts = Object.fromEntries(['Imperial', 'Anna', 'Mayra', 'Beverly']
     .map((c) => [c, LOCAL_CATALOG.filter((d) => d.collection === c).length]));
   assert.deepEqual(counts, { Imperial: 7, Anna: 5, Mayra: 10, Beverly: 5 });
@@ -112,7 +112,7 @@ test('static routes have own title/description/canonical; aliases and admin hand
 });
 
 test('collection SEO: one canonical per collection, also for /colectia/:slug', () => {
-  assert.equal(COLLECTIONS.length, 4);
+  assert.equal(COLLECTIONS.length, 6);
   for (const meta of COLLECTIONS) {
     const s = seo.collectionSeo(meta);
     assert.equal(seo.canonicalUrl(s.path), `https://www.salonfya.com/${meta.slug}`);
@@ -185,14 +185,14 @@ test('applySeo upserts all tags, never duplicates, removes canonical on noindex 
 
 /* ---------------------------- robots + sitemap ----------------------------- */
 
-test('sitemap.xml lists exactly real indexable routes and the 27 active models', () => {
+test('sitemap.xml lists exactly real indexable routes and all 78 active models', () => {
   const xml = read('../public/sitemap.xml');
   assert.match(xml, /^<\?xml version="1.0" encoding="UTF-8"\?>\n<urlset xmlns="http:\/\/www.sitemaps.org\/schemas\/sitemap\/0.9">/);
   const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-  const expected = ['/', '/colectii', '/imperial', '/anna', '/mayra', '/beverly', '/atelier', '/programare',
+  const expected = ['/', '/colectii', '/imperial', '/anna', '/mayra', '/beverly', '/aurora', '/noblesse', '/atelier', '/programare',
     ...LOCAL_CATALOG.map((d) => `/rochie/${encodeURIComponent(d.id)}`)].map(seo.canonicalUrl);
   assert.deepEqual([...locs].sort(), [...expected].sort());
-  assert.equal(locs.length, 35);
+  assert.equal(locs.length, 88);
   assert.equal(new Set(locs).size, locs.length);
   for (const [collection, name] of UNAVAILABLE_MODELS) {
     const slugged = `${collection}-${name}`.toLowerCase().replace(/[^a-z0-9]+/g, '-');
