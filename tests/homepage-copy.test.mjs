@@ -104,9 +104,15 @@ test('homepage: textul nou aprobat apare exact', () => {
   ]) assert.ok(body.includes(phrase), `lipsește: ${phrase}`);
 });
 
-test('homepage: CTA-ul numără rochiile din catalog, nu o cifră scrisă de mână', () => {
-  assert.ok(text(renderHome(3)).includes('Vezi cele 3 rochii'));
-  assert.ok(text(renderHome(78)).includes('Vezi cele 78 rochii'));
+test('homepage: fără numărul de rochii; CTA „Vezi colecția noastră”, cardurile „Vezi colecția”', () => {
+  for (const count of [0, 3, 27, 78]) {
+    const body = text(renderHome(count));
+    assert.ok(body.includes('Vezi colecția noastră'));
+    assert.doesNotMatch(body, /\d+\s*(rochii|rochie|modele|model)\b/i);
+    assert.doesNotMatch(body, /Vezi cele/);
+    assert.equal((body.match(/Vezi colecția(?! noastră)/g) || []).length, collections.length);
+  }
+  assert.doesNotMatch(read('src/pages/Homepage.tsx'), /dresses\.length|countFor|useCatalog/);
 });
 
 test('homepage: CTA-urile și contactul rămân neschimbate', () => {

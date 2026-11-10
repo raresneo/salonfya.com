@@ -24,8 +24,8 @@ const CollectionsIndex: React.FC = () => {
           <p className="eyebrow eyebrow--light">Catalog</p>
           <h1 className="h2">Toate rochiile</h1>
           <p className="lead body--light">
-            Patru colecții, croite și ajustate în atelierul din Oradea. Prețul și mărimile se discută la probă, pe
-            modelul care te interesează.
+            Colecțiile noastre, alese de noi și ajustate pe tine în atelierul din Oradea. Prețul și mărimile se discută
+            la probă, pe modelul care te interesează.
           </p>
         </div>
       </section>
@@ -33,18 +33,19 @@ const CollectionsIndex: React.FC = () => {
       <section className="sec sec--tight">
         <div className="filters">
           <button className={`chip${filter === 'all' ? ' on' : ''}`} onClick={() => setFilter('all')}>
-            Toate ({dresses.length})
+            Toate
           </button>
           {COLLECTIONS.map((item) => {
-            const count = dresses.filter((dress) => dress.collection === item.collection).length;
-            if (count === 0) return null;
+            // Ascundem doar filtrele fără rochii; numărul nu se afișează.
+            const hasDresses = dresses.some((dress) => dress.collection === item.collection);
+            if (!hasDresses) return null;
             return (
               <button
                 key={item.slug}
                 className={`chip${filter === item.collection ? ' on' : ''}`}
                 onClick={() => setFilter(item.collection)}
               >
-                {item.collection} ({count})
+                {item.collection}
               </button>
             );
           })}

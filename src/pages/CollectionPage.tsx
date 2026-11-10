@@ -75,16 +75,11 @@ const CollectionPage: React.FC<CollectionPageProps> = ({ slug }) => {
         )}
 
         {!loading && dresses.length > 0 && (
-          <>
-            <p className="eyebrow" style={{ marginBottom: 32 }}>
-              {dresses.length} {dresses.length === 1 ? 'model' : 'modele'}
-            </p>
-            <div className="cat-grid">
-              {dresses.map((dress, i) => (
-                <DressCard key={dress.id} dress={dress} index={i} />
-              ))}
-            </div>
-          </>
+          <div className="cat-grid">
+            {dresses.map((dress, i) => (
+              <DressCard key={dress.id} dress={dress} index={i} />
+            ))}
+          </div>
         )}
       </section>
 
