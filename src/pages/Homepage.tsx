@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { COLLECTIONS } from '../data/publicCatalog';
-import { useCatalog } from '../lib/useCatalog';
 import { Reveal, SmartImage } from '../lib/motion';
 import { SALON } from '../data/salon';
 import HeroMedia from '../ui/HeroMedia';
@@ -10,10 +9,6 @@ import HeroMedia from '../ui/HeroMedia';
 const RATIOS = ['r34', 'r45', 'r11', 'r23'];
 
 const Homepage: React.FC = () => {
-  const { dresses } = useCatalog();
-
-  const countFor = (name: string) => dresses.filter((dress) => dress.collection === name).length;
-
   return (
     <>
       {/* ---------------------------------- hero --------------------------------- */}
@@ -47,7 +42,7 @@ const Homepage: React.FC = () => {
                   <i>&rarr;</i>
                 </Link>
                 <Link className="btn btn--ghost" to="/colectii">
-                  <span>Vezi cele {dresses.length} rochii</span>
+                  <span>Vezi colecția noastră</span>
                 </Link>
               </span>
             </span>
@@ -139,7 +134,7 @@ const Homepage: React.FC = () => {
                     <p className="item-num tnum">{String(i + 1).padStart(2, '0')}</p>
                     <h3 className="item-name">{item.collection}</h3>
                     <span className="link-go">
-                      {countFor(item.collection) || ''} {countFor(item.collection) ? 'rochii' : 'Vezi colecția'} <u />
+                      Vezi colecția <u />
                     </span>
                   </div>
                   <p className="item-note">{item.note}</p>
