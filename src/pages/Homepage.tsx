@@ -24,20 +24,19 @@ const Homepage: React.FC = () => {
 
         <div className="hero-in">
           <p className="eyebrow eyebrow--light line" style={{ ['--i' as any]: 0 }}>
-            <span>Atelier de rochii de mireasă · Oradea</span>
+            <span>Salon și atelier de mireasă · Oradea</span>
           </p>
           <h1 className="display">
             <span className="line" style={{ ['--i' as any]: 1 }}>
-              <span>Rochii de mireasă,</span>
+              <span>Rochia ta,</span>
             </span>
             <span className="line" style={{ ['--i' as any]: 2 }}>
-              <span className="it">croite în Oradea.</span>
+              <span className="it">ajustată pe tine în Oradea.</span>
             </span>
           </h1>
           <p className="lead line" style={{ ['--i' as any]: 3 }}>
             <span>
-              Schița, croiala și ultima ajustare se fac în atelierul nostru. Nimic externalizat, nimic comandat gata
-              făcut.
+              Alegi dintre colecțiile noastre, iar ultima ajustare se face în atelierul din salon, cu tine la probă.
             </span>
           </p>
           <div className="line" style={{ ['--i' as any]: 4 }}>
@@ -68,28 +67,27 @@ const Homepage: React.FC = () => {
             Ce ne diferențiază
           </Reveal>
           <Reveal index={1} className="manifest-state" style={{ marginTop: 24 }}>
-            Nu trimitem rochia în altă parte. Se desenează, se coase și se ajustează la{' '}
-            <span className="it">același etaj</span>.
+            Proba, ajustarea sau redresarea, toate în <span className="it">același loc</span>.
           </Reveal>
         </div>
 
         <div className="manifest-side">
           <Reveal as="p" index={2} className="body">
-            Majoritatea saloanelor cumpără modele de la furnizori și externalizează modificările. La FYA croitoria e a
-            noastră. Asta înseamnă că poți schimba un decolteu cu trei săptămâni înainte de nuntă, iar răspunsul rămâne
-            da.
+            Fiecare rochie din colecții e aleasă de noi, iar ajustările le facem în atelierul propriu. Dacă vrei un
+            decolteu schimbat sau o talie strânsă cu trei săptămâni înainte de nuntă, vorbești direct cu cine lucrează
+            pe rochie.
           </Reveal>
 
           <Reveal as="div" index={3}>
             <dl className="pair">
-              <dt>Design</dt>
-              <dd>Pornim de la o schiță făcută cu tine, nu de la catalog.</dd>
+              <dt>Alegerea</dt>
+              <dd>Îți propunem rochiile care ți se potrivesc, pornind de la ce îți dorești.</dd>
             </dl>
           </Reveal>
           <Reveal as="div" index={4}>
             <dl className="pair">
-              <dt>Execuție</dt>
-              <dd>Tăiat, cusut și brodat în atelierul din Oradea.</dd>
+              <dt>Proba</dt>
+              <dd>Încerci rochia și stabilim împreună ce se ajustează.</dd>
             </dl>
           </Reveal>
           <Reveal as="div" index={5}>
@@ -106,11 +104,10 @@ const Homepage: React.FC = () => {
         <div className="band-track">
           {[0, 1].map((pass) => (
             <React.Fragment key={pass}>
-              <span>Atelier propriu</span>
-              <span>{dresses.length} rochii în colecții</span>
+              <span>Atelier de ajustări</span>
+              <span>Colecții alese de noi</span>
               <span>Ajustări în casă</span>
               <span>Probe pe bază de programare</span>
-              <span>Mirese din {SALON.reach.length} județe</span>
             </React.Fragment>
           ))}
         </div>
@@ -123,11 +120,10 @@ const Homepage: React.FC = () => {
             Colecțiile
           </Reveal>
           <Reveal as="h2" index={1} className="h2">
-            Patru colecții, <span className="it">un singur atelier</span>
+            Colecțiile noastre, <span className="it">un singur atelier de ajustări</span>
           </Reveal>
           <Reveal as="p" index={2} className="body">
-            Fiecare colecție acoperă toată paleta de siluete și materiale. Alegi ce te reprezintă, restul îl croim pe
-            tine.
+            Alegi rochia care te reprezintă, iar ajustările le facem pe tine.
           </Reveal>
         </div>
 
@@ -175,27 +171,18 @@ const Homepage: React.FC = () => {
             <div className="steps">
               <Reveal as="article" className="step">
                 <p className="step-n tnum">01</p>
-                <h3 className="h3">Schița</h3>
-                <p>
-                  Vii cu o poză, un screenshot sau doar o senzație. Desenăm împreună până arată ca tine, nu ca modelul
-                  din catalog.
-                </p>
+                <h3 className="h3">Alegerea</h3>
+                <p>Vii cu o poză sau doar o senzație, iar noi îți propunem rochiile care ți se potrivesc.</p>
               </Reveal>
               <Reveal as="article" className="step">
                 <p className="step-n tnum">02</p>
-                <h3 className="h3">Croiala</h3>
-                <p>
-                  Materialul se taie și se coase aici. Vezi rochia cum crește pe manechin, cu fiecare probă
-                  intermediară.
-                </p>
+                <h3 className="h3">Proba</h3>
+                <p>Încerci, iar noi stabilim împreună ce se ajustează.</p>
               </Reveal>
               <Reveal as="article" className="step">
                 <p className="step-n tnum">03</p>
                 <h3 className="h3">Ajustarea</h3>
-                <p>
-                  Ultima probă e aproape de zi. Dacă se schimbă ceva pe drum, se schimbă și rochia, fără discuții
-                  suplimentare.
-                </p>
+                <p>Continuăm până la proba finală, oricâte sunt nevoie.</p>
               </Reveal>
             </div>
 
@@ -226,10 +213,10 @@ const Homepage: React.FC = () => {
             <SmartImage src="/images/argente_back.jpg" alt="Rochie de mireasă FYA" />
           </Reveal>
           <Reveal as="figure" mode="wipe" index={1}>
-            <SmartImage src="/images/aurelia_closeup.jpg" alt="Detaliu de corset lucrat manual" />
+            <SmartImage src="/images/aurelia_closeup.jpg" alt="Detaliu de corset" />
           </Reveal>
           <Reveal as="figure" mode="wipe" index={2}>
-            <SmartImage src="/images/daiana_detail_2.jpg" alt="Detaliu de dantelă aplicată manual" />
+            <SmartImage src="/images/daiana_detail_2.jpg" alt="Detaliu de dantelă" />
           </Reveal>
         </div>
 
