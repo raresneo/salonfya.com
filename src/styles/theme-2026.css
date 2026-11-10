@@ -219,3 +219,25 @@
   [data-reveal], [data-reveal="wipe"] { opacity: 1; transform: none; clip-path: none; }
   .line > span { transform: none; }
 }
+
+.sheet { overflow-y: auto; overscroll-behavior: contain; }
+
+/* Portrait source images stay whole rather than being cropped into a wide hero. */
+.phero--new-collection {
+  min-height: 650px; grid-template-columns: 1fr 1fr; align-items: center;
+  gap: 6vw; padding-top: 112px; padding-bottom: 48px;
+}
+.phero--new-collection .phero-media {
+  position: relative; inset: auto; grid-column: 2; grid-row: 1;
+  width: 100%; height: 540px;
+}
+.phero--new-collection .phero-media img { object-fit: contain; animation: none; }
+.phero--new-collection .phero-media::after { display: none; }
+.phero--new-collection .phero-in { grid-column: 1; grid-row: 1; }
+.phero--new-collection .lead { color: var(--ivory); }
+@media (max-width: 700px) {
+  .phero--new-collection { grid-template-columns: 1fr; gap: 28px; padding-top: 108px; padding-bottom: 36px; }
+  .phero--new-collection .phero-media { grid-column: 1; grid-row: 1; height: auto; }
+  .phero--new-collection .phero-media img { display: block; width: 100%; height: auto; }
+  .phero--new-collection .phero-in { grid-column: 1; grid-row: 2; }
+}

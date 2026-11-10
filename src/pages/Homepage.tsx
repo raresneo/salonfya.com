@@ -68,7 +68,7 @@ const Homepage: React.FC = () => {
 
         <div className="manifest-side">
           <Reveal as="p" index={2} className="body">
-            Fiecare rochie din colecții e aleasă de noi, iar ajustările le facem în atelierul propriu. Dacă vrei un
+            Rochii alese de noi, ajustate pe tine în atelierul din Oradea. Dacă vrei un
             decolteu schimbat sau o talie strânsă cu trei săptămâni înainte de nuntă, vorbești direct cu cine lucrează
             pe rochie.
           </Reveal>
@@ -126,7 +126,7 @@ const Homepage: React.FC = () => {
           {COLLECTIONS.map((item, i) => (
             <Reveal key={item.slug} mode="wipe" index={i} as="div">
               <Link className="item" to={item.path}>
-                <div className={`item-frame ${RATIOS[i]}`} data-label={item.collection}>
+                <div className={`item-frame ${RATIOS[i % RATIOS.length]}`} data-label={item.collection}>
                   <SmartImage src={item.cover} alt={`Colecția ${item.collection}`} sizes="(max-width: 860px) 100vw, 45vw" />
                 </div>
                 <div className="item-meta">

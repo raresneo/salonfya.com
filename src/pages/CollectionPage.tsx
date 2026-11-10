@@ -38,7 +38,7 @@ const CollectionPage: React.FC<CollectionPageProps> = ({ slug }) => {
 
   return (
     <>
-      <section className="phero">
+      <section className={`phero${meta.aiGenerated ? ' phero--new-collection' : ''}`}>
         <div className="phero-media">
           <HeroMedia video={meta.video} poster={meta.cover} preload="none" />
         </div>

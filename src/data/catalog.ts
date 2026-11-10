@@ -1,4 +1,5 @@
 import { Collection, Dress, DressType } from '../types';
+import { AURORA_SEEDS, NOBLESSE_SEEDS } from './newCollections';
 
 /**
  * Catalogul rochiilor, construit din fotografiile reale din `public/images`.
@@ -28,9 +29,11 @@ const p = (...parts: string[]): string =>
 /** Scurtătură pentru imaginile deja optimizate din rădăcina /images. */
 const flat = (file: string): string => p(file);
 
-type Seed = {
+type DressSeed = {
   /** Numele rochiei, exact cum e în atelier. */
   name: string;
+  description: string;
+  price?: number;
   images: string[];
   sketches?: string[];
 };
@@ -43,11 +46,12 @@ const slug = (value: string): string =>
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/(^-|-$)/g, '');
 
-const build = (collection: Collection, seeds: Seed[]): Dress[] =>
+const build = (collection: Collection, seeds: DressSeed[]): Dress[] =>
   seeds.map((seed) => ({
     id: `${slug(collection)}-${slug(seed.name)}`,
     name: seed.name,
     description: seed.description || '',
+    price: seed.price,
     type: DressType.BUY,
     currency: 'RON',
     imageUrl: seed.images[0],
@@ -561,6 +565,8 @@ export const LOCAL_CATALOG: Dress[] = [
   ...build(Collection.ANNA, ANNA_SEEDS),
   ...build(Collection.MAYRA, MAYRA_SEEDS),
   ...build(Collection.BEVERLY, BEVERLY_SEEDS),
+  ...build(Collection.AURORA, AURORA_SEEDS),
+  ...build(Collection.NOBLESSE, NOBLESSE_SEEDS),
 ];
 
 /** Metadate de colecție, folosite pe homepage și pe paginile de colecție. */
@@ -572,9 +578,28 @@ export type CollectionMeta = {
   intro: string;
   cover: string;
   video?: string;
+  aiGenerated?: boolean;
 };
 
 export const COLLECTIONS: CollectionMeta[] = [
+  {
+    collection: Collection.AURORA,
+    slug: 'aurora',
+    path: '/aurora',
+    note: 'O nouă perspectivă pentru ziua ta',
+    intro: 'Descoperă Aurora și alege modelul pe care vrei să îl probezi. Rochii alese de noi, ajustate pe tine în atelierul din Oradea.',
+    cover: AURORA_SEEDS[0].images[0],
+    aiGenerated: true,
+  },
+  {
+    collection: Collection.NOBLESSE,
+    slug: 'noblesse',
+    path: '/noblesse',
+    note: 'Un album de forme și detalii',
+    intro: 'Explorează Noblesse, apoi vino să vezi cum se așază modelul ales. Rochii alese de noi, ajustate pe tine în atelierul din Oradea.',
+    cover: NOBLESSE_SEEDS[0].images[0],
+    aiGenerated: true,
+  },
   {
     collection: Collection.IMPERIAL,
     slug: 'imperial',
