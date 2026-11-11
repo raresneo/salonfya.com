@@ -143,11 +143,11 @@ test('fără parallax: niciun data-par pe homepage', () => {
 
 test('homepage: video existent cu autoplay normal, doar poster la reduced motion', () => {
   const normal = renderHome(false);
-  assert.match(normal, /<video[^>]*autoplay=""[^>]*poster="\/images\/history_hero_portrait\.png"/i);
+  assert.match(normal, /<video[^>]*autoplay=""[^>]*poster="\/images\/AURORA\/EMMA\/EMMA_01_plan_intreg\.jpg"/i);
   assert.match(normal, /<source src="\/images\/CINEMATIC\.mp4" type="video\/mp4"/);
   const reduced = renderHome(true);
   assert.doesNotMatch(reduced, /<video|autoplay|CINEMATIC/i);
-  assert.match(reduced, /<div class="hero-media"><img src="\/images\/history_hero_portrait\.png" alt="" aria-hidden="true"\/>/);
+  assert.match(reduced, /<div class="hero-media"><img src="\/images\/AURORA\/EMMA\/EMMA_01_plan_intreg\.jpg" alt="" aria-hidden="true"\/>/);
 });
 
 test('colecție: video existent normal, poster coperta la reduced motion', () => {

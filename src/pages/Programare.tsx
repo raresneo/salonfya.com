@@ -209,7 +209,7 @@ const Programare: React.FC = () => {
     <>
       <section className="phero">
         <div className="phero-media">
-          <img src="/images/feminity_vintage.png" alt="" aria-hidden="true" />
+          <img src="/images/AURORA/CARA/CARA_03_detaliu.jpg" alt="" aria-hidden="true" />
         </div>
         <div className="phero-in">
           <p className="eyebrow eyebrow--light">Programare</p>
