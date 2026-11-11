@@ -2,13 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { Reveal, SmartImage } from '../lib/motion';
-import { SALON } from '../data/salon';
 
 const Atelier: React.FC = () => (
   <>
-    <section className="phero">
+    <section className="phero phero--editorial">
       <div className="phero-media">
-        <img src="/images/atelier_vintage.png" alt="" aria-hidden="true" />
+        <img src="/images/AURORA/CARA/CARA_03_detaliu.jpg" alt="" aria-hidden="true" />
       </div>
       <div className="phero-in">
         <p className="eyebrow eyebrow--light">Atelierul</p>
@@ -61,9 +60,9 @@ const Atelier: React.FC = () => (
       <div className="atelier-grid">
         <div className="atelier-pin">
           <Reveal as="figure" mode="wipe">
-            <SmartImage src="/images/atelier_royal_vintage.png" alt="Interiorul atelierului FYA" />
+            <SmartImage src="/images/AURORA/EMMA/EMMA_01_plan_intreg.jpg" alt="Emma, din colecția Aurora" />
           </Reveal>
-          <figcaption>Atelier și showroom · {SALON.address}</figcaption>
+          <figcaption>Emma · Colecția Aurora</figcaption>
         </div>
 
         <div>
@@ -116,13 +115,13 @@ const Atelier: React.FC = () => (
     <section className="sec sec--warm sec--tight">
       <div className="strip">
         <Reveal as="figure" mode="wipe">
-          <SmartImage src="/images/atelier_hands_sewing.png" alt="Lucru la o rochie în atelier" />
+          <SmartImage src="/images/NOBLESSE/FYA2803/FYA2803_03_detaliu_asezata.jpg" alt="Amelia, detaliu din colecția Noblesse" />
         </Reveal>
         <Reveal as="figure" mode="wipe" index={1}>
-          <SmartImage src="/images/feminity_vintage.png" alt="Probă de rochie în showroom" />
+          <SmartImage src="/images/AURORA/CARA/CARA_01_plan_intreg.jpg" alt="Cara, din colecția Aurora" />
         </Reveal>
         <Reveal as="figure" mode="wipe" index={2}>
-          <SmartImage src="/images/jardin_vintage.png" alt="Rochie de mireasă FYA" />
+          <SmartImage src="/images/NOBLESSE/FYA2804/FYA2804_01_plan_intreg.jpg" alt="Antonia, din colecția Noblesse" />
         </Reveal>
       </div>
     </section>

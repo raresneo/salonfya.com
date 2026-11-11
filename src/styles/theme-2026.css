@@ -241,3 +241,11 @@
   .phero--new-collection .phero-media img { display: block; width: 100%; height: auto; }
   .phero--new-collection .phero-in { grid-column: 1; grid-row: 2; }
 }
+
+/* Catalog images can be bright. Keep text readable over the new editorial heroes. */
+.phero--editorial .phero-media::after {
+  background: linear-gradient(90deg,
+    oklch(19% 0.045 345 / .86) 0%,
+    oklch(19% 0.045 345 / .76) 65%,
+    oklch(19% 0.045 345 / .45) 100%);
+}

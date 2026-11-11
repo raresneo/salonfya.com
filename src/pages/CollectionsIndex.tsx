@@ -16,9 +16,9 @@ const CollectionsIndex: React.FC = () => {
 
   return (
     <>
-      <section className="phero">
+      <section className="phero phero--editorial">
         <div className="phero-media">
-          <img src="/images/atelier_royal_vintage.png" alt="" aria-hidden="true" />
+          <img src="/images/NOBLESSE/FYA2804/FYA2804_01_plan_intreg.jpg" alt="" aria-hidden="true" />
         </div>
         <div className="phero-in">
           <p className="eyebrow eyebrow--light">Catalog</p>

@@ -92,10 +92,10 @@ test('Atelier: textele alternative nu promit lucru manual sau rochii finalizate 
   }
 });
 
-test('Atelier: caption-ul cu adresa, imaginile și CTA-ul rămân neschimbate', () => {
+test('Atelier: cadrele editoriale au caption de colecție, nu promit un interior real', () => {
   const markup = render('src/pages/Atelier.tsx');
-  assert.ok(markup.includes('<figcaption>Atelier și showroom · Mihail Kogălniceanu nr. 44, Oradea</figcaption>'));
-  for (const image of ['atelier_vintage.png', 'atelier_royal_vintage.png', 'atelier_hands_sewing.png', 'feminity_vintage.png', 'jardin_vintage.png']) {
+  assert.ok(markup.includes('<figcaption>Emma · Colecția Aurora</figcaption>'));
+  for (const image of ['AURORA/CARA/CARA_03_detaliu.jpg', 'AURORA/EMMA/EMMA_01_plan_intreg.jpg', 'NOBLESSE/FYA2803/FYA2803_03_detaliu_asezata.jpg', 'AURORA/CARA/CARA_01_plan_intreg.jpg', 'NOBLESSE/FYA2804/FYA2804_01_plan_intreg.jpg']) {
     assert.ok(markup.includes(`/images/${image}`), image);
   }
   assert.ok(markup.includes('href="/programare"'));

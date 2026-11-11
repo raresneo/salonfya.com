@@ -14,7 +14,7 @@ const Homepage: React.FC = () => {
       {/* ---------------------------------- hero --------------------------------- */}
       <section className="hero">
         <div className="hero-media">
-          <HeroMedia video="/images/CINEMATIC.mp4" poster="/images/history_hero_portrait.png" />
+          <HeroMedia video="/images/CINEMATIC.mp4" poster="/images/AURORA/EMMA/EMMA_01_plan_intreg.jpg" />
         </div>
 
         <div className="hero-in">
@@ -150,9 +150,9 @@ const Homepage: React.FC = () => {
         <div className="atelier-grid">
           <div className="atelier-pin">
             <Reveal as="figure" mode="wipe">
-              <SmartImage src="/images/atelier_hands_sewing.png" alt="Mâini care cos o rochie în atelierul FYA" />
+              <SmartImage src="/images/NOBLESSE/FYA2801/FYA2801_03_detaliu.jpg" alt="Adelina, detaliu din colecția Noblesse" />
             </Reveal>
-            <figcaption>Atelier FYA · Oradea, Bihor</figcaption>
+            <figcaption>Adelina · Colecția Noblesse</figcaption>
           </div>
 
           <div>

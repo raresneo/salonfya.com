@@ -129,10 +129,10 @@ test('Programare real: text, link Maps, iframe și titlu sunt toate la adresa no
   assert.doesNotMatch(markup, OLD);
 });
 
-test('caption-ul real de atelier folosește noua adresă, fără schimbări de imagini', () => {
+test('imaginea editorială nu este atribuită adresei salonului', () => {
   const markup = render('src/pages/Atelier.tsx');
-  assert.ok(markup.includes(`<figcaption>Atelier și showroom · ${ADDRESS}</figcaption>`));
-  assert.ok(markup.includes('/images/atelier_royal_vintage.png'));
+  assert.ok(markup.includes('<figcaption>Emma · Colecția Aurora</figcaption>'));
+  assert.ok(markup.includes('/images/AURORA/EMMA/EMMA_01_plan_intreg.jpg'));
   assert.doesNotMatch(markup, OLD);
 });
 
