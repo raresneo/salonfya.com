@@ -27,7 +27,7 @@ const compile = (path, imports = {}) => {
   }).outputText + `\n// isolated import ${serial++}`);
 };
 const policy = compile('../src/data/catalogAvailability.ts');
-const copy = compile('../src/data/publicDressCopy.ts', { './catalogAvailability': policy });
+const copy = compile('../src/data/publicDressCopy.ts', { './catalogAvailability': policy, './newCollections': compile('../src/data/newCollections.ts') });
 const types = compile('../src/types.ts');
 const { UNAVAILABLE_MODELS, filterAvailableDresses } = await import(policy);
 const { PUBLIC_COPY_MODELS, UNKNOWN_PUBLIC_DESCRIPTION, withPublicDescriptions } = await import(copy);

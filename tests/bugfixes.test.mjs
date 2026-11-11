@@ -37,7 +37,7 @@ const compile = (path, imports = {}) => {
 
 const types = compile('../src/types.ts');
 const policy = compile('../src/data/catalogAvailability.ts', { '../types': types });
-const copy = compile('../src/data/publicDressCopy.ts', { './catalogAvailability': policy });
+const copy = compile('../src/data/publicDressCopy.ts', { './catalogAvailability': policy, './newCollections': compile('../src/data/newCollections.ts') });
 const catalog = compile('../src/data/catalog.ts', { '../types': types, './newCollections': compile('../src/data/newCollections.ts') });
 const publicCatalog = compile('../src/data/publicCatalog.ts', {
   '../types': types, './catalog': catalog, './publicDressCopy': copy, './catalogAvailability': policy,
