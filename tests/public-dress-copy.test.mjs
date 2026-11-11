@@ -32,7 +32,7 @@ const compile = (path, imports = {}) => url(ts.transpileModule(
 ).outputText);
 const policyUrl = compile('../src/data/catalogAvailability.ts');
 const { UNAVAILABLE_MODELS } = await import(policyUrl);
-const copyUrl = compile('../src/data/publicDressCopy.ts', { './catalogAvailability': policyUrl });
+const copyUrl = compile('../src/data/publicDressCopy.ts', { './catalogAvailability': policyUrl, './newCollections': compile('../src/data/newCollections.ts') });
 const {
   PUBLIC_COPY_MODELS, PUBLIC_SKETCH_NOTE, UNKNOWN_PUBLIC_DESCRIPTION,
   publicDressDescription, withPublicDescriptions,
@@ -143,4 +143,11 @@ test('actual publicCatalog fallback projects all 27 and retains metadata without
     assert.equal(meta.note, 'unchanged');
     assert.equal(meta.cover, meta.collection === 'Anna' ? '/Anais.jpg' : '/original-cover.jpg');
   }
+});
+
+test('all approved Noblesse names get named Romanian copy, not code or generic fallback', async () => {
+ const { NOBLESSE_SEEDS } = await import(compile('../src/data/newCollections.ts'));
+ for (const seed of NOBLESSE_SEEDS) {
+  assert.equal(publicDressDescription({name:seed.name,collection:'Noblesse'}), seed.description);
+ }
 });

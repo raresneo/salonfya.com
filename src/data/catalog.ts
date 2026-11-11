@@ -30,6 +30,8 @@ const p = (...parts: string[]): string =>
 const flat = (file: string): string => p(file);
 
 type DressSeed = {
+  /** Stable internal reference, independent of the public display name. */
+  code?: string;
   /** Numele rochiei, exact cum e în atelier. */
   name: string;
   description: string;
@@ -48,7 +50,7 @@ const slug = (value: string): string =>
 
 const build = (collection: Collection, seeds: DressSeed[]): Dress[] =>
   seeds.map((seed) => ({
-    id: `${slug(collection)}-${slug(seed.name)}`,
+    id: `${slug(collection)}-${slug(seed.code || seed.name)}`,
     name: seed.name,
     description: seed.description || '',
     price: seed.price,
