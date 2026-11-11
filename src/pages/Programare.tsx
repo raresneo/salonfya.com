@@ -207,7 +207,7 @@ const Programare: React.FC = () => {
 
   return (
     <>
-      <section className="phero">
+      <section className="phero phero--editorial">
         <div className="phero-media">
           <img src="/images/AURORA/CARA/CARA_03_detaliu.jpg" alt="" aria-hidden="true" />
         </div>

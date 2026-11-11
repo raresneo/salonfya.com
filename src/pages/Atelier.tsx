@@ -5,7 +5,7 @@ import { Reveal, SmartImage } from '../lib/motion';
 
 const Atelier: React.FC = () => (
   <>
-    <section className="phero">
+    <section className="phero phero--editorial">
       <div className="phero-media">
         <img src="/images/AURORA/CARA/CARA_03_detaliu.jpg" alt="" aria-hidden="true" />
       </div>
