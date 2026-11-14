@@ -6,6 +6,8 @@ export enum DressType {
 
 export interface Dress {
   id: string;
+  /** Cod public de catalog (ex. FYA2801), afișat lângă nume când există. */
+  code?: string;
   name: string;
   description: string;
   price?: number;

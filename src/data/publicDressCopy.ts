@@ -56,7 +56,7 @@ const descriptions = new Map<string, string>(
 );
 
 export const publicDressDescription = (dress: Pick<Dress, 'collection' | 'name'>): string => {
-  const isAurora = dress.collection === 'Aurora' && ['CARA', 'EMMA', 'MEGAN', 'ELSA', 'EMILY', 'ESMERALDA', 'KAMILA', 'MIA', 'QUEEN', 'ROSALIE', 'SAKURA'].includes(dress.name);
+  const isAurora = dress.collection === 'Aurora' && ['ANABELLE', 'ANNA', 'DIANA', 'ELSA', 'EMILY', 'ESMERALDA', 'KAMILA', 'MIA', 'QUEEN', 'ROSALIE', 'SAKURA'].includes(dress.name);
   const isNoblesse = dress.collection === 'Noblesse' && NOBLESSE_SEEDS.some((seed) => seed.name === dress.name);
   if (isAurora || isNoblesse) return `${dress.name}, din colecția ${dress.collection} a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.`;
   return dress.collection

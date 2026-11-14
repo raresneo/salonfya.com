@@ -2,8 +2,8 @@
 // Keep codes stable for existing dress URLs, wishlists and image references.
 export const AURORA_SEEDS = [
   {
-    "name": "CARA",
-    "description": "CARA, din colecția Aurora a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "name": "ANABELLE",
+    "description": "ANABELLE, din colecția Aurora a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 5400,
     "fullPrice": 7900,
     "images": [
@@ -13,8 +13,8 @@ export const AURORA_SEEDS = [
     ]
   },
   {
-    "name": "EMMA",
-    "description": "EMMA, din colecția Aurora a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "name": "ANNA",
+    "description": "ANNA, din colecția Aurora a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 6900,
     "fullPrice": 9800,
     "images": [
@@ -24,8 +24,8 @@ export const AURORA_SEEDS = [
     ]
   },
   {
-    "name": "MEGAN",
-    "description": "MEGAN, din colecția Aurora a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "name": "DIANA",
+    "description": "DIANA, din colecția Aurora a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 6900,
     "fullPrice": 9800,
     "images": [

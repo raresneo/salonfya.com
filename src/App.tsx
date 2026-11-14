@@ -1,5 +1,5 @@
 import React, { Suspense, lazy, useEffect } from 'react';
-import { Link, Route, Routes, useLocation } from 'react-router-dom';
+import { Link, Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import ReactPixel from 'react-facebook-pixel';
 
 import Nav from './ui/Nav';
@@ -131,6 +131,10 @@ export default function App() {
             <Route path="/aurora" element={<CollectionPage slug="aurora" />} />
             <Route path="/noblesse" element={<CollectionPage slug="noblesse" />} />
             <Route path="/colectia/:slug" element={<CollectionPage />} />
+            {/* Redenumiri Aurora 14 nov (catalog Beatrice, aprobat de Rares la 17:59): CARA->ANABELLE, EMMA->ANNA, MEGAN->DIANA. Linkurile vechi rămân funcționale. */}
+            <Route path="/rochie/aurora-cara" element={<Navigate to="/rochie/aurora-anabelle" replace />} />
+            <Route path="/rochie/aurora-emma" element={<Navigate to="/rochie/aurora-anna" replace />} />
+            <Route path="/rochie/aurora-megan" element={<Navigate to="/rochie/aurora-diana" replace />} />
             <Route path="/rochie/:id" element={<DressPage />} />
             <Route path="/atelier" element={<Atelier />} />
             <Route path="/despre-noi" element={<Atelier />} />

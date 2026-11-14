@@ -60,7 +60,7 @@ const Atelier: React.FC = () => (
       <div className="atelier-grid">
         <div className="atelier-pin">
           <Reveal as="figure" mode="wipe">
-            <SmartImage src="/images/AURORA/EMMA/EMMA_01_plan_intreg.jpg" alt="Emma, din colecția Aurora" />
+            <SmartImage src="/images/AURORA/EMMA/EMMA_01_plan_intreg.jpg" alt="Anna, din colecția Aurora" />
           </Reveal>
           <figcaption>Emma · Colecția Aurora</figcaption>
         </div>
@@ -118,7 +118,7 @@ const Atelier: React.FC = () => (
           <SmartImage src="/images/NOBLESSE/FYA2803/FYA2803_03_detaliu_asezata.jpg" alt="Amelia, detaliu din colecția Noblesse" />
         </Reveal>
         <Reveal as="figure" mode="wipe" index={1}>
-          <SmartImage src="/images/AURORA/CARA/CARA_01_plan_intreg.jpg" alt="Cara, din colecția Aurora" />
+          <SmartImage src="/images/AURORA/CARA/CARA_01_plan_intreg.jpg" alt="Anabelle, din colecția Aurora" />
         </Reveal>
         <Reveal as="figure" mode="wipe" index={2}>
           <SmartImage src="/images/NOBLESSE/FYA2804/FYA2804_01_plan_intreg.jpg" alt="Antonia, din colecția Noblesse" />

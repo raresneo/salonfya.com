@@ -98,6 +98,7 @@ const DressPage: React.FC = () => {
             )}
             <h1 className="dress-name" style={{ marginTop: 12 }}>
               {dress.name}
+              {dress.code && <span className="dress-code"> · {dress.code}</span>}
             </h1>
           </div>
 

@@ -663,3 +663,6 @@ form { display: grid; gap: var(--s-6); }
 
 /* Etichete pentru dublul preț (rochie nouă din fabrică / sample în promoție) */
 .card-hint .price-line, .dress-specs .price-line { display: block; white-space: normal; }
+
+/* Cod de catalog afișat lângă numele rochiei (cerere Rares, 14 nov) */
+.card-code, .dress-code { font-size: .68em; color: var(--muted, #8a8a8a); font-weight: 400; letter-spacing: .02em; white-space: nowrap; }

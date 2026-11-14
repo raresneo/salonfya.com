@@ -53,6 +53,7 @@ const slug = (value: string): string =>
 const build = (collection: Collection, seeds: DressSeed[]): Dress[] =>
   seeds.map((seed) => ({
     id: `${slug(collection)}-${slug(seed.code || seed.name)}`,
+    code: seed.code,
     name: seed.name,
     description: seed.description || '',
     price: seed.price,

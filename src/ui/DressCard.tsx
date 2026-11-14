@@ -32,7 +32,7 @@ const DressCard: React.FC<DressCardProps> = ({ dress, index = 0, showCollection 
         {showCollection && dress.collection && <span className="card-tag">{dress.collection}</span>}
       </div>
       <div className="card-body">
-        <h3 className="card-name">{dress.name}</h3>
+        <h3 className="card-name">{dress.name}{dress.code && <span className="card-code"> · {dress.code}</span>}</h3>
         <span className="card-hint">{priceLabel(dress)}</span>
       </div>
     </Link>
