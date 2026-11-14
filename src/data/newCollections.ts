@@ -5,6 +5,7 @@ export const AURORA_SEEDS = [
     "name": "CARA",
     "description": "CARA, din colecția Aurora a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 5400,
+    "fullPrice": 7900,
     "images": [
       "/images/AURORA/CARA/CARA_01_plan_intreg.jpg",
       "/images/AURORA/CARA/CARA_02_trei_sferturi.jpg",
@@ -15,6 +16,7 @@ export const AURORA_SEEDS = [
     "name": "EMMA",
     "description": "EMMA, din colecția Aurora a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 6900,
+    "fullPrice": 9800,
     "images": [
       "/images/AURORA/EMMA/EMMA_01_plan_intreg.jpg",
       "/images/AURORA/EMMA/EMMA_02_trei_sferturi.jpg",
@@ -25,6 +27,7 @@ export const AURORA_SEEDS = [
     "name": "MEGAN",
     "description": "MEGAN, din colecția Aurora a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 6900,
+    "fullPrice": 9800,
     "images": [
       "/images/AURORA/MEGAN/MEGAN_01_plan_intreg.jpg",
       "/images/AURORA/MEGAN/MEGAN_02_trei_sferturi.jpg",
@@ -35,6 +38,7 @@ export const AURORA_SEEDS = [
     "name": "ELSA",
     "description": "ELSA, din colecția Aurora a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 6900,
+    "fullPrice": 12900,
     "images": [
       "/images/AURORA/ELSA/ELSA_01_plan_intreg.jpg",
       "/images/AURORA/ELSA/ELSA_02_trei_sferturi.jpg",
@@ -45,6 +49,7 @@ export const AURORA_SEEDS = [
     "name": "EMILY",
     "description": "EMILY, din colecția Aurora a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 5400,
+    "fullPrice": 8900,
     "images": [
       "/images/AURORA/EMILY/EMILY_01_plan_intreg.jpg",
       "/images/AURORA/EMILY/EMILY_02_trei_sferturi.jpg",
@@ -55,6 +60,7 @@ export const AURORA_SEEDS = [
     "name": "ESMERALDA",
     "description": "ESMERALDA, din colecția Aurora a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 5400,
+    "fullPrice": 8900,
     "images": [
       "/images/AURORA/ESMERALDA/ESMERALDA_01_plan_intreg.jpg",
       "/images/AURORA/ESMERALDA/ESMERALDA_02_trei_sferturi.jpg",
@@ -65,6 +71,7 @@ export const AURORA_SEEDS = [
     "name": "KAMILA",
     "description": "KAMILA, din colecția Aurora a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 5900,
+    "fullPrice": 8900,
     "images": [
       "/images/AURORA/KAMILA/KAMILA_01_plan_intreg.jpg",
       "/images/AURORA/KAMILA/KAMILA_02_trei_sferturi.jpg",
@@ -75,6 +82,7 @@ export const AURORA_SEEDS = [
     "name": "MIA",
     "description": "MIA, din colecția Aurora a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 4500,
+    "fullPrice": 8900,
     "images": [
       "/images/AURORA/MIA/MIA_01_plan_intreg.jpg",
       "/images/AURORA/MIA/MIA_02_trei_sferturi.jpg",
@@ -85,6 +93,7 @@ export const AURORA_SEEDS = [
     "name": "QUEEN",
     "description": "QUEEN, din colecția Aurora a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 7900,
+    "fullPrice": 12000,
     "images": [
       "/images/AURORA/QUEEN/QUEEN_01_plan_intreg.jpg",
       "/images/AURORA/QUEEN/QUEEN_02_trei_sferturi.jpg",
@@ -95,6 +104,7 @@ export const AURORA_SEEDS = [
     "name": "ROSALIE",
     "description": "ROSALIE, din colecția Aurora a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 5400,
+    "fullPrice": 7900,
     "images": [
       "/images/AURORA/ROSALIE/ROSALIE_01_plan_intreg.jpg",
       "/images/AURORA/ROSALIE/ROSALIE_02_trei_sferturi.jpg",
@@ -105,6 +115,7 @@ export const AURORA_SEEDS = [
     "name": "SAKURA",
     "description": "SAKURA, din colecția Aurora a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 6500,
+    "fullPrice": 7900,
     "images": [
       "/images/AURORA/SAKURA/SAKURA_01_plan_intreg.jpg",
       "/images/AURORA/SAKURA/SAKURA_02_trei_sferturi.jpg",
