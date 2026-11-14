@@ -119,6 +119,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Adelina",
     "description": "Adelina, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 4900,
+    "fullPrice": 7900,
     "images": [
       "/images/NOBLESSE/FYA2801/FYA2801_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2801/FYA2801_02_trei_sferturi.jpg",
@@ -130,6 +131,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Alina",
     "description": "Alina, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 4900,
+    "fullPrice": 6500,
     "images": [
       "/images/NOBLESSE/FYA2802/FYA2802_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2802/FYA2802_02_trei_sferturi.jpg",
@@ -141,6 +143,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Amelia",
     "description": "Amelia, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 7900,
+    "fullPrice": 12000,
     "images": [
       "/images/NOBLESSE/FYA2803/FYA2803_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2803/FYA2803_02_trei_sferturi.jpg",
@@ -152,6 +155,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Antonia",
     "description": "Antonia, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 4900,
+    "fullPrice": 9000,
     "images": [
       "/images/NOBLESSE/FYA2804/FYA2804_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2804/FYA2804_02_trei_sferturi.jpg",
@@ -163,6 +167,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Briana",
     "description": "Briana, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 5400,
+    "fullPrice": 7900,
     "images": [
       "/images/NOBLESSE/FYA2805/FYA2805_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2805/FYA2805_02_trei_sferturi.jpg",
@@ -174,6 +179,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Bianca",
     "description": "Bianca, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 7900,
+    "fullPrice": 12000,
     "images": [
       "/images/NOBLESSE/FYA2806/FYA2806_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2806/FYA2806_02_trei_sferturi.jpg",
@@ -185,6 +191,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Camelia",
     "description": "Camelia, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 7900,
+    "fullPrice": 12000,
     "images": [
       "/images/NOBLESSE/FYA2807/FYA2807_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2807/FYA2807_02_trei_sferturi.jpg",
@@ -196,6 +203,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Carina",
     "description": "Carina, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 5900,
+    "fullPrice": 7900,
     "images": [
       "/images/NOBLESSE/FYA2808/FYA2808_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2808/FYA2808_02_trei_sferturi.jpg",
@@ -207,6 +215,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Cassandra",
     "description": "Cassandra, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 7900,
+    "fullPrice": 12000,
     "images": [
       "/images/NOBLESSE/FYA2809/FYA2809_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2809/FYA2809_02_trei_sferturi.jpg",
@@ -218,6 +227,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Celine",
     "description": "Celine, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 5500,
+    "fullPrice": 7900,
     "images": [
       "/images/NOBLESSE/FYA2810/FYA2810_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2810/FYA2810_02_detaliu_asezata.jpg",
@@ -229,6 +239,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Cleo",
     "description": "Cleo, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 4900,
+    "fullPrice": 6500,
     "images": [
       "/images/NOBLESSE/FYA2811/FYA2811_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2811/FYA2811_02_trei_sferturi.jpg",
@@ -240,6 +251,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Dalia",
     "description": "Dalia, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 5400,
+    "fullPrice": 6900,
     "images": [
       "/images/NOBLESSE/FYA2812/FYA2812_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2812/FYA2812_02_trei_sferturi.jpg",
@@ -251,6 +263,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Daria",
     "description": "Daria, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 5400,
+    "fullPrice": 6900,
     "images": [
       "/images/NOBLESSE/FYA2813/FYA2813_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2813/FYA2813_02_trei_sferturi.jpg",
@@ -262,6 +275,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Eliza",
     "description": "Eliza, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 4900,
+    "fullPrice": 5400,
     "images": [
       "/images/NOBLESSE/FYA2814/FYA2814_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2814/FYA2814_02_trei_sferturi.jpg",
@@ -273,6 +287,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Elena",
     "description": "Elena, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 4500,
+    "fullPrice": 5900,
     "images": [
       "/images/NOBLESSE/FYA2815/FYA2815_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2815/FYA2815_02_trei_sferturi.jpg",
@@ -284,6 +299,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Eva",
     "description": "Eva, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 7900,
+    "fullPrice": 12000,
     "images": [
       "/images/NOBLESSE/FYA2816/FYA2816_01_detaliu_cu_bolero.jpg",
       "/images/NOBLESSE/FYA2816/FYA2816_02_plan_intreg_fara_bolero.jpg",
@@ -295,6 +311,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Flavia",
     "description": "Flavia, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 5600,
+    "fullPrice": 7900,
     "images": [
       "/images/NOBLESSE/FYA2817/FYA2817_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2817/FYA2817_02_trei_sferturi.jpg",
@@ -306,6 +323,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Gabriela",
     "description": "Gabriela, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 7900,
+    "fullPrice": 12500,
     "images": [
       "/images/NOBLESSE/FYA2818/FYA2818_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2818/FYA2818_02_trei_sferturi.jpg",
@@ -317,6 +335,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Helena",
     "description": "Helena, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 5600,
+    "fullPrice": 8900,
     "images": [
       "/images/NOBLESSE/FYA2819/FYA2819_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2819/FYA2819_02_trei_sferturi.jpg",
@@ -328,6 +347,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Irina",
     "description": "Irina, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 5600,
+    "fullPrice": 7900,
     "images": [
       "/images/NOBLESSE/FYA2820/FYA2820_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2820/FYA2820_02_trei_sferturi.jpg",
@@ -339,6 +359,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Iris",
     "description": "Iris, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 5600,
+    "fullPrice": 8900,
     "images": [
       "/images/NOBLESSE/FYA2821/FYA2821_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2821/FYA2821_02_trei_sferturi.jpg",
@@ -350,6 +371,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Isabela",
     "description": "Isabela, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 4500,
+    "fullPrice": 6900,
     "images": [
       "/images/NOBLESSE/FYA2822/FYA2822_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2822/FYA2822_02_trei_sferturi.jpg",
@@ -361,6 +383,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Julia",
     "description": "Julia, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 5400,
+    "fullPrice": 6900,
     "images": [
       "/images/NOBLESSE/FYA2823/FYA2823_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2823/FYA2823_02_trei_sferturi.jpg",
@@ -372,6 +395,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Katia",
     "description": "Katia, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 8600,
+    "fullPrice": 13900,
     "images": [
       "/images/NOBLESSE/FYA2824/FYA2824_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2824/FYA2824_02_trei_sferturi.jpg",
@@ -383,6 +407,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Laura",
     "description": "Laura, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 5400,
+    "fullPrice": 7900,
     "images": [
       "/images/NOBLESSE/FYA2825/FYA2825_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2825/FYA2825_02_trei_sferturi.jpg",
@@ -394,6 +419,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Lia",
     "description": "Lia, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 7900,
+    "fullPrice": 12900,
     "images": [
       "/images/NOBLESSE/FYA2826/FYA2826_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2826/FYA2826_02_trei_sferturi.jpg",
@@ -405,6 +431,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Lucia",
     "description": "Lucia, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 6500,
+    "fullPrice": 8900,
     "images": [
       "/images/NOBLESSE/FYA2827/FYA2827_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2827/FYA2827_02_detaliu.jpg",
@@ -416,6 +443,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Luna",
     "description": "Luna, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 6900,
+    "fullPrice": 11900,
     "images": [
       "/images/NOBLESSE/FYA2828/FYA2828_01_detaliu.jpg",
       "/images/NOBLESSE/FYA2828/FYA2828_02_plan_intreg_lunga.jpg",
@@ -427,6 +455,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Madalina",
     "description": "Madalina, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 7900,
+    "fullPrice": 12000,
     "images": [
       "/images/NOBLESSE/FYA2829/FYA2829_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2829/FYA2829_02_trei_sferturi.jpg",
@@ -438,6 +467,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Maia",
     "description": "Maia, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 6500,
+    "fullPrice": 11900,
     "images": [
       "/images/NOBLESSE/FYA2830/FYA2830_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2830/FYA2830_02_trei_sferturi.jpg",
@@ -449,6 +479,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Marina",
     "description": "Marina, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 7900,
+    "fullPrice": 12900,
     "images": [
       "/images/NOBLESSE/FYA2831/FYA2831_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2831/FYA2831_02_trei_sferturi.jpg",
@@ -460,6 +491,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Nadia",
     "description": "Nadia, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 4900,
+    "fullPrice": 9800,
     "images": [
       "/images/NOBLESSE/FYA2832/FYA2832_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2832/FYA2832_02_trei_sferturi.jpg",
@@ -471,6 +503,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Natalia",
     "description": "Natalia, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 5900,
+    "fullPrice": 9800,
     "images": [
       "/images/NOBLESSE/FYA2833/FYA2833_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2833/FYA2833_02_trei_sferturi.jpg",
@@ -482,6 +515,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Olivia",
     "description": "Olivia, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 5600,
+    "fullPrice": 9800,
     "images": [
       "/images/NOBLESSE/FYA2834/FYA2834_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2834/FYA2834_02_trei_sferturi.jpg",
@@ -493,6 +527,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Paula",
     "description": "Paula, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 6600,
+    "fullPrice": 8900,
     "images": [
       "/images/NOBLESSE/FYA2835/FYA2835_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2835/FYA2835_02_spate.jpg"
@@ -503,6 +538,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Sofia",
     "description": "Sofia, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 5600,
+    "fullPrice": 7900,
     "images": [
       "/images/NOBLESSE/FYA2836/FYA2836_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2836/FYA2836_02_trei_sferturi.jpg",
@@ -514,6 +550,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Stela",
     "description": "Stela, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 6500,
+    "fullPrice": 8900,
     "images": [
       "/images/NOBLESSE/FYA2837/FYA2837_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2837/FYA2837_02_trei_sferturi.jpg",
@@ -525,6 +562,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Tamara",
     "description": "Tamara, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 7900,
+    "fullPrice": 13900,
     "images": [
       "/images/NOBLESSE/FYA2838/FYA2838_01_detaliu_corset.jpg",
       "/images/NOBLESSE/FYA2838/FYA2838_02_set_sirena.jpg",
@@ -536,6 +574,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Viola",
     "description": "Viola, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 4900,
+    "fullPrice": 7900,
     "images": [
       "/images/NOBLESSE/FYA2839/FYA2839_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2839/FYA2839_02_trei_sferturi.jpg",
@@ -547,6 +586,7 @@ export const NOBLESSE_SEEDS = [
     "name": "Zoe",
     "description": "Zoe, din colecția Noblesse a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 5900,
+    "fullPrice": 7900,
     "images": [
       "/images/NOBLESSE/FYA2840/FYA2840_01_plan_intreg.jpg",
       "/images/NOBLESSE/FYA2840/FYA2840_02_trei_sferturi.jpg",

@@ -36,6 +36,8 @@ type DressSeed = {
   name: string;
   description: string;
   price?: number;
+  /** Preț întreg (rochie nouă din fabrică); `price` rămâne prețul sample în promoție. */
+  fullPrice?: number;
   images: string[];
   sketches?: string[];
 };
@@ -54,6 +56,7 @@ const build = (collection: Collection, seeds: DressSeed[]): Dress[] =>
     name: seed.name,
     description: seed.description || '',
     price: seed.price,
+    fullPrice: seed.fullPrice,
     type: DressType.BUY,
     currency: 'RON',
     imageUrl: seed.images[0],

@@ -5,9 +5,19 @@ import { Dress, DressType } from '../types';
 import { Reveal, SmartImage } from '../lib/motion';
 
 /** Preț afișabil. Fără preț în baza de date nu inventăm nimic. */
-export const priceLabel = (dress: Dress): string => {
+export const priceLabel = (dress: Dress): React.ReactNode => {
   const currency = dress.currency || 'RON';
   if (dress.type === DressType.RENT && dress.rentPrice) return `de la ${dress.rentPrice} ${currency}`;
+  // Rochiile cu ambele prețuri (Noblesse): preț întreg = rochie nouă comandată din fabrică,
+  // preț mic = sample din magazin în promoție. Etichetele au fost cerute explicit de Rareș/Ramona (14 nov).
+  if (dress.price && dress.fullPrice) {
+    return (
+      <>
+        <span className="price-line">Rochie nouă, comandată din fabrică: {dress.fullPrice} {currency}</span>
+        <span className="price-line">Sample din magazin, în promoție: {dress.price} {currency}</span>
+      </>
+    );
+  }
   if (dress.price) return `${dress.price} ${currency}`;
   return 'Preț la probă';
 };

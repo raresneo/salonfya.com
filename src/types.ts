@@ -9,6 +9,8 @@ export interface Dress {
   name: string;
   description: string;
   price?: number;
+  /** Preț întreg (rochie nouă comandată din fabrică). Afișat împreună cu `price` (sample în promoție) când există. */
+  fullPrice?: number;
   rentPrice?: number;
   type: DressType;
   imageUrl: string;

@@ -660,3 +660,6 @@ form { display: grid; gap: var(--s-6); }
   .cursor { display: none; }
   [data-par] { transform: none !important; }
 }
+
+/* Etichete pentru dublul preț (rochie nouă din fabrică / sample în promoție) */
+.card-hint .price-line, .dress-specs .price-line { display: block; white-space: normal; }
