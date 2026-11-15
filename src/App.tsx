@@ -131,10 +131,10 @@ export default function App() {
             <Route path="/aurora" element={<CollectionPage slug="aurora" />} />
             <Route path="/noblesse" element={<CollectionPage slug="noblesse" />} />
             <Route path="/colectia/:slug" element={<CollectionPage />} />
-            {/* Redenumiri Aurora 14 nov (catalog Beatrice, aprobat de Rares la 17:59): CARA->ANABELLE, EMMA->ANNA, MEGAN->DIANA. Linkurile vechi rămân funcționale. */}
-            <Route path="/rochie/aurora-cara" element={<Navigate to="/rochie/aurora-anabelle" replace />} />
-            <Route path="/rochie/aurora-emma" element={<Navigate to="/rochie/aurora-anna" replace />} />
-            <Route path="/rochie/aurora-megan" element={<Navigate to="/rochie/aurora-diana" replace />} />
+            {/* Revenire Aurora 15 nov (aprobat de Rares la 12:33): ANABELLE->CARA, ANNA->EMMA, DIANA->MEGAN. Linkurile folosite pe 14 nov rămân funcționale. */}
+            <Route path="/rochie/aurora-anabelle" element={<Navigate to="/rochie/aurora-cara" replace />} />
+            <Route path="/rochie/aurora-anna" element={<Navigate to="/rochie/aurora-emma" replace />} />
+            <Route path="/rochie/aurora-diana" element={<Navigate to="/rochie/aurora-megan" replace />} />
             <Route path="/rochie/:id" element={<DressPage />} />
             <Route path="/atelier" element={<Atelier />} />
             <Route path="/despre-noi" element={<Atelier />} />
