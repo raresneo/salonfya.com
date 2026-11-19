@@ -668,7 +668,7 @@ form { display: grid; gap: var(--s-6); }
 .card-code, .dress-code { font-size: .68em; color: var(--muted, #8a8a8a); font-weight: 400; letter-spacing: .02em; white-space: nowrap; }
 
 /* Două casete alăturate: din fabrică / sample în promoție (aprobat Rares, 19 nov) */
-.price-boxes { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-2); width: 100%; margin-top: var(--s-2); white-space: normal; }
+.price-boxes { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--s-2); width: 100%; margin-top: var(--s-2); white-space: normal; }
 .price-box { display: flex; flex-direction: column; gap: 2px; padding: var(--s-2) var(--s-3); border: 1px solid var(--sand-deep); border-radius: 6px; background: transparent; color: var(--muted); text-align: left; }
 .price-box-label { font-size: .625rem; letter-spacing: .06em; text-transform: uppercase; line-height: 1.25; }
 .price-box-value { font-size: .8125rem; font-weight: 500; color: var(--ink); line-height: 1.25; }
@@ -684,3 +684,15 @@ form { display: grid; gap: var(--s-6); }
 .dress-specs .price-box-value { font-size: 1.0625rem; }
 .card-body:has(.price-boxes) { display: grid; gap: 4px; }
 .card-hint:has(.price-boxes) { display: block; white-space: normal; }
+
+/* Ecrane înguste (<=400px): pe lista de rochii casetele se pun una sub alta, nimic nu mai iese din chenar */
+@media (max-width: 400px) {
+  .card-body .price-boxes { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .card-body .price-box { flex-direction: row; justify-content: space-between; align-items: center; gap: 6px; padding: 6px 8px; }
+  .card-body .price-box-label { font-size: .5625rem; letter-spacing: .04em; overflow-wrap: normal; hyphens: manual; }
+  .card-body .price-box-value { font-size: .75rem; }
+  .dress-specs .price-boxes { gap: 6px; }
+  .dress-specs .price-box { padding: var(--s-2); }
+  .dress-specs .price-box-value { font-size: .9375rem; }
+  .dress-specs .price-box-label { font-size: .5625rem; letter-spacing: .03em; }
+}
