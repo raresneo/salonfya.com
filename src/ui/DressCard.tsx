@@ -12,10 +12,16 @@ export const priceLabel = (dress: Dress): React.ReactNode => {
   // preț mic = sample din magazin în promoție. Etichetele au fost cerute explicit de Rareș/Ramona (14 nov).
   if (dress.price && dress.fullPrice) {
     return (
-      <>
-        <span className="price-line">Rochie nouă, comandată din fabrică: {dress.fullPrice} {currency}</span>
-        <span className="price-line">Sample din magazin, în promoție: {dress.price} {currency}</span>
-      </>
+      <span className="price-boxes">
+        <span className="price-box">
+          <span className="price-box-label">Din fabrică</span>
+          <span className="price-box-value">{dress.fullPrice} {currency}</span>
+        </span>
+        <span className="price-box price-box-sample">
+          <span className="price-box-label">Sample, în promoție</span>
+          <span className="price-box-value">{dress.price} {currency}</span>
+        </span>
+      </span>
     );
   }
   if (dress.price) return `${dress.price} ${currency}`;
