@@ -130,6 +130,7 @@ export default function App() {
             <Route path="/beverly" element={<CollectionPage slug="beverly" />} />
             <Route path="/aurora" element={<CollectionPage slug="aurora" />} />
             <Route path="/noblesse" element={<CollectionPage slug="noblesse" />} />
+            <Route path="/celeste" element={<CollectionPage slug="celeste" />} />
             <Route path="/colectia/:slug" element={<CollectionPage />} />
             {/* Revenire Aurora 15 nov (aprobat de Rares la 12:33): ANABELLE->CARA, ANNA->EMMA, DIANA->MEGAN. Linkurile folosite pe 14 nov rămân funcționale. */}
             <Route path="/rochie/aurora-anabelle" element={<Navigate to="/rochie/aurora-cara" replace />} />
