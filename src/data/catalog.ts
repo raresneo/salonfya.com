@@ -1,5 +1,5 @@
 import { Collection, Dress, DressType } from '../types';
-import { AURORA_SEEDS, NOBLESSE_SEEDS } from './newCollections';
+import { AURORA_SEEDS, CELESTE_SEEDS, NOBLESSE_SEEDS } from './newCollections';
 
 /**
  * Catalogul rochiilor, construit din fotografiile reale din `public/images`.
@@ -573,6 +573,7 @@ export const LOCAL_CATALOG: Dress[] = [
   ...build(Collection.BEVERLY, BEVERLY_SEEDS),
   ...build(Collection.AURORA, AURORA_SEEDS),
   ...build(Collection.NOBLESSE, NOBLESSE_SEEDS),
+  ...build(Collection.CELESTE, CELESTE_SEEDS),
 ];
 
 /** Metadate de colecție, folosite pe homepage și pe paginile de colecție. */
@@ -605,7 +606,15 @@ export const COLLECTIONS: CollectionMeta[] = [
     intro: 'Explorează Noblesse, apoi vino să vezi cum se așază modelul ales. Rochii alese de noi, ajustate pe tine în atelierul din Oradea.',
     cover: NOBLESSE_SEEDS[0].images[0],
     aiGenerated: true,
+  },  {
+    collection: Collection.CELESTE,
+    slug: 'celeste',
+    path: '/celeste',
+    note: 'Dantelă, corset și siluete noi',
+    intro: 'Descoperă Celeste, apoi vino să probezi modelul ales. Rochii alese de noi, ajustate pe tine în atelierul din Oradea.',
+    cover: CELESTE_SEEDS[0].images[0],
   },
+
   {
     collection: Collection.IMPERIAL,
     slug: 'imperial',

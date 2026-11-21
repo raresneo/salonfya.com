@@ -51,4 +51,5 @@ export enum Collection {
   BEVERLY = 'Beverly',
   AURORA = 'Aurora',
   NOBLESSE = 'Noblesse',
+  CELESTE = 'Celeste',
 }

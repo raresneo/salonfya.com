@@ -1,4 +1,4 @@
-import { NOBLESSE_SEEDS } from './newCollections';
+import { CELESTE_SEEDS, NOBLESSE_SEEDS } from './newCollections';
 import type { Dress } from '../types';
 import { filterAvailableDresses } from './catalogAvailability';
 
@@ -58,7 +58,8 @@ const descriptions = new Map<string, string>(
 export const publicDressDescription = (dress: Pick<Dress, 'collection' | 'name'>): string => {
   const isAurora = dress.collection === 'Aurora' && ['CARA', 'EMMA', 'MEGAN', 'ELSA', 'EMILY', 'ESMERALDA', 'KAMILA', 'MIA', 'QUEEN', 'ROSALIE', 'SAKURA'].includes(dress.name);
   const isNoblesse = dress.collection === 'Noblesse' && NOBLESSE_SEEDS.some((seed) => seed.name === dress.name);
-  if (isAurora || isNoblesse) return `${dress.name}, din colecția ${dress.collection} a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.`;
+  const isCeleste = dress.collection === 'Celeste' && CELESTE_SEEDS.some((seed) => seed.name === dress.name);
+  if (isAurora || isNoblesse || isCeleste) return `${dress.name}, din colecția ${dress.collection} a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.`;
   return dress.collection
     ? descriptions.get(key(dress.collection, dress.name)) || UNKNOWN_PUBLIC_DESCRIPTION
     : UNKNOWN_PUBLIC_DESCRIPTION;

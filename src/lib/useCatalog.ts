@@ -16,6 +16,7 @@ const normalizeCollection = (value?: string | null): Collection | undefined => {
   if (!key) return undefined;
   if (key.includes('AURORA')) return Collection.AURORA;
   if (key.includes('NOBLESSE')) return Collection.NOBLESSE;
+  if (key.includes('CELESTE')) return Collection.CELESTE;
   if (key.includes('IMPERIAL')) return Collection.IMPERIAL;
   if (key.includes('BEVERLY')) return Collection.BEVERLY;
   if (key.includes('MAYRA')) return Collection.MAYRA;
@@ -91,7 +92,7 @@ export type CatalogState = {
 };
 
 const LOCAL = dedupe(LOCAL_CATALOG);
-const NEW_COLLECTIONS = new Set([Collection.AURORA, Collection.NOBLESSE]);
+const NEW_COLLECTIONS = new Set([Collection.AURORA, Collection.NOBLESSE, Collection.CELESTE]);
 
 /** The approved CSV is the source for these new collections until a separate DB import. */
 export const withNewCollections = (rows: Dress[]): Dress[] =>

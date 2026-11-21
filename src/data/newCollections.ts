@@ -606,3 +606,187 @@ export const NOBLESSE_SEEDS = [
   }
 ];
 
+
+// Colecția nouă (provizoriu "Celeste"): 20 rochii, o singură fotografie reală fiecare. Prețuri din PDF-ul completat (pret_mare = din fabrică, pret_mic = sample în promoție).
+export const CELESTE_SEEDS = [
+  {
+    "name": "Amarant",
+    "description": "Amarant, din colecția Celeste a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "price": 4700,
+    "fullPrice": 8900,
+    "images": [
+      "/images/CELESTE/Amarant/Amarant_01_plan_intreg.jpg"
+    ]
+  },
+  {
+    "name": "Astoria",
+    "description": "Astoria, din colecția Celeste a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "price": 6700,
+    "fullPrice": 11700,
+    "images": [
+      "/images/CELESTE/Astoria/Astoria_01_plan_intreg.jpg"
+    ]
+  },
+  {
+    "name": "Odette",
+    "description": "Odette, din colecția Celeste a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "price": 6400,
+    "fullPrice": 8700,
+    "images": [
+      "/images/CELESTE/Odette/Odette_01_plan_intreg.jpg"
+    ]
+  },
+  {
+    "name": "Belora",
+    "description": "Belora, din colecția Celeste a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "price": 6300,
+    "fullPrice": 8900,
+    "images": [
+      "/images/CELESTE/Belora/Belora_01_plan_intreg.jpg"
+    ]
+  },
+  {
+    "name": "Bridjit",
+    "description": "Bridjit, din colecția Celeste a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "price": 5200,
+    "fullPrice": 6700,
+    "images": [
+      "/images/CELESTE/Bridjit/Bridjit_01_plan_intreg.jpg"
+    ]
+  },
+  {
+    "name": "Caroline",
+    "description": "Caroline, din colecția Celeste a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "price": 5300,
+    "fullPrice": 6900,
+    "images": [
+      "/images/CELESTE/Caroline/Caroline_01_plan_intreg.jpg"
+    ]
+  },
+  {
+    "name": "Casia",
+    "description": "Casia, din colecția Celeste a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "price": 6400,
+    "fullPrice": 8900,
+    "images": [
+      "/images/CELESTE/Casia/Casia_01_plan_intreg.jpg"
+    ]
+  },
+  {
+    "name": "Clemence",
+    "description": "Clemence, din colecția Celeste a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "price": 5700,
+    "fullPrice": 11700,
+    "images": [
+      "/images/CELESTE/Clemence/Clemence_01_plan_intreg.jpg"
+    ]
+  },
+  {
+    "name": "Colette",
+    "description": "Colette, din colecția Celeste a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "price": 5700,
+    "fullPrice": 8700,
+    "images": [
+      "/images/CELESTE/Colette/Colette_01_plan_intreg.jpg"
+    ]
+  },
+  {
+    "name": "Elodia",
+    "description": "Elodia, din colecția Celeste a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "price": 5700,
+    "fullPrice": 8700,
+    "images": [
+      "/images/CELESTE/Elodia/Elodia_01_plan_intreg.jpg"
+    ]
+  },
+  {
+    "name": "Emilia",
+    "description": "Emilia, din colecția Celeste a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "price": 5700,
+    "fullPrice": 8700,
+    "images": [
+      "/images/CELESTE/Emilia/Emilia_01_plan_intreg.jpg"
+    ]
+  },
+  {
+    "name": "Fiora",
+    "description": "Fiora, din colecția Celeste a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "price": 5700,
+    "fullPrice": 9700,
+    "images": [
+      "/images/CELESTE/Fiora/Fiora_01_plan_intreg.jpg"
+    ]
+  },
+  {
+    "name": "Josephine",
+    "description": "Josephine, din colecția Celeste a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "price": 4700,
+    "fullPrice": 8700,
+    "images": [
+      "/images/CELESTE/Josephine/Josephine_01_plan_intreg.jpg"
+    ]
+  },
+  {
+    "name": "Josephine Corset",
+    "description": "Josephine Corset, din colecția Celeste a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "price": 6700,
+    "fullPrice": 12000,
+    "images": [
+      "/images/CELESTE/Josephine_Corset/Josephine_Corset_01_plan_intreg.jpg"
+    ]
+  },
+  {
+    "name": "Juliette",
+    "description": "Juliette, din colecția Celeste a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "price": 7700,
+    "fullPrice": 12000,
+    "images": [
+      "/images/CELESTE/Juliette/Juliette_01_plan_intreg.jpg"
+    ]
+  },
+  {
+    "name": "Selene",
+    "description": "Selene, din colecția Celeste a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "price": 5700,
+    "fullPrice": 8900,
+    "images": [
+      "/images/CELESTE/Selene/Selene_01_plan_intreg.jpg"
+    ]
+  },
+  {
+    "name": "Marlen",
+    "description": "Marlen, din colecția Celeste a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "price": 6700,
+    "fullPrice": 8700,
+    "images": [
+      "/images/CELESTE/Marlen/Marlen_01_plan_intreg.jpg"
+    ]
+  },
+  {
+    "name": "Manetti",
+    "description": "Manetti, din colecția Celeste a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "price": 5700,
+    "fullPrice": 8700,
+    "images": [
+      "/images/CELESTE/Manetti/Manetti_01_plan_intreg.jpg"
+    ]
+  },
+  {
+    "name": "Sabrina",
+    "description": "Sabrina, din colecția Celeste a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "price": 5700,
+    "fullPrice": 11700,
+    "images": [
+      "/images/CELESTE/Sabrina/Sabrina_01_plan_intreg.jpg"
+    ]
+  },
+  {
+    "name": "Siena",
+    "description": "Siena, din colecția Celeste a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "price": 6700,
+    "fullPrice": 12000,
+    "images": [
+      "/images/CELESTE/Siena/Siena_01_plan_intreg.jpg"
+    ]
+  }
+];
