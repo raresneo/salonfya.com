@@ -83,6 +83,7 @@ flat('alma_detail.jpg')
   },
   {
     name: 'Argente',
+    price: 4900,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Argente. Strapless fitted mermaid silhouette with intricate beadwork and floral lace on a sheer bodice, ending in a dramatic flared tulle skirt.',
     images: [
 flat('argente_front.jpg'),
@@ -106,6 +107,7 @@ flat('aurelia_detail.jpg'),
   },
   {
     name: 'Daiana',
+    price: 3900,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Daiana. Plunging V-neckline A-line gown with shimmering patterned lace, spaghetti straps, an illusion open back, and a flowing sheer skirt with a subtle train.',
     images: [
 flat('daiana_front.jpg'),
@@ -120,6 +122,7 @@ flat('daiana_detail_2.jpg'),
     // Fișierele plate elia_*.jpg sunt copii ale lui Daiana (SHA identic),
     // deci folosim exclusiv folderul colecției.
     name: 'Elia',
+    price: 3900,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, IMPERIAL collection, model Elia. Mermaid silhouette gown featuring a structured lace bodice with pearl detailing, available with an illusion plunging V-neck or strapless sweetheart neckline.',
     images: [
 p('IMPERIAL', 'Elia', 'IMG_5552.jpg'),
@@ -132,6 +135,7 @@ p('IMPERIAL', 'Elia', 'IMG_5415.jpg'),
   },
   {
     name: 'Elise',
+    price: 4700,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Elise. Off-the-shoulder ballgown with intricate silver beading, lace embroidery across the bodice, and a voluminous cascading tulle skirt with a long train.',
     images: [
 flat('elise_front.jpg'), flat('elise_side.jpg'), flat('elise_back.jpg'), flat('elise_detail.jpg'),
@@ -143,6 +147,8 @@ flat('elise_detail.jpg')
   },
   {
     name: 'Evora',
+    price: 4700,
+    fullPrice: 12000,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Evora. A-line gown with illusion long bishop sleeves, a deep V-neckline, fully beaded floral applique bodice, and a pure white flowing tulle skirt.',
     images: [
 p('IMPERIAL', 'Evora', 'IMG_5580.jpg'),
@@ -193,6 +199,7 @@ p('IMPERIAL', 'Queen', 'IMG_5463.jpg'),
   },
   {
     name: 'Serena',
+    price: 3900,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Serena. Form-fitting mermaid gown with long sleeves, a deep V-neckline, and sheer lace illusion details on the shoulders and back.',
     images: [
 p('IMPERIAL', 'Serena', 'IMG_5423.jpg'),
@@ -213,6 +220,7 @@ p('IMPERIAL', 'Serena', 'IMG_5460.jpg'),
 const ANNA_SEEDS: DressSeed[] = [
   {
     name: 'Anais',
+    price: 3900,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Anais. Plunging deep V-neckline, long sheer puffy bishop sleeves with dotted pattern, beaded lace bodice, soft flowing sparkly tulle skirt.',
     images: [
 p('ANNA', 'Anais', '0A1909F0-C8B1-4B7C-AA3E-2514FAA0D407.jpg'),
@@ -223,6 +231,7 @@ p('ANNA', 'Anais', 'A85332DF-BE08-4DA1-9DF5-CF48706FFDBF.PNG'),
   },
   {
     name: 'Anamara',
+    price: 3900,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Anamara. Mermaid silhouette, high illusion neckline over sweetheart bodice, sheer long sleeves, intricate lace appliques covering bodice and skirt, illusion back with button closure down the middle.',
     images: [
 p('IMPERIAL', 'Anamara', '3D870093-9834-45A4-9A7A-821B9FFB6889.PNG'),
@@ -252,6 +261,7 @@ p('ANNA', 'Anaria', 'E110F78F-1AE3-4F76-9927-C1C38242F2B0.PNG'),
   },
   {
     name: 'Anastasia',
+    price: 3900,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Anastasia. Cap sleeves with lace, sweetheart bodice with lace appliques, sheer illusion back with button closure down the middle, full soft plain tulle skirt.',
     images: [
 p('ANNA', 'Anastasia', '811DDE31-7EB2-44F1-8D33-920F6E536A1E.PNG'),
@@ -261,6 +271,7 @@ p('ANNA', 'Anastasia', '9882240D-72F9-435F-9A1C-213C53DC6380.PNG'),
   },
   {
     name: 'Anastea',
+    price: 3900,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Anastea. Smooth satin fabric, off-the-shoulder straps, draped sweetheart bodice, short puffed sleeves, full pleated satin skirt, corset lacing on back.',
     images: [
 p('ANNA', 'Anastea', '162B7262-5C38-4385-9346-FDB3B1527BD4.PNG'),
@@ -307,6 +318,7 @@ p('ANNA', 'Annabelle', 'IMG_5881.jpg'),
   },
   {
     name: 'Annador',
+    price: 3900,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Anna collection, model Annador. Off-the-shoulder draped soft tulle straps, sweetheart neckline, lace appliques on bodice, full soft tulle skirt.',
     images: [
 p('ANNA', 'Annador', '0DB5AAD1-EEE2-40B7-926B-403B31D9EEE2.PNG'),
@@ -340,6 +352,7 @@ p('ANNA', 'Just Anna', 'IMG_5908.jpg'),
 const MAYRA_SEEDS: DressSeed[] = [
   {
     name: 'Adania',
+    price: 5700,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Adania. Ornate fit-and-flare gown densely covered in pearls, beads, and sequins in a symmetrical butterfly-like pattern. The bodice has a sweetheart neckline with thin beaded straps. The gown has a deep V-neckline at the back and flows into a subtle train, with the pearled detailing continuing densely over the skirt.',
     images: [
 p('MAYRA', 'Adania', 'IMG_5591.jpg'),
@@ -350,6 +363,7 @@ p('MAYRA', 'Adania', 'IMG_5607.jpg'),
   },
   {
     name: 'Celina',
+    price: 5700,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Celina. Minimalist and fit-and-flare gown crafted from smooth crepe. The bodice features a clean, high boat neckline and solid white front. The long sleeves are made of sheer illusion mesh embellished with lace appliqué and beadwork. The back features a deep V-cut down to the waistline.',
     images: [
 p('MAYRA', 'Celina', 'IMG_5616.jpg'),
@@ -370,6 +384,7 @@ p('MAYRA', 'Desideria', 'IMG_5640.jpg'),
   },
   {
     name: 'Elvira',
+    price: 3700,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Elvira. A-line gown featuring an illusion bodice adorned with floral lace appliqué and off-the-shoulder draped lace sleeves. The sweetheart neckline is softened by the illusion mesh. The lightweight tulle skirt flows beautifully into a long train. The back features a scoop cut framed by matching floral lace.',
     images: [
 p('MAYRA', 'Elvira', 'IMG_5648.jpg'),
@@ -379,6 +394,7 @@ p('MAYRA', 'Elvira', 'IMG_5652.jpg'),
   },
   {
     name: 'Grazia',
+    price: 4700,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Grazia. Flowing A-line gown with a smooth draped skirt featuring a high side slit. The corset-style bodice showcases exposed boning and a sweetheart neckline, decorated with sparkling beaded lace appliqué that extends delicately down onto the skirt. The back features a low scoop neckline and thin straps.',
     images: [
 p('MAYRA', 'Grazia', 'IMG_5668.jpg'),
@@ -388,6 +404,7 @@ p('MAYRA', 'Grazia', 'ED2F8FEC-0716-44BC-B7C6-29E39267E930.jpg'),
   },
   {
     name: 'Isadora',
+    price: 3700,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Isadora. Fit-and-flare gown heavily embellished with beaded botanical lace over a sheer bodice. The gown features a plunging V-neckline and is paired with matching detachable long sheer sleeves. The back showcases a deep open V-cut framed by intricate lace, flowing into a dramatic train.',
     images: [
 p('MAYRA', 'Isadora', 'IMG_5681.jpg'),
@@ -397,6 +414,7 @@ p('MAYRA', 'Isadora', 'IMG_5691.jpg'),
   },
   {
     name: 'Luminia',
+    price: 3700,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Luminia. A-line gown with a flowing, soft tulle skirt. The bodice features a deep plunging V-neckline with illusion mesh paneling and thick straps, adorned with swirling symmetrical lace appliqué. The gown can be paired with an optional sheer high-neck cape that drapes elegantly over the shoulders. The back of the gown itself features a deep V-shape.',
     images: [
 p('MAYRA', 'Luminia', 'IMG_5697.jpg'),
@@ -420,6 +438,7 @@ p('MAYRA', 'Miracle', 'IMG_5729.jpg'),
   },
   {
     name: 'Roze',
+    price: 3700,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Roze. Voluminous blush pink ballgown made entirely of heavily textured, ruffled tulle rosettes. The bodice features a deep plunging V-neckline with ruffled tulle shoulder details and a matching deep V open back, finished with a ribbon sash at the waist.',
     images: [
 p('MAYRA', 'Roze', 'IMG_5735.jpg'), p('MAYRA', 'Roze', 'IMG_5736.jpg'),
@@ -428,6 +447,7 @@ p('MAYRA', 'Roze', 'IMG_5736.jpg')
   },
   {
     name: 'Snow',
+    price: 5700,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Snow. Minimalist A-line gown crafted from smooth satin. The structured bodice features a square neckline and wide straps, leading to a deep V-back. A large structured bow accents the back waistline with trailing tails over the flowing skirt and train.',
     images: [
 p('MAYRA', 'Snow', 'IMG_5744.jpg'),
@@ -439,6 +459,7 @@ p('MAYRA', 'Snow', 'IMG_5757.jpg'),
   },
   {
     name: 'Tania',
+    price: 4700,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Tania. Flowing A-line gown with long bishop sleeves. The bodice features pleating and a scoop neckline, accented with pink and green floral embroidery along the neckline, waistline, and cuffs. The back is closed with matching floral embroidery details.',
     images: [
 p('MAYRA', 'Tania', 'IMG_5764.jpg'),
@@ -449,6 +470,7 @@ p('MAYRA', 'Tania', 'IMG_5781.jpg'),
   },
   {
     name: 'Taniana',
+    price: 3700,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Mayra collection, model Taniana. Flowing A-line gown featuring unique cape sleeves that drape to the floor. The bodice features pleating and a scoop neckline, accented with intricate 3D floral appliques along the neckline and shoulders. The back features a deep V-shape adorned with matching floral appliques.',
     images: [
 p('MAYRA', 'Taniana', 'IMG_5785.jpg'),
@@ -476,6 +498,7 @@ p('BEVERLY', 'Aveline', 'AAAF1202-841B-4ECB-99D7-288B50AB6844.PNG'),
   },
   {
     name: 'Beauty',
+    price: 4700,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Beauty. Fitted trumpet gown completely covered in intricate geometric and floral beadwork. The bodice features a sweetheart neckline with thin spaghetti straps that lead to a dramatic open criss-cross back. A voluminous detachable tulle overskirt with matching beadwork at the waist adds a layer of grandeur.',
     images: [
 p('BEVERLY', 'Beauty', '2C8B1C4E-9132-4164-A376-2CA5D84F83B2.PNG'),
@@ -485,6 +508,7 @@ p('BEVERLY', 'Beauty', '1ED51795-BB30-42F8-9E60-27A53172F5C5.jpg'),
   },
   {
     name: 'Bety',
+    price: 3700,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Bety. Flowing A-line gown with a thigh-high slit. The corset bodice features a sweetheart neckline with thin spaghetti straps and off-the-shoulder tulle drape sleeves. The bodice and top of the skirt are adorned with intricate trailing beadwork and tiny 3D floral appliques. The back features a deep open V-shape.',
     images: [
 p('BEVERLY', 'Bety', '40C0C4BB-6FFA-4766-9C74-936E4B33A0B7.PNG'),
@@ -494,6 +518,7 @@ p('BEVERLY', 'Bety', 'D890182A-3BF8-4437-BE26-D4BE930405DF.PNG'),
   },
   {
     name: 'Candy',
+    price: 3700,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Candy. A-line gown with a softly pleated tulle skirt. The bodice has a deep plunging V-neckline with a sheer insert and long fitted sleeves. The entire bodice and sleeves are adorned with bold floral lace appliques that trail slightly past the waist. The back features a sheer illusion panel with matching lace appliques and a row of buttons down the center.',
     images: [
 p('BEVERLY', 'Candy', '658A28B1-4FB0-476A-8E4C-681794EDDC36.PNG'),
@@ -529,6 +554,7 @@ p('BEVERLY', 'Fyona', '44F1F915-D193-41D9-A6E3-1CAA83D39058.jpg'),
   },
   {
     name: 'Marisa',
+    price: 3700,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Marisa. Fitted trumpet gown with a unique geometric grid and large scroll lace pattern. The sweetheart neckline features a deep plunging slit and thin straps, along with off-the-shoulder lace sleeves. The bodice is structured with visible boning. The back is an open corset style.',
     images: [
 p('BEVERLY', 'Marisa', '230565A2-30C0-42B2-9489-FE788A454878.PNG'),
