@@ -53,3 +53,15 @@ test('Noblesse display names follow the approved code order without changing ide
  }
  assert.match(read('src/data/catalog.ts'),/slug\(seed.code \|\| seed.name\)/);
 });
+
+test('Celeste (provizoriu): 20 rochii, prețuri exact din PDF, o poză validă fiecare, fără nume de furnizor',async()=>{
+ const {CELESTE_SEEDS}=await import(moduleUrl);
+ assert.equal(CELESTE_SEEDS.length,20);
+ for(const s of CELESTE_SEEDS){
+  assert.ok(Number.isInteger(s.price)&&Number.isInteger(s.fullPrice)&&s.price<s.fullPrice,s.name);
+  assert.equal(s.images.length,1);
+  const m=await sharp(path.join(root,'public',s.images[0])).metadata();
+  assert.equal(m.format,'jpeg');assert.ok(m.width<=1920&&m.height<=1920);
+ }
+ assert.doesNotMatch(source,/amoureuse|leather|chantally/i);
+});

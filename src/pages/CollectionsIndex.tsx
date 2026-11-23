@@ -24,7 +24,7 @@ const CollectionsIndex: React.FC = () => {
           <p className="eyebrow eyebrow--light">Catalog</p>
           <h1 className="h2">Toate rochiile</h1>
           <p className="lead body--light">
-            Rochii alese de noi, ajustate pe tine în atelierul din Oradea. Pentru Aurora și Noblesse, prețul de vânzare
+            Rochii alese de noi, ajustate pe tine în atelierul din Oradea. Pentru Aurora, Noblesse și Celeste, prețul de vânzare
             este afișat pe fiecare model. Detaliile și mărimile se discută la probă.
           </p>
         </div>
