@@ -94,6 +94,7 @@ flat('argente_detail.jpg'),
   },
   {
     name: 'Aurelia',
+    price: 4880,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Aurelia. Sweetheart neckline ballgown featuring a structured boned corset bodice adorned with floral lace appliques that trail down a voluminous tulle skirt.',
     images: [
 flat('aurelia_front.jpg'),
@@ -538,6 +539,7 @@ p('BEVERLY', 'Marisa', 'B6C95714-06F6-44F8-8FD9-8D534D00AB86.PNG'),
   },
   {
     name: 'Nolli',
+    price: 5700,
     description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Beverly collection, model Nolli. A-line gown with a softly pleated tulle skirt. The bodice features a sweetheart neckline with a sheer illusion panel creating a high scoop neckline and long sheer sleeves with subtle wrist appliques. floral lace appliques decorate the bodice and trail gently onto the upper skirt. The back features a sheer illusion panel with matching lace appliques and a row of buttons down the center.',
     images: [
 p('BEVERLY', 'Nolli', '1AF62A14-D463-4296-996D-4407D0D05C0C.PNG'),
