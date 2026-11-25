@@ -691,8 +691,8 @@ export const CELESTE_SEEDS = [
     ]
   },
   {
-    "name": "Elodia",
-    "description": "Elodia, din colecția Celeste a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "name": "Giselle",
+    "description": "Giselle, din colecția Celeste a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 5700,
     "fullPrice": 8700,
     "images": [
