@@ -134,6 +134,8 @@ export default function App() {
             <Route path="/colectia/:slug" element={<CollectionPage />} />
             {/* Revenire Aurora 15 nov (aprobat de Rares la 12:33): ANABELLE->CARA, ANNA->EMMA, DIANA->MEGAN. Linkurile folosite pe 14 nov rămân funcționale. */}
             <Route path="/rochie/aurora-anabelle" element={<Navigate to="/rochie/aurora-cara" replace />} />
+            {/* Elodia -> Giselle (alegerea lui Rares, 24 nov). Linkul vechi rămâne funcțional. */}
+            <Route path="/rochie/celeste-elodia" element={<Navigate to="/rochie/celeste-giselle" replace />} />
             <Route path="/rochie/aurora-anna" element={<Navigate to="/rochie/aurora-emma" replace />} />
             <Route path="/rochie/aurora-diana" element={<Navigate to="/rochie/aurora-megan" replace />} />
             <Route path="/rochie/:id" element={<DressPage />} />

@@ -615,6 +615,9 @@ export const CELESTE_SEEDS = [
     "price": 4700,
     "fullPrice": 8900,
     "images": [
+      "/images/FRESH/Amarant/Amarant_fresh_01_front.jpg",
+      "/images/FRESH/Amarant/Amarant_fresh_02_side.jpg",
+      "/images/FRESH/Amarant/Amarant_fresh_03_back.jpg",
       "/images/CELESTE/Amarant/Amarant_01_plan_intreg.jpg"
     ]
   },
@@ -624,6 +627,9 @@ export const CELESTE_SEEDS = [
     "price": 6700,
     "fullPrice": 11700,
     "images": [
+      "/images/FRESH/Astoria/Astoria_fresh_01_front.jpg",
+      "/images/FRESH/Astoria/Astoria_fresh_02_side.jpg",
+      "/images/FRESH/Astoria/Astoria_fresh_03_back.jpg",
       "/images/CELESTE/Astoria/Astoria_01_plan_intreg.jpg"
     ]
   },
@@ -633,6 +639,9 @@ export const CELESTE_SEEDS = [
     "price": 6400,
     "fullPrice": 8700,
     "images": [
+      "/images/FRESH/Odette/Odette_fresh_01_front.jpg",
+      "/images/FRESH/Odette/Odette_fresh_02_side.jpg",
+      "/images/FRESH/Odette/Odette_fresh_03_back.jpg",
       "/images/CELESTE/Odette/Odette_01_plan_intreg.jpg"
     ]
   },
@@ -642,6 +651,9 @@ export const CELESTE_SEEDS = [
     "price": 6300,
     "fullPrice": 8900,
     "images": [
+      "/images/FRESH/Belora/Belora_fresh_01_front.jpg",
+      "/images/FRESH/Belora/Belora_fresh_02_side.jpg",
+      "/images/FRESH/Belora/Belora_fresh_03_back.jpg",
       "/images/CELESTE/Belora/Belora_01_plan_intreg.jpg"
     ]
   },
@@ -651,6 +663,9 @@ export const CELESTE_SEEDS = [
     "price": 5200,
     "fullPrice": 6700,
     "images": [
+      "/images/FRESH/Bridjit/Bridjit_fresh_01_front.jpg",
+      "/images/FRESH/Bridjit/Bridjit_fresh_02_side.jpg",
+      "/images/FRESH/Bridjit/Bridjit_fresh_03_back.jpg",
       "/images/CELESTE/Bridjit/Bridjit_01_plan_intreg.jpg"
     ]
   },
@@ -660,6 +675,9 @@ export const CELESTE_SEEDS = [
     "price": 5300,
     "fullPrice": 6900,
     "images": [
+      "/images/FRESH/Caroline/Caroline_fresh_01_front.jpg",
+      "/images/FRESH/Caroline/Caroline_fresh_02_side.jpg",
+      "/images/FRESH/Caroline/Caroline_fresh_03_back.jpg",
       "/images/CELESTE/Caroline/Caroline_01_plan_intreg.jpg"
     ]
   },
@@ -669,6 +687,9 @@ export const CELESTE_SEEDS = [
     "price": 6400,
     "fullPrice": 8900,
     "images": [
+      "/images/FRESH/Casia/Casia_fresh_01_front.jpg",
+      "/images/FRESH/Casia/Casia_fresh_02_side.jpg",
+      "/images/FRESH/Casia/Casia_fresh_03_back.jpg",
       "/images/CELESTE/Casia/Casia_01_plan_intreg.jpg"
     ]
   },
@@ -678,6 +699,9 @@ export const CELESTE_SEEDS = [
     "price": 5700,
     "fullPrice": 11700,
     "images": [
+      "/images/FRESH/Clemence/Clemence_fresh_01_front.jpg",
+      "/images/FRESH/Clemence/Clemence_fresh_02_side.jpg",
+      "/images/FRESH/Clemence/Clemence_fresh_03_back.jpg",
       "/images/CELESTE/Clemence/Clemence_01_plan_intreg.jpg"
     ]
   },
@@ -687,15 +711,21 @@ export const CELESTE_SEEDS = [
     "price": 5700,
     "fullPrice": 8700,
     "images": [
+      "/images/FRESH/Colette/Colette_fresh_01_front.jpg",
+      "/images/FRESH/Colette/Colette_fresh_02_side.jpg",
+      "/images/FRESH/Colette/Colette_fresh_03_back.jpg",
       "/images/CELESTE/Colette/Colette_01_plan_intreg.jpg"
     ]
   },
   {
-    "name": "Elodia",
-    "description": "Elodia, din colecția Celeste a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
+    "name": "Giselle",
+    "description": "Giselle, din colecția Celeste a Salonului FYA. Pentru detalii despre model și programarea unei probe, contactează atelierul.",
     "price": 5700,
     "fullPrice": 8700,
     "images": [
+      "/images/FRESH/Giselle/Giselle_fresh_01_front.jpg",
+      "/images/FRESH/Giselle/Giselle_fresh_02_side.jpg",
+      "/images/FRESH/Giselle/Giselle_fresh_03_back.jpg",
       "/images/CELESTE/Elodia/Elodia_01_plan_intreg.jpg"
     ]
   },
@@ -705,6 +735,9 @@ export const CELESTE_SEEDS = [
     "price": 5700,
     "fullPrice": 8700,
     "images": [
+      "/images/FRESH/Emilia/Emilia_fresh_01_front.jpg",
+      "/images/FRESH/Emilia/Emilia_fresh_02_side.jpg",
+      "/images/FRESH/Emilia/Emilia_fresh_03_back.jpg",
       "/images/CELESTE/Emilia/Emilia_01_plan_intreg.jpg"
     ]
   },
@@ -714,6 +747,9 @@ export const CELESTE_SEEDS = [
     "price": 5700,
     "fullPrice": 9700,
     "images": [
+      "/images/FRESH/Fiora/Fiora_fresh_01_front.jpg",
+      "/images/FRESH/Fiora/Fiora_fresh_02_side.jpg",
+      "/images/FRESH/Fiora/Fiora_fresh_03_back.jpg",
       "/images/CELESTE/Fiora/Fiora_01_plan_intreg.jpg"
     ]
   },
@@ -723,6 +759,9 @@ export const CELESTE_SEEDS = [
     "price": 4700,
     "fullPrice": 8700,
     "images": [
+      "/images/FRESH/Josephine/Josephine_fresh_01_front.jpg",
+      "/images/FRESH/Josephine/Josephine_fresh_02_side.jpg",
+      "/images/FRESH/Josephine/Josephine_fresh_03_back.jpg",
       "/images/CELESTE/Josephine/Josephine_01_plan_intreg.jpg"
     ]
   },
@@ -732,6 +771,9 @@ export const CELESTE_SEEDS = [
     "price": 6700,
     "fullPrice": 12000,
     "images": [
+      "/images/FRESH/Josephine_Corset/Josephine_Corset_fresh_01_front.jpg",
+      "/images/FRESH/Josephine_Corset/Josephine_Corset_fresh_02_side.jpg",
+      "/images/FRESH/Josephine_Corset/Josephine_Corset_fresh_03_back.jpg",
       "/images/CELESTE/Josephine_Corset/Josephine_Corset_01_plan_intreg.jpg"
     ]
   },
@@ -741,6 +783,9 @@ export const CELESTE_SEEDS = [
     "price": 7700,
     "fullPrice": 12000,
     "images": [
+      "/images/FRESH/Juliette/Juliette_fresh_01_front.jpg",
+      "/images/FRESH/Juliette/Juliette_fresh_02_side.jpg",
+      "/images/FRESH/Juliette/Juliette_fresh_03_back.jpg",
       "/images/CELESTE/Juliette/Juliette_01_plan_intreg.jpg"
     ]
   },
@@ -750,6 +795,9 @@ export const CELESTE_SEEDS = [
     "price": 5700,
     "fullPrice": 8900,
     "images": [
+      "/images/FRESH/Selene/Selene_fresh_01_front.jpg",
+      "/images/FRESH/Selene/Selene_fresh_02_side.jpg",
+      "/images/FRESH/Selene/Selene_fresh_03_back.jpg",
       "/images/CELESTE/Selene/Selene_01_plan_intreg.jpg"
     ]
   },
@@ -759,6 +807,9 @@ export const CELESTE_SEEDS = [
     "price": 6700,
     "fullPrice": 8700,
     "images": [
+      "/images/FRESH/Marlen/Marlen_fresh_01_front.jpg",
+      "/images/FRESH/Marlen/Marlen_fresh_02_side.jpg",
+      "/images/FRESH/Marlen/Marlen_fresh_03_back.jpg",
       "/images/CELESTE/Marlen/Marlen_01_plan_intreg.jpg"
     ]
   },
@@ -768,6 +819,9 @@ export const CELESTE_SEEDS = [
     "price": 5700,
     "fullPrice": 8700,
     "images": [
+      "/images/FRESH/Manetti/Manetti_fresh_01_front.jpg",
+      "/images/FRESH/Manetti/Manetti_fresh_02_side.jpg",
+      "/images/FRESH/Manetti/Manetti_fresh_03_back.jpg",
       "/images/CELESTE/Manetti/Manetti_01_plan_intreg.jpg"
     ]
   },
@@ -777,6 +831,9 @@ export const CELESTE_SEEDS = [
     "price": 5700,
     "fullPrice": 11700,
     "images": [
+      "/images/FRESH/Sabrina/Sabrina_fresh_01_front.jpg",
+      "/images/FRESH/Sabrina/Sabrina_fresh_02_side.jpg",
+      "/images/FRESH/Sabrina/Sabrina_fresh_03_back.jpg",
       "/images/CELESTE/Sabrina/Sabrina_01_plan_intreg.jpg"
     ]
   },
@@ -786,6 +843,9 @@ export const CELESTE_SEEDS = [
     "price": 6700,
     "fullPrice": 12000,
     "images": [
+      "/images/FRESH/Siena/Siena_fresh_01_front.jpg",
+      "/images/FRESH/Siena/Siena_fresh_02_side.jpg",
+      "/images/FRESH/Siena/Siena_fresh_03_back.jpg",
       "/images/CELESTE/Siena/Siena_01_plan_intreg.jpg"
     ]
   }
