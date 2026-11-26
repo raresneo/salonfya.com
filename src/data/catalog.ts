@@ -84,7 +84,7 @@ flat('alma_detail.jpg')
   {
     name: 'Argente',
     price: 4900,
-    description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Argente. Strapless fitted mermaid silhouette with intricate beadwork and floral lace on a sheer bodice, ending in a dramatic flared tulle skirt.',
+    description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Argente. Modest A-line ballgown with a high boat neckline, long fitted sleeves with small covered buttons, a low scooped open back, a thin beaded waist belt and a full shimmering sequin skirt with a long sweeping train.',
     images: [
 flat('argente_front.jpg'),
 flat('argente_front_2.jpg'),
@@ -96,7 +96,7 @@ flat('argente_detail.jpg'),
   {
     name: 'Aurelia',
     price: 4880,
-    description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Aurelia. Sweetheart neckline ballgown featuring a structured boned corset bodice adorned with floral lace appliques that trail down a voluminous tulle skirt.',
+    description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Aurelia. A-line gown with an illusion lace neckline and sheer long sleeves with floral lace appliqués and button cuffs, a sweetheart lace bodice, a sheer illusion back closed with a row of small buttons, and a smooth satin skirt with a train.',
     images: [
 flat('aurelia_front.jpg'),
 flat('aurelia_back.jpg'),
@@ -108,7 +108,7 @@ flat('aurelia_detail.jpg'),
   {
     name: 'Daiana',
     price: 3900,
-    description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Daiana. Plunging V-neckline A-line gown with shimmering patterned lace, spaghetti straps, an illusion open back, and a flowing sheer skirt with a subtle train.',
+    description: 'Wedding dress garment reference, not a person. Salon FYa Oradea, Imperial collection, model Daiana. Fitted mermaid gown in smooth satin with a sheer floral lace appliqué bodice, a plunging sweetheart neckline, strapless (one photo shows thin straps), and a flared hem with a small sweep train.',
     images: [
 flat('daiana_front.jpg'),
 flat('daiana_side.jpg'),
